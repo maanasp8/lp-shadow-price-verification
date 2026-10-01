@@ -1,0 +1,60 @@
+{
+ "stamp": "2026-08-27",
+ "x_tol": 1e-06,
+ "mutants": {
+  "evaluable": {
+   "n": 18525,
+   "oracle": 17030,
+   "checks": 17018
+  },
+  "inert": {
+   "n": 5507,
+   "oracle": 75,
+   "checks": 29
+  }
+ },
+ "restructure": {
+  "negate_flip_all": {
+   "n": 1040,
+   "oracle": 0,
+   "checks": 1017,
+   "x_only": 0
+  },
+  "negate_flip_row0": {
+   "n": 1039,
+   "oracle": 0,
+   "checks": 667,
+   "x_only": 0
+  },
+  "rescale_x2_all": {
+   "n": 1040,
+   "oracle": 11,
+   "checks": 1017,
+   "x_only": 11
+  },
+  "rescale_x2_row0": {
+   "n": 1039,
+   "oracle": 7,
+   "checks": 668,
+   "x_only": 7
+  },
+  "rescale_x01_all": {
+   "n": 1040,
+   "oracle": 15,
+   "checks": 1017,
+   "x_only": 15
+  },
+  "reorder_rows": {
+   "n": 1040,
+   "oracle": 0,
+   "checks": 0,
+   "x_only": 0
+  },
+  "reindex_vars": {
+   "n": 1040,
+   "oracle": 2,
+   "checks": 0,
+   "x_only": 2
+  }
+ }
+}

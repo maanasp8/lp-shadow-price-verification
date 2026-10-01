@@ -1,0 +1,99 @@
+{
+ "stamp": "2026-08-19",
+ "status": "POST-HOC. n=18,525 is NOT a pre-registered denominator. Pre-registered Check D figures remain 2,531/2,746=92.17% (binding->slack) and 2,762/4,672=59.12% (dedicated types).",
+ "naming": "paper prose says Check C; all code/data columns say Check D (rev-3 R3.1)",
+ "micro_all": {
+  "n": 18525,
+  "fired": 5997,
+  "pct": 32.37
+ },
+ "macro_single_pct": 26.53,
+ "macro_multi_pct": 30.64,
+ "structural_zeros": {
+  "type2": "objective-only, rowless",
+  "type5": "objective-only, rowless",
+  "type8": "spurious constraint tightens the mutant, so its x* always satisfies the text rows"
+ },
+ "per_type": {
+  "type1_single": {
+   "n": 1824,
+   "fired": 709,
+   "pct": 38.87
+  },
+  "type1_multi": {
+   "n": 2355,
+   "fired": 1142,
+   "pct": 48.49
+  },
+  "type2_single": {
+   "n": 1590,
+   "fired": 0,
+   "pct": 0.0
+  },
+  "type2_multi": {
+   "n": 2506,
+   "fired": 0,
+   "pct": 0.0
+  },
+  "type3_single": {
+   "n": 1115,
+   "fired": 381,
+   "pct": 34.17
+  },
+  "type3_multi": {
+   "n": 1834,
+   "fired": 977,
+   "pct": 53.27
+  },
+  "type4_single": {
+   "n": 1225,
+   "fired": 678,
+   "pct": 55.35
+  },
+  "type4_multi": {
+   "n": 1252,
+   "fired": 686,
+   "pct": 54.79
+  },
+  "type5_single": {
+   "n": 427,
+   "fired": 0,
+   "pct": 0.0
+  },
+  "type5_multi": {
+   "n": 576,
+   "fired": 0,
+   "pct": 0.0
+  },
+  "type6_single": {
+   "n": 805,
+   "fired": 482,
+   "pct": 59.88
+  },
+  "type6_multi": {
+   "n": 1099,
+   "fired": 542,
+   "pct": 49.32
+  },
+  "type7_single": {
+   "n": 446,
+   "fired": 107,
+   "pct": 23.99
+  },
+  "type7_multi": {
+   "n": 747,
+   "fired": 293,
+   "pct": 39.22
+  },
+  "type8_single": {
+   "n": 321,
+   "fired": 0,
+   "pct": 0.0
+  },
+  "type8_multi": {
+   "n": 403,
+   "fired": 0,
+   "pct": 0.0
+  }
+ }
+}

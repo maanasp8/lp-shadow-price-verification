@@ -1,0 +1,256 @@
+{
+  "problem_id": "1030062804",
+  "run_on": "2026-08-05",
+  "model": "claude-opus-5",
+  "params": {
+    "max_tokens": 16000,
+    "effort": "high",
+    "thinking": {
+      "type": "adaptive"
+    },
+    "temperature": null,
+    "temperature_note": "not sent; rejected on this model"
+  },
+  "raw_prompt": {
+    "system": "You extract the numbers of a linear-programming word problem into a typed slot table. You are not building or solving a model.\n\nReport only what the text states. Follow these rules exactly.\n\nVARIABLES\n- List every decision quantity the problem asks the reader to choose, using the wording the text uses.\n- Do not invent variables for quantities that are given, not chosen.\n\nOBJECTIVE\n- `sense` is \"max\" or \"min\", whichever the text asks for.\n- Give one term per variable that carries an objective coefficient in the text.\n- If a variable appears in the problem but the text gives it no objective coefficient, emit a term for it with coefficient \"ABSENT\".\n\nCONSTRAINTS\n- One entry per constraint the text states. Give each a short id of your choosing and quote the span of the source text it comes from in `quoted_text`.\n- `operator` is \"<=\", \">=\" or \"==\" as the text implies.\n- `limit` is the number on the other side of the comparison.\n- Give one term per variable, for every variable you listed. If a variable does not appear in that constraint, emit a term for it with coefficient \"ABSENT\". Never omit a variable from a constraint's term list \u2014 say \"ABSENT\" instead.\n\nNUMBERS\n- Normalize every number to a plain decimal: no thousands separators, no currency marks, no percent signs, no units, no words.\n- Write a percentage as the number the text writes, not as a fraction: \"30%\" becomes 30, not 0.3.\n- Write a word-number as its digits: \"twice\" becomes 2, \"a third\" becomes 0.333.\n- If a number is stated but you cannot normalize it, use \"ABSENT\".\n\nDO NOT\n- Do not autoformulate. Do not rearrange a constraint, move terms across the comparison, combine constraints, or introduce a coefficient the text does not state.\n- Do not fold units, rates, or conversions into a coefficient.\n- Do not add non-negativity, integrality, or any constraint the text does not state.\n- Do not fill a missing number with a default such as 1. Use \"ABSENT\".",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Extract the slot table for this problem.\n\n<problem>\nA nurse suggests that his patient drink more protein shakes and milk to meet their calcium and protein requirements. One glass of protein shake contains 3 units of calcium, 2 units of protein, and 3 grams of sugar. One glass of milk contains 5 units of calcium, 1 unit of protein, and 5 grams of sugar. The patient must get at least 90 units of calcium and 85 units of protein. Since the patent prefers milk, they must drink at least 3 times as many glasses of milk as glasses of protein shakes. How many glasses of each should they drink to minimize their sugar intake?\n</problem>"
+      }
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "variables": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Every decision quantity the problem asks the reader to choose."
+      },
+      "objective": {
+        "type": "object",
+        "properties": {
+          "sense": {
+            "type": "string",
+            "enum": [
+              "max",
+              "min"
+            ]
+          },
+          "terms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "variable": {
+                  "type": "string"
+                },
+                "coefficient": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string",
+                      "const": "ABSENT"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "variable",
+                "coefficient"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "sense",
+          "terms"
+        ],
+        "additionalProperties": false
+      },
+      "constraints": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "quoted_text": {
+              "type": "string"
+            },
+            "operator": {
+              "type": "string",
+              "enum": [
+                "<=",
+                ">=",
+                "=="
+              ]
+            },
+            "limit": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string",
+                  "const": "ABSENT"
+                }
+              ]
+            },
+            "terms": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "variable": {
+                    "type": "string"
+                  },
+                  "coefficient": {
+                    "anyOf": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "string",
+                        "const": "ABSENT"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "variable",
+                  "coefficient"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "id",
+            "quoted_text",
+            "operator",
+            "limit",
+            "terms"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "variables",
+      "objective",
+      "constraints"
+    ],
+    "additionalProperties": false
+  },
+  "elapsed_s": 13.72164912498556,
+  "stop_reason": "end_turn",
+  "stop_details": null,
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1831,
+    "output_tokens": 927,
+    "output_tokens_details": {
+      "thinking_tokens": 461
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "response_model": "claude-opus-5",
+  "request_id": "req_011CdkFPEk5JQwosAfzGPGrk",
+  "raw_response": [
+    {
+      "signature": "CAIS9wkKhwEIEBgCKkDC+m4oIEbvDWlt8fppj3guPn3q0Ft/YhP7GmMYqewg++5vTGHXJusVpiiFkawB17U5iHfaqtrNnw/R+BF4yCElMg1jbGF1ZGUtb3B1cy01OAFCCHRoaW5raW5nWiQ3ZGZkZTBlYS02YjVjLTQ5NzUtYjA2NS0wNDQ2M2Y0NTJlYTASDIMds8Lno7Rs+pWWVhoMGnRig/8CxiM72+ZJIjCSQxVcSdH7TnCUb2QIzSIKRQIeLWf8rGpWqqdCzLjVRJYDqNWFLKjrEYcEnbI4nm4qnAiU0ClSCXRml/uzquwineGdMATn4NrHzHtWF+yNVIwFC/DijHabC1KaZK0nUJhwG+H/zSV1W1lJmbHXkmFMvyP1jyzELdDVbSmjoNoSAtAFnZDteRFV+ADVL4F5+irOGCXuCqxKaEiqHMYFlzI++ubCElMFUngX/HUrAKjSrq5AoFe+4xjXEFLyoskqwvUfNMxXD99XPGTfwyFh0KMSg47CTLhT7fGzWqzCgCro7AXZDc9YBgWLsab38IAWIrDPzKsNfdztPuwcjZBlGiG74iV8NyaNcSdYiy2k3P47YT7WXdTJqFUwV65mzR/0aA6Ywn8mD4QAojb7LIoxGH3rPxllKxJ9yKJn/lZvLGxsDLU90cdCA6b1aPLd6TLhY+cpG8SVFrl3jCaw8jO7eoK9px9uy9RexE5MIfpZU7QftXWrk/rrS1Q3KgfCUqguy/kOvhi4qAOCJWNIXmwCeSFPvK2u1au9RpQpWvXI/LiGuDlzWP13jn5twkYD3ra7+3S1227KbhELjttz62C64DXskAvFb+D6Ufiy2ZOJpEvDUx8s5fHWF1jetiI+NOQouY8C03dJ1KgNTaV/5q9tKs8SkIPiZ1RkRiLRidzev0MAPr+XsQkRTS8xrtkTiVcS29BLlz9FUjbEvGWN9o4ONI0nplfZ8lqzOVdHIHOnlAkggfRKyXflgaw2DasQIvMoPZYboQ4v3Bjc3guH7RKz4BNcFMuJARG9np3BfpFBu87tXIgI8qEXFRn4eFqoeTyXoMAWx5wBSL7o3+r4pGxeFxQmVtUClvvNs1p5zVh2f7SpWmEzcqtX9Al0NnEwGUhzJxTKf9yMBeXXa250J19Uo6N4Qmni8AF4j8Izfewnx2tGXdcUt0q+vNtX1NssXxlnRhZGooRTYAbRB7cVLTS1tcAuNeAtXtGLXTG844+w2VJIV1dkOGBIPC8JgvanDBPJahSgPX3fXiSBvoIbTXWWDs80PzdT91kzpehnUb9mptkUXOg8jEjnWTIQUgyIK7217wkbfgj5Bi3X7mjKh+FW4VTKvpEWgNPnihSKbbsTETzL0Tcw02tp8qXwo4bkdoVmTcegqxZ7PFIHskURxy9eyLP6NkB3eYO1JOS7ukqpQCNF3FBRJLI78y1Q7K/OvWUASMQTCu4gsyu9T7M/01ZceKJMRH430xrWeJgtORi8RP2M25Zwu5CDskd+jBACL8yjVSdtvggfHg1f2EhayNbj5MK9/DBkoWX3hJa6mU7aWpElSYRra0I1zMF4z04jovW9mDuBvzjHQTIyOKmvfDOgO4NnHRA3ZqmLqyomAuJSMlE70i+2QOcy1eQ5M9R/2Vf26jXS//OT0OmJd0FiVqGi2z6k0iVRIm8jdG/Ya2cZ0sarlOQuFDMGSK5cz+PB0Eqo6RgB",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"variables\":[\"glasses of protein shake\",\"glasses of milk\"],\"objective\":{\"sense\":\"min\",\"terms\":[{\"variable\":\"glasses of protein shake\",\"coefficient\":3},{\"variable\":\"glasses of milk\",\"coefficient\":5}]},\"constraints\":[{\"id\":\"calcium\",\"quoted_text\":\"One glass of protein shake contains 3 units of calcium ... One glass of milk contains 5 units of calcium ... The patient must get at least 90 units of calcium\",\"operator\":\">=\",\"limit\":90,\"terms\":[{\"variable\":\"glasses of protein shake\",\"coefficient\":3},{\"variable\":\"glasses of milk\",\"coefficient\":5}]},{\"id\":\"protein\",\"quoted_text\":\"One glass of protein shake contains ... 2 units of protein ... One glass of milk contains ... 1 unit of protein ... at least 85 units of protein\",\"operator\":\">=\",\"limit\":85,\"terms\":[{\"variable\":\"glasses of protein shake\",\"coefficient\":2},{\"variable\":\"glasses of milk\",\"coefficient\":1}]},{\"id\":\"milk_preference\",\"quoted_text\":\"they must drink at least 3 times as many glasses of milk as glasses of protein shakes\",\"operator\":\">=\",\"limit\":\"ABSENT\",\"terms\":[{\"variable\":\"glasses of protein shake\",\"coefficient\":3},{\"variable\":\"glasses of milk\",\"coefficient\":\"ABSENT\"}]}]}",
+      "type": "text"
+    }
+  ],
+  "ok": true,
+  "extraction": {
+    "variables": [
+      "glasses of protein shake",
+      "glasses of milk"
+    ],
+    "objective": {
+      "sense": "min",
+      "terms": [
+        {
+          "variable": "glasses of protein shake",
+          "coefficient": 3
+        },
+        {
+          "variable": "glasses of milk",
+          "coefficient": 5
+        }
+      ]
+    },
+    "constraints": [
+      {
+        "id": "calcium",
+        "quoted_text": "One glass of protein shake contains 3 units of calcium ... One glass of milk contains 5 units of calcium ... The patient must get at least 90 units of calcium",
+        "operator": ">=",
+        "limit": 90,
+        "terms": [
+          {
+            "variable": "glasses of protein shake",
+            "coefficient": 3
+          },
+          {
+            "variable": "glasses of milk",
+            "coefficient": 5
+          }
+        ]
+      },
+      {
+        "id": "protein",
+        "quoted_text": "One glass of protein shake contains ... 2 units of protein ... One glass of milk contains ... 1 unit of protein ... at least 85 units of protein",
+        "operator": ">=",
+        "limit": 85,
+        "terms": [
+          {
+            "variable": "glasses of protein shake",
+            "coefficient": 2
+          },
+          {
+            "variable": "glasses of milk",
+            "coefficient": 1
+          }
+        ]
+      },
+      {
+        "id": "milk_preference",
+        "quoted_text": "they must drink at least 3 times as many glasses of milk as glasses of protein shakes",
+        "operator": ">=",
+        "limit": "ABSENT",
+        "terms": [
+          {
+            "variable": "glasses of protein shake",
+            "coefficient": 3
+          },
+          {
+            "variable": "glasses of milk",
+            "coefficient": "ABSENT"
+          }
+        ]
+      }
+    ]
+  }
+}

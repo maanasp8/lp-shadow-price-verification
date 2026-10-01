@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Corpus is fetched at a pinned commit, never committed
+corpus/
+nl4opt_cache/

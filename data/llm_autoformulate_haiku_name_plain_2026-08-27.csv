@@ -1,0 +1,101 @@
+problem_id,status,align,n_rows_gold,n_rows_llm,matches_gold,a,b,c,any,any_norm
+-1282947574,OPTIMAL,name,3,3,True,True,True,False,True,True
+-201398490,OPTIMAL,name,4,4,True,True,True,False,True,True
+-2142684674,OPTIMAL,name,2,2,False,True,True,True,True,True
+-1533753278,OPTIMAL,name,2,2,True,True,True,False,True,True
+1825508140,OPTIMAL,name,3,3,True,True,True,False,True,True
+1264668532,OPTIMAL,name,3,3,True,True,True,False,True,True
+-1083302057,OPTIMAL,name,2,2,True,True,True,False,True,True
+-27745871,OPTIMAL,name,2,2,True,True,True,False,True,True
+1466742521,OPTIMAL,name,2,2,True,True,True,False,True,True
+-355727939,OPTIMAL,name,3,3,False,True,True,False,True,True
+37344130,OPTIMAL,name,2,2,True,True,True,False,True,True
+2078904807,OPTIMAL,name,3,3,True,True,True,False,True,True
+-1596596902,parse_fail: JSONDecodeError,,,,,,,,,
+1821426741,OPTIMAL,name,2,2,True,True,True,False,True,True
+-1900987309,OPTIMAL,name,2,2,True,True,True,False,True,True
+-146126231,OPTIMAL,name,3,3,False,True,True,True,True,True
+286528177,OPTIMAL,name,3,3,True,True,True,False,True,True
+1133974368,OPTIMAL,name,5,5,True,True,True,False,True,True
+-1952736066,OPTIMAL,name,3,3,True,True,True,False,True,True
+1462210894,parse_fail: ValueError,,,,,,,,,
+-1843155546,OPTIMAL,name,2,2,True,True,True,False,True,True
+-2083631303,OPTIMAL,name,2,2,True,True,True,False,True,True
+-282771990,parse_fail: ValueError,,,,,,,,,
+193295056,parse_fail: JSONDecodeError,,,,,,,,,
+-180744128,OPTIMAL,name,2,2,True,True,True,False,True,True
+-1292542531,OPTIMAL,name,3,3,True,True,True,False,True,True
+681150852,OPTIMAL,name,2,2,True,True,True,False,True,True
+-720131595,OPTIMAL,name,3,3,True,True,True,False,True,True
+-1384211970,OPTIMAL,name,2,2,True,True,True,False,True,True
+-261742752,OPTIMAL,name,2,2,True,True,True,False,True,True
+-1202959445,parse_fail: ValueError,,,,,,,,,
+1434993476,OPTIMAL,name,3,3,True,True,True,False,True,True
+1692392701,OPTIMAL,name,2,2,True,True,True,False,True,True
+-206261087,OPTIMAL,name,2,2,True,True,True,False,True,True
+118256182,OPTIMAL,name,6,6,True,True,True,False,True,True
+1262901358,OPTIMAL,name,4,4,True,True,True,False,True,True
+1775140418,OPTIMAL,name,3,3,True,True,True,False,True,True
+-591967366,OPTIMAL,name,3,3,True,True,True,False,True,True
+343561730,OPTIMAL,name,2,2,True,True,True,False,True,True
+1128524765,OPTIMAL,name,5,5,True,True,True,False,True,True
+-707305018,OPTIMAL,name,2,2,True,True,True,False,True,True
+-2145484718,OPTIMAL,name,3,3,True,True,True,False,True,True
+-1371866588,OPTIMAL,name,2,2,True,True,True,False,True,True
+1688548725,OPTIMAL,name,3,3,False,True,True,False,True,True
+-661636428,OPTIMAL,name,4,4,True,True,True,False,True,True
+-2004165813,OPTIMAL,name,3,3,True,True,True,False,True,True
+1629184346,OPTIMAL,name,2,2,True,True,True,False,True,True
+2017354998,OPTIMAL,name,3,3,True,True,True,False,True,True
+-577606329,parse_fail: ValueError,,,,,,,,,
+1092036773,OPTIMAL,name,3,3,True,True,True,False,True,True
+902707159,OPTIMAL,name,2,2,True,True,True,False,True,True
+-342979720,OPTIMAL,name,2,2,True,True,True,False,True,True
+-1412758703,OPTIMAL,name,3,3,True,True,True,False,True,True
+-1107954998,OPTIMAL,name,3,3,True,True,True,False,True,True
+-504122344,OPTIMAL,name,3,3,True,True,True,False,True,True
+721056636,OPTIMAL,name,5,5,True,True,True,False,True,True
+928775045,solve_INFEASIBLE,name,1,2,,,,,,
+-1278751305,OPTIMAL,name,3,3,True,True,True,False,True,True
+467579298,OPTIMAL,name,2,2,True,True,True,False,True,True
+1885129178,OPTIMAL,name,2,2,True,True,True,False,True,True
+-1927179020,OPTIMAL,name,2,2,True,True,True,False,True,True
+1054847148,OPTIMAL,name,2,2,True,True,True,False,True,True
+-1492133110,OPTIMAL,name,3,3,True,True,True,False,True,True
+1294399767,OPTIMAL,name,2,2,True,True,True,False,True,True
+2035548217,OPTIMAL,name,2,2,False,True,True,False,True,True
+-17265158,OPTIMAL,name,3,3,True,True,True,False,True,True
+-441849133,parse_fail: ValueError,,,,,,,,,
+-568965344,OPTIMAL,name,3,3,True,True,True,False,True,True
+299393763,parse_fail: ValueError,,,,,,,,,
+1045126906,parse_fail: JSONDecodeError,,,,,,,,,
+-594806556,OPTIMAL,name,2,2,True,True,True,False,True,True
+1738773919,OPTIMAL,name,3,3,False,True,True,False,True,True
+-574304318,parse_fail: ValueError,,,,,,,,,
+-1447728775,OPTIMAL,name,3,3,True,True,True,False,True,True
+-169306566,parse_fail: JSONDecodeError,,,,,,,,,
+-1830770679,OPTIMAL,name,3,3,True,True,True,False,True,True
+-400376495,OPTIMAL,name,2,2,True,True,True,False,True,True
+-336089912,OPTIMAL,name,2,2,True,True,True,False,True,True
+-1421194232,OPTIMAL,name,2,2,True,True,True,False,True,True
+1146360292,OPTIMAL,name,2,2,True,True,True,False,True,True
+-672891245,OPTIMAL,name,2,2,True,True,True,False,True,True
+2128667133,OPTIMAL,name,2,2,True,True,True,False,True,True
+-1062928915,OPTIMAL,name,2,3,False,True,True,True,True,True
+125732204,OPTIMAL,name,5,5,True,True,True,False,True,True
+-451402850,OPTIMAL,name,3,3,True,True,True,False,True,True
+786856725,OPTIMAL,name,3,3,False,True,True,True,True,True
+1958482161,OPTIMAL,name,3,3,True,True,True,False,True,True
+1268238141,OPTIMAL,name,4,4,True,False,False,False,False,False
+599598925,OPTIMAL,name,3,3,True,True,True,False,True,True
+-1133652946,OPTIMAL,name,3,3,True,True,True,False,True,True
+-1963149491,OPTIMAL,name,3,3,True,True,True,False,True,True
+-188754660,OPTIMAL,name,3,3,True,True,True,False,True,True
+102495722,OPTIMAL,name,3,3,True,True,True,False,True,True
+-197783589,OPTIMAL,name,3,3,True,True,True,False,True,True
+358299194,OPTIMAL,name,4,4,True,True,True,False,True,True
+1916748046,OPTIMAL,name,2,2,True,True,True,False,True,True
+-1374720410,OPTIMAL,name,2,2,True,True,True,False,True,True
+971456192,OPTIMAL,name,3,3,True,True,True,False,True,True
+-437895545,OPTIMAL,name,3,3,True,True,True,False,True,True
+1470713712,OPTIMAL,name,2,2,False,True,True,True,True,True

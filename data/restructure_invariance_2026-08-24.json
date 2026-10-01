@@ -1,0 +1,63 @@
+{
+ "stamp": "2026-08-24",
+ "n_instances": 1040,
+ "self_test_failures": 0,
+ "summary": {
+  "negate_flip_all": {
+   "n": 1040,
+   "a_fired": 1017,
+   "b_fired": 1017,
+   "d_fired": 0,
+   "any_fired": 1017,
+   "any_pct": 97.79
+  },
+  "negate_flip_row0": {
+   "n": 1039,
+   "a_fired": 667,
+   "b_fired": 631,
+   "d_fired": 0,
+   "any_fired": 667,
+   "any_pct": 64.2
+  },
+  "rescale_x2_all": {
+   "n": 1040,
+   "a_fired": 1017,
+   "b_fired": 1017,
+   "d_fired": 0,
+   "any_fired": 1017,
+   "any_pct": 97.79
+  },
+  "rescale_x2_row0": {
+   "n": 1039,
+   "a_fired": 668,
+   "b_fired": 632,
+   "d_fired": 0,
+   "any_fired": 668,
+   "any_pct": 64.29
+  },
+  "rescale_x01_all": {
+   "n": 1040,
+   "a_fired": 1017,
+   "b_fired": 1017,
+   "d_fired": 0,
+   "any_fired": 1017,
+   "any_pct": 97.79
+  },
+  "reorder_rows": {
+   "n": 1040,
+   "a_fired": 0,
+   "b_fired": 0,
+   "d_fired": 0,
+   "any_fired": 0,
+   "any_pct": 0.0
+  },
+  "reindex_vars": {
+   "n": 1040,
+   "a_fired": 0,
+   "b_fired": 0,
+   "d_fired": 0,
+   "any_fired": 0,
+   "any_pct": 0.0
+  }
+ }
+}

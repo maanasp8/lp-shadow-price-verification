@@ -1,0 +1,251 @@
+{
+  "problem_id": "1092036773",
+  "run_on": "2026-08-05",
+  "model": "claude-opus-5",
+  "params": {
+    "max_tokens": 16000,
+    "effort": "high",
+    "thinking": {
+      "type": "adaptive"
+    },
+    "temperature": null,
+    "temperature_note": "not sent; rejected on this model"
+  },
+  "raw_prompt": {
+    "system": "You extract the numbers of a linear-programming word problem into a typed slot table. You are not building or solving a model.\n\nReport only what the text states. Follow these rules exactly.\n\nVARIABLES\n- List every decision quantity the problem asks the reader to choose, using the wording the text uses.\n- Do not invent variables for quantities that are given, not chosen.\n\nOBJECTIVE\n- `sense` is \"max\" or \"min\", whichever the text asks for.\n- Give one term per variable that carries an objective coefficient in the text.\n- If a variable appears in the problem but the text gives it no objective coefficient, emit a term for it with coefficient \"ABSENT\".\n\nCONSTRAINTS\n- One entry per constraint the text states. Give each a short id of your choosing and quote the span of the source text it comes from in `quoted_text`.\n- `operator` is \"<=\", \">=\" or \"==\" as the text implies.\n- `limit` is the number on the other side of the comparison.\n- Give one term per variable, for every variable you listed. If a variable does not appear in that constraint, emit a term for it with coefficient \"ABSENT\". Never omit a variable from a constraint's term list \u2014 say \"ABSENT\" instead.\n\nNUMBERS\n- Normalize every number to a plain decimal: no thousands separators, no currency marks, no percent signs, no units, no words.\n- Write a percentage as the number the text writes, not as a fraction: \"30%\" becomes 30, not 0.3.\n- Write a word-number as its digits: \"twice\" becomes 2, \"a third\" becomes 0.333.\n- If a number is stated but you cannot normalize it, use \"ABSENT\".\n\nDO NOT\n- Do not autoformulate. Do not rearrange a constraint, move terms across the comparison, combine constraints, or introduce a coefficient the text does not state.\n- Do not fold units, rates, or conversions into a coefficient.\n- Do not add non-negativity, integrality, or any constraint the text does not state.\n- Do not fill a missing number with a default such as 1. Use \"ABSENT\".",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Extract the slot table for this problem.\n\n<problem>\nBob Fashion produces two types of lipsticks: cream lipsticks and matte lipsticks. The profit per cream lipstick is $70 and the profit per matte lipstick is $100. It takes 3.5 hours to produce the raw materials for one cream lipstick, 5 hours to mix and 2 hours in packing. It takes 5 hours to produce the raw materials for one matte lipstick, 3 hours to mix and 1.5 hours in packing. Per month, 300 hours are available for preparing the raw materials, 400 hours for mixing and 200 hours for packing the lipsticks.  How many of each type of lipstick should be produced in order to maximize the total monthly profit?\n</problem>"
+      }
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "variables": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Every decision quantity the problem asks the reader to choose."
+      },
+      "objective": {
+        "type": "object",
+        "properties": {
+          "sense": {
+            "type": "string",
+            "enum": [
+              "max",
+              "min"
+            ]
+          },
+          "terms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "variable": {
+                  "type": "string"
+                },
+                "coefficient": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string",
+                      "const": "ABSENT"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "variable",
+                "coefficient"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "sense",
+          "terms"
+        ],
+        "additionalProperties": false
+      },
+      "constraints": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "quoted_text": {
+              "type": "string"
+            },
+            "operator": {
+              "type": "string",
+              "enum": [
+                "<=",
+                ">=",
+                "=="
+              ]
+            },
+            "limit": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string",
+                  "const": "ABSENT"
+                }
+              ]
+            },
+            "terms": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "variable": {
+                    "type": "string"
+                  },
+                  "coefficient": {
+                    "anyOf": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "string",
+                        "const": "ABSENT"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "variable",
+                  "coefficient"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "id",
+            "quoted_text",
+            "operator",
+            "limit",
+            "terms"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "variables",
+      "objective",
+      "constraints"
+    ],
+    "additionalProperties": false
+  },
+  "elapsed_s": 6.3453688329900615,
+  "stop_reason": "end_turn",
+  "stop_details": null,
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1862,
+    "output_tokens": 469,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "response_model": "claude-opus-5",
+  "request_id": "req_011CdkFQFPoJQWr98vCqSXUE",
+  "raw_response": [
+    {
+      "citations": null,
+      "text": "{\"variables\":[\"cream lipsticks\",\"matte lipsticks\"],\"objective\":{\"sense\":\"max\",\"terms\":[{\"variable\":\"cream lipsticks\",\"coefficient\":70},{\"variable\":\"matte lipsticks\",\"coefficient\":100}]},\"constraints\":[{\"id\":\"raw_materials\",\"quoted_text\":\"It takes 3.5 hours to produce the raw materials for one cream lipstick ... It takes 5 hours to produce the raw materials for one matte lipstick ... Per month, 300 hours are available for preparing the raw materials\",\"operator\":\"<=\",\"limit\":300,\"terms\":[{\"variable\":\"cream lipsticks\",\"coefficient\":3.5},{\"variable\":\"matte lipsticks\",\"coefficient\":5}]},{\"id\":\"mixing\",\"quoted_text\":\"5 hours to mix ... 3 hours to mix ... 400 hours for mixing\",\"operator\":\"<=\",\"limit\":400,\"terms\":[{\"variable\":\"cream lipsticks\",\"coefficient\":5},{\"variable\":\"matte lipsticks\",\"coefficient\":3}]},{\"id\":\"packing\",\"quoted_text\":\"2 hours in packing ... 1.5 hours in packing ... 200 hours for packing the lipsticks\",\"operator\":\"<=\",\"limit\":200,\"terms\":[{\"variable\":\"cream lipsticks\",\"coefficient\":2},{\"variable\":\"matte lipsticks\",\"coefficient\":1.5}]}]}",
+      "type": "text"
+    }
+  ],
+  "ok": true,
+  "extraction": {
+    "variables": [
+      "cream lipsticks",
+      "matte lipsticks"
+    ],
+    "objective": {
+      "sense": "max",
+      "terms": [
+        {
+          "variable": "cream lipsticks",
+          "coefficient": 70
+        },
+        {
+          "variable": "matte lipsticks",
+          "coefficient": 100
+        }
+      ]
+    },
+    "constraints": [
+      {
+        "id": "raw_materials",
+        "quoted_text": "It takes 3.5 hours to produce the raw materials for one cream lipstick ... It takes 5 hours to produce the raw materials for one matte lipstick ... Per month, 300 hours are available for preparing the raw materials",
+        "operator": "<=",
+        "limit": 300,
+        "terms": [
+          {
+            "variable": "cream lipsticks",
+            "coefficient": 3.5
+          },
+          {
+            "variable": "matte lipsticks",
+            "coefficient": 5
+          }
+        ]
+      },
+      {
+        "id": "mixing",
+        "quoted_text": "5 hours to mix ... 3 hours to mix ... 400 hours for mixing",
+        "operator": "<=",
+        "limit": 400,
+        "terms": [
+          {
+            "variable": "cream lipsticks",
+            "coefficient": 5
+          },
+          {
+            "variable": "matte lipsticks",
+            "coefficient": 3
+          }
+        ]
+      },
+      {
+        "id": "packing",
+        "quoted_text": "2 hours in packing ... 1.5 hours in packing ... 200 hours for packing the lipsticks",
+        "operator": "<=",
+        "limit": 200,
+        "terms": [
+          {
+            "variable": "cream lipsticks",
+            "coefficient": 2
+          },
+          {
+            "variable": "matte lipsticks",
+            "coefficient": 1.5
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,4035 @@
+{
+  "axes": {
+    "numeric_correct": 73,
+    "numeric_wrong": 3,
+    "alignment_correct": 171,
+    "alignment_error": 54,
+    "content_gap": 124,
+    "spurious": 206,
+    "manual_review": 52
+  },
+  "by_cause": {
+    "alignment_error": {
+      "unmatched_variable_name": 54
+    },
+    "content_gap": {
+      "cell_under_unmatched_variable": 124
+    },
+    "spurious": {
+      "unrecognised_variable_name": 54,
+      "cell_under_unrecognised_name": 139,
+      "extra_row": 13
+    }
+  },
+  "per_instance": [
+    {
+      "problem_id": "-1970166929",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 1,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 6,
+        "error": 4
+      },
+      "content_gap": 0,
+      "spurious": 8,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 4
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 4,
+        "cell_under_unrecognised_name": 4
+      },
+      "content_gap_breakdown": {},
+      "manual_review": [
+        {
+          "cell": "objective[GPUs]",
+          "reason": "non_numeric_raw",
+          "raw": "4%",
+          "gt_value": 0.04,
+          "extracted": null
+        },
+        {
+          "cell": "objective[CPUs]",
+          "reason": "non_numeric_raw",
+          "raw": "6%",
+          "gt_value": 0.06,
+          "extracted": null
+        },
+        {
+          "cell": "objective[software]",
+          "reason": "non_numeric_raw",
+          "raw": "11%",
+          "gt_value": 0.11,
+          "extracted": null
+        },
+        {
+          "cell": "objective[mobile devices]",
+          "reason": "non_numeric_raw",
+          "raw": "8%",
+          "gt_value": 0.08,
+          "extracted": null
+        },
+        {
+          "cell": "c0_sum.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "sum",
+          "canonical_reference": {
+            "GPUs": 1.0,
+            "CPUs": 1.0,
+            "software": 1.0,
+            "mobile devices": 1.0
+          },
+          "extracted": {
+            "'amount invested in gpus' (unrecognised)": 1,
+            "'amount invested in cpus' (unrecognised)": 1,
+            "'amount invested in software' (unrecognised)": 1,
+            "'amount invested in mobile devices' (unrecognised)": 1
+          }
+        },
+        {
+          "cell": "c1_xy.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "xy",
+          "canonical_reference": {
+            "GPUs": 1.0,
+            "CPUs": -1.0
+          },
+          "extracted": {
+            "'amount invested in gpus' (unrecognised)": 1,
+            "'amount invested in cpus' (unrecognised)": 1
+          }
+        },
+        {
+          "cell": "c2_xy.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "xy",
+          "canonical_reference": {
+            "mobile devices": 1.0,
+            "software": -1.0
+          },
+          "extracted": {
+            "'amount invested in software' (unrecognised)": 1,
+            "'amount invested in mobile devices' (unrecognised)": 1
+          }
+        },
+        {
+          "cell": "c3_ratio.limit",
+          "reason": "non_numeric_raw",
+          "raw": "9%",
+          "gt_value": 0.09,
+          "extracted": 9
+        },
+        {
+          "cell": "c3_ratio.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "ratio",
+          "canonical_reference": {
+            "GPUs": 0.91,
+            "CPUs": -0.09,
+            "software": -0.09,
+            "mobile devices": -0.09
+          },
+          "extracted": {
+            "'amount invested in gpus' (unrecognised)": 1
+          }
+        }
+      ],
+      "detail": [
+        {
+          "cell": "variable[CPUs]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[GPUs]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[mobile devices]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[software]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[amount invested in CPUs]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[amount invested in GPUs]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[amount invested in mobile devices]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[amount invested in software]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective['amount invested in gpus' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 4
+        },
+        {
+          "cell": "objective['amount invested in cpus' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 6
+        },
+        {
+          "cell": "objective['amount invested in software' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 11
+        },
+        {
+          "cell": "objective['amount invested in mobile devices' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 8
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "CPUs",
+          "GPUs",
+          "mobile devices",
+          "software"
+        ],
+        "ex_unmatched": [
+          "amount invested in CPUs",
+          "amount invested in GPUs",
+          "amount invested in mobile devices",
+          "amount invested in software"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1,
+          "2": 2,
+          "3": 3
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "-1501301743",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 2,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 5,
+        "error": 3
+      },
+      "content_gap": 9,
+      "spurious": 12,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 3
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 3,
+        "cell_under_unrecognised_name": 9
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 9
+      },
+      "manual_review": [],
+      "detail": [
+        {
+          "cell": "variable[Plus]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[Premium]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[Standard]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[tons of Plus grade alloy produced]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[tons of Premium grade alloy produced]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[tons of Standard grade alloy produced]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[Standard]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 1500.0
+        },
+        {
+          "cell": "objective[Plus]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 2500.0
+        },
+        {
+          "cell": "objective[Premium]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 5500.0
+        },
+        {
+          "cell": "objective['tons of standard grade alloy produced' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 1500
+        },
+        {
+          "cell": "objective['tons of plus grade alloy produced' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 2500
+        },
+        {
+          "cell": "objective['tons of premium grade alloy produced' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 5500
+        },
+        {
+          "cell": "c0_linear[Standard grade alloy]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 3.0
+        },
+        {
+          "cell": "c0_linear[Plus grade alloy]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 5.0
+        },
+        {
+          "cell": "c0_linear[Premium grade alloy]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 6.0
+        },
+        {
+          "cell": "c0_linear['tons of standard grade alloy produced' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 3
+        },
+        {
+          "cell": "c0_linear['tons of plus grade alloy produced' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 5
+        },
+        {
+          "cell": "c0_linear['tons of premium grade alloy produced' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 6
+        },
+        {
+          "cell": "c1_linear[Standard grade alloy]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 1.0
+        },
+        {
+          "cell": "c1_linear[Plus grade alloy]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 2.0
+        },
+        {
+          "cell": "c1_linear[Premium grade alloy]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 3.0
+        },
+        {
+          "cell": "c1_linear['tons of standard grade alloy produced' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 1
+        },
+        {
+          "cell": "c1_linear['tons of plus grade alloy produced' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 2
+        },
+        {
+          "cell": "c1_linear['tons of premium grade alloy produced' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 3
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "Plus",
+          "Premium",
+          "Standard"
+        ],
+        "ex_unmatched": [
+          "tons of Plus grade alloy produced",
+          "tons of Premium grade alloy produced",
+          "tons of Standard grade alloy produced"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "-1133652946",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 3,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 7,
+        "error": 3
+      },
+      "content_gap": 12,
+      "spurious": 15,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 3
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 3,
+        "cell_under_unrecognised_name": 12
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 12
+      },
+      "manual_review": [],
+      "detail": [
+        {
+          "cell": "variable[type A layout]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[type B layout]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[type C layout]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[number of type A layouts]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[number of type B layouts]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[number of type C layouts]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[type A layout]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 200.0
+        },
+        {
+          "cell": "objective[type B layout]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 175.0
+        },
+        {
+          "cell": "objective[type C layout]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 225.0
+        },
+        {
+          "cell": "objective['number of type a layouts' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 200
+        },
+        {
+          "cell": "objective['number of type b layouts' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 175
+        },
+        {
+          "cell": "objective['number of type c layouts' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 225
+        },
+        {
+          "cell": "c0_linear[type A layout]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 10.0
+        },
+        {
+          "cell": "c0_linear[type B layout]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 5.0
+        },
+        {
+          "cell": "c0_linear[type C layout]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 12.0
+        },
+        {
+          "cell": "c0_linear['number of type a layouts' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 10
+        },
+        {
+          "cell": "c0_linear['number of type b layouts' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 5
+        },
+        {
+          "cell": "c0_linear['number of type c layouts' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 12
+        },
+        {
+          "cell": "c1_linear[type A layout]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 7.0
+        },
+        {
+          "cell": "c1_linear[type B layout]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 12.0
+        },
+        {
+          "cell": "c1_linear[type C layout]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 4.0
+        },
+        {
+          "cell": "c1_linear['number of type a layouts' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 7
+        },
+        {
+          "cell": "c1_linear['number of type b layouts' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 12
+        },
+        {
+          "cell": "c1_linear['number of type c layouts' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 4
+        },
+        {
+          "cell": "c2_linear[type A layout]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 15.0
+        },
+        {
+          "cell": "c2_linear[type B layout]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 10.0
+        },
+        {
+          "cell": "c2_linear[type C layout]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 12.0
+        },
+        {
+          "cell": "c2_linear['number of type a layouts' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 15
+        },
+        {
+          "cell": "c2_linear['number of type b layouts' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 10
+        },
+        {
+          "cell": "c2_linear['number of type c layouts' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 12
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "type A layout",
+          "type B layout",
+          "type C layout"
+        ],
+        "ex_unmatched": [
+          "number of type A layouts",
+          "number of type B layouts",
+          "number of type C layouts"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1,
+          "2": 2
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "-1062928915",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 1,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 4,
+        "error": 3
+      },
+      "content_gap": 3,
+      "spurious": 9,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 3
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 3,
+        "cell_under_unrecognised_name": 6
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 3
+      },
+      "manual_review": [
+        {
+          "cell": "c0_sum.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "sum",
+          "canonical_reference": {
+            "basketball tournament": 1.0,
+            "horse race": 1.0,
+            "soccer game": 1.0
+          },
+          "extracted": {
+            "'money put on basketball tournament' (unrecognised)": 1,
+            "'money put on horse race' (unrecognised)": 1,
+            "'money put on soccer game' (unrecognised)": 1
+          }
+        },
+        {
+          "cell": "c1_linear.limit",
+          "reason": "non_numeric_raw",
+          "raw": "30%",
+          "gt_value": 0.3,
+          "extracted": 30
+        },
+        {
+          "cell": "c1_linear[basketball tournament]",
+          "reason": "non_numeric_raw",
+          "raw": "50%",
+          "gt_value": 0.5,
+          "extracted": null
+        },
+        {
+          "cell": "c1_linear[horse race]",
+          "reason": "non_numeric_raw",
+          "raw": "25%",
+          "gt_value": 0.25,
+          "extracted": null
+        },
+        {
+          "cell": "c1_linear[soccer game]",
+          "reason": "non_numeric_raw",
+          "raw": "10%",
+          "gt_value": 0.1,
+          "extracted": null
+        }
+      ],
+      "detail": [
+        {
+          "cell": "variable[basketball tournament]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[horse race]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[soccer game]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[money put on basketball tournament]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[money put on horse race]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[money put on soccer game]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[basketball tournament]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 1.2
+        },
+        {
+          "cell": "objective[horse race]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 0.5
+        },
+        {
+          "cell": "objective[soccer game]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 0.1
+        },
+        {
+          "cell": "objective['money put on basketball tournament' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 1.2
+        },
+        {
+          "cell": "objective['money put on horse race' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 0.5
+        },
+        {
+          "cell": "objective['money put on soccer game' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 0.1
+        },
+        {
+          "cell": "c1_linear['money put on basketball tournament' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 50
+        },
+        {
+          "cell": "c1_linear['money put on horse race' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 25
+        },
+        {
+          "cell": "c1_linear['money put on soccer game' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 10
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "basketball tournament",
+          "horse race",
+          "soccer game"
+        ],
+        "ex_unmatched": [
+          "money put on basketball tournament",
+          "money put on horse race",
+          "money put on soccer game"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "-615992646",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 0,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 3,
+        "error": 4
+      },
+      "content_gap": 0,
+      "spurious": 12,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 4
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 4,
+        "cell_under_unrecognised_name": 4,
+        "extra_row": 4
+      },
+      "content_gap_breakdown": {},
+      "manual_review": [
+        {
+          "cell": "objective[biotech]",
+          "reason": "non_numeric_raw",
+          "raw": "4%",
+          "gt_value": 0.04,
+          "extracted": null
+        },
+        {
+          "cell": "objective[food]",
+          "reason": "non_numeric_raw",
+          "raw": "6%",
+          "gt_value": 0.06,
+          "extracted": null
+        },
+        {
+          "cell": "objective[finance]",
+          "reason": "non_numeric_raw",
+          "raw": "8%",
+          "gt_value": 0.08,
+          "extracted": null
+        },
+        {
+          "cell": "objective[health care]",
+          "reason": "non_numeric_raw",
+          "raw": "10%",
+          "gt_value": 0.1,
+          "extracted": null
+        },
+        {
+          "cell": "c0_xy.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "xy",
+          "canonical_reference": {
+            "food industry": 1.0,
+            "finance industry": -1.0
+          },
+          "extracted": {
+            "'amount invested in biotech industry' (unrecognised)": 1,
+            "'amount invested in food industry' (unrecognised)": 1,
+            "'amount invested in finance industry' (unrecognised)": 1,
+            "'amount invested in health care industry' (unrecognised)": 1
+          }
+        },
+        {
+          "cell": "c1_ratio.limit",
+          "reason": "non_numeric_raw",
+          "raw": "30%",
+          "gt_value": 0.3,
+          "extracted": "ABSENT"
+        },
+        {
+          "cell": "c1_ratio.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "ratio",
+          "canonical_reference": {
+            "health care": 0.7,
+            "biotech industry": -0.3,
+            "food industry": -0.3,
+            "finance industry": -0.3
+          },
+          "extracted": {
+            "'amount invested in biotech industry' (unrecognised)": 1,
+            "'amount invested in health care industry' (unrecognised)": 1
+          }
+        }
+      ],
+      "detail": [
+        {
+          "cell": "variable[biotech industry]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[finance industry]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[food industry]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[health care]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[amount invested in biotech industry]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[amount invested in finance industry]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[amount invested in food industry]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[amount invested in health care industry]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective['amount invested in biotech industry' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 4
+        },
+        {
+          "cell": "objective['amount invested in food industry' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 6
+        },
+        {
+          "cell": "objective['amount invested in finance industry' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 8
+        },
+        {
+          "cell": "objective['amount invested in health care industry' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 10
+        },
+        {
+          "cell": "<extracted row food_vs_finance>",
+          "verdict": "spurious",
+          "cause": "extra_row",
+          "note": "no ground-truth counterpart",
+          "quoted_text": "the amount invested in the food industry cannot exceed the amount invested in the finance industry"
+        },
+        {
+          "cell": "<extracted row health_cap>",
+          "verdict": "spurious",
+          "cause": "extra_row",
+          "note": "no ground-truth counterpart",
+          "quoted_text": "at most 30% of the investment can be in the health care industry"
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "biotech industry",
+          "finance industry",
+          "food industry",
+          "health care"
+        ],
+        "ex_unmatched": [
+          "amount invested in biotech industry",
+          "amount invested in finance industry",
+          "amount invested in food industry",
+          "amount invested in health care industry"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "problem_id": "-114149479",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 4,
+        "wrong": 3
+      },
+      "alignment": {
+        "correct": 9,
+        "error": 0
+      },
+      "content_gap": 0,
+      "spurious": 4,
+      "alignment_breakdown": {},
+      "spurious_breakdown": {
+        "extra_row": 4
+      },
+      "content_gap_breakdown": {},
+      "manual_review": [],
+      "detail": [
+        {
+          "cell": "c0_linear[crepe cake]",
+          "verdict": "numeric_wrong",
+          "gt": 200.0,
+          "extracted": 400
+        },
+        {
+          "cell": "c0_linear[sponge cake]",
+          "verdict": "numeric_wrong",
+          "gt": 300.0,
+          "extracted": 500
+        },
+        {
+          "cell": "c0_linear[birthday cake]",
+          "verdict": "numeric_wrong",
+          "gt": 350.0,
+          "extracted": 450
+        },
+        {
+          "cell": "<extracted row milk>",
+          "verdict": "spurious",
+          "cause": "extra_row",
+          "note": "no ground-truth counterpart",
+          "quoted_text": "14000 grams of milk ... A crepe cake needs ... 200 grams of milk ... A sponge cake requires ... 300 grams of milk ... A birthday cake requires ... 350 grams of milk"
+        }
+      ],
+      "variable_alignment": {
+        "matched": {
+          "crepe cakes": "crepe cakes",
+          "sponge cakes": "sponge cakes",
+          "birthday cakes": "birthday cakes"
+        },
+        "matched_keys": [
+          0,
+          1,
+          2
+        ],
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": [
+          1
+        ]
+      }
+    },
+    {
+      "problem_id": "155829587",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 2,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 5,
+        "error": 3
+      },
+      "content_gap": 9,
+      "spurious": 12,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 3
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 3,
+        "cell_under_unrecognised_name": 9
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 9
+      },
+      "manual_review": [],
+      "detail": [
+        {
+          "cell": "variable[general purpose vessels]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[pharmaceutical vessels]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[pressure vessels]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[sets of general purpose vessels]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[sets of pharmaceutical vessels]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[sets of pressure vessels]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[general purpose]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 2000.0
+        },
+        {
+          "cell": "objective[pharmaceutical]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 3000.0
+        },
+        {
+          "cell": "objective[pressure vessels]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 4500.0
+        },
+        {
+          "cell": "objective['sets of general purpose vessels' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 2000
+        },
+        {
+          "cell": "objective['sets of pharmaceutical vessels' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 3000
+        },
+        {
+          "cell": "objective['sets of pressure vessels' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 4500
+        },
+        {
+          "cell": "c0_linear[general purpose vessels]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 3.5
+        },
+        {
+          "cell": "c0_linear[pharmaceutical vessels]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 4.0
+        },
+        {
+          "cell": "c0_linear[pressure vessels]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 2.0
+        },
+        {
+          "cell": "c0_linear['sets of general purpose vessels' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 3.5
+        },
+        {
+          "cell": "c0_linear['sets of pharmaceutical vessels' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 4
+        },
+        {
+          "cell": "c0_linear['sets of pressure vessels' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 2
+        },
+        {
+          "cell": "c1_linear[general purpose vessels]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 2.0
+        },
+        {
+          "cell": "c1_linear[pharmaceutical vessels]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 5.0
+        },
+        {
+          "cell": "c1_linear[pressure vessels]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 3.5
+        },
+        {
+          "cell": "c1_linear['sets of general purpose vessels' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 2
+        },
+        {
+          "cell": "c1_linear['sets of pharmaceutical vessels' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 5
+        },
+        {
+          "cell": "c1_linear['sets of pressure vessels' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 3.5
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "general purpose vessels",
+          "pharmaceutical vessels",
+          "pressure vessels"
+        ],
+        "ex_unmatched": [
+          "sets of general purpose vessels",
+          "sets of pharmaceutical vessels",
+          "sets of pressure vessels"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "240605764",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 2,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 5,
+        "error": 3
+      },
+      "content_gap": 9,
+      "spurious": 12,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 3
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 3,
+        "cell_under_unrecognised_name": 9
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 9
+      },
+      "manual_review": [],
+      "detail": [
+        {
+          "cell": "variable[high quality]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[low]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[medium]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[high quality face wash]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[low quality face wash]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[medium quality face wash]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[low quality]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 3.0
+        },
+        {
+          "cell": "objective[medium quality]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 7.0
+        },
+        {
+          "cell": "objective[high quality]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 9.0
+        },
+        {
+          "cell": "objective['low quality face wash' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 3
+        },
+        {
+          "cell": "objective['medium quality face wash' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 7
+        },
+        {
+          "cell": "objective['high quality face wash' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 9
+        },
+        {
+          "cell": "c0_linear[low quality]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 1.0
+        },
+        {
+          "cell": "c0_linear[medium quality]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 3.0
+        },
+        {
+          "cell": "c0_linear[high quality]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 4.0
+        },
+        {
+          "cell": "c0_linear['low quality face wash' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 1
+        },
+        {
+          "cell": "c0_linear['medium quality face wash' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 3
+        },
+        {
+          "cell": "c0_linear['high quality face wash' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 4
+        },
+        {
+          "cell": "c1_linear[low quality]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 4.0
+        },
+        {
+          "cell": "c1_linear[medium quality]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 2.0
+        },
+        {
+          "cell": "c1_linear[high quality]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 1.0
+        },
+        {
+          "cell": "c1_linear['low quality face wash' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 4
+        },
+        {
+          "cell": "c1_linear['medium quality face wash' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 2
+        },
+        {
+          "cell": "c1_linear['high quality face wash' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 1
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "high quality",
+          "low",
+          "medium"
+        ],
+        "ex_unmatched": [
+          "high quality face wash",
+          "low quality face wash",
+          "medium quality face wash"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "645706426",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 2,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 7,
+        "error": 3
+      },
+      "content_gap": 6,
+      "spurious": 9,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 3
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 3,
+        "cell_under_unrecognised_name": 6
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 6
+      },
+      "manual_review": [
+        {
+          "cell": "c0_upperbound.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "upperbound",
+          "canonical_reference": {
+            "buses": 1.0
+          },
+          "extracted": {
+            "'number of ads on buses' (unrecognised)": 1
+          }
+        },
+        {
+          "cell": "c1_ratio.limit",
+          "reason": "non_numeric_raw",
+          "raw": "30%",
+          "gt_value": 0.3,
+          "extracted": 30
+        },
+        {
+          "cell": "c1_ratio.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "ratio",
+          "canonical_reference": {
+            "taxis": 0.7,
+            "buses": -0.3,
+            "privately owned cars": -0.3
+          },
+          "extracted": {
+            "'number of ads on taxis' (unrecognised)": 1
+          }
+        },
+        {
+          "cell": "c2_ratio.limit",
+          "reason": "non_numeric_raw",
+          "raw": "20%",
+          "gt_value": 0.2,
+          "extracted": 20
+        },
+        {
+          "cell": "c2_ratio.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "ratio",
+          "canonical_reference": {
+            "privately owned cars": 0.8,
+            "taxis": -0.2,
+            "buses": -0.2
+          },
+          "extracted": {
+            "'number of ads on privately owned cars' (unrecognised)": 1
+          }
+        }
+      ],
+      "detail": [
+        {
+          "cell": "variable[buses]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[privately owned cars]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[taxis]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[number of ads on buses]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[number of ads on privately owned cars]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[number of ads on taxis]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[taxi]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 5000.0
+        },
+        {
+          "cell": "objective[bus]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 12000.0
+        },
+        {
+          "cell": "objective[privately owned car]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 2000.0
+        },
+        {
+          "cell": "objective['number of ads on taxis' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 5000
+        },
+        {
+          "cell": "objective['number of ads on buses' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 12000
+        },
+        {
+          "cell": "objective['number of ads on privately owned cars' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 2000
+        },
+        {
+          "cell": "c3_linear[taxi]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 500.0
+        },
+        {
+          "cell": "c3_linear[bus]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 1000.0
+        },
+        {
+          "cell": "c3_linear[privately owned car]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 300.0
+        },
+        {
+          "cell": "c3_linear['number of ads on taxis' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 500
+        },
+        {
+          "cell": "c3_linear['number of ads on buses' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 1000
+        },
+        {
+          "cell": "c3_linear['number of ads on privately owned cars' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 300
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "buses",
+          "privately owned cars",
+          "taxis"
+        ],
+        "ex_unmatched": [
+          "number of ads on buses",
+          "number of ads on privately owned cars",
+          "number of ads on taxis"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "3": 3,
+          "1": 1,
+          "2": 2
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "1855357113",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 0,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 4,
+        "error": 4
+      },
+      "content_gap": 0,
+      "spurious": 10,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 4
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 4,
+        "cell_under_unrecognised_name": 4,
+        "extra_row": 2
+      },
+      "content_gap_breakdown": {},
+      "manual_review": [
+        {
+          "cell": "objective[solar]",
+          "reason": "non_numeric_raw",
+          "raw": "6%",
+          "gt_value": 0.06,
+          "extracted": null
+        },
+        {
+          "cell": "objective[wind]",
+          "reason": "non_numeric_raw",
+          "raw": "9%",
+          "gt_value": 0.09,
+          "extracted": null
+        },
+        {
+          "cell": "objective[nuclear]",
+          "reason": "non_numeric_raw",
+          "raw": "12%",
+          "gt_value": 0.12,
+          "extracted": null
+        },
+        {
+          "cell": "objective[coal]",
+          "reason": "non_numeric_raw",
+          "raw": "3%",
+          "gt_value": 0.03,
+          "extracted": null
+        },
+        {
+          "cell": "c0_xy.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "xy",
+          "canonical_reference": {
+            "coal": 1.0,
+            "solar": -1.0
+          },
+          "extracted": {
+            "'amount invested in solar' (unrecognised)": 1,
+            "'amount invested in wind' (unrecognised)": 1,
+            "'amount invested in nuclear' (unrecognised)": 1,
+            "'amount invested in coal' (unrecognised)": 1
+          }
+        },
+        {
+          "cell": "c1_xy.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "xy",
+          "canonical_reference": {
+            "wind": 1.0,
+            "nuclear": -1.0
+          },
+          "extracted": {
+            "'amount invested in solar' (unrecognised)": 1,
+            "'amount invested in coal' (unrecognised)": 1
+          }
+        },
+        {
+          "cell": "c2_ratio.limit",
+          "reason": "non_numeric_raw",
+          "raw": "10%",
+          "gt_value": 0.1,
+          "extracted": "ABSENT"
+        },
+        {
+          "cell": "c2_ratio.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "ratio",
+          "canonical_reference": {
+            "coal": 0.9,
+            "solar": -0.1,
+            "wind": -0.1,
+            "nuclear": -0.1
+          },
+          "extracted": {
+            "'amount invested in wind' (unrecognised)": 1,
+            "'amount invested in nuclear' (unrecognised)": 1
+          }
+        }
+      ],
+      "detail": [
+        {
+          "cell": "variable[coal]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[nuclear]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[solar]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[wind]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[amount invested in coal]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[amount invested in nuclear]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[amount invested in solar]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[amount invested in wind]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective['amount invested in solar' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 6
+        },
+        {
+          "cell": "objective['amount invested in wind' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 9
+        },
+        {
+          "cell": "objective['amount invested in nuclear' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 12
+        },
+        {
+          "cell": "objective['amount invested in coal' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 3
+        },
+        {
+          "cell": "<extracted row coal_share>",
+          "verdict": "spurious",
+          "cause": "extra_row",
+          "note": "no ground-truth counterpart",
+          "quoted_text": "at most 10% of the investment can be in coal"
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "coal",
+          "nuclear",
+          "solar",
+          "wind"
+        ],
+        "ex_unmatched": [
+          "amount invested in coal",
+          "amount invested in nuclear",
+          "amount invested in solar",
+          "amount invested in wind"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1,
+          "2": 2
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": [
+          3
+        ]
+      }
+    },
+    {
+      "problem_id": "-1927179020",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 2,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 5,
+        "error": 2
+      },
+      "content_gap": 6,
+      "spurious": 8,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 2
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 2,
+        "cell_under_unrecognised_name": 6
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 6
+      },
+      "manual_review": [],
+      "detail": [
+        {
+          "cell": "variable[machine 1]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[machine 2]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[minutes machine 1 is used]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[minutes machine 2 is used]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[machine 1]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 0.3
+        },
+        {
+          "cell": "objective[machine 2]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 0.5
+        },
+        {
+          "cell": "objective['minutes machine 1 is used' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 0.3
+        },
+        {
+          "cell": "objective['minutes machine 2 is used' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 0.5
+        },
+        {
+          "cell": "c0_linear[Machine 1]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 0.5
+        },
+        {
+          "cell": "c0_linear[Machine 2]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 0.3
+        },
+        {
+          "cell": "c0_linear['minutes machine 1 is used' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 0.5
+        },
+        {
+          "cell": "c0_linear['minutes machine 2 is used' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 0.3
+        },
+        {
+          "cell": "c1_linear[Machine 1]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 0.8
+        },
+        {
+          "cell": "c1_linear[Machine 2]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 1.0
+        },
+        {
+          "cell": "c1_linear['minutes machine 1 is used' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 0.8
+        },
+        {
+          "cell": "c1_linear['minutes machine 2 is used' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 1
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "machine 1",
+          "machine 2"
+        ],
+        "ex_unmatched": [
+          "minutes machine 1 is used",
+          "minutes machine 2 is used"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "-1921036549",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 1,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 4,
+        "error": 2
+      },
+      "content_gap": 2,
+      "spurious": 7,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 2
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 2,
+        "cell_under_unrecognised_name": 2,
+        "extra_row": 3
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 2
+      },
+      "manual_review": [
+        {
+          "cell": "c0_xby.param",
+          "reason": "non_numeric_raw",
+          "ctype": "xby",
+          "raw": "half",
+          "gt_value": 0.5,
+          "extracted_limit": "ABSENT"
+        },
+        {
+          "cell": "c0_xby.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "xby",
+          "canonical_reference": {
+            "chorine": 1.0,
+            "water softener": -0.5
+          },
+          "extracted": {
+            "'units of chlorine' (unrecognised)": 1,
+            "'units of water softener' (unrecognised)": 0.5
+          }
+        },
+        {
+          "cell": "c1_lowerbound.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "lowerbound",
+          "canonical_reference": {
+            "chorine": 1.0
+          },
+          "extracted": {
+            "'units of chlorine' (unrecognised)": 1
+          }
+        }
+      ],
+      "detail": [
+        {
+          "cell": "variable[chorine]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[water softener]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[units of chlorine]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[units of water softener]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[chlorine]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 1.0
+        },
+        {
+          "cell": "objective[water softener]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 2.0
+        },
+        {
+          "cell": "objective['units of chlorine' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 1
+        },
+        {
+          "cell": "objective['units of water softener' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 2
+        },
+        {
+          "cell": "<extracted row total_chemicals>",
+          "verdict": "spurious",
+          "cause": "extra_row",
+          "note": "no ground-truth counterpart",
+          "quoted_text": "a total of 500 units of chemicals in the water"
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "chorine",
+          "water softener"
+        ],
+        "ex_unmatched": [
+          "units of chlorine",
+          "units of water softener"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "1": 1,
+          "0": 0
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": [
+          2
+        ]
+      }
+    },
+    {
+      "problem_id": "-1828241964",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 3,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 7,
+        "error": 2
+      },
+      "content_gap": 8,
+      "spurious": 10,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 2
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 2,
+        "cell_under_unrecognised_name": 8
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 8
+      },
+      "manual_review": [],
+      "detail": [
+        {
+          "cell": "variable[north side]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[south side]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[days per week north side operation is run]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[days per week south side operation is run]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[north side]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 450.0
+        },
+        {
+          "cell": "objective[south side]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 550.0
+        },
+        {
+          "cell": "objective['days per week north side operation is run' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 450
+        },
+        {
+          "cell": "objective['days per week south side operation is run' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 550
+        },
+        {
+          "cell": "c0_linear[north side]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 5.0
+        },
+        {
+          "cell": "c0_linear[south side]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 6.0
+        },
+        {
+          "cell": "c0_linear['days per week north side operation is run' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 5
+        },
+        {
+          "cell": "c0_linear['days per week south side operation is run' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 6
+        },
+        {
+          "cell": "c1_linear[north side]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 5.0
+        },
+        {
+          "cell": "c1_linear[south side]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 4.0
+        },
+        {
+          "cell": "c1_linear['days per week north side operation is run' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 5
+        },
+        {
+          "cell": "c1_linear['days per week south side operation is run' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 4
+        },
+        {
+          "cell": "c2_linear[north side]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 4.0
+        },
+        {
+          "cell": "c2_linear[south side]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 6.0
+        },
+        {
+          "cell": "c2_linear['days per week north side operation is run' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 4
+        },
+        {
+          "cell": "c2_linear['days per week south side operation is run' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 6
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "north side",
+          "south side"
+        ],
+        "ex_unmatched": [
+          "days per week north side operation is run",
+          "days per week south side operation is run"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1,
+          "2": 2
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "-1727241372",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 3,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 7,
+        "error": 2
+      },
+      "content_gap": 8,
+      "spurious": 10,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 2
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 2,
+        "cell_under_unrecognised_name": 8
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 8
+      },
+      "manual_review": [],
+      "detail": [
+        {
+          "cell": "variable[cheap]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[expensive box]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[number of cheap boxes]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[number of expensive boxes]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[cheap box]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 8.0
+        },
+        {
+          "cell": "objective[expensive box]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 10.0
+        },
+        {
+          "cell": "objective['number of cheap boxes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 8
+        },
+        {
+          "cell": "objective['number of expensive boxes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 10
+        },
+        {
+          "cell": "c0_linear[cheap box]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 3.0
+        },
+        {
+          "cell": "c0_linear[expensive box]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 5.0
+        },
+        {
+          "cell": "c0_linear['number of cheap boxes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 3
+        },
+        {
+          "cell": "c0_linear['number of expensive boxes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 5
+        },
+        {
+          "cell": "c1_linear[cheap box]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 5.0
+        },
+        {
+          "cell": "c1_linear[expensive box]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 8.0
+        },
+        {
+          "cell": "c1_linear['number of cheap boxes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 5
+        },
+        {
+          "cell": "c1_linear['number of expensive boxes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 8
+        },
+        {
+          "cell": "c2_linear[cheap box]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 2.0
+        },
+        {
+          "cell": "c2_linear[expensive box]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 3.0
+        },
+        {
+          "cell": "c2_linear['number of cheap boxes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 2
+        },
+        {
+          "cell": "c2_linear['number of expensive boxes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 3
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "cheap",
+          "expensive box"
+        ],
+        "ex_unmatched": [
+          "number of cheap boxes",
+          "number of expensive boxes"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1,
+          "2": 2
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "-1448607152",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 3,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 8,
+        "error": 2
+      },
+      "content_gap": 6,
+      "spurious": 8,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 2
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 2,
+        "cell_under_unrecognised_name": 6
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 6
+      },
+      "manual_review": [
+        {
+          "cell": "c0_lowerbound.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "lowerbound",
+          "canonical_reference": {
+            "high-power model": 1.0
+          },
+          "extracted": {
+            "'number of high-power air conditioners' (unrecognised)": 1
+          }
+        },
+        {
+          "cell": "c3_ratio.limit",
+          "reason": "non_numeric_raw",
+          "raw": "30%",
+          "gt_value": 0.3,
+          "extracted": 30
+        },
+        {
+          "cell": "c3_ratio.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "ratio",
+          "canonical_reference": {
+            "low-power": 0.7,
+            "high-power model": -0.3
+          },
+          "extracted": {}
+        }
+      ],
+      "detail": [
+        {
+          "cell": "variable[high-power model]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[low-power]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[number of high-power air conditioners]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[number of low-power air conditioners]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[low-power]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 1.0
+        },
+        {
+          "cell": "objective[high-power model]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 1.0
+        },
+        {
+          "cell": "objective['number of low-power air conditioners' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 1
+        },
+        {
+          "cell": "objective['number of high-power air conditioners' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 1
+        },
+        {
+          "cell": "c1_linear[low-powered air]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 12.0
+        },
+        {
+          "cell": "c1_linear[high-power model]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 17.0
+        },
+        {
+          "cell": "c1_linear['number of low-power air conditioners' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 12
+        },
+        {
+          "cell": "c1_linear['number of high-power air conditioners' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 17
+        },
+        {
+          "cell": "c2_linear[high-power model]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 250.0
+        },
+        {
+          "cell": "c2_linear[low-powered air]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 150.0
+        },
+        {
+          "cell": "c2_linear['number of low-power air conditioners' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 150
+        },
+        {
+          "cell": "c2_linear['number of high-power air conditioners' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 250
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "high-power model",
+          "low-power"
+        ],
+        "ex_unmatched": [
+          "number of high-power air conditioners",
+          "number of low-power air conditioners"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 1,
+          "1": 2,
+          "2": 3,
+          "3": 0
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "-919179028",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 3,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 7,
+        "error": 2
+      },
+      "content_gap": 8,
+      "spurious": 10,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 2
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 2,
+        "cell_under_unrecognised_name": 8
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 8
+      },
+      "manual_review": [],
+      "detail": [
+        {
+          "cell": "variable[meal replacement shakes]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[vanilla protein bars]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[servings of organic meal replacement shakes]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[servings of vanilla protein bars]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[meal replacement shakes]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 15.0
+        },
+        {
+          "cell": "objective[Vanilla protein bars]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 10.0
+        },
+        {
+          "cell": "objective['servings of vanilla protein bars' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 10
+        },
+        {
+          "cell": "objective['servings of organic meal replacement shakes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 15
+        },
+        {
+          "cell": "c0_linear[Vanilla protein bars]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 30.0
+        },
+        {
+          "cell": "c0_linear[meal replacement shakes]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 10.0
+        },
+        {
+          "cell": "c0_linear['servings of vanilla protein bars' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 30
+        },
+        {
+          "cell": "c0_linear['servings of organic meal replacement shakes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 10
+        },
+        {
+          "cell": "c1_linear[Vanilla protein bars]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 50.0
+        },
+        {
+          "cell": "c1_linear[meal replacement shakes]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 20.0
+        },
+        {
+          "cell": "c1_linear['servings of vanilla protein bars' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 50
+        },
+        {
+          "cell": "c1_linear['servings of organic meal replacement shakes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 20
+        },
+        {
+          "cell": "c2_linear[meal replacement shakes]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 5.0
+        },
+        {
+          "cell": "c2_linear[Vanilla protein bars]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 2.0
+        },
+        {
+          "cell": "c2_linear['servings of vanilla protein bars' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 2
+        },
+        {
+          "cell": "c2_linear['servings of organic meal replacement shakes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 5
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "meal replacement shakes",
+          "vanilla protein bars"
+        ],
+        "ex_unmatched": [
+          "servings of organic meal replacement shakes",
+          "servings of vanilla protein bars"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1,
+          "2": 2
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "69065177",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 2,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 5,
+        "error": 2
+      },
+      "content_gap": 6,
+      "spurious": 8,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 2
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 2,
+        "cell_under_unrecognised_name": 6
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 6
+      },
+      "manual_review": [],
+      "detail": [
+        {
+          "cell": "variable[Soda 1]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[Soda 2]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[cans of soda 1]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[cans of soda 2]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[soda 1]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 5.0
+        },
+        {
+          "cell": "objective[soda 2]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 7.0
+        },
+        {
+          "cell": "objective['cans of soda 1' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 5
+        },
+        {
+          "cell": "objective['cans of soda 2' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 7
+        },
+        {
+          "cell": "c0_linear[Soda 1]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 3.0
+        },
+        {
+          "cell": "c0_linear[Soda 2]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 2.0
+        },
+        {
+          "cell": "c0_linear['cans of soda 1' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 3
+        },
+        {
+          "cell": "c0_linear['cans of soda 2' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 2
+        },
+        {
+          "cell": "c1_linear[Soda 1]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 2.0
+        },
+        {
+          "cell": "c1_linear[Soda 2]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 5.0
+        },
+        {
+          "cell": "c1_linear['cans of soda 1' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 2
+        },
+        {
+          "cell": "c1_linear['cans of soda 2' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 5
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "Soda 1",
+          "Soda 2"
+        ],
+        "ex_unmatched": [
+          "cans of soda 1",
+          "cans of soda 2"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "584268166",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 3,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 8,
+        "error": 2
+      },
+      "content_gap": 6,
+      "spurious": 8,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 2
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 2,
+        "cell_under_unrecognised_name": 6
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 6
+      },
+      "manual_review": [
+        {
+          "cell": "c2_xy.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "xy",
+          "canonical_reference": {
+            "regular package": 1.0,
+            "premium package": -1.0
+          },
+          "extracted": {
+            "'number of regular packages' (unrecognised)": 1,
+            "'number of premium packages' (unrecognised)": 1
+          }
+        },
+        {
+          "cell": "c3_lowerbound.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "lowerbound",
+          "canonical_reference": {
+            "regular package": 1.0
+          },
+          "extracted": {
+            "'number of regular packages' (unrecognised)": 1
+          }
+        }
+      ],
+      "detail": [
+        {
+          "cell": "variable[premium package]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[regular package]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[number of premium packages]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[number of regular packages]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[regular package]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 2.0
+        },
+        {
+          "cell": "objective[premium batch]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 3.0
+        },
+        {
+          "cell": "objective['number of regular packages' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 2
+        },
+        {
+          "cell": "objective['number of premium packages' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 3
+        },
+        {
+          "cell": "c0_linear[regular package]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 100.0
+        },
+        {
+          "cell": "c0_linear[premium package]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 130.0
+        },
+        {
+          "cell": "c0_linear['number of regular packages' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 100
+        },
+        {
+          "cell": "c0_linear['number of premium packages' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 130
+        },
+        {
+          "cell": "c1_linear[regular package]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 30.0
+        },
+        {
+          "cell": "c1_linear[premium package]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 60.0
+        },
+        {
+          "cell": "c1_linear['number of regular packages' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 30
+        },
+        {
+          "cell": "c1_linear['number of premium packages' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 60
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "premium package",
+          "regular package"
+        ],
+        "ex_unmatched": [
+          "number of premium packages",
+          "number of regular packages"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1,
+          "3": 3,
+          "2": 2
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "741805703",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 7,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 13,
+        "error": 0
+      },
+      "content_gap": 0,
+      "spurious": 0,
+      "alignment_breakdown": {},
+      "spurious_breakdown": {},
+      "content_gap_breakdown": {},
+      "manual_review": [
+        {
+          "cell": "c0_lowerbound.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "lowerbound",
+          "canonical_reference": {
+            "desk-lamps": 1.0
+          },
+          "extracted": {
+            "desk-lamps": 1
+          }
+        },
+        {
+          "cell": "c1_lowerbound.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "lowerbound",
+          "canonical_reference": {
+            "night-lamps": 1.0
+          },
+          "extracted": {
+            "night-lamps": 1
+          }
+        },
+        {
+          "cell": "c2_upperbound.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "upperbound",
+          "canonical_reference": {
+            "desk-lamps": 1.0
+          },
+          "extracted": {
+            "desk-lamps": 1
+          }
+        },
+        {
+          "cell": "c3_upperbound.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "upperbound",
+          "canonical_reference": {
+            "night-lamps": 1.0
+          },
+          "extracted": {
+            "night-lamps": 1
+          }
+        },
+        {
+          "cell": "c4_sum.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "sum",
+          "canonical_reference": {
+            "desk-lamps": 1.0,
+            "night-lamps": 1.0
+          },
+          "extracted": {
+            "desk-lamps": 1,
+            "night-lamps": 1
+          }
+        }
+      ],
+      "detail": [],
+      "variable_alignment": {
+        "matched": {
+          "desk-lamps": "desk-lamps",
+          "night-lamps": "night-lamps"
+        },
+        "matched_keys": [
+          0,
+          1
+        ],
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 4
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "1030062804",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 2,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 6,
+        "error": 2
+      },
+      "content_gap": 6,
+      "spurious": 8,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 2
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 2,
+        "cell_under_unrecognised_name": 6
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 6
+      },
+      "manual_review": [
+        {
+          "cell": "c2_xby.param",
+          "reason": "non_numeric_raw",
+          "ctype": "xby",
+          "raw": "3 times",
+          "gt_value": 3.0,
+          "extracted_limit": "ABSENT"
+        },
+        {
+          "cell": "c2_xby.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "xby",
+          "canonical_reference": {
+            "milk": 1.0,
+            "protein shakes": -3.0
+          },
+          "extracted": {
+            "'glasses of protein shake' (unrecognised)": 3
+          }
+        }
+      ],
+      "detail": [
+        {
+          "cell": "variable[milk]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[protein shakes]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[glasses of milk]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[glasses of protein shake]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[protein shake]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 3.0
+        },
+        {
+          "cell": "objective[milk]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 5.0
+        },
+        {
+          "cell": "objective['glasses of protein shake' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 3
+        },
+        {
+          "cell": "objective['glasses of milk' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 5
+        },
+        {
+          "cell": "c0_linear[protein shake]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 3.0
+        },
+        {
+          "cell": "c0_linear[milk]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 5.0
+        },
+        {
+          "cell": "c0_linear['glasses of protein shake' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 3
+        },
+        {
+          "cell": "c0_linear['glasses of milk' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 5
+        },
+        {
+          "cell": "c1_linear[protein shake]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 2.0
+        },
+        {
+          "cell": "c1_linear[milk]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 1.0
+        },
+        {
+          "cell": "c1_linear['glasses of protein shake' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 2
+        },
+        {
+          "cell": "c1_linear['glasses of milk' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 1
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "milk",
+          "protein shakes"
+        ],
+        "ex_unmatched": [
+          "glasses of milk",
+          "glasses of protein shake"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1,
+          "2": 2
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "1092036773",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 11,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 15,
+        "error": 0
+      },
+      "content_gap": 0,
+      "spurious": 0,
+      "alignment_breakdown": {},
+      "spurious_breakdown": {},
+      "content_gap_breakdown": {},
+      "manual_review": [],
+      "detail": [],
+      "variable_alignment": {
+        "matched": {
+          "cream lipsticks": "cream lipsticks",
+          "matte lipsticks": "matte lipsticks"
+        },
+        "matched_keys": [
+          0,
+          1
+        ],
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1,
+          "2": 2
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "1231061056",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 8,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 12,
+        "error": 0
+      },
+      "content_gap": 0,
+      "spurious": 0,
+      "alignment_breakdown": {},
+      "spurious_breakdown": {},
+      "content_gap_breakdown": {},
+      "manual_review": [
+        {
+          "cell": "c1_ratio.limit",
+          "reason": "non_numeric_raw",
+          "raw": "50%",
+          "gt_value": 0.5,
+          "extracted": 50
+        },
+        {
+          "cell": "c1_ratio.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "ratio",
+          "canonical_reference": {
+            "beds": 0.5,
+            "couches": -0.5
+          },
+          "extracted": {}
+        }
+      ],
+      "detail": [],
+      "variable_alignment": {
+        "matched": {
+          "couches": "couches",
+          "beds": "beds"
+        },
+        "matched_keys": [
+          0,
+          1
+        ],
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "2": 2,
+          "1": 1
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "1655680875",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 3,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 7,
+        "error": 2
+      },
+      "content_gap": 6,
+      "spurious": 8,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 2
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 2,
+        "cell_under_unrecognised_name": 6
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 6
+      },
+      "manual_review": [
+        {
+          "cell": "c0_sum.coefficients",
+          "reason": "implicit_structural_coefficient",
+          "ctype": "sum",
+          "canonical_reference": {
+            "corn": 1.0,
+            "cabbage": 1.0
+          },
+          "extracted": {
+            "'acres of corn' (unrecognised)": 1,
+            "'acres of cabbage' (unrecognised)": 1
+          }
+        }
+      ],
+      "detail": [
+        {
+          "cell": "variable[cabbage]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[corn]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[acres of cabbage]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[acres of corn]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[corn]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 50.0
+        },
+        {
+          "cell": "objective[cabbage]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 70.0
+        },
+        {
+          "cell": "objective['acres of corn' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 50
+        },
+        {
+          "cell": "objective['acres of cabbage' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 70
+        },
+        {
+          "cell": "c1_linear[corn]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 1.0
+        },
+        {
+          "cell": "c1_linear[cabbage]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 1.5
+        },
+        {
+          "cell": "c1_linear['acres of corn' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 1
+        },
+        {
+          "cell": "c1_linear['acres of cabbage' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 1.5
+        },
+        {
+          "cell": "c2_linear[corn]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 2.0
+        },
+        {
+          "cell": "c2_linear[cabbage]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 3.0
+        },
+        {
+          "cell": "c2_linear['acres of corn' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 2
+        },
+        {
+          "cell": "c2_linear['acres of cabbage' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 3
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "cabbage",
+          "corn"
+        ],
+        "ex_unmatched": [
+          "acres of cabbage",
+          "acres of corn"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1,
+          "2": 2
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "1751406188",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 2,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 5,
+        "error": 2
+      },
+      "content_gap": 6,
+      "spurious": 8,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 2
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 2,
+        "cell_under_unrecognised_name": 6
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 6
+      },
+      "manual_review": [],
+      "detail": [
+        {
+          "cell": "variable[regular glass pane]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[tempered glass pane]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[regular glass panes]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[tempered glass panes]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[regular glass]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 8.0
+        },
+        {
+          "cell": "objective[tempered glass]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 10.0
+        },
+        {
+          "cell": "objective['regular glass panes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 8
+        },
+        {
+          "cell": "objective['tempered glass panes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 10
+        },
+        {
+          "cell": "c0_linear[regular glass pane]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 3.0
+        },
+        {
+          "cell": "c0_linear[tempered glass pane]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 5.0
+        },
+        {
+          "cell": "c0_linear['regular glass panes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 3
+        },
+        {
+          "cell": "c0_linear['tempered glass panes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 5
+        },
+        {
+          "cell": "c1_linear[regular glass pane]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 5.0
+        },
+        {
+          "cell": "c1_linear[tempered glass pane]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 8.0
+        },
+        {
+          "cell": "c1_linear['regular glass panes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 5
+        },
+        {
+          "cell": "c1_linear['tempered glass panes' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 8
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "regular glass pane",
+          "tempered glass pane"
+        ],
+        "ex_unmatched": [
+          "regular glass panes",
+          "tempered glass panes"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    },
+    {
+      "problem_id": "2078904807",
+      "extraction_present": true,
+      "numeric": {
+        "correct": 3,
+        "wrong": 0
+      },
+      "alignment": {
+        "correct": 7,
+        "error": 2
+      },
+      "content_gap": 8,
+      "spurious": 10,
+      "alignment_breakdown": {
+        "unmatched_variable_name": 2
+      },
+      "spurious_breakdown": {
+        "unrecognised_variable_name": 2,
+        "cell_under_unrecognised_name": 8
+      },
+      "content_gap_breakdown": {
+        "cell_under_unmatched_variable": 8
+      },
+      "manual_review": [],
+      "detail": [
+        {
+          "cell": "variable[premium brand]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[regular brand]",
+          "verdict": "alignment_error",
+          "cause": "unmatched_variable_name",
+          "note": "ground-truth variable not extracted"
+        },
+        {
+          "cell": "variable[bags of premium brand]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "variable[bags of regular brand]",
+          "verdict": "spurious",
+          "cause": "unrecognised_variable_name",
+          "note": "extracted variable with no counterpart"
+        },
+        {
+          "cell": "objective[premium brand]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 35.0
+        },
+        {
+          "cell": "objective[regular brand]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 20.0
+        },
+        {
+          "cell": "objective['bags of regular brand' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 20
+        },
+        {
+          "cell": "objective['bags of premium brand' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 35
+        },
+        {
+          "cell": "c0_linear[regular brand]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 4.0
+        },
+        {
+          "cell": "c0_linear[premium brand]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 12.0
+        },
+        {
+          "cell": "c0_linear['bags of regular brand' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 4
+        },
+        {
+          "cell": "c0_linear['bags of premium brand' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 12
+        },
+        {
+          "cell": "c1_linear[regular brand]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 7.0
+        },
+        {
+          "cell": "c1_linear[premium brand]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 10.0
+        },
+        {
+          "cell": "c1_linear['bags of regular brand' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 7
+        },
+        {
+          "cell": "c1_linear['bags of premium brand' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 10
+        },
+        {
+          "cell": "c2_linear[regular brand]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 10.0
+        },
+        {
+          "cell": "c2_linear[premium brand]",
+          "verdict": "content_gap",
+          "cause": "cell_under_unmatched_variable",
+          "gt": 16.0
+        },
+        {
+          "cell": "c2_linear['bags of regular brand' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 10
+        },
+        {
+          "cell": "c2_linear['bags of premium brand' (unrecognised)]",
+          "verdict": "spurious",
+          "cause": "cell_under_unrecognised_name",
+          "extracted": 16
+        }
+      ],
+      "variable_alignment": {
+        "matched": {},
+        "matched_keys": [],
+        "gt_unmatched": [
+          "premium brand",
+          "regular brand"
+        ],
+        "ex_unmatched": [
+          "bags of premium brand",
+          "bags of regular brand"
+        ]
+      },
+      "row_matching": {
+        "pairs": {
+          "0": 0,
+          "1": 1,
+          "2": 2
+        },
+        "gt_unmatched": [],
+        "ex_unmatched": []
+      }
+    }
+  ]
+}

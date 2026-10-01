@@ -1,0 +1,631 @@
+{
+  "slot_1": {
+    "problem_id": "-451730029",
+    "split": "train",
+    "sense": "min",
+    "objective_value": 20.8,
+    "n_usable": 2,
+    "document": "A dog owner mixes two types of dog food to ensure the new mixture contains a minimum of 12 units of meat and 8 units of micronutrients. Type A food contains 1 unit of meat and 2 units of micronutrients per kg. Type B food contains 3 units of meat and 1 unit of micronutrients per kg. If it costs $2 per kg of Type A food and $5 per kg of Type B food, how many kg of each should the owner buy to minimize her costs?",
+    "obj_declaration": {
+      "type": "objective",
+      "direction": "minimize",
+      "name": "costs",
+      "terms": {
+        "Type A food": "2",
+        "Type B food": "5"
+      }
+    },
+    "const_declarations": [
+      {
+        "type": "linear",
+        "direction": "minimum",
+        "limit": "12",
+        "terms": {
+          "Type A food": "1",
+          "Type B food": "3"
+        },
+        "operator": "GREATER_OR_EQUAL"
+      },
+      {
+        "type": "linear",
+        "direction": "minimum",
+        "limit": "8",
+        "terms": {
+          "Type B food": "1",
+          "Type A food": "2"
+        },
+        "operator": "GREATER_OR_EQUAL"
+      }
+    ],
+    "objective_coefficients": {
+      "Type A food": 2.0,
+      "Type B food": 5.0
+    },
+    "constraints": [
+      {
+        "constraint_name": "c0_linear",
+        "ctype": "linear",
+        "n_vars_in_row": 2,
+        "n_vars_nonzero": 2,
+        "operator": ">=",
+        "rhs_limit": 12.0,
+        "pi": 1.6,
+        "slack": 0.0,
+        "binding": true,
+        "coefficients": {
+          "Type A food": 1.0,
+          "Type B food": 3.0
+        }
+      },
+      {
+        "constraint_name": "c1_linear",
+        "ctype": "linear",
+        "n_vars_in_row": 2,
+        "n_vars_nonzero": 2,
+        "operator": ">=",
+        "rhs_limit": 8.0,
+        "pi": 0.19999999999999996,
+        "slack": 0.0,
+        "binding": true,
+        "coefficients": {
+          "Type A food": 2.0,
+          "Type B food": 1.0
+        }
+      }
+    ],
+    "variables": [
+      {
+        "var_name": "Type A food",
+        "value": 2.4,
+        "label": "FREE",
+        "restricted_by": "",
+        "objective_coefficient": 2.0
+      },
+      {
+        "var_name": "Type B food",
+        "value": 3.2,
+        "label": "FREE",
+        "restricted_by": "",
+        "objective_coefficient": 5.0
+      }
+    ]
+  },
+  "slot_2": {
+    "problem_id": "-503693411",
+    "split": "train",
+    "sense": "max",
+    "objective_value": 65.0,
+    "n_usable": 2,
+    "document": "In a video game, you can solve easy puzzles worth 5 points or hard puzzles worth 8 points. You have to solve at least 3 easy puzzles and 1 hard puzzle. Due to time restrictions, you can solve at most 10 easy puzzles and 5 hard puzzles. In total, you can only solve a maximum of 10 puzzles. How many of each puzzle type should you solve to maximize your points?",
+    "obj_declaration": {
+      "type": "objective",
+      "direction": "maximize",
+      "name": "points",
+      "terms": {
+        "easy puzzles": "5",
+        "hard puzzles": "8"
+      }
+    },
+    "const_declarations": [
+      {
+        "type": "lowerbound",
+        "direction": "at least",
+        "limit": "3",
+        "var": "easy puzzles",
+        "operator": "GREATER_OR_EQUAL"
+      },
+      {
+        "type": "lowerbound",
+        "direction": "at least",
+        "limit": "1",
+        "var": "hard puzzle",
+        "operator": "GREATER_OR_EQUAL"
+      },
+      {
+        "type": "upperbound",
+        "direction": "at most",
+        "limit": "10",
+        "var": "easy puzzles",
+        "operator": "LESS_OR_EQUAL"
+      },
+      {
+        "type": "upperbound",
+        "direction": "at most",
+        "limit": "5",
+        "var": "hard puzzles",
+        "operator": "LESS_OR_EQUAL"
+      },
+      {
+        "type": "sum",
+        "direction": "maximum",
+        "limit": "10",
+        "operator": "LESS_OR_EQUAL"
+      }
+    ],
+    "objective_coefficients": {
+      "easy puzzles": 5.0,
+      "hard puzzles": 8.0
+    },
+    "constraints": [
+      {
+        "constraint_name": "c0_lowerbound",
+        "ctype": "lowerbound",
+        "n_vars_in_row": 1,
+        "n_vars_nonzero": 1,
+        "operator": ">=",
+        "rhs_limit": 3.0,
+        "pi": 0.0,
+        "slack": -2.0,
+        "binding": false,
+        "coefficients": {
+          "easy puzzles": 1.0
+        }
+      },
+      {
+        "constraint_name": "c1_lowerbound",
+        "ctype": "lowerbound",
+        "n_vars_in_row": 1,
+        "n_vars_nonzero": 1,
+        "operator": ">=",
+        "rhs_limit": 1.0,
+        "pi": 0.0,
+        "slack": -4.0,
+        "binding": false,
+        "coefficients": {
+          "hard puzzles": 1.0
+        }
+      },
+      {
+        "constraint_name": "c2_upperbound",
+        "ctype": "upperbound",
+        "n_vars_in_row": 1,
+        "n_vars_nonzero": 1,
+        "operator": "<=",
+        "rhs_limit": 10.0,
+        "pi": 0.0,
+        "slack": 5.0,
+        "binding": false,
+        "coefficients": {
+          "easy puzzles": 1.0
+        }
+      },
+      {
+        "constraint_name": "c3_upperbound",
+        "ctype": "upperbound",
+        "n_vars_in_row": 1,
+        "n_vars_nonzero": 1,
+        "operator": "<=",
+        "rhs_limit": 5.0,
+        "pi": 3.0,
+        "slack": 0.0,
+        "binding": true,
+        "coefficients": {
+          "hard puzzles": 1.0
+        }
+      },
+      {
+        "constraint_name": "c4_sum",
+        "ctype": "sum",
+        "n_vars_in_row": 2,
+        "n_vars_nonzero": 2,
+        "operator": "<=",
+        "rhs_limit": 10.0,
+        "pi": 5.0,
+        "slack": 0.0,
+        "binding": true,
+        "coefficients": {
+          "easy puzzles": 1.0,
+          "hard puzzles": 1.0
+        }
+      }
+    ],
+    "variables": [
+      {
+        "var_name": "easy puzzles",
+        "value": 5.0,
+        "label": "FREE",
+        "restricted_by": "",
+        "objective_coefficient": 5.0
+      },
+      {
+        "var_name": "hard puzzles",
+        "value": 5.0,
+        "label": "AT_UPPER",
+        "restricted_by": "c3_upperbound(upper)",
+        "objective_coefficient": 8.0
+      }
+    ]
+  },
+  "slot_3": {
+    "problem_id": "-2061445103",
+    "split": "train",
+    "sense": "max",
+    "objective_value": 640.0,
+    "n_usable": 1,
+    "document": "An consumer electronics business needs to determine the level of production of its two hottest video game consoles, which are the PX7 and Silent X, ahead of the holiday season. Making one PX7 console requires 3 hours of labor and yields a $40 profit. On the other hand, one Silent X console can be produced in 7 hours and offers a greater profit of $75. Given the demand forecast, the business decides to produce at least twice as many PX7 consoles as Silent X ones. In addition, it can spend up to 48 hours a week to manufacture these consoles. Can you help the business determine the number of each console to produced each week to obtain the maximum profit?",
+    "obj_declaration": {
+      "type": "objective",
+      "direction": "maximum",
+      "name": "profit",
+      "terms": {
+        "PX7": "40",
+        "Silent X": "75"
+      }
+    },
+    "const_declarations": [
+      {
+        "type": "linear",
+        "direction": "up to",
+        "limit": "48",
+        "terms": {
+          "PX7": "3",
+          "Silent X": "7"
+        },
+        "operator": "LESS_OR_EQUAL"
+      },
+      {
+        "type": "xby",
+        "x_var": "PX7",
+        "direction": "at least",
+        "param": "twice",
+        "y_var": "Silent X",
+        "operator": "GREATER_OR_EQUAL"
+      }
+    ],
+    "objective_coefficients": {
+      "PX7": 40.0,
+      "Silent X": 75.0
+    },
+    "constraints": [
+      {
+        "constraint_name": "c0_linear",
+        "ctype": "linear",
+        "n_vars_in_row": 2,
+        "n_vars_nonzero": 2,
+        "operator": "<=",
+        "rhs_limit": 48.0,
+        "pi": 13.333333333333334,
+        "slack": 0.0,
+        "binding": true,
+        "coefficients": {
+          "PX7": 3.0,
+          "Silent X": 7.0
+        }
+      },
+      {
+        "constraint_name": "c1_xby",
+        "ctype": "xby",
+        "n_vars_in_row": 2,
+        "n_vars_nonzero": 2,
+        "operator": ">=",
+        "rhs_limit": 0.0,
+        "pi": 0.0,
+        "slack": -16.0,
+        "binding": false,
+        "coefficients": {
+          "PX7": 1.0,
+          "Silent X": -2.0
+        }
+      }
+    ],
+    "variables": [
+      {
+        "var_name": "PX7",
+        "value": 16.0,
+        "label": "FREE",
+        "restricted_by": "",
+        "objective_coefficient": 40.0
+      },
+      {
+        "var_name": "Silent X",
+        "value": 0.0,
+        "label": "AT_LOWER",
+        "restricted_by": "own_lb",
+        "objective_coefficient": 75.0
+      }
+    ]
+  },
+  "slot_4": {
+    "problem_id": "294897151",
+    "split": "test",
+    "sense": "max",
+    "objective_value": 166.66666666666669,
+    "n_usable": 2,
+    "document": "Ben is growing apples and pears on his orchard. He has 50 acres available on which he must grow a minimum of 5 acres of apples and a minimum of 10 acres of pears to meet demands. The profit per apple is $2 and the profit per pear is $4. He prefers to grow more pears than apples but limitations in his workforce allow him to grow at most twice the amount of pears as apples. How many of each fruit should Ben grow in order to maximize his profit? What is that profit?",
+    "obj_declaration": {
+      "type": "objective",
+      "direction": "maximize",
+      "name": "profit",
+      "terms": {
+        "apple": "2",
+        "pear": "4"
+      }
+    },
+    "const_declarations": [
+      {
+        "type": "sum",
+        "direction": "available",
+        "limit": "50",
+        "operator": "LESS_OR_EQUAL"
+      },
+      {
+        "type": "lowerbound",
+        "direction": "minimum",
+        "limit": "5",
+        "var": "apples",
+        "operator": "GREATER_OR_EQUAL"
+      },
+      {
+        "type": "lowerbound",
+        "direction": "minimum",
+        "limit": "10",
+        "var": "pears",
+        "operator": "GREATER_OR_EQUAL"
+      },
+      {
+        "type": "xby",
+        "x_var": "pears",
+        "direction": "at most",
+        "param": "twice",
+        "y_var": "apples",
+        "operator": "LESS_OR_EQUAL"
+      }
+    ],
+    "objective_coefficients": {
+      "apples": 2.0,
+      "pears": 4.0
+    },
+    "constraints": [
+      {
+        "constraint_name": "c0_sum",
+        "ctype": "sum",
+        "n_vars_in_row": 2,
+        "n_vars_nonzero": 2,
+        "operator": "<=",
+        "rhs_limit": 50.0,
+        "pi": 3.3333333333333335,
+        "slack": 0.0,
+        "binding": true,
+        "coefficients": {
+          "apples": 1.0,
+          "pears": 1.0
+        }
+      },
+      {
+        "constraint_name": "c1_lowerbound",
+        "ctype": "lowerbound",
+        "n_vars_in_row": 1,
+        "n_vars_nonzero": 1,
+        "operator": ">=",
+        "rhs_limit": 5.0,
+        "pi": 0.0,
+        "slack": -11.666666666666668,
+        "binding": false,
+        "coefficients": {
+          "apples": 1.0
+        }
+      },
+      {
+        "constraint_name": "c2_lowerbound",
+        "ctype": "lowerbound",
+        "n_vars_in_row": 1,
+        "n_vars_nonzero": 1,
+        "operator": ">=",
+        "rhs_limit": 10.0,
+        "pi": 0.0,
+        "slack": -23.333333333333336,
+        "binding": false,
+        "coefficients": {
+          "pears": 1.0
+        }
+      },
+      {
+        "constraint_name": "c3_xby",
+        "ctype": "xby",
+        "n_vars_in_row": 2,
+        "n_vars_nonzero": 2,
+        "operator": "<=",
+        "rhs_limit": 0.0,
+        "pi": 0.6666666666666667,
+        "slack": 0.0,
+        "binding": true,
+        "coefficients": {
+          "apples": -2.0,
+          "pears": 1.0
+        }
+      }
+    ],
+    "variables": [
+      {
+        "var_name": "apples",
+        "value": 16.66666667,
+        "label": "FREE",
+        "restricted_by": "",
+        "objective_coefficient": 2.0
+      },
+      {
+        "var_name": "pears",
+        "value": 33.33333333,
+        "label": "FREE",
+        "restricted_by": "",
+        "objective_coefficient": 4.0
+      }
+    ]
+  },
+  "slot_5": {
+    "problem_id": "1727707716",
+    "split": "train",
+    "sense": "max",
+    "objective_value": 33.333333333333336,
+    "n_usable": 1,
+    "document": "A smoothie store sells two types of smoothies - a small and a large size. Both contain only ice cream and peanut butter. Each small smoothie requires 2 units of ice cream and 1 unit of peanut butter. Each large smoothie requires 3 units of ice cream and 2 units of peanut butter. The company only has a total of 20 units of ice cream and 18 units of peanut butter. If the profit per small smoothie is $3 and the profit per large smoothie is $5, how many of each should the store sell to maximize profit?",
+    "obj_declaration": {
+      "type": "objective",
+      "direction": "maximize",
+      "name": "profit",
+      "terms": {
+        "small smoothie": "3",
+        "large smoothie": "5"
+      }
+    },
+    "const_declarations": [
+      {
+        "type": "linear",
+        "direction": "total",
+        "limit": "20",
+        "terms": {
+          "small smoothie": "2",
+          "large smoothie": "3"
+        },
+        "operator": "LESS_OR_EQUAL"
+      },
+      {
+        "type": "linear",
+        "direction": "total",
+        "limit": "18",
+        "terms": {
+          "small smoothie": "1",
+          "large smoothie": "2"
+        },
+        "operator": "LESS_OR_EQUAL"
+      }
+    ],
+    "objective_coefficients": {
+      "small": 3.0,
+      "large size": 5.0
+    },
+    "constraints": [
+      {
+        "constraint_name": "c0_linear",
+        "ctype": "linear",
+        "n_vars_in_row": 2,
+        "n_vars_nonzero": 2,
+        "operator": "<=",
+        "rhs_limit": 20.0,
+        "pi": 1.6666666666666667,
+        "slack": 0.0,
+        "binding": true,
+        "coefficients": {
+          "small": 2.0,
+          "large size": 3.0
+        }
+      },
+      {
+        "constraint_name": "c1_linear",
+        "ctype": "linear",
+        "n_vars_in_row": 2,
+        "n_vars_nonzero": 2,
+        "operator": "<=",
+        "rhs_limit": 18.0,
+        "pi": 0.0,
+        "slack": 4.666666666666668,
+        "binding": false,
+        "coefficients": {
+          "small": 1.0,
+          "large size": 2.0
+        }
+      }
+    ],
+    "variables": [
+      {
+        "var_name": "small",
+        "value": 0.0,
+        "label": "AT_LOWER",
+        "restricted_by": "own_lb",
+        "objective_coefficient": 3.0
+      },
+      {
+        "var_name": "large size",
+        "value": 6.666666667,
+        "label": "FREE",
+        "restricted_by": "",
+        "objective_coefficient": 5.0
+      }
+    ]
+  },
+  "slot_6": {
+    "problem_id": "1866828133",
+    "split": "train",
+    "sense": "min",
+    "objective_value": 28000.0,
+    "n_usable": 1,
+    "document": "A gardening company employs newcomers earning $400 a week and full-time employees earning $700 a week. The company needs at least 100 gardeners of whom at least 40 must be full-time employees. In addition, to make sure there is supervision, the number of full-time employees should be at least half the number of newcomers. Formulate a LP to minimize the wage bill.",
+    "obj_declaration": {
+      "type": "objective",
+      "direction": "minimize",
+      "name": "the wage bill",
+      "terms": {
+        "newcomers": "400",
+        "full-time employees": "700"
+      }
+    },
+    "const_declarations": [
+      {
+        "type": "lowerbound",
+        "direction": "at least",
+        "limit": "40",
+        "var": "full-time employees",
+        "operator": "GREATER_OR_EQUAL"
+      },
+      {
+        "type": "xby",
+        "x_var": "full-time employees",
+        "direction": "at least",
+        "param": "half",
+        "y_var": "newcomers",
+        "operator": "GREATER_OR_EQUAL"
+      }
+    ],
+    "objective_coefficients": {
+      "newcomers": 400.0,
+      "full-time employees": 700.0
+    },
+    "constraints": [
+      {
+        "constraint_name": "c0_lowerbound",
+        "ctype": "lowerbound",
+        "n_vars_in_row": 1,
+        "n_vars_nonzero": 1,
+        "operator": ">=",
+        "rhs_limit": 40.0,
+        "pi": 700.0,
+        "slack": 0.0,
+        "binding": true,
+        "coefficients": {
+          "full-time employees": 1.0
+        }
+      },
+      {
+        "constraint_name": "c1_xby",
+        "ctype": "xby",
+        "n_vars_in_row": 2,
+        "n_vars_nonzero": 2,
+        "operator": ">=",
+        "rhs_limit": 0.0,
+        "pi": 0.0,
+        "slack": -40.0,
+        "binding": false,
+        "coefficients": {
+          "newcomers": -0.5,
+          "full-time employees": 1.0
+        }
+      }
+    ],
+    "variables": [
+      {
+        "var_name": "newcomers",
+        "value": 0.0,
+        "label": "AT_LOWER",
+        "restricted_by": "own_lb",
+        "objective_coefficient": 400.0
+      },
+      {
+        "var_name": "full-time employees",
+        "value": 40.0,
+        "label": "AT_LOWER",
+        "restricted_by": "c0_lowerbound(lower)",
+        "objective_coefficient": 700.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+ "stamp": "2026-09-03",
+ "model": "claude-haiku-4-5-20251001",
+ "variant": "plain",
+ "align": "content",
+ "cached": 100,
+ "scored": 87,
+ "optimum_differs": 8,
+ "optimum_matches": 79,
+ "answer_neutral_same_model": 79,
+ "answer_neutral_different_model": 0,
+ "answer_neutral_different_model_strict": 1,
+ "rounded_rescaling_only": 1,
+ "answer_neutral_reported": 0,
+ "answer_neutral_certified": 0,
+ "false_positive_same_model": 3,
+ "false_positive_same_model_norm": 0,
+ "cert_notes": {},
+ "deviating_models": 13,
+ "models_with_value_swap": 4,
+ "error_kind_counts": {
+  "swap_within_row": 1,
+  "magnitude": 9,
+  "spurious": 2,
+  "structural": 1,
+  "swap_objective": 1,
+  "swap_cross_row": 2
+ },
+ "swap_type_mutants": 6183,
+ "certified_rate_among_swaps": 0.008895358240336406,
+ "expected_certified_here": 0.035581432961345624,
+ "generations_to_expect_one": 2445.0954545454547
+}

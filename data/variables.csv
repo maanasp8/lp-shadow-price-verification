@@ -1,0 +1,2147 @@
+problem_id,split,var_name,value,label,restricted_by
+1292442966,train,airline,40000,FREE,
+1292442966,train,railway industries,10000,AT_LOWER,c1_lowerbound(lower)
+46292831,train,short shot,6,FREE,
+46292831,train,long shot,8,AT_UPPER,c4_upperbound(upper)
+-1087235958,train,regular hot-dog,50,FREE,
+-1087235958,train,premium hot-dog,250,AT_UPPER,c2_upperbound(upper)
+-530221061,train,stocks,0,AT_LOWER,own_lb
+-530221061,train,options,1600000,FREE,
+-530221061,train,security swaps,1600000,FREE,
+-530221061,train,futures,0,AT_LOWER,own_lb
+-648989842,train,winter jackets,60,AT_UPPER,c0_upperbound(upper)
+-648989842,train,rain jackets,70,AT_UPPER,c1_upperbound(upper)
+39272600,train,burgers,10,AT_LOWER,c2_lowerbound(lower)
+39272600,train,sausages,80,FREE,
+-813109867,train,luxury tickets,166.6666667,FREE,
+-813109867,train,regular tickets,333.3333333,FREE,
+-172104674,train,caesar,8,AT_LOWER,c2_lowerbound(lower)
+-172104674,train,house salad,61.33333333,FREE,
+-1943415390,train,oil and gas,0,AT_LOWER,own_lb
+-1943415390,train,tech,0,AT_LOWER,own_lb
+-1943415390,train,mining,1000000,FREE,
+-1943415390,train,retail industries,0,AT_LOWER,own_lb
+1641244902,train,peach,70,AT_UPPER,c4_upperbound(upper)
+1641244902,train,mango,80,FREE,
+1838049901,train,carry-on,5,FREE,
+1838049901,train,large suitcases,20,AT_UPPER,c1_upperbound(upper)
+556594261,train,cars,12.5,FREE,
+556594261,train,motor bikes,12.5,FREE,
+-424578953,train,roads,840,FREE,
+-424578953,train,housing,2660,FREE,
+168484030,train,waiters,37.5,FREE,
+168484030,train,cooks,12.5,FREE,
+-1660993798,train,cigarette,2000,FREE,
+-1660993798,train,tobacco industries,3000,FREE,
+424152750,train,premium class,33.33333333,FREE,
+424152750,train,regular class,66.66666667,FREE,
+-262805213,train,consoles,50,AT_UPPER,c2_upperbound(upper)
+-262805213,train,discs,250,FREE,
+1492393031,train,movies,50,FREE,
+1492393031,train,sports games,0,AT_LOWER,own_lb
+1492393031,train,comedy shows,0,AT_LOWER,own_lb
+-990899936,train,regular,300,AT_UPPER,c2_upperbound(upper)
+-990899936,train,mechanical keyboards,150,AT_UPPER,c3_upperbound(upper)
+-1746220922,train,heated,75,FREE,
+-1746220922,train,regular seats,225,FREE,
+-1324368967,train,automotive,24000,AT_UPPER,c2_upperbound(upper)
+-1324368967,train,textile industries,6000,FREE,
+1280519471,train,fridges,14.28571429,FREE,
+1280519471,train,stoves,21.42857143,FREE,
+1144883424,train,paper industry,150000,FREE,
+1144883424,train,glass industry,150000,FREE,
+-589883453,train,individual servings,152,FREE,
+-589883453,train,family servings,10,AT_LOWER,c2_lowerbound(lower)
+1045126906,train,mining,100000,FREE,
+1045126906,train,logging industries,0,AT_LOWER,own_lb
+-474676810,train,energy,99000,FREE,
+-474676810,train,telecom,51000,FREE,
+-474676810,train,utilities,51000,FREE,
+-474676810,train,health care,99000,FREE,
+-65073877,train,healthcare industry,325000,FREE,
+-65073877,train,energy sector,175000,FREE,
+-683593010,train,regular wine,70,FREE,
+-683593010,train,premium aged wine,50,AT_UPPER,c1_upperbound(upper)
+1524239940,train,monitors,0,AT_LOWER,own_lb
+1524239940,train,gaming stations,12.5,FREE,
+-823020274,train,small ball,12,AT_UPPER,c3_upperbound(upper)
+-823020274,train,large ball,8,FREE,
+1045884097,train,malls,6,FREE,
+1045884097,train,bus stops,0,AT_LOWER,own_lb
+1045884097,train,theatres,0,AT_LOWER,own_lb
+-1880270232,train,algebra questions,10,AT_LOWER,c1_lowerbound(lower)
+-1880270232,train,calculus questions,15,AT_UPPER,c4_upperbound(upper)
+2134273494,train,moving seat,25,FREE,
+2134273494,train,regular seat,75,FREE,
+-514173020,train,single room,125,AT_LOWER,c1_lowerbound(lower)
+-514173020,train,couple's room,675,FREE,
+-1239927123,train,hockey sticks,110,AT_UPPER,c2_upperbound(upper)
+-1239927123,train,pucks,330,FREE,
+1536366618,train,peanut butter sandwiches,80,AT_UPPER,c3_upperbound(upper)
+1536366618,train,chocolate spread sandwiches,70,FREE,
+-1736245984,train,hardcover book,83.33333333,FREE,
+-1736245984,train,paperback book,416.6666667,FREE,
+-1128760069,train,tacos,50,AT_LOWER,c0_lowerbound(lower)
+-1128760069,train,burritos,50,AT_UPPER,c3_upperbound(upper)
+-1583408116,train,carrots,25,FREE,
+-1583408116,train,beets,5,AT_LOWER,c2_lowerbound(lower)
+199345366,train,youth,232.5,FREE,
+199345366,train,adult doses,10,AT_LOWER,c2_lowerbound(lower)
+856152554,train,black,150,AT_UPPER,c0_upperbound(upper)
+856152554,train,blue shoes,100,AT_UPPER,c1_upperbound(upper)
+1615543212,train,concerts,0,AT_LOWER,own_lb
+1615543212,train,cinema,17.2,FREE,
+-99634492,train,farm 1,1.181818182,FREE,
+-99634492,train,farm 2,5.454545455,FREE,
+-2138783197,train,hammers,6.828919112,FREE,
+-2138783197,train,screwdrivers,6.957766643,FREE,
+-504122344,train,standing table,0,AT_LOWER,own_lb
+-504122344,train,dining table,1500,FREE,
+971456192,train,Omega,3.333333333,FREE,
+971456192,train,Omini,4,FREE,
+681150852,train,train,33.33333333,FREE,
+681150852,train,truck,33.33333333,FREE,
+-1176603373,train,dresses,0,AT_LOWER,own_lb
+-1176603373,train,suits,30,FREE,
+-298923797,train,international employees,37.5,FREE,
+-298923797,train,local employees,12.5,FREE,
+658868371,train,Drummondville blend,38.33333333,FREE,
+658868371,train,Victoriaville blend,2.666666667,FREE,
+1314557513,train,Alnolyte,0,AT_LOWER,own_lb
+1314557513,train,Blenzoate,71.42857143,FREE,
+-644178025,train,chocolate chip,0,AT_LOWER,own_lb
+-644178025,train,oatmeal cookies,80,FREE,
+92354356,train,NFTs,1250,FREE,
+92354356,train,crypto-currency,3750,FREE,
+30492189,train,coffee,0,AT_LOWER,own_lb
+30492189,train,tea,166.6666667,FREE,
+1804684770,train,drug A,0,AT_LOWER,own_lb
+1804684770,train,drug B,3.428571429,FREE,
+-441849133,train,package A,350,FREE,
+-441849133,train,package B.,150,FREE,
+-2145484718,train,mall kiosk,8.8,FREE,
+-2145484718,train,flagship store,3.6,FREE,
+-134578212,train,61 keys,0,AT_LOWER,own_lb
+-134578212,train,81 keys,5.333333333,FREE,
+-888993455,train,orange flavored,2.166666667,FREE,
+-888993455,train,apple flavored,0.7222222222,FREE,
+-642701442,train,sneakers,0,AT_LOWER,own_lb
+-642701442,train,boots,43.75,FREE,
+243869483,train,gourmet truffles,23.07692308,FREE,
+243869483,train,chocolate bars,46.15384615,FREE,
+-1164473054,train,rings,6,FREE,
+-1164473054,train,necklaces,0,AT_LOWER,own_lb
+-1544558203,train,real estate,195000,FREE,
+-1544558203,train,pharmaceuticals industry,105000,FREE,
+-1384211970,train,Bonzai Beach,3.793103448,FREE,
+-1384211970,train,Marina Beach,5.517241379,FREE,
+-1547892789,train,standard definition,266.6666667,FREE,
+-1547892789,train,high definition,0,AT_LOWER,own_lb
+2108333249,train,green,8.055555556,FREE,
+2108333249,train,red,46.38888889,FREE,
+959302629,train,tuna salad,28.57142857,FREE,
+959302629,train,chicken salad sandwiches,42.85714286,FREE,
+-1043307800,train,chicken,6.428571429,FREE,
+-1043307800,train,goat,5.714285714,FREE,
+688677284,train,chocolate,40,FREE,
+688677284,train,blueberry muffins,240,FREE,
+-1987579295,train,cutting boards,0,AT_LOWER,own_lb
+-1987579295,train,knife handles,20,FREE,
+1954410196,train,chocolate,13.66666667,FREE,
+1954410196,train,caramel syrup,3,AT_LOWER,c3_lowerbound(lower)
+557507017,train,student version,244.4444444,FREE,
+557507017,train,professional version,105.5555556,FREE,
+1466742521,train,sausages,833.3333333,FREE,
+1466742521,train,burger patties,333.3333333,FREE,
+745349252,train,soccer balls,0,AT_LOWER,own_lb
+745349252,train,basket balls,333.3333333,FREE,
+-332037700,train,blue,153.8461538,FREE,
+-332037700,train,dark blue t-shirts,107.6923077,FREE,
+-261693695,train,lined paper,583.3333333,FREE,
+-261693695,train,graph paper,0,AT_LOWER,own_lb
+635994932,train,northern city,38.46153846,FREE,
+635994932,train,southern city,153.8461538,FREE,
+-50294932,train,gold,0,AT_LOWER,own_lb
+-50294932,train,diamond,0,AT_LOWER,own_lb
+-50294932,train,ruby,600000,FREE,
+-50294932,train,sapphire,400000,FREE,
+-1380201245,train,tulips,100,FREE,
+-1380201245,train,daffodils,100,FREE,
+-1333121150,train,cartoons,2.5,FREE,
+-1333121150,train,kids-movies,6.25,FREE,
+1652531585,train,tulips,80,FREE,
+1652531585,train,orchids,0,AT_LOWER,own_lb
+780267130,train,sunflowers,97.01492537,FREE,
+780267130,train,roses,0,AT_LOWER,own_lb
+-1628312989,train,morning TV show,4,AT_LOWER,c1_lowerbound(lower)
+-1628312989,train,social media,41.5,FREE,
+-1716301675,train,blueberry,333.3333333,FREE,
+-1716301675,train,chocolate smoothies,0,AT_LOWER,own_lb
+239372788,train,phones,233.3333333,FREE,
+239372788,train,laptops,0,AT_LOWER,own_lb
+-1547439005,train,chicken,0,AT_LOWER,own_lb
+-1547439005,train,beef,3.333333333,FREE,
+928775045,train,small team,0,AT_LOWER,own_lb
+928775045,train,large team,0,AT_LOWER,own_lb
+-1168130319,train,small truck,15,FREE,
+-1168130319,train,large truck,0,AT_LOWER,own_lb
+124450166,train,hand-bags,66.66666667,FREE,
+124450166,train,backpacks,0,AT_LOWER,own_lb
+-963690780,train,sour drops,7,FREE,
+-963690780,train,sour belts,4,FREE,
+-1830924888,train,regular,0,AT_LOWER,own_lb
+-1830924888,train,jelly-filled,833.3333333,FREE,
+-661974449,train,dinning table,80,FREE,
+-661974449,train,coffee table,0,AT_LOWER,own_lb
+764032993,train,long answer questions,8,FREE,
+764032993,train,multiple choice questions,7,AT_LOWER,c2_lowerbound(lower)
+1310506563,train,boat,13.15789474,FREE,
+1310506563,train,neighbor,13.15789474,FREE,
+2050370749,train,small,0,AT_LOWER,own_lb
+2050370749,train,large,31.25,FREE,
+966407725,train,strawberry toppings,10,FREE,
+966407725,train,chocolate topping,5,AT_UPPER,c0_upperbound(upper)
+1862750461,train,chocolate protein shakes,6.5,FREE,
+1862750461,train,meal replacement smoothies,0,AT_LOWER,own_lb
+-1348328225,train,mountain bike,0,AT_LOWER,own_lb
+-1348328225,train,road bike,40,FREE,
+-438005028,train,Sleeper class,333.3333333,FREE,
+-438005028,train,regular tickets,66.66666667,FREE,
+-1682514824,train,almonds,50,FREE,
+-1682514824,train,pecans,0,AT_LOWER,own_lb
+-2061445103,train,PX7,16,FREE,
+-2061445103,train,Silent X,0,AT_LOWER,own_lb
+252364506,train,local brand,2.1875,FREE,
+252364506,train,specialty health brand,0.625,FREE,
+-1984936485,train,crab soup,0,AT_LOWER,own_lb
+-1984936485,train,lobster soup,8,FREE,
+-1206801469,train,Alpha,40,FREE,
+-1206801469,train,Beta,0,AT_LOWER,own_lb
+-625466875,train,dining tables,25,FREE,
+-625466875,train,desks,0,AT_LOWER,own_lb
+1229481587,train,social media,20,AT_UPPER,c2_upperbound(upper)
+1229481587,train,magazine covers,73.33333333,FREE,
+1101417478,train,milk,16,FREE,
+1101417478,train,cheese,0,AT_LOWER,own_lb
+-1676008055,train,chairs,6.666666667,FREE,
+-1676008055,train,nightstands,3.333333333,FREE,
+-1815789258,train,glass dogs,10,FREE,
+-1815789258,train,cats,60,FREE,
+918472951,train,soup,14.28571429,FREE,
+918472951,train,sandwiches,2.857142857,FREE,
+-14279558,train,scarfs,8000,FREE,
+-14279558,train,toques,3000,AT_LOWER,c2_lowerbound(lower)
+1173275251,train,orange juice,0,AT_LOWER,own_lb
+1173275251,train,apple juice,8,FREE,
+1727707716,train,small,0,AT_LOWER,own_lb
+1727707716,train,large size,6.666666667,FREE,
+556123470,train,sunflowers,0,AT_LOWER,own_lb
+556123470,train,roses,28.75,FREE,
+-1998648387,train,economical,0,AT_LOWER,own_lb
+-1998648387,train,regular,40,FREE,
+-1998648387,train,premium,0,AT_LOWER,own_lb
+781521487,train,fruit,80,FREE,
+781521487,train,vegetable smoothies,0,AT_LOWER,own_lb
+-1379759497,train,west side,1.31147541,FREE,
+-1379759497,train,east side,2.295081967,FREE,
+724147587,train,lettuce,0,AT_LOWER,own_lb
+724147587,train,spinach,50,FREE,
+-1119351614,train,local factory,0,AT_LOWER,own_lb
+-1119351614,train,mini dresses,0,AT_LOWER,own_lb
+-1119351614,train,foreign factory,4.933333333,FREE,
+-1021533410,train,tables,5,FREE,
+-1021533410,train,chairs,0,AT_LOWER,own_lb
+-1374720410,train,backpacks,180,FREE,
+-1374720410,train,handbags,0,AT_LOWER,own_lb
+-2050865263,train,regular games,50,FREE,
+-2050865263,train,collector's edition games,50,FREE,
+193295056,train,cheap,1.6,FREE,
+193295056,train,expensive,0,AT_LOWER,own_lb
+-590492809,train,Alpha,1.351351351,FREE,
+-590492809,train,Beta,4.324324324,FREE,
+1655680875,train,corn,137.5,FREE,
+1655680875,train,cabbage,0,AT_LOWER,own_lb
+-1356800647,train,violins,12.72727273,FREE,
+-1356800647,train,harps,11.81818182,FREE,
+-1735682655,train,peas,10,FREE,
+-1735682655,train,beans,20,FREE,
+1326356284,train,Eucalyptus,0,AT_LOWER,own_lb
+1326356284,train,Citrus,1250,FREE,
+298923065,train,diamond,3.75,FREE,
+298923065,train,gold necklaces,3.75,FREE,
+1932848793,train,bikes,0,AT_LOWER,own_lb
+1932848793,train,cars,3.333333333,FREE,
+500097421,train,rubber ducks,0,AT_LOWER,own_lb
+500097421,train,toy boats,125,FREE,
+-1620664428,train,first mix,0,AT_LOWER,own_lb
+-1620664428,train,second mix,250,FREE,
+1388676063,train,seafood medley one,150,FREE,
+1388676063,train,seafood medley two,175,FREE,
+-1904851972,train,LED,0,AT_LOWER,own_lb
+-1904851972,train,Halogen,50,FREE,
+-1880541131,train,Printer A,0,AT_LOWER,own_lb
+-1880541131,train,Printer B,3.333333333,FREE,
+207992620,train,CPUs,43.93939394,FREE,
+207992620,train,GPUs,7.575757576,FREE,
+574568064,train,trust,12000,FREE,
+574568064,train,savings account,48000,FREE,
+-1720842504,train,leather,62.5,FREE,
+-1720842504,train,mesh chairs,62.5,FREE,
+786856725,train,enriched hay,3,FREE,
+786856725,train,chicken scraps,1,FREE,
+-1251698184,train,northside mall,25.55555556,FREE,
+-1251698184,train,southside mall,5,AT_UPPER,c0_upperbound(upper)
+-1251698184,train,central mall,15.27777778,FREE,
+605952457,train,superhero,173.9130435,FREE,
+605952457,train,cartoon figurines,43.47826087,FREE,
+-882985416,train,vanilla,20,AT_LOWER,c0_lowerbound(lower)
+-882985416,train,chocolate ice cream,60,AT_UPPER,c3_upperbound(upper)
+-2084079400,train,Alpha brand,8,FREE,
+-2084079400,train,Gamma brand,4,FREE,
+23481428,train,daisies,325,FREE,
+23481428,train,lilies,0,AT_LOWER,own_lb
+-1133652946,train,type A layout,0,AT_LOWER,own_lb
+-1133652946,train,type B layout,29.03225806,FREE,
+-1133652946,train,type C layout,87.90322581,FREE,
+1323333207,train,Kommand,10,FREE,
+1323333207,train,Kontrol,0,AT_LOWER,own_lb
+-1574025664,train,potatoes,60,FREE,
+-1574025664,train,squash,0,AT_LOWER,own_lb
+186157891,train,pork,3.125,FREE,
+186157891,train,chicken,1.25,FREE,
+377178712,train,engineers,0,AT_LOWER,own_lb
+377178712,train,interns,100,FREE,
+-26774598,train,elk meat,0,AT_LOWER,own_lb
+-26774598,train,bison meat,10,FREE,
+-250500533,train,eastern location,3.888888889,FREE,
+-250500533,train,western location,2.777777778,FREE,
+-374649990,train,rice bowls,70,AT_UPPER,c1_upperbound(upper)
+-374649990,train,quesadillas,80,AT_UPPER,c3_upperbound(upper)
+1600733243,train,chocolate chip cookies,0,AT_LOWER,own_lb
+1600733243,train,oatmeal cookies,11.0701107,FREE,
+221050166,train,TV shows,5,FREE,
+221050166,train,sports programs,0,AT_LOWER,own_lb
+-1358145545,train,coconut trees,0,AT_LOWER,own_lb
+-1358145545,train,banana trees,100,FREE,
+-1138570462,train,cars,33.33333333,FREE,
+-1138570462,train,bikes,0,AT_LOWER,own_lb
+1543270953,train,touchscreen phone,166.6666667,FREE,
+1543270953,train,flip phone,0,AT_LOWER,own_lb
+2122514169,train,Fruity Loop,178.5714286,FREE,
+2122514169,train,Passion Cook,42.85714286,FREE,
+-1371952559,train,Indian,15.38461538,FREE,
+-1371952559,train,Thai,0,AT_LOWER,own_lb
+-879837204,train,pears,2.5,FREE,
+-879837204,train,broccoli,2.5,FREE,
+2048818571,train,sofa,21.42857143,FREE,
+2048818571,train,kitchen cabinet,3.571428571,FREE,
+-1202875232,train,vehicle tickets,10,AT_LOWER,c1_lowerbound(lower)
+-1202875232,train,passenger tickets,90,FREE,
+1138164544,train,pizza,0,AT_LOWER,own_lb
+1138164544,train,donuts,28.57142857,FREE,
+-146126231,train,premium seats,300,FREE,
+-146126231,train,regular seats,0,AT_LOWER,own_lb
+-2082418574,train,lined,0,AT_LOWER,own_lb
+-2082418574,train,unlined paper,200,FREE,
+1470713712,train,sweet mix,40,FREE,
+1470713712,train,regular mix,0,AT_LOWER,own_lb
+2121307739,train,star layout,0,AT_LOWER,own_lb
+2121307739,train,circle layout,33.33333333,FREE,
+2121307739,train,snowflake layout,0,AT_LOWER,own_lb
+1919022789,train,vase décor,0,AT_LOWER,own_lb
+1919022789,train,wood canvas,22.22222222,FREE,
+-1873006018,train,chicken,10,FREE,
+-1873006018,train,pork,0,AT_LOWER,own_lb
+1924819311,train,peaches,80,FREE,
+1924819311,train,nectarines,0,AT_LOWER,own_lb
+-1748960564,train,mixture A,22.85714286,FREE,
+-1748960564,train,mixture B.,32.14285714,FREE,
+-66849159,train,scooters,3.333333333,FREE,
+-66849159,train,bikes,0,AT_LOWER,own_lb
+-1830770679,train,Ruby,2.625,FREE,
+-1830770679,train,Sapphire,2.4375,FREE,
+697851528,train,Pacific,0,AT_LOWER,own_lb
+697851528,train,Atlantic,5,FREE,
+-1793738749,train,carrots,2.222222222,FREE,
+-1793738749,train,spinach,8.888888889,FREE,
+1264668532,train,sports drink,7.142857143,FREE,
+1264668532,train,coconut water,0.7142857143,FREE,
+-161656281,train,Bundle A,2,FREE,
+-161656281,train,Bundle B.,5,AT_UPPER,c1_linear(upper)
+1754296821,train,pants,0,AT_LOWER,own_lb
+1754296821,train,short,125,FREE,
+1629184346,train,oval,200,FREE,
+1629184346,train,rectangular,0,AT_LOWER,own_lb
+-1181465915,train,son's company,37500,FREE,
+-1181465915,train,friend's company,12500,FREE,
+65353142,train,donuts,7.777777778,FREE,
+65353142,train,cookies,8.888888889,FREE,
+739079103,train,ordinary bag,8.333333333,FREE,
+739079103,train,special bag,0.8333333333,FREE,
+1116193816,train,money market fund,90000,FREE,
+1116193816,train,foreign bonds,60000,FREE,
+-818318467,train,cocoa beans,3,AT_LOWER,c2_lowerbound(lower)
+-818318467,train,coffee beans,12,FREE,
+-1421194232,train,chocolate chip,36,FREE,
+-1421194232,train,oatmeal,0,AT_LOWER,own_lb
+-1817427063,train,Mill A,5,FREE,
+-1817427063,train,Mill B,0,AT_LOWER,own_lb
+1133883824,train,fridges,15,FREE,
+1133883824,train,ovens,23.33333333,FREE,
+-2018478111,train,coffee,55,FREE,
+-2018478111,train,hot chocolate,20,AT_LOWER,c1_lowerbound(lower)
+-233222514,train,chocolate bars,25,FREE,
+-233222514,train,chocolate wafers,100,AT_UPPER,c1_upperbound(upper)
+1821426741,train,small,0,AT_LOWER,own_lb
+1821426741,train,large circuit boards,33.33333333,FREE,
+1692392701,train,grey,0,AT_LOWER,own_lb
+1692392701,train,black pants,105,FREE,
+-1083302057,train,t-shirts,30,FREE,
+-1083302057,train,hoodies,0,AT_LOWER,own_lb
+1010549365,train,regular,166.6666667,FREE,
+1010549365,train,premium,0,AT_LOWER,own_lb
+111816674,train,regular,66.66666667,FREE,
+111816674,train,touchscreen laptops,66.66666667,FREE,
+-1120393808,train,wraps,266.6666667,FREE,
+-1120393808,train,bowls,0,AT_LOWER,own_lb
+942951153,train,strawberry jam,63.33333333,FREE,
+942951153,train,peach jam,80,AT_UPPER,c2_upperbound(upper)
+-1734964325,train,area one,0,AT_LOWER,own_lb
+-1734964325,train,area two,0,AT_LOWER,own_lb
+-221520752,train,video game,0,AT_LOWER,own_lb
+-221520752,train,camera company,0,AT_LOWER,own_lb
+-221520752,train,cell phone company,300000,FREE,
+-221520752,train,laptop company,0,AT_LOWER,own_lb
+1699001963,train,deer,7,FREE,
+1699001963,train,bear,5,AT_UPPER,c3_upperbound(upper)
+-41153534,train,pianos,0,AT_LOWER,own_lb
+-41153534,train,guitars,26.66666667,FREE,
+-597212963,train,milk,25000,AT_UPPER,c2_upperbound(upper)
+-597212963,train,cheese industries,5000,FREE,
+1413006014,train,Mixture 1,14.54545455,FREE,
+1413006014,train,Mixture 2,38.18181818,FREE,
+1902566293,train,regular donuts,45,FREE,
+1902566293,train,jelly filled donuts,75,AT_UPPER,c1_upperbound(upper)
+1961511061,train,individual,50,FREE,
+1961511061,train,family,16.66666667,FREE,
+1443291076,train,small,100,FREE,
+1443291076,train,large coffee pods,25,FREE,
+-963235922,train,apple trees,40,FREE,
+-963235922,train,orange trees,40,FREE,
+-1512669876,train,mugs,0,AT_LOWER,own_lb
+-1512669876,train,bowls,40,FREE,
+1195333780,train,chocolate,100,AT_UPPER,c2_upperbound(upper)
+1195333780,train,maple donuts,150,AT_UPPER,c3_upperbound(upper)
+414249544,train,regular phones,15,FREE,
+414249544,train,premium phones,15,AT_UPPER,c1_upperbound(upper)
+240605764,train,low,46.66666667,FREE,
+240605764,train,medium,0,AT_LOWER,own_lb
+240605764,train,high quality,13.33333333,FREE,
+-1162304095,train,younger sister,2000,FREE,
+-1162304095,train,elder sister,3000,FREE,
+1343830030,train,Brand A sneakers,0,AT_LOWER,own_lb
+1343830030,train,Brand B sneakers,13.33333333,FREE,
+1617817849,train,students,66.66666667,FREE,
+1617817849,train,full-time employees,33.33333333,FREE,
+1171420904,train,oats,33.33333333,FREE,
+1171420904,train,flaxseed.,16.66666667,FREE,
+-1533753278,train,police officer costumes,0,AT_LOWER,own_lb
+-1533753278,train,fireman costumes,250,FREE,
+1885129178,train,SD,3.571428571,FREE,
+1885129178,train,LD,5.714285714,FREE,
+-1550725342,train,new grad engineers,37.5,FREE,
+-1550725342,train,senior engineers,12.5,FREE,
+-959862663,train,small bowl,0,AT_LOWER,own_lb
+-959862663,train,large bowl,18.75,FREE,
+-240598758,train,lavender,33.33333333,FREE,
+-240598758,train,tulips,16.66666667,FREE,
+1841169502,train,Commercials with famous actors,3.454545455,FREE,
+1841169502,train,commercials with regular people,3,AT_UPPER,c0_upperbound(upper)
+1841169502,train,commercials with no people,3.227272727,FREE,
+561368533,train,electric,3,AT_UPPER,c0_upperbound(upper)
+561368533,train,gas cars,2,FREE,
+671764043,train,textile,250000,FREE,
+671764043,train,telecom industries,250000,FREE,
+2117126961,train,meat option,100,FREE,
+2117126961,train,veggie option,0,AT_LOWER,own_lb
+1169913509,train,small,0,AT_LOWER,own_lb
+1169913509,train,large,48,FREE,
+1153045283,train,large,75,FREE,
+1153045283,train,small,0,AT_LOWER,own_lb
+-1478289491,train,one-inch,150,AT_UPPER,c2_upperbound(upper)
+-1478289491,train,two-inch,160,AT_UPPER,c3_upperbound(upper)
+-2097740958,train,energy drink R,1.111111111,FREE,
+-2097740958,train,energy drink M,5.555555556,FREE,
+-2108752537,train,chocolate,50,AT_UPPER,c1_upperbound(upper)
+-2108752537,train,vanilla ice cream,20,AT_LOWER,c2_lowerbound(lower)
+215705279,train,airports,0,AT_LOWER,own_lb
+215705279,train,malls,33.33333333,FREE,
+215705279,train,movie theatres,0,AT_LOWER,own_lb
+-802287095,train,Sandwich A,111.1111111,FREE,
+-802287095,train,Sandwich B,33.33333333,FREE,
+-983015264,train,dolls,100,FREE,
+-983015264,train,soldiers,0,AT_LOWER,own_lb
+-192352919,train,action movie,125000,FREE,
+-192352919,train,animation,375000,FREE,
+-1120220216,train,guavas,33.33333333,FREE,
+-1120220216,train,mangos,66.66666667,FREE,
+-1323625459,train,almond,0,AT_LOWER,own_lb
+-1323625459,train,cashews,100,FREE,
+-326788588,train,regular hot dogs,50,FREE,
+-326788588,train,premium hot dogs,70,AT_UPPER,c1_upperbound(upper)
+286528177,train,spinach,150,FREE,
+286528177,train,kale,150,FREE,
+-574304318,train,company M,75000,FREE,
+-574304318,train,company P.,25000,FREE,
+146329572,train,logging,2000,FREE,
+146329572,train,shipping industries,1000,AT_LOWER,c2_lowerbound(lower)
+1916748046,train,large size,0,AT_LOWER,own_lb
+1916748046,train,small size,100,FREE,
+-616263906,train,wallets,0,AT_LOWER,own_lb
+-616263906,train,purses,20,FREE,
+-353788571,train,company A,2000,FREE,
+-353788571,train,company B,3000,FREE,
+530244707,train,avocado industry,120000,FREE,
+530244707,train,kale industry,180000,FREE,
+-1050261045,train,dining tables,73.68421053,FREE,
+-1050261045,train,bed frames,15.78947368,FREE,
+1231061056,train,couches,0,AT_LOWER,own_lb
+1231061056,train,beds,13.33333333,FREE,
+48357637,train,lake 1,4.090909091,FREE,
+48357637,train,lake 2,1.363636364,FREE,
+1540745183,train,marble,0,AT_LOWER,own_lb
+1540745183,train,granite countertops,250,FREE,
+645706426,train,taxis,12,FREE,
+645706426,train,buses,8,AT_UPPER,c0_upperbound(upper)
+645706426,train,privately owned cars,20,FREE,
+-242284866,train,heated seats,25,FREE,
+-242284866,train,regular seats,75,FREE,
+-71192775,train,soccer balls,140,FREE,
+-71192775,train,basket balls,0,AT_LOWER,own_lb
+-1160297975,train,sofas,13.88888889,FREE,
+-1160297975,train,beds,32.40740741,FREE,
+-1631258346,train,cars,150,FREE,
+-1631258346,train,buses,0,AT_LOWER,own_lb
+-601159686,train,Protein Bar A,3.225806452,FREE,
+-601159686,train,Protein Bar B,8.064516129,FREE,
+1973638902,train,Juice A,6.25,FREE,
+1973638902,train,Juice B,3.125,FREE,
+-38817154,train,digital watches,200,AT_UPPER,c2_upperbound(upper)
+-38817154,train,analog watches,180,AT_UPPER,c3_upperbound(upper)
+1722718639,train,mini elephants,18,FREE,
+1722718639,train,lions,15,FREE,
+-1813218966,train,milk,40,FREE,
+-1813218966,train,dark,0,AT_LOWER,own_lb
+-1746532659,train,red,75,FREE,
+-1746532659,train,green grapes,25,AT_LOWER,c2_lowerbound(lower)
+-944200428,train,lens,25,AT_UPPER,c2_upperbound(upper)
+-944200428,train,tripod,0,AT_LOWER,own_lb
+-646455141,train,medication A,11,FREE,
+-646455141,train,medication B,3,FREE,
+-2106825279,train,short words,5,AT_LOWER,c0_lowerbound(lower)
+-2106825279,train,long words,5,AT_UPPER,c3_upperbound(upper)
+1002573642,train,washing machines,57.14285714,FREE,
+1002573642,train,dryers,85.71428571,FREE,
+1550263004,train,round watches,2,FREE,
+1550263004,train,square watches,6,AT_UPPER,c1_upperbound(upper)
+1496939706,train,undergraduate students,37.5,FREE,
+1496939706,train,graduate students,12.5,FREE,
+-1761770632,train,stuffed donuts,1363.636364,FREE,
+-1761770632,train,pastries,1454.545455,FREE,
+-730482695,train,Juice A,50,FREE,
+-730482695,train,Juice B.,66.66666667,FREE,
+-2134084888,train,Capsule A,5.625,FREE,
+-2134084888,train,Capsule B,3.125,FREE,
+1023581637,train,burgers,0,AT_LOWER,own_lb
+1023581637,train,hot-dogs,1000,FREE,
+927355158,train,premium,0,AT_LOWER,own_lb
+927355158,train,regular,750,FREE,
+343561730,train,treadmills,300,FREE,
+343561730,train,stationary bikes,0,AT_LOWER,own_lb
+-2105184323,train,postal service,20,FREE,
+-2105184323,train,vans,0,AT_LOWER,own_lb
+153962739,train,tuna salad sandwiches,6,FREE,
+153962739,train,chicken salad sandwiches,0,AT_LOWER,own_lb
+-17265158,train,premium ticket,125,FREE,
+-17265158,train,regular ticket,375,FREE,
+-244560478,train,pills,100,FREE,
+-244560478,train,cream,133.3333333,FREE,
+526228455,train,trains,26.66666667,FREE,
+526228455,train,planes,80,FREE,
+-734996004,train,laptops,30,AT_LOWER,c0_lowerbound(lower)
+-734996004,train,tablets,30,FREE,
+149055541,train,apple industry,210000,FREE,
+149055541,train,orange industry,0,AT_LOWER,own_lb
+149055541,train,pear industry,0,AT_LOWER,own_lb
+149055541,train,banana industry,90000,FREE,
+187636535,train,pancakes,166.6666667,FREE,
+187636535,train,waffles,0,AT_LOWER,own_lb
+-855138281,train,small,0,AT_LOWER,own_lb
+-855138281,train,large,33.33333333,FREE,
+154902619,train,peaches,15,FREE,
+154902619,train,nectarines,15,FREE,
+702332968,train,fries,20,AT_LOWER,c0_lowerbound(lower)
+702332968,train,onion rings,30,FREE,
+1128524765,train,fish,40,FREE,
+1128524765,train,chicken tacos,40,AT_LOWER,c1_lowerbound(lower)
+-1469208822,train,large,240,FREE,
+-1469208822,train,small,0,AT_LOWER,own_lb
+-606525597,train,mangoes,100,FREE,
+-606525597,train,pineapples,100,FREE,
+-620437882,train,rings,425,FREE,
+-620437882,train,necklaces,50,AT_LOWER,c2_lowerbound(lower)
+-1795768460,train,large,0,AT_LOWER,own_lb
+-1795768460,train,small bottles,500,FREE,
+528982296,train,burgers,4.615384615,FREE,
+528982296,train,fries,2.307692308,FREE,
+1108577712,train,regular pens,25,FREE,
+1108577712,train,premium pens,50,AT_UPPER,c1_upperbound(upper)
+291000796,train,regular tickets,833.3333333,FREE,
+291000796,train,premium tickets,166.6666667,FREE,
+-1255974871,train,skis,28.57142857,FREE,
+-1255974871,train,snowboards,14.28571429,FREE,
+1863062325,train,queen,0,AT_LOWER,own_lb
+1863062325,train,king,166.6666667,FREE,
+-451730029,train,Type A food,2.4,FREE,
+-451730029,train,Type B food,3.2,FREE,
+943165280,train,fried fish,0,AT_LOWER,own_lb
+943165280,train,fried chicken,83.33333333,FREE,
+2133506352,train,toques,33.33333333,FREE,
+2133506352,train,scarfs,20,FREE,
+1810354571,train,lemon candy,50,FREE,
+1810354571,train,cherry candy,80,AT_UPPER,c2_upperbound(upper)
+1493954743,train,sour cherry candies,10,AT_UPPER,c2_upperbound(upper)
+1493954743,train,sour peach candies,30,FREE,
+1236350435,train,vaccine industry,0,AT_LOWER,own_lb
+1236350435,train,meat-replacement industry,100000,FREE,
+1797374435,train,chewable pills,0,AT_LOWER,own_lb
+1797374435,train,regular pills,10,FREE,
+-2094163363,train,planes,0,AT_LOWER,own_lb
+-2094163363,train,blimps,25,FREE,
+-2094163363,train,hot air balloons,0,AT_LOWER,own_lb
+-357202617,train,maple pecan,125,FREE,
+-357202617,train,mint chocolate ice cream,0,AT_LOWER,own_lb
+547732358,train,small,5,AT_LOWER,c3_lowerbound(lower)
+547732358,train,large,16.25,FREE,
+-481644170,train,sardines,0,AT_LOWER,own_lb
+-481644170,train,tuna,133.3333333,FREE,
+180778824,train,blue pill,6.363636364,FREE,
+180778824,train,red pill,7.272727273,FREE,
+-1107954998,train,premium seats,16.66666667,FREE,
+-1107954998,train,regular seats,83.33333333,FREE,
+-1045601007,train,soft,0,AT_LOWER,own_lb
+-1045601007,train,smooth,53.33333333,FREE,
+-1045601007,train,crunchy,0,AT_LOWER,own_lb
+1522122834,train,oak,100,FREE,
+1522122834,train,elm trees,200,FREE,
+817947649,train,cars,0,AT_LOWER,own_lb
+817947649,train,trucks,320,FREE,
+1666945837,train,maple syrup,5,FREE,
+1666945837,train,maple candy,5,AT_LOWER,c3_lowerbound(lower)
+-1755932279,train,supplement A,3.578947368,FREE,
+-1755932279,train,supplement B,2.105263158,FREE,
+-77615391,train,leather,20,AT_UPPER,c0_upperbound(upper)
+-77615391,train,mesh chairs,10,FREE,
+-2143757724,train,Bowl 1,112.5,FREE,
+-2143757724,train,Bowl 2,25,FREE,
+-1178157806,train,Package 1,200,FREE,
+-1178157806,train,Package 2,150,FREE,
+-1720466618,train,shampoo,60,FREE,
+-1720466618,train,conditioner,30,AT_LOWER,c2_lowerbound(lower)
+1695243531,train,chairs,80,FREE,
+1695243531,train,shelves,0,AT_LOWER,own_lb
+69065177,train,Soda 1,15.45454545,FREE,
+69065177,train,Soda 2,1.818181818,FREE,
+1069342200,train,slow balls,5,AT_LOWER,c0_lowerbound(lower)
+1069342200,train,fast balls,7,FREE,
+243699416,train,vegetarian,6.666666667,FREE,
+243699416,train,meat option,1.111111111,FREE,
+-1963149491,train,mushrooms,0,AT_LOWER,own_lb
+-1963149491,train,truffles,40,FREE,
+-1006908156,train,cushioned seat,50,AT_LOWER,c1_lowerbound(lower)
+-1006908156,train,regular seat,100,FREE,
+803987475,train,guided tickets,75,FREE,
+803987475,train,regular tickets,225,FREE,
+1231818101,train,stuffed beavers,200,FREE,
+1231818101,train,stuffed bears,0,AT_LOWER,own_lb
+896546054,train,books,357.1428571,FREE,
+896546054,train,magazines,71.42857143,FREE,
+-1595400088,train,Eastside bakery,3.529411765,FREE,
+-1595400088,train,Westside bakery,8.941176471,FREE,
+-1742874325,train,blue jelly pouch,7,FREE,
+-1742874325,train,red jelly pouch,9,FREE,
+1496462806,train,hockey nets,45.34883721,FREE,
+1496462806,train,basketball hoops,24.41860465,FREE,
+-335745552,train,doors,50,FREE,
+-335745552,train,bumpers,200,AT_UPPER,c2_upperbound(upper)
+566463604,train,glass,375,FREE,
+566463604,train,brass,0,AT_LOWER,own_lb
+-1848094752,train,peanut butter,3.333333333,FREE,
+-1848094752,train,almond butter smoothies,30,AT_UPPER,c1_linear(upper)
+598057720,train,hoodies,150,FREE,
+598057720,train,sweaters,0,AT_LOWER,own_lb
+-451402850,train,Bob's farm,40000,AT_UPPER,c2_upperbound(upper)
+-451402850,train,Joe's farm,10000,FREE,
+-790646361,train,spoons,0,AT_LOWER,own_lb
+-790646361,train,forks,0,AT_LOWER,own_lb
+-790646361,train,knives,200,FREE,
+1181172112,train,train,6.25,FREE,
+1181172112,train,car,6.25,FREE,
+1780841328,train,Trail mix A,7.5,FREE,
+1780841328,train,Trail mix B,2.5,FREE,
+2770657,train,Pill A,3.461538462,FREE,
+2770657,train,Pill B,4.615384615,FREE,
+-158369978,train,red bean bags,4,FREE,
+-158369978,train,blue bean bags,8,AT_UPPER,c3_upperbound(upper)
+-1998923102,train,shop 1,4.482758621,FREE,
+-1998923102,train,shop 2,3.448275862,FREE,
+91331390,train,small fish,70,FREE,
+91331390,train,large fish,0,AT_LOWER,own_lb
+1818492485,train,model trains,0,AT_LOWER,own_lb
+1818492485,train,planes,120,FREE,
+-503693411,train,easy puzzles,5,FREE,
+-503693411,train,hard puzzles,5,AT_UPPER,c3_upperbound(upper)
+-386611919,train,race car,3,AT_UPPER,c0_upperbound(upper)
+-386611919,train,regular car,3,FREE,
+-655808311,train,houses,0,AT_LOWER,own_lb
+-655808311,train,apartments,466.6666667,FREE,
+-507549139,train,canoes,20,FREE,
+-507549139,train,paddles,0,AT_LOWER,own_lb
+254797731,train,regular and,30,FREE,
+254797731,train,premium pies,30,AT_UPPER,c1_upperbound(upper)
+1240864021,train,dog food A,8,FREE,
+1240864021,train,dog food B,0,AT_LOWER,own_lb
+-2142684674,train,train,0,AT_LOWER,own_lb
+-2142684674,train,truck,0,AT_LOWER,own_lb
+-2142684674,train,train trip,20,FREE,
+57882563,train,pies,30,AT_LOWER,c2_lowerbound(lower)
+57882563,train,tarts,283.3333333,FREE,
+1405331961,train,pens,150,AT_UPPER,c2_upperbound(upper)
+1405331961,train,pencils,200,FREE,
+1665744345,train,t-shirts,40,AT_UPPER,c1_upperbound(upper)
+1665744345,train,sweaters,20,FREE,
+-1712927932,train,microwaves,46.15384615,FREE,
+-1712927932,train,vents,15.38461538,FREE,
+-709670450,train,policeman costumes,240,FREE,
+-709670450,train,fireman costumes,40,FREE,
+-1527825949,train,tennis rackets,0,AT_LOWER,own_lb
+-1527825949,train,badminton rackets,291.6666667,FREE,
+1761965781,train,cheese,71.42857143,FREE,
+1761965781,train,pepperoni pizza,21.42857143,FREE,
+-288455684,train,peanut butter,0,AT_LOWER,own_lb
+-288455684,train,almond butter smoothies,25,FREE,
+2104626903,train,premium ticket,62.5,FREE,
+2104626903,train,regular ticket,187.5,FREE,
+-720131595,train,sapphire,10,AT_UPPER,c0_upperbound(upper)
+-720131595,train,ruby rings,5,FREE,
+-2106263334,train,Model A,10,FREE,
+-2106263334,train,Model B,0,AT_LOWER,own_lb
+-1092558172,train,Mix A,62.5,FREE,
+-1092558172,train,Mix B,25,FREE,
+659209022,train,beans,0,AT_LOWER,own_lb
+659209022,train,peas,90,FREE,
+-994230395,train,Bag A,8,FREE,
+-994230395,train,Bag B,1,FREE,
+-336089912,train,small shelf,25,FREE,
+-336089912,train,large shelf,0,AT_LOWER,own_lb
+-738331979,train,daisies,44.44444444,FREE,
+-738331979,train,peonies,0,AT_LOWER,own_lb
+-195931847,train,carrot juice,1.923076923,FREE,
+-195931847,train,lemon juice,3.205128205,FREE,
+-1323858757,train,flight jackets,5,FREE,
+-1323858757,train,denim jackets,25,AT_UPPER,c1_upperbound(upper)
+1825508140,train,mango-lovers package,1.875,FREE,
+1825508140,train,regular package,5,AT_UPPER,c2_linear(upper)
+1316021843,train,coffee table,16.66666667,FREE,
+1316021843,train,bookcase,0,AT_LOWER,own_lb
+-1371866588,train,standing desks,0,AT_LOWER,own_lb
+-1371866588,train,office chairs,100,FREE,
+-208169543,train,grains,0.3703703704,FREE,
+-208169543,train,vegetables,5.925925926,FREE,
+2021781166,train,waiters,35,FREE,
+2021781166,train,managers,15,AT_LOWER,c1_lowerbound(lower)
+-1605570733,train,Gamma,28.33333333,FREE,
+-1605570733,train,Delta,0,AT_LOWER,own_lb
+-1449805744,train,Klun,4.444444444,FREE,
+-1449805744,train,Tao,0,AT_LOWER,own_lb
+-907853272,train,carrots,100,FREE,
+-907853272,train,pumpkins,100,FREE,
+1735063067,train,trucks,12,FREE,
+1735063067,train,vans,12,FREE,
+-1129911621,train,Prune juice,0,AT_LOWER,own_lb
+-1129911621,train,Apple juice,8.75,FREE,
+768050241,train,bracelets,4,AT_UPPER,c0_upperbound(upper)
+768050241,train,rings,7,AT_UPPER,c1_upperbound(upper)
+-664958047,train,gold,875000,FREE,
+-664958047,train,silver,0,AT_LOWER,own_lb
+-664958047,train,platinum,750000,FREE,
+-664958047,train,diamond,875000,FREE,
+-400376495,train,pancakes,21.11111111,FREE,
+-400376495,train,pretzels,8.148148148,FREE,
+-1977229492,train,VIP seat,40,FREE,
+-1977229492,train,general seat,160,FREE,
+73102943,train,billboards,18.46153846,FREE,
+73102943,train,podcasts,6.153846154,FREE,
+73102943,train,merchandises,0,AT_LOWER,own_lb
+73102943,train,3,0,AT_LOWER,own_lb
+-1982353428,train,earl grey,100,FREE,
+-1982353428,train,English breakfast teabags,25,FREE,
+-2083631303,train,solar panels,0,AT_LOWER,own_lb
+-2083631303,train,windmills,50,FREE,
+-907072760,train,almond bubble tea,100,FREE,
+-907072760,train,ginger bubble tea,200,AT_UPPER,c1_upperbound(upper)
+-974682365,train,Shio ramen,46.66666667,FREE,
+-974682365,train,Shoyu ramen,6.666666667,FREE,
+1890638854,train,regular tables,10,FREE,
+1890638854,train,standing tables,50,AT_UPPER,c1_upperbound(upper)
+-1181361842,train,superhero costumes,0,AT_LOWER,own_lb
+-1181361842,train,fantasy costumes,200,FREE,
+636857111,train,beans,7.5,FREE,
+636857111,train,cereal,0,AT_LOWER,own_lb
+1200650324,train,LED signs,3,AT_UPPER,c0_upperbound(upper)
+1200650324,train,neon signs,4,AT_UPPER,c2_upperbound(upper)
+1262901358,train,new cooks,22.5,FREE,
+1262901358,train,senior cooks,7.5,FREE,
+2038778006,train,large,33.33333333,FREE,
+2038778006,train,small salads,0,AT_LOWER,own_lb
+125732204,train,beef burritos,70,AT_UPPER,c3_upperbound(upper)
+125732204,train,pork burritos,30,AT_LOWER,c2_lowerbound(lower)
+454593242,train,bookcases,22.5,FREE,
+454593242,train,garden chairs,6.25,FREE,
+-374196579,train,regular passes,375,FREE,
+-374196579,train,premium passes,125,FREE,
+-838296258,train,general class,240,FREE,
+-838296258,train,sleeper class,160,FREE,
+-331045302,train,all-inclusive ticket,125,FREE,
+-331045302,train,regular ticket,375,FREE,
+-1814291927,train,shuttlecocks,0,AT_LOWER,own_lb
+-1814291927,train,volleyballs,200,FREE,
+1052619427,train,lemons,300,AT_UPPER,c2_upperbound(upper)
+1052619427,train,bananas,66.66666667,FREE,
+796437889,train,local farm,10,FREE,
+796437889,train,foreign farm,0,AT_LOWER,own_lb
+720167371,train,pop artist,250000,AT_UPPER,c1_upperbound(upper)
+720167371,train,rapper,83333.33333,FREE,
+2035548217,train,Piano A,0,AT_LOWER,own_lb
+2035548217,train,Piano B,25,FREE,
+-1211558483,train,coats,28,FREE,
+-1211558483,train,skirts,0,AT_LOWER,own_lb
+-1715825597,train,pop industry,200000,FREE,
+-1715825597,train,rap industry,0,AT_LOWER,own_lb
+-1715825597,train,country industry,0,AT_LOWER,own_lb
+-1715825597,train,indie industry,0,AT_LOWER,own_lb
+1764286025,train,rail,16.21621622,FREE,
+1764286025,train,truck,16.21621622,FREE,
+-1176378527,train,carrots,80,FREE,
+-1176378527,train,onions,0,AT_LOWER,own_lb
+415803817,train,coffee table,323.5294118,FREE,
+415803817,train,bedside table,1264.705882,FREE,
+-197783589,train,desks,22,AT_UPPER,c1_upperbound(upper)
+-197783589,train,chairs,18,FREE,
+1694027096,train,Regular Synthetic,0,AT_LOWER,own_lb
+1694027096,train,Premium Synthetic,20,FREE,
+-864692003,train,boat,25,FREE,
+-864692003,train,cargo plane,25,FREE,
+-47282422,train,drills,0,AT_LOWER,own_lb
+-47282422,train,saws,8.888888889,FREE,
+1001215896,train,regular,0,AT_LOWER,own_lb
+1001215896,train,premium,300,FREE,
+1925980551,train,newspapers,5,AT_LOWER,c3_lowerbound(lower)
+1925980551,train,radio stations,25,FREE,
+-1706100768,train,slow shot,8,AT_LOWER,c1_lowerbound(lower)
+-1706100768,train,quick shot,12,AT_UPPER,c3_upperbound(upper)
+-757513535,train,shrimp,8.333333333,FREE,
+-757513535,train,beef,0,AT_LOWER,own_lb
+834095199,train,Roller v2,4.705882353,FREE,
+834095199,train,Roller v1,8.823529412,FREE,
+1866828133,train,newcomers,0,AT_LOWER,own_lb
+1866828133,train,full-time employees,40,AT_LOWER,c0_lowerbound(lower)
+-145745089,train,fast food,175000,FREE,
+-145745089,train,pharmaceutical,0,AT_LOWER,own_lb
+-145745089,train,healthcare,150000,FREE,
+-145745089,train,green energy industries,175000,FREE,
+-815669778,train,chocolate,120,AT_UPPER,c3_upperbound(upper)
+-815669778,train,strawberry cookies,80,FREE,
+-1952736066,train,daikons,0,AT_LOWER,own_lb
+-1952736066,train,fennels,148,FREE,
+-1305902435,train,perfume,300,FREE,
+-1305902435,train,cologne bottles,40,AT_LOWER,c2_lowerbound(lower)
+-1982324798,train,bean burritos,5,AT_LOWER,c2_lowerbound(lower)
+-1982324798,train,beef burritos,270.8333333,FREE,
+-1550096807,train,education industry,150000,FREE,
+-1550096807,train,wood industry,350000,FREE,
+-257136206,train,Combo 1,42.85714286,FREE,
+-257136206,train,Combo 2,10.71428571,FREE,
+-201398490,train,apple,100,FREE,
+-201398490,train,peach trees,300,FREE,
+-618790770,train,plush toys,0,AT_LOWER,own_lb
+-618790770,train,action figures,80,FREE,
+2071029294,train,first-class seats,75,FREE,
+2071029294,train,regular seats,225,FREE,
+1229366693,train,blue gummy,0,AT_LOWER,own_lb
+1229366693,train,red gummy,15,FREE,
+1160070199,train,vehicles,40,FREE,
+1160070199,train,passengers,160,FREE,
+-1063681658,train,shoe factory,15000,AT_UPPER,c2_upperbound(upper)
+-1063681658,train,hat factory,3750,FREE,
+1326962238,train,bookcases,0,AT_LOWER,own_lb
+1326962238,train,coffee tables,30,FREE,
+-988774507,train,blueberries,133.3333333,FREE,
+-988774507,train,raspberries,0,AT_LOWER,own_lb
+-356156483,train,gummy vitamin,7,FREE,
+-356156483,train,powder vitamin,0,AT_LOWER,own_lb
+1612947890,train,laptop bags,25,FREE,
+1612947890,train,briefcases,0,AT_LOWER,own_lb
+-631420779,train,green tea,0,AT_LOWER,own_lb
+-631420779,train,pancakes,6.666666667,FREE,
+-215214153,train,desk lamps,75,FREE,
+-215214153,train,chandeliers,0,AT_LOWER,own_lb
+-1018049027,train,black milk tea,136.3636364,FREE,
+-1018049027,train,green milk tea,45.45454545,FREE,
+1109593584,train,foldable scooters,1250,FREE,
+1109593584,train,electric scooters,0,AT_LOWER,own_lb
+2128667133,train,shipping container,1.818181818,FREE,
+2128667133,train,cargo planes,1.818181818,FREE,
+-1942954068,train,coats,0,AT_LOWER,own_lb
+-1942954068,train,shirts,80,FREE,
+2033729916,train,mutual funds,4800,FREE,
+2033729916,train,stock market,7200,FREE,
+-1723877534,train,bagels,0,AT_LOWER,own_lb
+-1723877534,train,croissants,1250,FREE,
+-1689259006,train,red bean,3,AT_UPPER,c2_upperbound(upper)
+-1689259006,train,pudding toppings,2.083333333,FREE,
+-1352169480,train,regular truck,41.66666667,FREE,
+-1352169480,train,refrigerated truck,41.66666667,FREE,
+-1008461120,train,glass jars,40,FREE,
+-1008461120,train,plates,0,AT_LOWER,own_lb
+812718675,train,P100,11.60714286,FREE,
+812718675,train,Y200,8.035714286,FREE,
+-261742752,train,desk chair,0,AT_LOWER,own_lb
+-261742752,train,garden chair,116.6666667,FREE,
+-267933721,train,modern violins,0,AT_LOWER,own_lb
+-267933721,train,baroque violin,37.5,FREE,
+-1162965426,train,basmati rice,6.111111111,FREE,
+-1162965426,train,bananas,34.44444444,FREE,
+1877717441,train,newspaper,24,AT_UPPER,c2_upperbound(upper)
+1877717441,train,television,28,FREE,
+-1747006103,train,cream Alpha,2.962962963,FREE,
+-1747006103,train,cream Beta,0,AT_LOWER,own_lb
+-1724208777,train,bookcases,6.944444444,FREE,
+-1724208777,train,dining tables,27.77777778,FREE,
+1840103420,train,furniture,30,FREE,
+1840103420,train,carpet,120,FREE,
+1094773395,train,social media,1.5625,FREE,
+1094773395,train,television,4.0625,FREE,
+334482831,train,regular desks,0,AT_LOWER,own_lb
+334482831,train,standing desks,12.5,FREE,
+-131587418,train,wallets,10,AT_LOWER,c0_lowerbound(lower)
+-131587418,train,purses,495,FREE,
+839077637,train,Iota,2.142857143,FREE,
+839077637,train,Lambda,0.7142857143,FREE,
+-1900987309,train,dotted paper,0,AT_LOWER,own_lb
+-1900987309,train,grid paper,428.5714286,FREE,
+495029314,train,blankets,0,AT_LOWER,own_lb
+495029314,train,sweaters,10,FREE,
+1967220861,train,oranges,66.66666667,FREE,
+1967220861,train,grapefruits,133.3333333,FREE,
+-1461740387,train,headsets,0,AT_LOWER,own_lb
+-1461740387,train,keyboards,90.90909091,FREE,
+-117212297,train,surfboards,106.6666667,FREE,
+-117212297,train,skateboards,0,AT_LOWER,own_lb
+2050861890,train,wood,7000,AT_UPPER,c2_upperbound(upper)
+2050861890,train,bamboo industries,1750,FREE,
+1126424265,train,burritos,100,AT_UPPER,c1_upperbound(upper)
+1126424265,train,tacitos,150,AT_UPPER,c4_upperbound(upper)
+285799206,train,sliding doors,210,AT_UPPER,c2_upperbound(upper)
+285799206,train,windows,170,AT_UPPER,c3_upperbound(upper)
+1457598668,train,newspaper ads,83.33333333,FREE,
+1457598668,train,radio ads,0,AT_LOWER,own_lb
+1457598668,train,television ads,0,AT_LOWER,own_lb
+1581587735,train,aster flowers,16,FREE,
+1581587735,train,stonecrops.,104,FREE,
+-92144789,train,keyboards,10,FREE,
+-92144789,train,PC controllers,20,FREE,
+-849740004,train,sandals,52.94117647,FREE,
+-849740004,train,slippers,17.64705882,FREE,
+-913047001,train,ring layout,0,AT_LOWER,own_lb
+-913047001,train,tree layout,33.33333333,FREE,
+-913047001,train,mesh layout,0,AT_LOWER,own_lb
+1000020458,train,kayaks,0,AT_LOWER,own_lb
+1000020458,train,canoes,100,FREE,
+2054560331,train,cat foods,0,AT_LOWER,own_lb
+2054560331,train,canned tuna,100,FREE,
+1567569708,train,white cocktail,48.38709677,FREE,
+1567569708,train,green cocktail,80.64516129,FREE,
+794407334,train,regular model,0,AT_LOWER,own_lb
+794407334,train,premium model,60,FREE,
+-871648047,train,cranberries,24,FREE,
+-871648047,train,bilberries,0,AT_LOWER,own_lb
+-919179028,train,vanilla protein bars,5.166666667,FREE,
+-919179028,train,meal replacement shakes,0,AT_LOWER,own_lb
+1211410105,train,fishing,15000,FREE,
+1211410105,train,transportation industries,5000,AT_LOWER,c2_lowerbound(lower)
+-707305018,train,farm 1,40.90909091,FREE,
+-707305018,train,farm 2,13.63636364,FREE,
+-1624408933,train,multiple choice questions,15,AT_LOWER,c1_lowerbound(lower)
+-1624408933,train,short answer questions,15,FREE,
+-1400155083,train,pepperoni,35,AT_LOWER,c0_lowerbound(lower)
+-1400155083,train,Hawaiian pizzas,55,FREE,
+1503083816,train,small cabinet,20,FREE,
+1503083816,train,large cabinet,0,AT_LOWER,own_lb
+1609629473,train,SUV,0,AT_LOWER,own_lb
+1609629473,train,sedan,100,FREE,
+-672891245,train,Cherry tomatoes,37.77777778,FREE,
+-672891245,train,Cocktail tomatoes,64.44444444,FREE,
+-1023483692,train,university cafe,30,FREE,
+-1023483692,train,downtown cafe,0,AT_LOWER,own_lb
+1869490233,train,computer engineers,10,AT_LOWER,c1_lowerbound(lower)
+1869490233,train,software engineers,40,FREE,
+-636662142,train,adhesives,0,AT_LOWER,own_lb
+-636662142,train,plasticizers,56.25,FREE,
+-30300855,train,carrots,0,AT_LOWER,own_lb
+-30300855,train,green peas,73.33333333,FREE,
+1300005456,train,printed art,15,FREE,
+1300005456,train,paintings,21.66666667,FREE,
+356566587,train,RC drones,0,AT_LOWER,own_lb
+356566587,train,model cars,45,FREE,
+1894232673,train,Danvers carrots,120,FREE,
+1894232673,train,Nantes carrots,0,AT_LOWER,own_lb
+611957227,train,chocolate croissants,0,AT_LOWER,own_lb
+611957227,train,strawberry croissants,1200,FREE,
+583736451,train,headphones,0,AT_LOWER,own_lb
+583736451,train,earphones,0,AT_LOWER,own_lb
+583736451,train,headphone,50,FREE,
+583736451,train,earphone,0,AT_LOWER,own_lb
+1519284406,train,Indian,0,AT_LOWER,own_lb
+1519284406,train,Arctic oceans,3.333333333,FREE,
+-414671050,train,family mix,70,FREE,
+-414671050,train,party mix,0,AT_LOWER,own_lb
+-1110516940,train,cereal A,16,FREE,
+-1110516940,train,cereal B,0,AT_LOWER,own_lb
+-868287186,train,skirts,0,AT_LOWER,own_lb
+-868287186,train,coats,10,FREE,
+1462210894,train,silage,1.25,FREE,
+1462210894,train,mixed grains,6.875,FREE,
+-387572139,train,minivans,6,FREE,
+-387572139,train,trucks,0,AT_LOWER,own_lb
+-1971177107,train,Zippered hoodies,25,FREE,
+-1971177107,train,pullover hoodies,0,AT_LOWER,own_lb
+-342979720,train,internet service,0,AT_LOWER,own_lb
+-342979720,train,TV service,140,FREE,
+-1995830584,train,crabs,0,AT_LOWER,own_lb
+-1995830584,train,lobsters,75,FREE,
+-1611900017,train,carrots,0,AT_LOWER,own_lb
+-1611900017,train,pumpkins,50,FREE,
+460760959,train,red umbrella,10,AT_LOWER,c1_lowerbound(lower)
+460760959,train,blue umbrella,90,FREE,
+341875970,train,small,0,AT_LOWER,own_lb
+341875970,train,bulk size,6.666666667,FREE,
+-282771990,train,snack mix A,4.5,FREE,
+-282771990,train,snack mix B.,0,AT_LOWER,own_lb
+-1524876908,train,Clear Liquid,109.375,FREE,
+-1524876908,train,Fresh Mint,122.7678571,FREE,
+-117120382,train,face masks,500,AT_UPPER,c0_upperbound(upper)
+-117120382,train,hand sanitizers,250,FREE,
+-1488895992,train,lettuce,0,AT_LOWER,own_lb
+-1488895992,train,tomatoes,36.42857143,FREE,
+1350493270,train,pork,8,FREE,
+1350493270,train,shrimp,0,AT_LOWER,own_lb
+929102639,train,solar energy industry,10000,FREE,
+929102639,train,wind energy industry,40000,FREE,
+-214665832,train,nutritional cereal,0,AT_LOWER,own_lb
+-214665832,train,kids' cereal,333.3333333,FREE,
+-214665832,train,sugary cereal,0,AT_LOWER,own_lb
+-1400177241,train,sheds,0,AT_LOWER,own_lb
+-1400177241,train,treehouses,20,FREE,
+-1823459785,train,GreenCycle,3.392857143,FREE,
+-1823459785,train,GrowSafe,0.5357142857,FREE,
+815648330,train,apple pies,67.5,FREE,
+815648330,train,blueberry pies,60,AT_UPPER,c2_upperbound(upper)
+-901265690,train,fish,8,FREE,
+-901265690,train,birds,4,AT_UPPER,c1_upperbound(upper)
+-1968400749,train,easy questions,5,FREE,
+-1968400749,train,hard questions,4,AT_UPPER,c3_upperbound(upper)
+-313424632,train,regular desks,150,FREE,
+-313424632,train,standing desks,0,AT_LOWER,own_lb
+-1906439142,train,breakfast option,100,FREE,
+-1906439142,train,lunch option,0,AT_LOWER,own_lb
+-860126962,train,bottom deck seats,10,AT_LOWER,c1_lowerbound(lower)
+-860126962,train,top deck seats,40,FREE,
+-1843155546,train,pancakes,0,AT_LOWER,own_lb
+-1843155546,train,bagels,16.66666667,FREE,
+-1596596902,train,LED display industry,39999.35,FREE,
+-1596596902,train,microprocessor industry,0.65,AT_UPPER,c1_upperbound(upper)
+1529036966,train,Alpha,116.6666667,FREE,
+1529036966,train,Beta,10,AT_LOWER,c2_lowerbound(lower)
+-1257061820,train,cutting boards,32.5,FREE,
+-1257061820,train,chairs,7.5,FREE,
+-185815606,train,regular milk tea,60,AT_UPPER,c1_upperbound(upper)
+-185815606,train,fresh fruit tea,75,AT_UPPER,c3_upperbound(upper)
+-1286317952,train,first-floor seats,83.33333333,FREE,
+-1286317952,train,second-floor seats,166.6666667,FREE,
+-915636384,train,laptop,35,AT_UPPER,c2_upperbound(upper)
+-915636384,train,desktop,6.25,FREE,
+1858714184,train,solar calculators,26.66666667,FREE,
+1858714184,train,finance calculators,5.555555556,FREE,
+-27745871,train,Vanilla cake mix,18.18181818,FREE,
+-27745871,train,Chocolate cake mix,0,AT_LOWER,own_lb
+-1745177797,train,lemons,0,AT_LOWER,own_lb
+-1745177797,train,pecans,5,FREE,
+737447686,train,bedside tables,0,AT_LOWER,own_lb
+737447686,train,bookcases,6,FREE,
+-963004865,train,blankets,125,FREE,
+-963004865,train,bedsheets,0,AT_LOWER,own_lb
+-301688101,train,French perfume,0,AT_LOWER,own_lb
+-301688101,train,Spanish perfume,5,FREE,
+-1256233986,train,small vehicle,0,AT_LOWER,own_lb
+-1256233986,train,large vehicle,14.28571429,FREE,
+-400300871,train,pharmaceutical industry,500000,FREE,
+-400300871,train,renewable energy industry,0,AT_LOWER,own_lb
+-400300871,train,entertainment industry,0,AT_LOWER,own_lb
+-400300871,train,construction industry,0,AT_LOWER,own_lb
+-416996117,train,noodles,0,AT_LOWER,own_lb
+-416996117,train,cakes,0,AT_LOWER,own_lb
+603259629,train,individual salad,44,FREE,
+603259629,train,family-sized salad,0,AT_LOWER,own_lb
+1468112927,train,eggs benedicts,500,FREE,
+1468112927,train,hashbrowns.,0,AT_LOWER,own_lb
+1944978859,train,coats,100,AT_UPPER,c2_upperbound(upper)
+1944978859,train,shirts,400,FREE,
+1442198615,train,small,36,FREE,
+1442198615,train,large,0,AT_LOWER,own_lb
+1259789310,train,chocolate milk,3.333333333,FREE,
+1259789310,train,vegetable juice,0,AT_LOWER,own_lb
+-1527320177,train,bulldozers,22.22222222,FREE,
+-1527320177,train,forklifts,266.6666667,AT_UPPER,c1_linear(upper)
+-1727076879,train,first-class,20,AT_LOWER,c1_lowerbound(lower)
+-1727076879,train,economy-class,130,FREE,
+1180514101,train,trucks,7.8125,FREE,
+1180514101,train,vans,7.8125,FREE,
+-1376782236,train,pharmaceutical industry,480000,FREE,
+-1376782236,train,fast food industry,320000,FREE,
+1428531079,train,regular rate tickets,105,FREE,
+1428531079,train,concession rate tickets,15,AT_LOWER,c2_lowerbound(lower)
+-1974542599,train,office,0,AT_LOWER,own_lb
+-1974542599,train,dining chairs,80,FREE,
+-1588647623,train,display shelf,0,AT_LOWER,own_lb
+-1588647623,train,plant stand,17.5,FREE,
+837193748,train,pumpkins,25,FREE,
+837193748,train,carrots,75,FREE,
+-2143410996,train,fruit gummy bears,120,AT_UPPER,c1_upperbound(upper)
+-2143410996,train,sour gummy bears,53.33333333,FREE,
+1876661826,train,duck shot,8,FREE,
+1876661826,train,goose shot,7,AT_UPPER,c3_upperbound(upper)
+1959646428,train,stock market,150000,FREE,
+1959646428,train,cryptocurrency,50000,FREE,
+608336077,train,potatoes,800,AT_UPPER,c3_upperbound(upper)
+608336077,train,pumpkins,266.6666667,FREE,
+-1795331689,train,meatballs,76,FREE,
+-1795331689,train,ham sandwiches,70,FREE,
+877880223,train,bear plush toys,47.61904762,FREE,
+877880223,train,dog plush,23.80952381,FREE,
+-1492133110,train,regular speakers,100,FREE,
+-1492133110,train,portable speakers,200,AT_UPPER,c1_upperbound(upper)
+-2062598061,train,healthcare,12000,AT_UPPER,c1_upperbound(upper)
+-2062598061,train,fashion industries,3000,FREE,
+-1970166929,train,GPUs,0,AT_LOWER,own_lb
+-1970166929,train,CPUs,0,AT_LOWER,own_lb
+-1970166929,train,software,2000000,FREE,
+-1970166929,train,mobile devices,0,AT_LOWER,own_lb
+-63495762,train,hybrid model,5,FREE,
+-63495762,train,electric model,5,AT_UPPER,c2_upperbound(upper)
+-2047585894,train,beans,25,FREE,
+-2047585894,train,pumpkins,75,FREE,
+-147514762,train,televisions,50,FREE,
+-147514762,train,speakers,25,FREE,
+-337748765,train,designers,5,FREE,
+-337748765,train,assemblers,15,FREE,
+-448827668,train,long-term cruise,300,FREE,
+-448827668,train,week-long cruise,1200,FREE,
+493111753,train,folding bike,0,AT_LOWER,own_lb
+493111753,train,touring bike,42.85714286,FREE,
+-946574927,train,ice cream,20,FREE,
+-946574927,train,cheese,80,AT_UPPER,c1_upperbound(upper)
+1365390442,train,mix A,12.5,FREE,
+1365390442,train,mix B,1.25,FREE,
+-522392392,train,electric vehicle company,0,AT_LOWER,own_lb
+-522392392,train,microprocessor company,0,AT_LOWER,own_lb
+-522392392,train,business analytics software company,20000,FREE,
+-522392392,train,construction supply company,0,AT_LOWER,own_lb
+-1347623997,train,regular room,100,AT_LOWER,c1_lowerbound(lower)
+-1347623997,train,premium room,400,FREE,
+316977720,train,Bag A,8,FREE,
+316977720,train,Bag B,1.5,FREE,
+-13162692,train,fish meat,80,FREE,
+-13162692,train,shrimp meat,0,AT_LOWER,own_lb
+-725251297,train,earrings,5.6,FREE,
+-725251297,train,watches,0.8,FREE,
+-1935674089,train,solar energy company,3000,FREE,
+-1935674089,train,wind energy company,3000,AT_LOWER,c2_lowerbound(lower)
+503287325,train,Machine X,2.105263158,FREE,
+503287325,train,Machine Y,3.421052632,FREE,
+2086021215,train,neon,200,FREE,
+2086021215,train,metal signs,0,AT_LOWER,own_lb
+1911422792,train,headsets,0,AT_LOWER,own_lb
+1911422792,train,keyboards,120,FREE,
+-734844204,train,Mexican burrito,7.5,AT_UPPER,c1_linear(upper)
+-734844204,train,Korean burrito,3.5,FREE,
+1012426882,train,hamburger,4,FREE,
+1012426882,train,pasta,0,AT_LOWER,own_lb
+-949723129,train,small,70,FREE,
+-949723129,train,large chessboards,0,AT_LOWER,own_lb
+-814235434,train,strawberry,10,AT_LOWER,c0_lowerbound(lower)
+-814235434,train,mint ice cream cakes,40,AT_UPPER,c2_upperbound(upper)
+1476574617,train,red shirts,50,FREE,
+1476574617,train,green shirts,280,FREE,
+1092036773,train,cream lipsticks,0,AT_LOWER,own_lb
+1092036773,train,matte lipsticks,60,FREE,
+-1805362172,train,search engines,17,FREE,
+-1805362172,train,videos,0,AT_LOWER,own_lb
+-1805362172,train,social media,0,AT_LOWER,own_lb
+-229455193,train,film,199999.4,FREE,
+-229455193,train,healthcare industries,0.6,AT_UPPER,c2_upperbound(upper)
+1908220477,train,rice,7.407407407,FREE,
+1908220477,train,beef,2.037037037,FREE,
+635359047,train,SUV cars,5,AT_UPPER,c0_upperbound(upper)
+635359047,train,minivans,0,AT_LOWER,own_lb
+438270023,train,lattes,50,FREE,
+438270023,train,cappuccinos,0,AT_LOWER,own_lb
+-2105580086,train,Supplement A,10,FREE,
+-2105580086,train,Supplement B,0,AT_LOWER,own_lb
+9925844,train,first class,166.6666667,FREE,
+9925844,train,second class,333.3333333,FREE,
+155829587,train,general purpose vessels,0,AT_LOWER,own_lb
+155829587,train,pharmaceutical vessels,0,AT_LOWER,own_lb
+155829587,train,pressure vessels,20,FREE,
+179700628,train,fertilizer company,2500,FREE,
+179700628,train,pesticide company,2500,FREE,
+-2034307602,train,taro,10,FREE,
+-2034307602,train,mango bubble teas,20,AT_UPPER,c1_linear(upper)
+-1183653605,train,controllers,60,AT_UPPER,c1_upperbound(upper)
+-1183653605,train,speakers,240,FREE,
+2038058304,train,subs,666.6666667,FREE,
+2038058304,train,flatbreads,0,AT_LOWER,own_lb
+379931422,train,pork meat,0,AT_LOWER,own_lb
+379931422,train,shrimp meat,5,FREE,
+-2013750349,train,mutual funds,140000,FREE,
+-2013750349,train,cryptocurrencies,60000,FREE,
+-1435950157,train,north one,3.5,FREE,
+-1435950157,train,south one,0.1666666667,FREE,
+1194994066,train,road bikes,4,FREE,
+1194994066,train,mountain bikes,0,AT_LOWER,own_lb
+877479920,train,burgers,100,AT_LOWER,c0_lowerbound(lower)
+877479920,train,sandwiches,100,AT_UPPER,c3_upperbound(upper)
+-1576481997,train,croissant,18.86363636,FREE,
+-1576481997,train,ficelle,7.272727273,FREE,
+1962550027,train,chicken,2.692307692,FREE,
+1962550027,train,potatoes,13.07692308,FREE,
+2077426897,train,ABC Software,300000,AT_UPPER,c0_upperbound(upper)
+2077426897,train,XYZ Designs,500000,FREE,
+797233732,train,tea,0,AT_LOWER,own_lb
+797233732,train,coffee,166.6666667,FREE,
+-161695218,train,oval pot,0,AT_LOWER,own_lb
+-161695218,train,square pot,47.5,FREE,
+1419130428,train,wheat,0,AT_LOWER,own_lb
+1419130428,train,corn,30,FREE,
+715710952,train,paintings,0,AT_LOWER,own_lb
+715710952,train,photo prints,35,FREE,
+-347968584,train,perfume,40,AT_UPPER,c2_upperbound(upper)
+-347968584,train,mascara,13.33333333,FREE,
+823166508,train,protein drink,10,FREE,
+823166508,train,fruit snack,0,AT_LOWER,own_lb
+-1828241964,train,north side,0,AT_LOWER,own_lb
+-1828241964,train,south side,5,FREE,
+-1790324203,train,nuts,9.090909091,FREE,
+-1790324203,train,candy,181.8181818,FREE,
+1421633003,train,iron and steel,2000000,FREE,
+1421633003,train,tobacco,0,AT_LOWER,own_lb
+1421633003,train,healthcare,0,AT_LOWER,own_lb
+1421633003,train,food industries,0,AT_LOWER,own_lb
+2040768743,train,green tea,95,FREE,
+2040768743,train,black tea,55,FREE,
+-1096202168,train,home vacuums,400,FREE,
+-1096202168,train,shop vacuums,0,AT_LOWER,own_lb
+1009345361,train,Banana Livestream,13.33333333,FREE,
+1009345361,train,Durian TV,0,AT_LOWER,own_lb
+1009345361,train,Orange Premium Video,0,AT_LOWER,own_lb
+-361325577,train,entry-level devices,20,AT_UPPER,c0_upperbound(upper)
+-361325577,train,premium devices,10,FREE,
+-855803158,train,Seasoning A,2,FREE,
+-855803158,train,Seasoning B,1,FREE,
+-749201814,train,plates,0,AT_LOWER,own_lb
+-749201814,train,forks,250,FREE,
+1885080399,train,Pizza A,0,AT_LOWER,own_lb
+1885080399,train,Pizza B,120,FREE,
+799759512,train,Caesar salad,200,FREE,
+799759512,train,Mediterranean salad,0,AT_LOWER,own_lb
+916913873,train,muffins,116.2790698,FREE,
+916913873,train,milk cakes,232.5581395,FREE,
+-1017657947,train,chicken salad,1.547619048,FREE,
+-1017657947,train,beef tacos,4.761904762,FREE,
+2068785825,train,sunflowers,266.6666667,FREE,
+2068785825,train,roses,0,AT_LOWER,own_lb
+1106730800,train,cakes,230.7692308,FREE,
+1106730800,train,pies,15.38461538,FREE,
+876167589,train,mango trees,0,AT_LOWER,own_lb
+876167589,train,durian trees,111.1111111,FREE,
+-935766467,train,DIY videos,5,AT_UPPER,c3_upperbound(upper)
+-935766467,train,shopping videos,10.41666667,FREE,
+-935766467,train,unboxing videos,15.41666667,FREE,
+1198821053,train,fishing,6000,FREE,
+1198821053,train,education industries,14000,FREE,
+1198659824,train,regular refrigerators,100,AT_UPPER,c2_upperbound(upper)
+1198659824,train,energy-efficient refrigerators,70,AT_UPPER,c3_upperbound(upper)
+-1278751305,train,Delta brand,13,FREE,
+-1278751305,train,Phi brand,0,AT_LOWER,own_lb
+-1542644642,train,apple,0,AT_LOWER,own_lb
+-1542644642,train,peach trees,120,FREE,
+1477942004,train,mini bears,0,AT_LOWER,own_lb
+1477942004,train,dogs,40,FREE,
+-1202959445,train,freight trains,0,AT_LOWER,own_lb
+-1202959445,train,cargo ships,8.333333333,FREE,
+1864501490,train,company A,333333.3333,FREE,
+1864501490,train,company B.,166666.6667,FREE,
+1448763159,train,cakes,100,FREE,
+1448763159,train,cupcakes,0,AT_LOWER,own_lb
+-939257051,train,large,20,FREE,
+-939257051,train,small artworks,10,AT_LOWER,c4_lowerbound(lower)
+-534214523,train,bagels,33.33333333,FREE,
+-534214523,train,burgers,0,AT_LOWER,own_lb
+919309131,train,researchers,12.5,FREE,
+919309131,train,developers,37.5,FREE,
+365497562,train,apple,15,AT_LOWER,c0_lowerbound(lower)
+365497562,train,peach pies,15,FREE,
+118743640,train,storefront signs,30,FREE,
+118743640,train,street signs,0,AT_LOWER,own_lb
+-1294018002,train,daisies,33.33333333,FREE,
+-1294018002,train,peonies,66.66666667,FREE,
+626992884,train,package X,150,FREE,
+626992884,train,package Y.,150,FREE,
+-123421198,train,Pizza mix,6.944444444,FREE,
+-123421198,train,Mac and cheese,2.222222222,FREE,
+1107094432,train,Egret,1.166666667,FREE,
+1107094432,train,Crane,0,AT_LOWER,own_lb
+-1567864806,train,ylang ylang,66.66666667,FREE,
+-1567864806,train,vanilla,33.33333333,FREE,
+624578902,train,guided tour packages,100,FREE,
+624578902,train,regular tickets,200,FREE,
+649290259,train,regular,35,FREE,
+649290259,train,premium ice cream,25,AT_UPPER,c1_upperbound(upper)
+-1616068707,train,cars,14.11764706,FREE,
+-1616068707,train,trucks,9.411764706,FREE,
+822169661,train,burritos,6,AT_LOWER,c2_lowerbound(lower)
+822169661,train,sandwiches,323.3333333,FREE,
+739435915,train,Vietnamese,16.66666667,FREE,
+739435915,train,Korean,0,AT_LOWER,own_lb
+2015303631,train,Business class,600,FREE,
+2015303631,train,coach class,0,AT_LOWER,own_lb
+599598925,train,healthcare industry,9000,FREE,
+599598925,train,fishing industry,1000,AT_UPPER,c2_upperbound(upper)
+-1443479053,train,apple,0,AT_LOWER,own_lb
+-1443479053,train,orange smoothies,100,FREE,
+1912502114,train,Zeta,118.1818182,FREE,
+1912502114,train,Phi,36.36363636,FREE,
+1726213376,train,Delta,25000,FREE,
+1726213376,train,Omega,75000,FREE,
+-1329470525,train,Starry Mountain,6.896551724,FREE,
+-1329470525,train,Frosty Hills,5.517241379,FREE,
+-2133935107,train,platinum,1.235294118,FREE,
+-2133935107,train,silver necklaces,4.294117647,FREE,
+1377434768,train,LCD,300,AT_UPPER,c2_upperbound(upper)
+1377434768,train,LED monitors,280,AT_UPPER,c3_upperbound(upper)
+-2080370374,train,bulletproof glass pane,58.33333333,FREE,
+-2080370374,train,fire-rated glass pane,0,AT_LOWER,own_lb
+1450943790,train,outdoor soil,20,FREE,
+1450943790,train,indoor soil,0,AT_LOWER,own_lb
+-2099506892,train,oil paintings,0,AT_LOWER,own_lb
+-2099506892,train,acrylic paintings,14.80263158,FREE,
+-2099506892,train,watercolor paintings,14.47368421,FREE,
+711862731,train,grocery stores,43.75,FREE,
+711862731,train,train stations,15,AT_UPPER,c1_upperbound(upper)
+711862731,train,water parks,29.375,FREE,
+1113010512,train,oats,0,AT_LOWER,own_lb
+1113010512,train,sunflower seeds,25,FREE,
+-563856464,train,bookcases,14,FREE,
+-563856464,train,computer desks,26,FREE,
+2064426927,train,1st,7.333333333,FREE,
+2064426927,train,2nd generation motherboards,7,AT_LOWER,c4_lowerbound(lower)
+-273884671,train,hardwood flooring,0,AT_LOWER,own_lb
+-273884671,train,carpet,100,FREE,
+265038062,train,A400,5.625,FREE,
+265038062,train,P500,1.875,FREE,
+-2101760318,train,Vanilla flavor,30,FREE,
+-2101760318,train,Mocha flavor,0,AT_LOWER,own_lb
+883784731,train,fences,43.75,FREE,
+883784731,train,doors,62.5,FREE,
+501615489,train,ice cream cones,166.6666667,FREE,
+501615489,train,ice cream cups,0,AT_LOWER,own_lb
+1338474634,train,Gamma,0,AT_LOWER,own_lb
+1338474634,train,Delta,5,FREE,
+897983475,train,Berry mix A,0.5555555556,FREE,
+897983475,train,Berry mix B,6.666666667,FREE,
+2052035230,train,beans,9.259259259,FREE,
+2052035230,train,onions,8.703703704,FREE,
+1482174936,train,Combo X,45,FREE,
+1482174936,train,Combo Y.,10,FREE,
+-1282947574,train,oolong tea,100,AT_UPPER,c0_upperbound(upper)
+-1282947574,train,green tea,50,FREE,
+865048192,train,minivans,48,FREE,
+865048192,train,SUVs,0,AT_LOWER,own_lb
+922724597,train,AA,1000,FREE,
+922724597,train,D batteries,0,AT_LOWER,own_lb
+-839049614,train,energy sector,10,FREE,
+-839049614,train,travel sector,0,AT_LOWER,own_lb
+-152009588,train,fishing,20000,FREE,
+-152009588,train,education,0,AT_LOWER,own_lb
+-152009588,train,clothing,60000,FREE,
+-152009588,train,pharmaceutical industries,20000,FREE,
+349299805,train,renewable energy,40000,AT_UPPER,c2_upperbound(upper)
+349299805,train,education,10000,FREE,
+2017864484,train,corn,35,FREE,
+2017864484,train,peas,43.33333333,FREE,
+-1169971025,train,pasta sauce,2000,FREE,
+-1169971025,train,barbecue sauce,3500,FREE,
+1680605469,train,burritos,0,AT_LOWER,own_lb
+1680605469,train,tacos,111.1111111,FREE,
+299393763,train,Combo X,7.333333333,FREE,
+299393763,train,Combo Y.,4.333333333,AT_UPPER,c1_linear(upper)
+467579298,train,global news,3.777777778,FREE,
+467579298,train,talent shows,0.1777777778,FREE,
+1434993476,train,zero gravity,50,FREE,
+1434993476,train,standard seats,200,FREE,
+603860984,train,floral,2500,FREE,
+603860984,train,healthcare industries,7500,FREE,
+-316516118,train,Special Formula,0,AT_LOWER,own_lb
+-316516118,train,One Daily,8.333333333,FREE,
+999284804,train,pineapples,140,FREE,
+999284804,train,bananas,60,AT_LOWER,c3_lowerbound(lower)
+2120590914,train,pumpkin farm,16.55172414,FREE,
+2120590914,train,potato farm,4.137931034,FREE,
+72416232,train,Package 1,140,FREE,
+72416232,train,Package 2,0,AT_LOWER,own_lb
+473766545,train,low,0,AT_LOWER,own_lb
+473766545,train,medium,0,AT_LOWER,own_lb
+473766545,train,high quality tea,50,FREE,
+-1757358180,train,rafts,20.18348624,FREE,
+-1757358180,train,kayaks,16.51376147,FREE,
+-640645082,dev,rickshaws,11.11111111,FREE,
+-640645082,dev,ox carts,11.11111111,FREE,
+892653388,dev,dining tables,0,AT_LOWER,own_lb
+892653388,dev,chairs,133.3333333,FREE,
+793774916,dev,chocolate cake,20,FREE,
+793774916,dev,vanilla cake,30,AT_UPPER,c1_upperbound(upper)
+1962552394,dev,magazine ads,48.4,FREE,
+1962552394,dev,flyers,8,AT_UPPER,c1_upperbound(upper)
+1962552394,dev,billboard ads,0,AT_LOWER,own_lb
+2117951416,dev,peppers,10.10638298,FREE,
+2117951416,dev,tomatoes,8.723404255,FREE,
+-176363722,dev,2-piece,40,AT_LOWER,c2_lowerbound(lower)
+-176363722,dev,3-piece suits,28,FREE,
+-1501301743,dev,Standard,0,AT_LOWER,own_lb
+-1501301743,dev,Plus,0,AT_LOWER,own_lb
+-1501301743,dev,Premium,11.66666667,FREE,
+-106908195,dev,t-shirts,1000,AT_LOWER,c0_lowerbound(lower)
+-106908195,dev,hoodies,1000,AT_LOWER,c1_lowerbound(lower)
+368302984,dev,diced onions,125,FREE,
+368302984,dev,carrots,0,AT_LOWER,own_lb
+-1904284746,dev,foldable,7.142857143,FREE,
+-1904284746,dev,regular,42.85714286,FREE,
+-580767881,dev,Aleph 3,0,AT_LOWER,own_lb
+-580767881,dev,Gilgamesh Supreme,2000,FREE,
+1775140418,dev,rice,10.29411765,FREE,
+1775140418,dev,corn,33.82352941,FREE,
+-551748874,dev,coconut water,3.333333333,FREE,
+-551748874,dev,blue energade,0,AT_LOWER,own_lb
+-927748635,dev,strawberries,0,AT_LOWER,own_lb
+-927748635,dev,watermelons,50,FREE,
+-934921495,dev,gel,0,AT_LOWER,own_lb
+-934921495,dev,acrylic,96,FREE,
+1213406437,dev,GICs,3000,FREE,
+1213406437,dev,index ETF,7000,FREE,
+2042898874,dev,Low Quality,0,AT_LOWER,own_lb
+2042898874,dev,Regular Quality,18.46153846,FREE,
+2042898874,dev,Premium Quality,7.692307692,FREE,
+1778958258,dev,lemonade,20,FREE,
+1778958258,dev,brownies,0,AT_LOWER,own_lb
+-1684549839,dev,ham,16,FREE,
+-1684549839,dev,bacon,220,AT_UPPER,c2_upperbound(upper)
+-188381292,dev,UI designers,0,AT_LOWER,own_lb
+-188381292,dev,software engineers,50,FREE,
+-1577213425,dev,bike tires,0,AT_LOWER,own_lb
+-1577213425,dev,car tires,100,FREE,
+1319496932,dev,raincoats,1200,FREE,
+1319496932,dev,umbrellas,0,AT_LOWER,own_lb
+584268166,dev,regular package,38.88888889,FREE,
+584268166,dev,premium package,38.88888889,FREE,
+562583112,dev,drones,0,AT_LOWER,own_lb
+562583112,dev,couriers,32,FREE,
+-1188104412,dev,double-load,0,AT_LOWER,own_lb
+-1188104412,dev,single-load model,30.76923077,FREE,
+-156815021,dev,anti-inflammatory cream,50,AT_LOWER,c1_lowerbound(lower)
+-156815021,dev,pain-killing cream,61.11111111,FREE,
+690843809,dev,car,8.666666667,FREE,
+690843809,dev,truck,8.666666667,FREE,
+-491780757,dev,fruits,3.157894737,FREE,
+-491780757,dev,juice,6.315789474,FREE,
+901713880,dev,sleeping pills,3.833333333,FREE,
+901713880,dev,sleep supplement,0.6666666667,FREE,
+-458048177,dev,salmon lunch,2.25,FREE,
+-458048177,dev,bison burger,6.75,FREE,
+-1303541177,dev,mixture A,0,AT_LOWER,own_lb
+-1303541177,dev,mixture B.,42.85714286,FREE,
+947008343,dev,medium bags,37.5,FREE,
+947008343,dev,specialty delivery bag,12.5,FREE,
+471112257,dev,small,0,AT_LOWER,own_lb
+471112257,dev,large production lines,12.6,AT_LOWER,c1_linear(lower)
+882129265,dev,large,208,FREE,
+882129265,dev,small logging trucks,0,AT_LOWER,own_lb
+648491494,dev,commercial planes,14.58333333,FREE,
+648491494,dev,private planes,29.16666667,FREE,
+-356853555,dev,large cans,20,AT_LOWER,c2_lowerbound(lower)
+-356853555,dev,small cans,46.66666667,FREE,
+-1211890581,dev,box,100,FREE,
+-1211890581,dev,bucket,300,AT_UPPER,c1_upperbound(upper)
+-1603423876,dev,refrigerator ABC,9.166666667,FREE,
+-1603423876,dev,refrigerator XYZ,5,AT_LOWER,c3_lowerbound(lower)
+343813684,dev,tonometer,114.2857143,FREE,
+343813684,dev,“puff of air” test,114.2857143,FREE,
+558300309,dev,dentists,50,FREE,
+558300309,dev,oral hygienists,80,FREE,
+-1829385566,dev,bikes,25.42735043,FREE,
+-1829385566,dev,car,10.8974359,FREE,
+542112273,dev,logging trucks,42.85714286,FREE,
+542112273,dev,lumber carrier vessels,42.85714286,FREE,
+1367844202,dev,full-time tutors,46.34146341,FREE,
+1367844202,dev,assistant tutors,207.3170732,FREE,
+1030062804,dev,protein shakes,17,FREE,
+1030062804,dev,milk,51,FREE,
+-1362864316,dev,trucks,15.78947368,FREE,
+-1362864316,dev,boats,10.52631579,FREE,
+1738481857,dev,force experiment,0,AT_LOWER,own_lb
+1738481857,dev,hydraulics experiment,7.5,FREE,
+-1003923679,dev,chocolate powder,27.77777778,FREE,
+-1003923679,dev,vanilla powder shakes,55.55555556,FREE,
+691521231,dev,Analyzer 3000,22,FREE,
+691521231,dev,QuickAnalytics.,14,FREE,
+1122311364,dev,toy cars,3,AT_UPPER,c2_upperbound(upper)
+1122311364,dev,toy trucks,4.666666667,FREE,
+1206867214,dev,architects,23.80952381,FREE,
+1206867214,dev,drafters,23.80952381,FREE,
+1426711389,dev,shuttle bus,5,AT_UPPER,c1_upperbound(upper)
+1426711389,dev,taxi service,43,FREE,
+-1384117219,dev,liquid waste,50,FREE,
+-1384117219,dev,solid waste,0,AT_LOWER,own_lb
+172061722,dev,delivery truck,0,AT_LOWER,own_lb
+172061722,dev,van,20,FREE,
+1455902979,dev,marinated wild boar,25,FREE,
+1455902979,dev,processed lamb chops,175,FREE,
+-188754660,dev,large plant,40,FREE,
+-188754660,dev,small plant,0,AT_LOWER,own_lb
+-1091195781,dev,cargo ship,9.75,FREE,
+-1091195781,dev,airplane,6,AT_LOWER,c1_lowerbound(lower)
+-920265113,dev,truck A,39.33333333,FREE,
+-920265113,dev,truck B.,8,AT_LOWER,c3_lowerbound(lower)
+-668544637,dev,expert,6.097560976,FREE,
+-668544637,dev,apprentice,54.87804878,FREE,
+-206261087,dev,diabetic pill,50,FREE,
+-206261087,dev,diabetic shot,0,AT_LOWER,own_lb
+-577606329,dev,method X,0,AT_LOWER,own_lb
+-577606329,dev,method Y.,108.3333333,FREE,
+-1784457731,dev,manual pallet jack,6,AT_UPPER,c3_upperbound(upper)
+-1784457731,dev,electric pallet jack,15,AT_UPPER,c4_upperbound(upper)
+-1633326119,dev,medium containers,3,AT_LOWER,c1_lowerbound(lower)
+-1633326119,dev,large containers,10.625,FREE,
+-659035994,dev,gamma experiment,100,FREE,
+-659035994,dev,omega experiment,400,FREE,
+-706167573,dev,employees,225,FREE,
+-706167573,dev,U-pick,0,AT_LOWER,own_lb
+-978446117,dev,sofas,0,AT_LOWER,own_lb
+-978446117,dev,beds,0,AT_LOWER,own_lb
+1062319269,dev,diabetic pills,20,AT_LOWER,c1_lowerbound(lower)
+1062319269,dev,latex gloves,30,FREE,
+-537539268,dev,coffee,0,AT_LOWER,own_lb
+-537539268,dev,cappuccinos,0,AT_LOWER,own_lb
+1947901559,dev,super vitamin XYZ,7.058823529,FREE,
+1947901559,dev,vitamin ABC,10.58823529,FREE,
+1824796169,dev,internal drivers,3.125,FREE,
+1824796169,dev,external drivers,12.5,FREE,
+-1910834629,dev,airplane,5,AT_LOWER,c2_lowerbound(lower)
+-1910834629,dev,helicopter,16.25,FREE,
+-1292542531,dev,fast-acting eye drops,272.7272727,FREE,
+-1292542531,dev,slow-acting eye drops,545.4545455,FREE,
+2114430988,dev,large boxes of chocolates,22.5,FREE,
+2114430988,dev,small boxes of chocolates,67.5,FREE,
+-254808664,dev,steaks,15,FREE,
+-254808664,dev,chicken breasts,30,FREE,
+85177523,dev,large trucks,2.916666667,FREE,
+85177523,dev,boat,0.9722222222,FREE,
+-1873921235,dev,sleds,750,FREE,
+-1873921235,dev,snowmobile,375,FREE,
+-654999513,dev,large container,17.5,FREE,
+-654999513,dev,medium container,35,AT_UPPER,c2_upperbound(upper)
+-594806556,dev,large trailers,4.444444444,FREE,
+-594806556,dev,small trailers,13.33333333,FREE,
+439170086,dev,pipeline,83.33333333,FREE,
+439170086,dev,train,166.6666667,FREE,
+-1447728775,dev,cones,1426.666667,FREE,
+-1447728775,dev,tubs,30,AT_LOWER,c1_lowerbound(lower)
+-955370712,dev,fish farming,36.36363636,FREE,
+-955370712,dev,trawling,140.9090909,FREE,
+-1389517053,dev,reaction X,9.818181818,FREE,
+-1389517053,dev,reaction Y.,13.24675325,FREE,
+-1846151655,dev,black,0,AT_LOWER,own_lb
+-1846151655,dev,green tea,0,AT_LOWER,own_lb
+1392566545,dev,cranes,0,AT_LOWER,own_lb
+1392566545,dev,elevators,45,FREE,
+38885939,dev,mechanical,60,FREE,
+38885939,dev,chemistry kit,0,AT_LOWER,own_lb
+709701618,dev,escalator,66.66666667,FREE,
+709701618,dev,elevator,33.33333333,FREE,
+987782367,dev,fruits,13.33333333,FREE,
+987782367,dev,vegetables,6.666666667,FREE,
+-2043853315,dev,gondola,7.142857143,FREE,
+-2043853315,dev,large bus,71.42857143,FREE,
+-279354943,dev,juice,15.36585366,FREE,
+-279354943,dev,vitamin-added milk,1.707317073,FREE,
+-1394768760,dev,steak,27.77777778,FREE,
+-1394768760,dev,vegetarian meal,0,AT_LOWER,own_lb
+1117636837,test,sled dogs,0,AT_LOWER,own_lb
+1117636837,test,trucks,10,FREE,
+1884763091,test,color printers,20,AT_UPPER,c0_upperbound(upper)
+1884763091,test,black and white printers,15,FREE,
+-1394927728,test,senior accountants,25,FREE,
+-1394927728,test,junior accountants,75,FREE,
+294897151,test,apples,16.66666667,FREE,
+294897151,test,pears,33.33333333,FREE,
+741805703,test,desk-lamps,150,AT_UPPER,c2_upperbound(upper)
+741805703,test,night-lamps,180,AT_UPPER,c3_upperbound(upper)
+2005236115,test,telecom,70000,AT_UPPER,c2_upperbound(upper)
+2005236115,test,healthcare,23333.33333,FREE,
+1344881875,test,tomatoes,20,AT_LOWER,c2_lowerbound(lower)
+1344881875,test,potatoes,120,FREE,
+85734555,test,wired headphones,100,AT_UPPER,c0_upperbound(upper)
+85734555,test,wireless headphones,50,FREE,
+359376818,test,clothing company,2500,FREE,
+359376818,test,tech company,500,AT_UPPER,c2_upperbound(upper)
+-450888040,test,carrots,500,AT_UPPER,c3_upperbound(upper)
+-450888040,test,cucumbers,166.6666667,FREE,
+-1044932722,test,A,12.67605634,FREE,
+-1044932722,test,B.,6.901408451,FREE,
+-836325049,test,condos,152000,FREE,
+-836325049,test,detached houses,608000,FREE,
+1130600103,test,regular,20,FREE,
+1130600103,test,special,0,AT_LOWER,own_lb
+861462634,test,long,22.22222222,FREE,
+861462634,test,short cables,111.1111111,FREE,
+1040407495,test,senior citizens,37.5,FREE,
+1040407495,test,young adults,12.5,FREE,
+1275707149,test,z-tube,10,FREE,
+1275707149,test,soorchle,0,AT_LOWER,own_lb
+1275707149,test,wassa,0,AT_LOWER,own_lb
+1588230199,test,chair,5.5,FREE,
+1588230199,test,dresser,0,AT_LOWER,own_lb
+703345038,test,Feed A,1.063829787,FREE,
+703345038,test,Feed B,2.765957447,FREE,
+1433467400,test,thin jar,0,AT_LOWER,own_lb
+1433467400,test,stubby jar,26.66666667,FREE,
+-1036797903,test,banana-haters package,0,AT_LOWER,own_lb
+-1036797903,test,combo package,2,FREE,
+1771352861,test,bread,0,AT_LOWER,own_lb
+1771352861,test,cookies,3000,FREE,
+1751406188,test,regular glass pane,60,FREE,
+1751406188,test,tempered glass pane,0,AT_LOWER,own_lb
+-241297255,test,elephants,100,FREE,
+-241297255,test,tigers,0,AT_LOWER,own_lb
+-1864917274,test,large,5,AT_LOWER,"c3_lowerbound(lower),c4_lowerbound(lower)"
+-1864917274,test,small art pieces,22.5,FREE,
+-38441702,test,apartments,200000,AT_UPPER,c1_upperbound(upper)
+-38441702,test,townhouses,400000,FREE,
+-1536845616,test,Zodiac,2.765957447,FREE,
+-1536845616,test,Sunny,1.170212766,FREE,
+-495039680,test,model trains,20,FREE,
+-495039680,test,planes,15,FREE,
+-1713743137,test,phones,0,AT_LOWER,own_lb
+-1713743137,test,laptops,60,FREE,
+-382781648,test,regular mix,94.28571429,FREE,
+-382781648,test,sour surprise mix,45.71428571,FREE,
+1361923588,test,phones,0,AT_LOWER,own_lb
+1361923588,test,laptops,100,FREE,
+1248158471,test,premium desktops,100,FREE,
+1248158471,test,regular desktops,100,FREE,
+-889698619,test,regular model,6,FREE,
+-889698619,test,premium model,6,AT_UPPER,c1_upperbound(upper)
+1178527024,test,long desks,6.666666667,FREE,
+1178527024,test,short desks,0,AT_LOWER,own_lb
+-964250787,test,C,2.592592593,FREE,
+-964250787,test,Y.,0.2222222222,FREE,
+1703643437,test,pill A,9.62962963,FREE,
+1703643437,test,pill B.,1.851851852,FREE,
+2051029907,test,Oil Max,0,AT_LOWER,own_lb
+2051029907,test,Oil Max Pro,36.51111111,FREE,
+-22176003,test,mangos,150,AT_UPPER,c2_upperbound(upper)
+-22176003,test,guavas,50,FREE,
+118256182,test,chocolate,10,AT_UPPER,c2_upperbound(upper)
+118256182,test,vanilla ice cream,8,AT_UPPER,c3_upperbound(upper)
+811663079,test,potatoes,16.66666667,FREE,
+811663079,test,cucumbers,33.33333333,FREE,
+-2081282851,test,hardwood,50000,AT_UPPER,c3_upperbound(upper)
+-2081282851,test,vinyl planks,30000,AT_UPPER,c4_upperbound(upper)
+2017354998,test,old,4.333333333,FREE,
+2017354998,test,new farm,0.3333333333,FREE,
+-816513289,test,Kebabs,11,FREE,
+-816513289,test,Rice,0,AT_LOWER,own_lb
+-1296070793,test,scooters,2000,FREE,
+-1296070793,test,bikes,0,AT_LOWER,own_lb
+-1965714403,test,blueberries,0,AT_LOWER,own_lb
+-1965714403,test,raspberries.,191.6666667,FREE,
+1204240087,test,vegetable,10,FREE,
+1204240087,test,fruits,0,AT_LOWER,own_lb
+-864701644,test,bagels,28.8,FREE,
+-864701644,test,croissants,12.4,FREE,
+207812519,test,factory 1,5,AT_LOWER,c2_linear(lower)
+207812519,test,factory 2,0,AT_LOWER,own_lb
+1606486655,test,turnips,125,FREE,
+1606486655,test,pumpkins,375,FREE,
+204200639,test,staff,66.66666667,FREE,
+204200639,test,substitute teachers,200,FREE,
+-710890866,test,high intensity,8.421052632,FREE,
+-710890866,test,low intensity,12.63157895,FREE,
+103572338,test,dine-in place,2.5,FREE,
+103572338,test,food-truck,5,FREE,
+-1913311520,test,process A,150,FREE,
+-1913311520,test,process B,0,AT_LOWER,own_lb
+1124566219,test,miter saw,12.5,FREE,
+1124566219,test,circular saw,12.5,FREE,
+-1969046840,test,windrower,100,FREE,
+-1969046840,test,hay harvester,100,FREE,
+-1576429501,test,wraps,535.7142857,FREE,
+-1576429501,test,platters,178.5714286,FREE,
+-1066222271,test,cash-based,10,FREE,
+-1066222271,test,card-only,10,FREE,
+1838800424,test,glass,23.52941176,FREE,
+1838800424,test,plastic jars,47.05882353,FREE,
+431521997,test,lychee bubble tea,0,AT_LOWER,own_lb
+431521997,test,mango bubble tea,0,AT_LOWER,own_lb
+-1744875694,test,seasonal,33.33333333,FREE,
+-1744875694,test,permanent,10,FREE,
+-1681245352,test,rural,20,FREE,
+-1681245352,test,urban,5,FREE,
+1051552533,test,counter-top sized,0,AT_LOWER,own_lb
+1051552533,test,fridge sized one,6.666666667,FREE,
+454157274,test,small,40,FREE,
+454157274,test,large,5,FREE,
+-437895545,test,small,0,AT_LOWER,own_lb
+-437895545,test,large,225,FREE,
+-1979635456,test,almond,0,AT_LOWER,own_lb
+-1979635456,test,pistachio,0,AT_LOWER,own_lb
+1789644271,test,gas,3,FREE,
+1789644271,test,electric,3,FREE,
+1151835649,test,brownies,0,AT_LOWER,own_lb
+1151835649,test,lemon squares,0,AT_LOWER,own_lb
+1636951466,test,nurses,0,AT_LOWER,own_lb
+1636951466,test,pharmacists,28.57142857,FREE,
+267694031,test,top-loading model,0,AT_LOWER,own_lb
+267694031,test,front-loading model,66.66666667,FREE,
+902707159,test,small,0,AT_LOWER,own_lb
+902707159,test,large branches,12,FREE,
+-691402093,test,regular,10,FREE,
+-691402093,test,hybrid,50,FREE,
+-2012603375,test,with a catalyst,5,FREE,
+-2012603375,test,without a catalyst,16.66666667,FREE,
+-2001553884,test,traditional machine,300,FREE,
+-2001553884,test,modern machine,200,FREE,
+-1584110645,test,light,0,AT_LOWER,own_lb
+-1584110645,test,heavy,0,AT_LOWER,own_lb
+-642253022,test,dual,6,FREE,
+-642253022,test,single,0,AT_LOWER,own_lb
+1605420061,test,peanut butter crepes,0,AT_LOWER,own_lb
+1605420061,test,chocolate crepe,0,AT_LOWER,own_lb
+-1409151968,test,regular,15,FREE,
+-1409151968,test,emergency fire,25,FREE,
+-2027758451,test,motion activated,10,FREE,
+-2027758451,test,manual,6.666666667,FREE,
+844555197,test,small shop,0,AT_LOWER,own_lb
+844555197,test,large shop,7.142857143,FREE,
+-397147458,test,4-wheeler,7.333333333,FREE,
+-397147458,test,"3-wheeler,",14,FREE,
+-1807877749,test,experiment alpha,42.30769231,FREE,
+-1807877749,test,experiment beta,134.6153846,FREE,
+-1809449648,test,net,125,FREE,
+-1809449648,test,fishing line,100,FREE,
+498603121,test,mochas,0,AT_LOWER,own_lb
+498603121,test,regular coffees,0,AT_LOWER,own_lb
+1165597365,test,manual,3.333333333,FREE,
+1165597365,test,automatic,4.166666667,FREE,
+-24265158,test,glass,90.90909091,FREE,
+-24265158,test,plastic,272.7272727,FREE,
+-1540907330,test,goat,0,AT_LOWER,own_lb
+-1540907330,test,chicken,0,AT_LOWER,own_lb
+-1363773320,test,part time workers,75,FREE,
+-1363773320,test,full time workers,25,FREE,
+410247479,test,A,19.44444444,FREE,
+410247479,test,B.,8.333333333,FREE,
+-742925976,test,medium sized factory,5,FREE,
+-742925976,test,small factory,0,AT_LOWER,own_lb
+2024321843,test,chemical reaction A,96.2962963,FREE,
+2024321843,test,chemical reaction B.,74.07407407,FREE,
+1168196894,test,heap leaching,10,FREE,
+1168196894,test,vat leaching,0,AT_LOWER,own_lb
+492091808,test,milk chocolate,0,AT_LOWER,own_lb
+492091808,test,dark chocolate bars,0,AT_LOWER,own_lb
+1333247991,test,premium model,6.666666667,FREE,
+1333247991,test,regular model,0,AT_LOWER,own_lb
+2084816058,test,vintage,28.57142857,FREE,
+2084816058,test,regular bottles,114.2857143,FREE,
+1268238141,test,peach flavored candy,0,AT_LOWER,own_lb
+1268238141,test,cherry flavored candy,0,AT_LOWER,own_lb
+-272035411,test,Pill 1,10,AT_LOWER,c1_linear(lower)
+-272035411,test,Pill 2,0,AT_LOWER,own_lb
+766541281,test,alpha,3.909774436,FREE,
+766541281,test,omega,2.105263158,FREE,
+-361200173,test,beaker 1,0,AT_LOWER,own_lb
+-361200173,test,beaker 2,15,FREE,
+-271434326,test,small,30,FREE,
+-271434326,test,large bones,30,AT_LOWER,c2_lowerbound(lower)
+-854940425,test,orange,3,AT_LOWER,c1_lowerbound(lower)
+-854940425,test,apple juice,46,FREE,
+1283305022,test,cleansing chemical,200,FREE,
+1283305022,test,odor-removing chemical,100,FREE,
+-38093970,test,factory 1,33.33333333,FREE,
+-38093970,test,factory 2,3.333333333,FREE,
+1625239928,test,fish,4.285714286,FREE,
+1625239928,test,chicken,8.571428571,FREE,
+-950198491,test,regular batch,33.33333333,FREE,
+-950198491,test,premium batch,33.33333333,FREE,
+-1173119684,test,automatic machine,500,FREE,
+-1173119684,test,manual machine,1000,FREE,
+1637604355,test,syrup 1,0,AT_LOWER,own_lb
+1637604355,test,syrup 2,8,FREE,
+-1023375267,test,crab cakes,13.33333333,FREE,
+-1023375267,test,lobster roll,1.666666667,FREE,
+1602930125,test,demonstration 1,5,FREE,
+1602930125,test,demonstration 2,0,AT_LOWER,own_lb
+1402521519,test,children's,50,AT_LOWER,c2_lowerbound(lower)
+1402521519,test,adult vaccines,116.6666667,FREE,
+-1765797791,test,apple,16.66666667,FREE,
+-1765797791,test,carrot,5.555555556,FREE,
+406925003,test,fertilizer,50,AT_LOWER,c1_lowerbound(lower)
+406925003,test,seeds,25,FREE,
+279930346,test,factory 1,66.66666667,FREE,
+279930346,test,factory 2,0,AT_LOWER,own_lb
+1187069645,test,burgers,5,FREE,
+1187069645,test,pizza,10,FREE,
+-443483964,test,vitamin shots,10,AT_UPPER,c1_upperbound(upper)
+-443483964,test,pills,18,FREE,
+2041857060,test,electronic,3750,FREE,
+2041857060,test,regular thermometer,1875,FREE,
+-1927179020,test,machine 1,5,FREE,
+-1927179020,test,machine 2,0,AT_LOWER,own_lb
+-76205225,test,ramen,2.727272727,FREE,
+-76205225,test,fries,6.363636364,FREE,
+-1727241372,test,cheap,25,FREE,
+-1727241372,test,expensive box,0,AT_LOWER,own_lb
+1475265046,test,painkillers,50,AT_LOWER,c0_lowerbound(lower)
+1475265046,test,sleeping pills,116.6666667,FREE,
+-596972682,test,gummies,54.54545455,FREE,
+-596972682,test,pills,18.18181818,FREE,
+-530211023,test,anxiety medication,66.66666667,FREE,
+-530211023,test,anti-depressants one,33.33333333,FREE,
+-355557676,test,machine 1,15.83333333,FREE,
+-355557676,test,machine 2,18.33333333,FREE,
+-534201937,test,cashews,14.28571429,FREE,
+-534201937,test,almonds,28.57142857,FREE,
+1862321313,test,liquid,20,FREE,
+1862321313,test,foam hand sanitizer,20,FREE,
+-1911316210,test,throat,3478.26087,FREE,
+-1911316210,test,nasal swabs,869.5652174,FREE,
+-1819716628,test,pain killer 1,26.66666667,FREE,
+-1819716628,test,pain killer 2,0,AT_LOWER,own_lb
+-1832353699,test,bananas,30.94688222,FREE,
+-1832353699,test,mangoes,15.24249423,FREE,
+-724293739,test,table 1,15,FREE,
+-724293739,test,table 2,0,AT_LOWER,own_lb
+415701,test,cheesecake,35.29411765,FREE,
+415701,test,caramel cake,11.76470588,FREE,
+1694815390,test,sulfate,100,AT_LOWER,c0_lowerbound(lower)
+1694815390,test,ginger,50,FREE,
+102495722,test,oranges,12.72727273,FREE,
+102495722,test,grapefruit,6.363636364,FREE,
+615752596,test,medicine A,4.285714286,FREE,
+615752596,test,medicine B.,4.285714286,FREE,
+1066287493,test,spit tests,770,FREE,
+1066287493,test,swabs,20,AT_LOWER,c1_lowerbound(lower)
+-1008324134,test,Beam 1,0,AT_LOWER,own_lb
+-1008324134,test,Beam 2,7.5,FREE,
+-2066769788,test,turkey dinner,0,AT_LOWER,own_lb
+-2066769788,test,tuna salad sandwich,8.333333333,FREE,
+-879679183,test,experiment 1,10,FREE,
+-879679183,test,experiment 2,0,AT_LOWER,own_lb
+762614338,test,large pill,100,AT_LOWER,c1_lowerbound(lower)
+762614338,test,small pill,150,FREE,
+-1921036549,test,chorine,200,AT_LOWER,c1_lowerbound(lower)
+-1921036549,test,water softener,400,FREE,
+-1051990960,test,blueberries,15,FREE,
+-1051990960,test,strawberries,45,FREE,
+201060410,test,beam bridges,20,FREE,
+201060410,test,truss bridges,0,AT_LOWER,own_lb
+-369455986,test,pill,142.8571429,FREE,
+-369455986,test,shot,428.5714286,FREE,
+935147725,test,vans,11.53846154,FREE,
+935147725,test,trucks,11.53846154,FREE,
+721056636,test,small,133.3333333,FREE,
+721056636,test,large,66.66666667,FREE,
+651026322,test,ships,12.5,FREE,
+651026322,test,planes,0,AT_LOWER,own_lb
+349208478,test,boat,12,AT_UPPER,c0_upperbound(upper)
+349208478,test,canoe,22.5,FREE,
+1529148342,test,old,26,FREE,
+1529148342,test,new vans,30,AT_UPPER,c1_upperbound(upper)
+-661636428,test,small teams,40,FREE,
+-661636428,test,large teams,6,AT_LOWER,c2_lowerbound(lower)
+1688548725,test,otters,13.63636364,FREE,
+1688548725,test,dolphins,31.81818182,FREE,
+-1609306796,test,vans,13.33333333,FREE,
+-1609306796,test,trucks,13.33333333,FREE,
+-1815549876,test,containers,40,FREE,
+-1815549876,test,trucks,20,FREE,
+-578452959,test,small buses,15.38461538,FREE,
+-578452959,test,large buses,3.846153846,FREE,
+-806818884,test,trucks,25,FREE,
+-806818884,test,vans,50,FREE,
+-682137487,test,small bouquets,46.66666667,FREE,
+-682137487,test,large bouquets,23.33333333,FREE,
+1725654106,test,new one,0,AT_LOWER,own_lb
+1725654106,test,old one,14.28571429,FREE,
+-1489352929,test,bus,10,AT_UPPER,c0_upperbound(upper)
+-1489352929,test,car,16.66666667,FREE,
+-1742967011,test,helicopters,8,FREE,
+-1742967011,test,trucks,8,AT_UPPER,c1_upperbound(upper)
+-2015083686,test,small,91,FREE,
+-2015083686,test,large,3,AT_LOWER,c2_lowerbound(lower)
+1678710144,test,electric bikes,26.08695652,FREE,
+1678710144,test,scooters,60.86956522,FREE,
+-1598952138,test,large,7.5,FREE,
+-1598952138,test,small,7.5,FREE,
+-1533701072,test,small,44.44444444,FREE,
+-1533701072,test,large,22.22222222,FREE,
+1645157200,test,scooter,75,FREE,
+1645157200,test,rickshaw,50,FREE,
+1798416293,test,camels,10,FREE,
+1798416293,test,horses,8.333333333,FREE,
+1133974368,test,small,46.66666667,FREE,
+1133974368,test,large,23.33333333,FREE,
+686025796,test,regular,20,AT_UPPER,c0_upperbound(upper)
+686025796,test,speed boats,20,FREE,
+2137478401,test,bus,7.5,FREE,
+2137478401,test,car,11.25,FREE,
+1815576357,test,van,9.375,FREE,
+1815576357,test,minibus,9.375,FREE,
+-1715698555,test,small,40,FREE,
+-1715698555,test,large bins,4,AT_LOWER,c3_lowerbound(lower)
+-125243875,test,seasonal,14.63414634,FREE,
+-125243875,test,full-time,34.14634146,FREE,
+532983159,test,small,400,FREE,
+532983159,test,large,400,FREE,
+-180744128,test,tractor,6.25,FREE,
+-180744128,test,car,12.5,FREE,
+-920049049,test,bike,78.94736842,FREE,
+-920049049,test,car,52.63157895,FREE,
+-591967366,test,cargo planes,12.5,FREE,
+-591967366,test,ultrawide trucks,12.5,FREE,
+-1464324143,test,small,16.66666667,FREE,
+-1464324143,test,large,8.333333333,FREE,
+1476803282,test,submarine,5.555555556,FREE,
+1476803282,test,boat,5.555555556,FREE,
+1532977517,test,helicopter,5,AT_UPPER,c0_upperbound(upper)
+1532977517,test,car,7.5,FREE,
+1074978508,test,hot-air balloon,0,AT_LOWER,own_lb
+1074978508,test,gondola lift,11.66666667,FREE,
+-1587539848,test,medium,18,FREE,
+-1587539848,test,large,6,FREE,
+119901001,test,labradors,0,AT_LOWER,own_lb
+119901001,test,golden retrievers,250,FREE,
+2097908663,test,cows,14.28571429,FREE,
+2097908663,test,elephants,14.28571429,FREE,
+-352305044,test,ferry,6.25,FREE,
+-352305044,test,light rail,25,FREE,
+-355727939,test,taxis,76.92307692,FREE,
+-355727939,test,company cars,115.3846154,FREE,
+-1473799322,test,small crates,45,FREE,
+-1473799322,test,large crates,15,FREE,
+-1981528237,test,truck,5,AT_UPPER,c0_upperbound(upper)
+-1981528237,test,car,8.333333333,FREE,
+777636520,test,helicopter,24,FREE,
+777636520,test,bus,0,AT_LOWER,own_lb
+-1499435338,test,car,55,FREE,
+-1499435338,test,bus,4,AT_UPPER,c1_upperbound(upper)
+892143253,test,carrier pigeons,157.8947368,FREE,
+892143253,test,owls,105.2631579,FREE,
+-1807102910,test,large,4.285714286,FREE,
+-1807102910,test,small ships,4.285714286,FREE,
+1137689014,test,small canoes,66.66666667,FREE,
+1137689014,test,smaller diesel boats,22.22222222,FREE,
+-717448510,test,vans,15.38461538,FREE,
+-717448510,test,cars,35.8974359,FREE,
+981967779,test,hamburgers,3.5,FREE,
+981967779,test,chicken wraps,0,AT_LOWER,own_lb
+1797952873,test,hams,0,AT_LOWER,own_lb
+1797952873,test,pork ribs,1142.857143,FREE,
+465775172,test,refrigerators,333.3333333,FREE,
+465775172,test,stoves,0,AT_LOWER,own_lb
+587452310,test,desks,0,AT_LOWER,own_lb
+587452310,test,drawers,133.3333333,FREE,
+1146360292,test,black milk tea,50,FREE,
+1146360292,test,matcha milk tea,0,AT_LOWER,own_lb
+37344130,test,milk,2.5,FREE,
+37344130,test,vegetables,0,AT_LOWER,own_lb
+1054847148,test,protein bars,2.514285714,FREE,
+1054847148,test,noodles,2.285714286,FREE,
+-1385190693,test,plush toys,190,AT_UPPER,c2_upperbound(upper)
+-1385190693,test,dolls,65,FREE,
+256126407,test,graph paper,0,AT_LOWER,own_lb
+256126407,test,music paper,116.6666667,FREE,
+1973401520,test,health supplement A,0,AT_LOWER,own_lb
+1973401520,test,health supplement B.,6.666666667,FREE,
+2078904807,test,regular brand,2.045454545,FREE,
+2078904807,test,premium brand,0.5681818182,FREE,
+-443833341,test,light oil,33.33333333,FREE,
+-443833341,test,non-sticky oil,25,FREE,
+-443833341,test,heavy oil,0,AT_LOWER,own_lb
+-1289899123,test,laminate planks,40000,AT_UPPER,c3_upperbound(upper)
+-1289899123,test,carpets,20000,AT_UPPER,c4_upperbound(upper)
+25391666,test,supplement A,8,FREE,
+25391666,test,supplement B,0,AT_LOWER,own_lb
+-708051064,test,regular handbags,0,AT_LOWER,own_lb
+-708051064,test,premium handbags,475,FREE,
+-1062928915,test,basketball tournament,0.6,FREE,
+-1062928915,test,horse race,0,AT_LOWER,own_lb
+-1062928915,test,soccer game,0,AT_LOWER,own_lb
+1383248270,test,freezers,160,FREE,
+1383248270,test,washing machine,0,AT_LOWER,own_lb
+-114149479,test,crepe cakes,100,FREE,
+-114149479,test,sponge cakes,0,AT_LOWER,own_lb
+-114149479,test,birthday cakes,0,AT_LOWER,own_lb
+-1587622119,test,first mix,30,FREE,
+-1587622119,test,second mix,40,FREE,
+-1412758703,test,regular tacos,30,FREE,
+-1412758703,test,deluxe tacos,40,AT_UPPER,c1_upperbound(upper)
+25709243,test,math workbooks,140,AT_UPPER,c2_upperbound(upper)
+25709243,test,English workbooks,170,AT_UPPER,c3_upperbound(upper)
+-926961422,test,full-weighted,0,AT_LOWER,own_lb
+-926961422,test,semi-weighted,233.3333333,FREE,
+1294399767,test,personal license,137.9310345,FREE,
+1294399767,test,commercial license,162.0689655,FREE,
+2014574459,test,strawberry cookie,20,FREE,
+2014574459,test,sugar cookie,80,AT_UPPER,c1_upperbound(upper)
+-38479566,test,Pi TV,2.093023256,FREE,
+-38479566,test,Beta Video,8,AT_UPPER,c0_upperbound(upper)
+-38479566,test,Gamma Live,0.3720930233,FREE,
+237749763,test,temperature check,10775,FREE,
+237749763,test,blood test,45,AT_LOWER,c1_lowerbound(lower)
+-568965344,test,wide pipes,12.85714286,FREE,
+-568965344,test,narrow pipes,38.57142857,FREE,
+181608358,test,carts,18,FREE,
+181608358,test,trolleys,12,AT_LOWER,c1_lowerbound(lower)
+412957315,test,subsoil,23.33333333,FREE,
+412957315,test,topsoil,10,AT_LOWER,c1_lowerbound(lower)
+1714978926,test,densely-seated one,20,FREE,
+1714978926,test,loosely-seated one,5,AT_LOWER,c0_lowerbound(lower)
+1461222631,test,calcium pills,90,FREE,
+1461222631,test,vitamin D pills,40,AT_LOWER,c1_lowerbound(lower)
+1687568297,test,throwing,42.5,FREE,
+1687568297,test,climbing games,5,AT_LOWER,c1_lowerbound(lower)
+450578779,test,circular tables,60,FREE,
+450578779,test,rectangular tables,50,FREE,
+-145322229,test,high-volume and,5,FREE,
+-145322229,test,low-volume one,20,FREE,
+698081777,test,molars,45,AT_LOWER,c2_lowerbound(lower)
+698081777,test,canines,67.5,FREE,
+1378302908,test,bikes,35,FREE,
+1378302908,test,scooters,5,AT_LOWER,c3_lowerbound(lower)
+653949473,test,pop,38.46153846,FREE,
+653949473,test,R&B.,25.64102564,FREE,
+358299194,test,large pizza,628.5714286,FREE,
+358299194,test,medium pizza,314.2857143,FREE,
+395600048,test,limousine,20.28985507,FREE,
+395600048,test,bus,8.695652174,FREE,
+-737389251,test,prevention,583.3333333,FREE,
+-737389251,test,treatment,50,AT_LOWER,c2_lowerbound(lower)
+-2138755435,test,cart,7,FREE,
+-2138755435,test,hand,3,AT_LOWER,c1_lowerbound(lower)
+1832323222,test,salmon,4.615384615,FREE,
+1832323222,test,eggs,3.076923077,FREE,
+905906224,test,original,0,AT_LOWER,own_lb
+905906224,test,experimental meal,0,AT_LOWER,own_lb
+1148198628,test,chop saw,8.8,FREE,
+1148198628,test,steel cutter,60,FREE,
+960620706,test,large cruise ship,7,AT_UPPER,c1_upperbound(upper)
+960620706,test,small cruise ship,7.5,FREE,
+1436660235,test,LED fixture,210,FREE,
+1436660235,test,fluorescence lamp,90,FREE,
+713346505,test,retail store,6,FREE,
+713346505,test,factory outlet,0,AT_LOWER,own_lb
+358766780,test,freight,31.81818182,FREE,
+358766780,test,air,13.63636364,FREE,
+-756853497,test,large mobile production units,15,FREE,
+-756853497,test,small mobile production units,5,AT_LOWER,c0_lowerbound(lower)
+-1833947525,test,small boxes,18.75,FREE,
+-1833947525,test,large boxes,6.25,FREE,
+915960254,test,automatic electric one,8.333333333,AT_UPPER,c1_linear(upper)
+915960254,test,gas-powered one,11.42857143,AT_UPPER,c2_linear(upper)
+-258335120,test,palladium-heavy catalyst,5.172413793,FREE,
+-258335120,test,platinum-heavy catalyst,18.62068966,FREE,
+1270045886,test,process J,0,AT_LOWER,own_lb
+1270045886,test,process P.,250,FREE,
+-318455198,test,escalators,17.64705882,FREE,
+-318455198,test,elevators,5.882352941,FREE,
+-15543151,test,method A,0,AT_LOWER,own_lb
+-15543151,test,method B.,40,FREE,
+-876754599,test,kayak,393.75,FREE,
+-876754599,test,motorboat,25,AT_UPPER,c1_upperbound(upper)
+-876754599,test,Kayaks,106.25,FREE,
+346332840,test,specialized third-party,166.6666667,FREE,
+346332840,test,common third-party annotation company,0,AT_LOWER,own_lb
+-1396068089,test,golf carts,17.14285714,FREE,
+-1396068089,test,pull carts,11.42857143,FREE,
+-1210596886,test,acai berry smoothie,0,AT_LOWER,own_lb
+-1210596886,test,banana chocolate smoothie,0,AT_LOWER,own_lb
+249931530,test,basketballs,250,FREE,
+249931530,test,footballs,83.33333333,FREE,
+1384123609,test,in-vivo,0,AT_LOWER,own_lb
+1384123609,test,ex-vivo,0,AT_LOWER,own_lb
+1738773919,test,runners,40.11976048,FREE,
+1738773919,test,canoers,19.76047904,FREE,
+-169306566,test,smoothie,0,AT_LOWER,own_lb
+-169306566,test,protein bar,8,FREE,
+1958482161,test,northern factory,1000,FREE,
+1958482161,test,western factory,0,AT_LOWER,own_lb
+1240783644,test,medication patches,30.76923077,FREE,
+1240783644,test,anti-biotic creams,61.53846154,FREE,
+-550351289,test,camel caravans,7.5,FREE,
+-550351289,test,desert trucks,7.5,FREE,
+-1243268146,test,first-dose,40,FREE,
+-1243268146,test,second-dose,40,AT_LOWER,c2_lowerbound(lower)
+-2004165813,test,chemical A,375,FREE,
+-2004165813,test,chemical B,1125,FREE,
+1108621669,test,sedans,0,AT_LOWER,own_lb
+1108621669,test,buses,18.4,FREE,
+-685300642,test,matcha ice cream,0,AT_LOWER,own_lb
+-685300642,test,orange sorbet,0,AT_LOWER,own_lb
+-735986381,test,bus,8.888888889,FREE,
+-735986381,test,personal car,5,AT_LOWER,c1_lowerbound(lower)
+-913518185,test,coconut oil,300,AT_LOWER,c0_lowerbound(lower)
+-913518185,test,lavender,100,FREE,
+772460666,test,salinity test,166.6666667,FREE,
+772460666,test,pH test,250,AT_LOWER,c0_lowerbound(lower)
+-1677324863,test,full-time and,18.75,FREE,
+-1677324863,test,part-time staff,16.66666667,FREE,
+1878130600,test,heavy-duty yard machine,0,AT_LOWER,own_lb
+1878130600,test,gas lawn mower,0,AT_LOWER,own_lb
+2018818116,test,wide trail,0,AT_LOWER,own_lb
+2018818116,test,narrow trail,0,AT_LOWER,own_lb
+2078392466,test,wine,0,AT_LOWER,own_lb
+2078392466,test,kombucha,0,AT_LOWER,own_lb
+-527722703,test,type II ambulance,7.529411765,FREE,
+-527722703,test,hospital van,11.29411765,FREE,
+-636643683,test,argon gas approach,0,AT_LOWER,own_lb
+-636643683,test,halogen gas approach,7,FREE,

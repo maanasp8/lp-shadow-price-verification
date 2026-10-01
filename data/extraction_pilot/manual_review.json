@@ -1,0 +1,574 @@
+[
+  {
+    "problem_id": "-1970166929",
+    "cell": "objective[GPUs]",
+    "reason": "non_numeric_raw",
+    "raw": "4%",
+    "gt_value": 0.04,
+    "extracted": null
+  },
+  {
+    "problem_id": "-1970166929",
+    "cell": "objective[CPUs]",
+    "reason": "non_numeric_raw",
+    "raw": "6%",
+    "gt_value": 0.06,
+    "extracted": null
+  },
+  {
+    "problem_id": "-1970166929",
+    "cell": "objective[software]",
+    "reason": "non_numeric_raw",
+    "raw": "11%",
+    "gt_value": 0.11,
+    "extracted": null
+  },
+  {
+    "problem_id": "-1970166929",
+    "cell": "objective[mobile devices]",
+    "reason": "non_numeric_raw",
+    "raw": "8%",
+    "gt_value": 0.08,
+    "extracted": null
+  },
+  {
+    "problem_id": "-1970166929",
+    "cell": "c0_sum.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "sum",
+    "canonical_reference": {
+      "GPUs": 1.0,
+      "CPUs": 1.0,
+      "software": 1.0,
+      "mobile devices": 1.0
+    },
+    "extracted": {
+      "'amount invested in gpus' (unrecognised)": 1,
+      "'amount invested in cpus' (unrecognised)": 1,
+      "'amount invested in software' (unrecognised)": 1,
+      "'amount invested in mobile devices' (unrecognised)": 1
+    }
+  },
+  {
+    "problem_id": "-1970166929",
+    "cell": "c1_xy.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "xy",
+    "canonical_reference": {
+      "GPUs": 1.0,
+      "CPUs": -1.0
+    },
+    "extracted": {
+      "'amount invested in gpus' (unrecognised)": 1,
+      "'amount invested in cpus' (unrecognised)": 1
+    }
+  },
+  {
+    "problem_id": "-1970166929",
+    "cell": "c2_xy.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "xy",
+    "canonical_reference": {
+      "mobile devices": 1.0,
+      "software": -1.0
+    },
+    "extracted": {
+      "'amount invested in software' (unrecognised)": 1,
+      "'amount invested in mobile devices' (unrecognised)": 1
+    }
+  },
+  {
+    "problem_id": "-1970166929",
+    "cell": "c3_ratio.limit",
+    "reason": "non_numeric_raw",
+    "raw": "9%",
+    "gt_value": 0.09,
+    "extracted": 9
+  },
+  {
+    "problem_id": "-1970166929",
+    "cell": "c3_ratio.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "ratio",
+    "canonical_reference": {
+      "GPUs": 0.91,
+      "CPUs": -0.09,
+      "software": -0.09,
+      "mobile devices": -0.09
+    },
+    "extracted": {
+      "'amount invested in gpus' (unrecognised)": 1
+    }
+  },
+  {
+    "problem_id": "-1062928915",
+    "cell": "c0_sum.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "sum",
+    "canonical_reference": {
+      "basketball tournament": 1.0,
+      "horse race": 1.0,
+      "soccer game": 1.0
+    },
+    "extracted": {
+      "'money put on basketball tournament' (unrecognised)": 1,
+      "'money put on horse race' (unrecognised)": 1,
+      "'money put on soccer game' (unrecognised)": 1
+    }
+  },
+  {
+    "problem_id": "-1062928915",
+    "cell": "c1_linear.limit",
+    "reason": "non_numeric_raw",
+    "raw": "30%",
+    "gt_value": 0.3,
+    "extracted": 30
+  },
+  {
+    "problem_id": "-1062928915",
+    "cell": "c1_linear[basketball tournament]",
+    "reason": "non_numeric_raw",
+    "raw": "50%",
+    "gt_value": 0.5,
+    "extracted": null
+  },
+  {
+    "problem_id": "-1062928915",
+    "cell": "c1_linear[horse race]",
+    "reason": "non_numeric_raw",
+    "raw": "25%",
+    "gt_value": 0.25,
+    "extracted": null
+  },
+  {
+    "problem_id": "-1062928915",
+    "cell": "c1_linear[soccer game]",
+    "reason": "non_numeric_raw",
+    "raw": "10%",
+    "gt_value": 0.1,
+    "extracted": null
+  },
+  {
+    "problem_id": "-615992646",
+    "cell": "objective[biotech]",
+    "reason": "non_numeric_raw",
+    "raw": "4%",
+    "gt_value": 0.04,
+    "extracted": null
+  },
+  {
+    "problem_id": "-615992646",
+    "cell": "objective[food]",
+    "reason": "non_numeric_raw",
+    "raw": "6%",
+    "gt_value": 0.06,
+    "extracted": null
+  },
+  {
+    "problem_id": "-615992646",
+    "cell": "objective[finance]",
+    "reason": "non_numeric_raw",
+    "raw": "8%",
+    "gt_value": 0.08,
+    "extracted": null
+  },
+  {
+    "problem_id": "-615992646",
+    "cell": "objective[health care]",
+    "reason": "non_numeric_raw",
+    "raw": "10%",
+    "gt_value": 0.1,
+    "extracted": null
+  },
+  {
+    "problem_id": "-615992646",
+    "cell": "c0_xy.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "xy",
+    "canonical_reference": {
+      "food industry": 1.0,
+      "finance industry": -1.0
+    },
+    "extracted": {
+      "'amount invested in biotech industry' (unrecognised)": 1,
+      "'amount invested in food industry' (unrecognised)": 1,
+      "'amount invested in finance industry' (unrecognised)": 1,
+      "'amount invested in health care industry' (unrecognised)": 1
+    }
+  },
+  {
+    "problem_id": "-615992646",
+    "cell": "c1_ratio.limit",
+    "reason": "non_numeric_raw",
+    "raw": "30%",
+    "gt_value": 0.3,
+    "extracted": "ABSENT"
+  },
+  {
+    "problem_id": "-615992646",
+    "cell": "c1_ratio.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "ratio",
+    "canonical_reference": {
+      "health care": 0.7,
+      "biotech industry": -0.3,
+      "food industry": -0.3,
+      "finance industry": -0.3
+    },
+    "extracted": {
+      "'amount invested in biotech industry' (unrecognised)": 1,
+      "'amount invested in health care industry' (unrecognised)": 1
+    }
+  },
+  {
+    "problem_id": "645706426",
+    "cell": "c0_upperbound.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "upperbound",
+    "canonical_reference": {
+      "buses": 1.0
+    },
+    "extracted": {
+      "'number of ads on buses' (unrecognised)": 1
+    }
+  },
+  {
+    "problem_id": "645706426",
+    "cell": "c1_ratio.limit",
+    "reason": "non_numeric_raw",
+    "raw": "30%",
+    "gt_value": 0.3,
+    "extracted": 30
+  },
+  {
+    "problem_id": "645706426",
+    "cell": "c1_ratio.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "ratio",
+    "canonical_reference": {
+      "taxis": 0.7,
+      "buses": -0.3,
+      "privately owned cars": -0.3
+    },
+    "extracted": {
+      "'number of ads on taxis' (unrecognised)": 1
+    }
+  },
+  {
+    "problem_id": "645706426",
+    "cell": "c2_ratio.limit",
+    "reason": "non_numeric_raw",
+    "raw": "20%",
+    "gt_value": 0.2,
+    "extracted": 20
+  },
+  {
+    "problem_id": "645706426",
+    "cell": "c2_ratio.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "ratio",
+    "canonical_reference": {
+      "privately owned cars": 0.8,
+      "taxis": -0.2,
+      "buses": -0.2
+    },
+    "extracted": {
+      "'number of ads on privately owned cars' (unrecognised)": 1
+    }
+  },
+  {
+    "problem_id": "1855357113",
+    "cell": "objective[solar]",
+    "reason": "non_numeric_raw",
+    "raw": "6%",
+    "gt_value": 0.06,
+    "extracted": null
+  },
+  {
+    "problem_id": "1855357113",
+    "cell": "objective[wind]",
+    "reason": "non_numeric_raw",
+    "raw": "9%",
+    "gt_value": 0.09,
+    "extracted": null
+  },
+  {
+    "problem_id": "1855357113",
+    "cell": "objective[nuclear]",
+    "reason": "non_numeric_raw",
+    "raw": "12%",
+    "gt_value": 0.12,
+    "extracted": null
+  },
+  {
+    "problem_id": "1855357113",
+    "cell": "objective[coal]",
+    "reason": "non_numeric_raw",
+    "raw": "3%",
+    "gt_value": 0.03,
+    "extracted": null
+  },
+  {
+    "problem_id": "1855357113",
+    "cell": "c0_xy.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "xy",
+    "canonical_reference": {
+      "coal": 1.0,
+      "solar": -1.0
+    },
+    "extracted": {
+      "'amount invested in solar' (unrecognised)": 1,
+      "'amount invested in wind' (unrecognised)": 1,
+      "'amount invested in nuclear' (unrecognised)": 1,
+      "'amount invested in coal' (unrecognised)": 1
+    }
+  },
+  {
+    "problem_id": "1855357113",
+    "cell": "c1_xy.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "xy",
+    "canonical_reference": {
+      "wind": 1.0,
+      "nuclear": -1.0
+    },
+    "extracted": {
+      "'amount invested in solar' (unrecognised)": 1,
+      "'amount invested in coal' (unrecognised)": 1
+    }
+  },
+  {
+    "problem_id": "1855357113",
+    "cell": "c2_ratio.limit",
+    "reason": "non_numeric_raw",
+    "raw": "10%",
+    "gt_value": 0.1,
+    "extracted": "ABSENT"
+  },
+  {
+    "problem_id": "1855357113",
+    "cell": "c2_ratio.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "ratio",
+    "canonical_reference": {
+      "coal": 0.9,
+      "solar": -0.1,
+      "wind": -0.1,
+      "nuclear": -0.1
+    },
+    "extracted": {
+      "'amount invested in wind' (unrecognised)": 1,
+      "'amount invested in nuclear' (unrecognised)": 1
+    }
+  },
+  {
+    "problem_id": "-1921036549",
+    "cell": "c0_xby.param",
+    "reason": "non_numeric_raw",
+    "ctype": "xby",
+    "raw": "half",
+    "gt_value": 0.5,
+    "extracted_limit": "ABSENT"
+  },
+  {
+    "problem_id": "-1921036549",
+    "cell": "c0_xby.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "xby",
+    "canonical_reference": {
+      "chorine": 1.0,
+      "water softener": -0.5
+    },
+    "extracted": {
+      "'units of chlorine' (unrecognised)": 1,
+      "'units of water softener' (unrecognised)": 0.5
+    }
+  },
+  {
+    "problem_id": "-1921036549",
+    "cell": "c1_lowerbound.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "lowerbound",
+    "canonical_reference": {
+      "chorine": 1.0
+    },
+    "extracted": {
+      "'units of chlorine' (unrecognised)": 1
+    }
+  },
+  {
+    "problem_id": "-1448607152",
+    "cell": "c0_lowerbound.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "lowerbound",
+    "canonical_reference": {
+      "high-power model": 1.0
+    },
+    "extracted": {
+      "'number of high-power air conditioners' (unrecognised)": 1
+    }
+  },
+  {
+    "problem_id": "-1448607152",
+    "cell": "c3_ratio.limit",
+    "reason": "non_numeric_raw",
+    "raw": "30%",
+    "gt_value": 0.3,
+    "extracted": 30
+  },
+  {
+    "problem_id": "-1448607152",
+    "cell": "c3_ratio.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "ratio",
+    "canonical_reference": {
+      "low-power": 0.7,
+      "high-power model": -0.3
+    },
+    "extracted": {}
+  },
+  {
+    "problem_id": "584268166",
+    "cell": "c2_xy.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "xy",
+    "canonical_reference": {
+      "regular package": 1.0,
+      "premium package": -1.0
+    },
+    "extracted": {
+      "'number of regular packages' (unrecognised)": 1,
+      "'number of premium packages' (unrecognised)": 1
+    }
+  },
+  {
+    "problem_id": "584268166",
+    "cell": "c3_lowerbound.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "lowerbound",
+    "canonical_reference": {
+      "regular package": 1.0
+    },
+    "extracted": {
+      "'number of regular packages' (unrecognised)": 1
+    }
+  },
+  {
+    "problem_id": "741805703",
+    "cell": "c0_lowerbound.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "lowerbound",
+    "canonical_reference": {
+      "desk-lamps": 1.0
+    },
+    "extracted": {
+      "desk-lamps": 1
+    }
+  },
+  {
+    "problem_id": "741805703",
+    "cell": "c1_lowerbound.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "lowerbound",
+    "canonical_reference": {
+      "night-lamps": 1.0
+    },
+    "extracted": {
+      "night-lamps": 1
+    }
+  },
+  {
+    "problem_id": "741805703",
+    "cell": "c2_upperbound.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "upperbound",
+    "canonical_reference": {
+      "desk-lamps": 1.0
+    },
+    "extracted": {
+      "desk-lamps": 1
+    }
+  },
+  {
+    "problem_id": "741805703",
+    "cell": "c3_upperbound.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "upperbound",
+    "canonical_reference": {
+      "night-lamps": 1.0
+    },
+    "extracted": {
+      "night-lamps": 1
+    }
+  },
+  {
+    "problem_id": "741805703",
+    "cell": "c4_sum.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "sum",
+    "canonical_reference": {
+      "desk-lamps": 1.0,
+      "night-lamps": 1.0
+    },
+    "extracted": {
+      "desk-lamps": 1,
+      "night-lamps": 1
+    }
+  },
+  {
+    "problem_id": "1030062804",
+    "cell": "c2_xby.param",
+    "reason": "non_numeric_raw",
+    "ctype": "xby",
+    "raw": "3 times",
+    "gt_value": 3.0,
+    "extracted_limit": "ABSENT"
+  },
+  {
+    "problem_id": "1030062804",
+    "cell": "c2_xby.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "xby",
+    "canonical_reference": {
+      "milk": 1.0,
+      "protein shakes": -3.0
+    },
+    "extracted": {
+      "'glasses of protein shake' (unrecognised)": 3
+    }
+  },
+  {
+    "problem_id": "1231061056",
+    "cell": "c1_ratio.limit",
+    "reason": "non_numeric_raw",
+    "raw": "50%",
+    "gt_value": 0.5,
+    "extracted": 50
+  },
+  {
+    "problem_id": "1231061056",
+    "cell": "c1_ratio.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "ratio",
+    "canonical_reference": {
+      "beds": 0.5,
+      "couches": -0.5
+    },
+    "extracted": {}
+  },
+  {
+    "problem_id": "1655680875",
+    "cell": "c0_sum.coefficients",
+    "reason": "implicit_structural_coefficient",
+    "ctype": "sum",
+    "canonical_reference": {
+      "corn": 1.0,
+      "cabbage": 1.0
+    },
+    "extracted": {
+      "'acres of corn' (unrecognised)": 1,
+      "'acres of cabbage' (unrecognised)": 1
+    }
+  }
+]

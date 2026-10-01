@@ -1,0 +1,309 @@
+{
+  "problem_id": "-615992646",
+  "run_on": "2026-08-05",
+  "model": "claude-opus-5",
+  "params": {
+    "max_tokens": 16000,
+    "effort": "high",
+    "thinking": {
+      "type": "adaptive"
+    },
+    "temperature": null,
+    "temperature_note": "not sent; rejected on this model"
+  },
+  "raw_prompt": {
+    "system": "You extract the numbers of a linear-programming word problem into a typed slot table. You are not building or solving a model.\n\nReport only what the text states. Follow these rules exactly.\n\nVARIABLES\n- List every decision quantity the problem asks the reader to choose, using the wording the text uses.\n- Do not invent variables for quantities that are given, not chosen.\n\nOBJECTIVE\n- `sense` is \"max\" or \"min\", whichever the text asks for.\n- Give one term per variable that carries an objective coefficient in the text.\n- If a variable appears in the problem but the text gives it no objective coefficient, emit a term for it with coefficient \"ABSENT\".\n\nCONSTRAINTS\n- One entry per constraint the text states. Give each a short id of your choosing and quote the span of the source text it comes from in `quoted_text`.\n- `operator` is \"<=\", \">=\" or \"==\" as the text implies.\n- `limit` is the number on the other side of the comparison.\n- Give one term per variable, for every variable you listed. If a variable does not appear in that constraint, emit a term for it with coefficient \"ABSENT\". Never omit a variable from a constraint's term list \u2014 say \"ABSENT\" instead.\n\nNUMBERS\n- Normalize every number to a plain decimal: no thousands separators, no currency marks, no percent signs, no units, no words.\n- Write a percentage as the number the text writes, not as a fraction: \"30%\" becomes 30, not 0.3.\n- Write a word-number as its digits: \"twice\" becomes 2, \"a third\" becomes 0.333.\n- If a number is stated but you cannot normalize it, use \"ABSENT\".\n\nDO NOT\n- Do not autoformulate. Do not rearrange a constraint, move terms across the comparison, combine constraints, or introduce a coefficient the text does not state.\n- Do not fold units, rates, or conversions into a coefficient.\n- Do not add non-negativity, integrality, or any constraint the text does not state.\n- Do not fill a missing number with a default such as 1. Use \"ABSENT\".",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Extract the slot table for this problem.\n\n<problem>\nA man has $1000000 to invest in four industries. He can invest in the biotech industry, food industry, finance industry, and health care industry. The return on investment for each of the industries is as follows: biotech, 4%; food, 6%; finance, 8%; and health care 10%. To be safe, he wants to make sure the amount invested in the health care industry does not exceed the amount invested in the biotech industry. Also the amount invested in the food industry cannot exceed the amount invested in the finance industry. Lastly, at most 30% of the investment can be in the health care industry. How much should he invested in each industry to maximize his returns?\n</problem>"
+      }
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "variables": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Every decision quantity the problem asks the reader to choose."
+      },
+      "objective": {
+        "type": "object",
+        "properties": {
+          "sense": {
+            "type": "string",
+            "enum": [
+              "max",
+              "min"
+            ]
+          },
+          "terms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "variable": {
+                  "type": "string"
+                },
+                "coefficient": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string",
+                      "const": "ABSENT"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "variable",
+                "coefficient"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "sense",
+          "terms"
+        ],
+        "additionalProperties": false
+      },
+      "constraints": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "quoted_text": {
+              "type": "string"
+            },
+            "operator": {
+              "type": "string",
+              "enum": [
+                "<=",
+                ">=",
+                "=="
+              ]
+            },
+            "limit": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string",
+                  "const": "ABSENT"
+                }
+              ]
+            },
+            "terms": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "variable": {
+                    "type": "string"
+                  },
+                  "coefficient": {
+                    "anyOf": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "string",
+                        "const": "ABSENT"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "variable",
+                  "coefficient"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "id",
+            "quoted_text",
+            "operator",
+            "limit",
+            "terms"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "variables",
+      "objective",
+      "constraints"
+    ],
+    "additionalProperties": false
+  },
+  "elapsed_s": 8.28633637499297,
+  "stop_reason": "end_turn",
+  "stop_details": null,
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1833,
+    "output_tokens": 835,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "response_model": "claude-opus-5",
+  "request_id": "req_011CdkFEmX1C3iVioACPn7JL",
+  "raw_response": [
+    {
+      "citations": null,
+      "text": "{\"variables\":[\"amount invested in biotech industry\",\"amount invested in food industry\",\"amount invested in finance industry\",\"amount invested in health care industry\"],\"objective\":{\"sense\":\"max\",\"terms\":[{\"variable\":\"amount invested in biotech industry\",\"coefficient\":4},{\"variable\":\"amount invested in food industry\",\"coefficient\":6},{\"variable\":\"amount invested in finance industry\",\"coefficient\":8},{\"variable\":\"amount invested in health care industry\",\"coefficient\":10}]},\"constraints\":[{\"id\":\"budget\",\"quoted_text\":\"A man has $1000000 to invest in four industries.\",\"operator\":\"<=\",\"limit\":1000000,\"terms\":[{\"variable\":\"amount invested in biotech industry\",\"coefficient\":1},{\"variable\":\"amount invested in food industry\",\"coefficient\":1},{\"variable\":\"amount invested in finance industry\",\"coefficient\":1},{\"variable\":\"amount invested in health care industry\",\"coefficient\":1}]},{\"id\":\"health_vs_biotech\",\"quoted_text\":\"he wants to make sure the amount invested in the health care industry does not exceed the amount invested in the biotech industry\",\"operator\":\"<=\",\"limit\":\"ABSENT\",\"terms\":[{\"variable\":\"amount invested in biotech industry\",\"coefficient\":1},{\"variable\":\"amount invested in food industry\",\"coefficient\":\"ABSENT\"},{\"variable\":\"amount invested in finance industry\",\"coefficient\":\"ABSENT\"},{\"variable\":\"amount invested in health care industry\",\"coefficient\":1}]},{\"id\":\"food_vs_finance\",\"quoted_text\":\"the amount invested in the food industry cannot exceed the amount invested in the finance industry\",\"operator\":\"<=\",\"limit\":\"ABSENT\",\"terms\":[{\"variable\":\"amount invested in biotech industry\",\"coefficient\":\"ABSENT\"},{\"variable\":\"amount invested in food industry\",\"coefficient\":1},{\"variable\":\"amount invested in finance industry\",\"coefficient\":1},{\"variable\":\"amount invested in health care industry\",\"coefficient\":\"ABSENT\"}]},{\"id\":\"health_cap\",\"quoted_text\":\"at most 30% of the investment can be in the health care industry\",\"operator\":\"<=\",\"limit\":30,\"terms\":[{\"variable\":\"amount invested in biotech industry\",\"coefficient\":\"ABSENT\"},{\"variable\":\"amount invested in food industry\",\"coefficient\":\"ABSENT\"},{\"variable\":\"amount invested in finance industry\",\"coefficient\":\"ABSENT\"},{\"variable\":\"amount invested in health care industry\",\"coefficient\":1}]}]}",
+      "type": "text"
+    }
+  ],
+  "ok": true,
+  "extraction": {
+    "variables": [
+      "amount invested in biotech industry",
+      "amount invested in food industry",
+      "amount invested in finance industry",
+      "amount invested in health care industry"
+    ],
+    "objective": {
+      "sense": "max",
+      "terms": [
+        {
+          "variable": "amount invested in biotech industry",
+          "coefficient": 4
+        },
+        {
+          "variable": "amount invested in food industry",
+          "coefficient": 6
+        },
+        {
+          "variable": "amount invested in finance industry",
+          "coefficient": 8
+        },
+        {
+          "variable": "amount invested in health care industry",
+          "coefficient": 10
+        }
+      ]
+    },
+    "constraints": [
+      {
+        "id": "budget",
+        "quoted_text": "A man has $1000000 to invest in four industries.",
+        "operator": "<=",
+        "limit": 1000000,
+        "terms": [
+          {
+            "variable": "amount invested in biotech industry",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in food industry",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in finance industry",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in health care industry",
+            "coefficient": 1
+          }
+        ]
+      },
+      {
+        "id": "health_vs_biotech",
+        "quoted_text": "he wants to make sure the amount invested in the health care industry does not exceed the amount invested in the biotech industry",
+        "operator": "<=",
+        "limit": "ABSENT",
+        "terms": [
+          {
+            "variable": "amount invested in biotech industry",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in food industry",
+            "coefficient": "ABSENT"
+          },
+          {
+            "variable": "amount invested in finance industry",
+            "coefficient": "ABSENT"
+          },
+          {
+            "variable": "amount invested in health care industry",
+            "coefficient": 1
+          }
+        ]
+      },
+      {
+        "id": "food_vs_finance",
+        "quoted_text": "the amount invested in the food industry cannot exceed the amount invested in the finance industry",
+        "operator": "<=",
+        "limit": "ABSENT",
+        "terms": [
+          {
+            "variable": "amount invested in biotech industry",
+            "coefficient": "ABSENT"
+          },
+          {
+            "variable": "amount invested in food industry",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in finance industry",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in health care industry",
+            "coefficient": "ABSENT"
+          }
+        ]
+      },
+      {
+        "id": "health_cap",
+        "quoted_text": "at most 30% of the investment can be in the health care industry",
+        "operator": "<=",
+        "limit": 30,
+        "terms": [
+          {
+            "variable": "amount invested in biotech industry",
+            "coefficient": "ABSENT"
+          },
+          {
+            "variable": "amount invested in food industry",
+            "coefficient": "ABSENT"
+          },
+          {
+            "variable": "amount invested in finance industry",
+            "coefficient": "ABSENT"
+          },
+          {
+            "variable": "amount invested in health care industry",
+            "coefficient": 1
+          }
+        ]
+      }
+    ]
+  }
+}

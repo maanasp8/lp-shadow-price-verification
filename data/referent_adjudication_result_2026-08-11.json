@@ -1,0 +1,891 @@
+{
+  "generated": "2026-08-11",
+  "source_calls": "referent_adjudication_sheet_2026-08-07.csv",
+  "n_calls": 54,
+  "n_accepted": 54,
+  "n_rejected": 0,
+  "raw_call_values": [
+    "Y",
+    "y"
+  ],
+  "note": "Adjudicated figures are a derived layer. scores.json is unaltered and remains the as-measured record. A call can only move referent accuracy in the extractor's favour; the as-measured figure is the floor.",
+  "referent_accuracy": {
+    "as_measured": {
+      "resolved": 9,
+      "total": 63,
+      "pct": 14.29
+    },
+    "adjudicated": {
+      "resolved": 63,
+      "total": 63,
+      "pct": 100.0
+    }
+  },
+  "axes": {
+    "as_measured": {
+      "numeric_correct": 73,
+      "numeric_wrong": 3,
+      "alignment_correct": 171,
+      "alignment_error": 54,
+      "content_gap": 124,
+      "spurious": 206,
+      "manual_review": 52
+    },
+    "adjudicated": {
+      "numeric_correct": 197,
+      "numeric_wrong": 3,
+      "alignment_correct": 295,
+      "alignment_error": 0,
+      "content_gap": 0,
+      "spurious": 13,
+      "manual_review": 52
+    }
+  },
+  "by_cause": {
+    "as_measured": {
+      "alignment_error": {
+        "unmatched_variable_name": 54
+      },
+      "content_gap": {
+        "cell_under_unmatched_variable": 124
+      },
+      "spurious": {
+        "unrecognised_variable_name": 54,
+        "cell_under_unrecognised_name": 139,
+        "extra_row": 13
+      }
+    },
+    "adjudicated": {
+      "alignment_error": {},
+      "content_gap": {},
+      "spurious": {
+        "extra_row": 13
+      }
+    }
+  },
+  "per_instance": {
+    "as_measured": {
+      "-1970166929": {
+        "numeric": {
+          "correct": 1,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 6,
+          "error": 4
+        },
+        "content_gap": 0,
+        "spurious": 8
+      },
+      "-1501301743": {
+        "numeric": {
+          "correct": 2,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 5,
+          "error": 3
+        },
+        "content_gap": 9,
+        "spurious": 12
+      },
+      "-1133652946": {
+        "numeric": {
+          "correct": 3,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 7,
+          "error": 3
+        },
+        "content_gap": 12,
+        "spurious": 15
+      },
+      "-1062928915": {
+        "numeric": {
+          "correct": 1,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 4,
+          "error": 3
+        },
+        "content_gap": 3,
+        "spurious": 9
+      },
+      "-615992646": {
+        "numeric": {
+          "correct": 0,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 3,
+          "error": 4
+        },
+        "content_gap": 0,
+        "spurious": 12
+      },
+      "-114149479": {
+        "numeric": {
+          "correct": 4,
+          "wrong": 3
+        },
+        "alignment": {
+          "correct": 9,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 4
+      },
+      "155829587": {
+        "numeric": {
+          "correct": 2,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 5,
+          "error": 3
+        },
+        "content_gap": 9,
+        "spurious": 12
+      },
+      "240605764": {
+        "numeric": {
+          "correct": 2,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 5,
+          "error": 3
+        },
+        "content_gap": 9,
+        "spurious": 12
+      },
+      "645706426": {
+        "numeric": {
+          "correct": 2,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 7,
+          "error": 3
+        },
+        "content_gap": 6,
+        "spurious": 9
+      },
+      "1855357113": {
+        "numeric": {
+          "correct": 0,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 4,
+          "error": 4
+        },
+        "content_gap": 0,
+        "spurious": 10
+      },
+      "-1927179020": {
+        "numeric": {
+          "correct": 2,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 5,
+          "error": 2
+        },
+        "content_gap": 6,
+        "spurious": 8
+      },
+      "-1921036549": {
+        "numeric": {
+          "correct": 1,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 4,
+          "error": 2
+        },
+        "content_gap": 2,
+        "spurious": 7
+      },
+      "-1828241964": {
+        "numeric": {
+          "correct": 3,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 7,
+          "error": 2
+        },
+        "content_gap": 8,
+        "spurious": 10
+      },
+      "-1727241372": {
+        "numeric": {
+          "correct": 3,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 7,
+          "error": 2
+        },
+        "content_gap": 8,
+        "spurious": 10
+      },
+      "-1448607152": {
+        "numeric": {
+          "correct": 3,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 8,
+          "error": 2
+        },
+        "content_gap": 6,
+        "spurious": 8
+      },
+      "-919179028": {
+        "numeric": {
+          "correct": 3,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 7,
+          "error": 2
+        },
+        "content_gap": 8,
+        "spurious": 10
+      },
+      "69065177": {
+        "numeric": {
+          "correct": 2,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 5,
+          "error": 2
+        },
+        "content_gap": 6,
+        "spurious": 8
+      },
+      "584268166": {
+        "numeric": {
+          "correct": 3,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 8,
+          "error": 2
+        },
+        "content_gap": 6,
+        "spurious": 8
+      },
+      "741805703": {
+        "numeric": {
+          "correct": 7,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 13,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "1030062804": {
+        "numeric": {
+          "correct": 2,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 6,
+          "error": 2
+        },
+        "content_gap": 6,
+        "spurious": 8
+      },
+      "1092036773": {
+        "numeric": {
+          "correct": 11,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 15,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "1231061056": {
+        "numeric": {
+          "correct": 8,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 12,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "1655680875": {
+        "numeric": {
+          "correct": 3,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 7,
+          "error": 2
+        },
+        "content_gap": 6,
+        "spurious": 8
+      },
+      "1751406188": {
+        "numeric": {
+          "correct": 2,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 5,
+          "error": 2
+        },
+        "content_gap": 6,
+        "spurious": 8
+      },
+      "2078904807": {
+        "numeric": {
+          "correct": 3,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 7,
+          "error": 2
+        },
+        "content_gap": 8,
+        "spurious": 10
+      }
+    },
+    "adjudicated": {
+      "-1970166929": {
+        "numeric": {
+          "correct": 1,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 6,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "-1501301743": {
+        "numeric": {
+          "correct": 11,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 14,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "-1133652946": {
+        "numeric": {
+          "correct": 15,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 19,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "-1062928915": {
+        "numeric": {
+          "correct": 4,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 7,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "-615992646": {
+        "numeric": {
+          "correct": 0,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 3,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 4
+      },
+      "-114149479": {
+        "numeric": {
+          "correct": 4,
+          "wrong": 3
+        },
+        "alignment": {
+          "correct": 9,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 4
+      },
+      "155829587": {
+        "numeric": {
+          "correct": 11,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 14,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "240605764": {
+        "numeric": {
+          "correct": 11,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 14,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "645706426": {
+        "numeric": {
+          "correct": 8,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 13,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "1855357113": {
+        "numeric": {
+          "correct": 0,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 4,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 2
+      },
+      "-1927179020": {
+        "numeric": {
+          "correct": 8,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 11,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "-1921036549": {
+        "numeric": {
+          "correct": 3,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 6,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 3
+      },
+      "-1828241964": {
+        "numeric": {
+          "correct": 11,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 15,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "-1727241372": {
+        "numeric": {
+          "correct": 11,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 15,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "-1448607152": {
+        "numeric": {
+          "correct": 9,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 14,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "-919179028": {
+        "numeric": {
+          "correct": 11,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 15,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "69065177": {
+        "numeric": {
+          "correct": 8,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 11,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "584268166": {
+        "numeric": {
+          "correct": 9,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 14,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "741805703": {
+        "numeric": {
+          "correct": 7,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 13,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "1030062804": {
+        "numeric": {
+          "correct": 8,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 12,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "1092036773": {
+        "numeric": {
+          "correct": 11,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 15,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "1231061056": {
+        "numeric": {
+          "correct": 8,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 12,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "1655680875": {
+        "numeric": {
+          "correct": 9,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 13,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "1751406188": {
+        "numeric": {
+          "correct": 8,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 11,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      },
+      "2078904807": {
+        "numeric": {
+          "correct": 11,
+          "wrong": 0
+        },
+        "alignment": {
+          "correct": 15,
+          "error": 0
+        },
+        "content_gap": 0,
+        "spurious": 0
+      }
+    }
+  },
+  "accepted": [
+    [
+      "-1062928915",
+      "basketball tournament"
+    ],
+    [
+      "-1062928915",
+      "horse race"
+    ],
+    [
+      "-1062928915",
+      "soccer game"
+    ],
+    [
+      "-1133652946",
+      "type A layout"
+    ],
+    [
+      "-1133652946",
+      "type B layout"
+    ],
+    [
+      "-1133652946",
+      "type C layout"
+    ],
+    [
+      "-1448607152",
+      "high-power model"
+    ],
+    [
+      "-1448607152",
+      "low-power"
+    ],
+    [
+      "-1501301743",
+      "Plus"
+    ],
+    [
+      "-1501301743",
+      "Premium"
+    ],
+    [
+      "-1501301743",
+      "Standard"
+    ],
+    [
+      "-1727241372",
+      "cheap"
+    ],
+    [
+      "-1727241372",
+      "expensive box"
+    ],
+    [
+      "-1828241964",
+      "north side"
+    ],
+    [
+      "-1828241964",
+      "south side"
+    ],
+    [
+      "-1921036549",
+      "chorine"
+    ],
+    [
+      "-1921036549",
+      "water softener"
+    ],
+    [
+      "-1927179020",
+      "machine 1"
+    ],
+    [
+      "-1927179020",
+      "machine 2"
+    ],
+    [
+      "-1970166929",
+      "CPUs"
+    ],
+    [
+      "-1970166929",
+      "GPUs"
+    ],
+    [
+      "-1970166929",
+      "mobile devices"
+    ],
+    [
+      "-1970166929",
+      "software"
+    ],
+    [
+      "-615992646",
+      "biotech industry"
+    ],
+    [
+      "-615992646",
+      "finance industry"
+    ],
+    [
+      "-615992646",
+      "food industry"
+    ],
+    [
+      "-615992646",
+      "health care"
+    ],
+    [
+      "-919179028",
+      "meal replacement shakes"
+    ],
+    [
+      "-919179028",
+      "vanilla protein bars"
+    ],
+    [
+      "1030062804",
+      "milk"
+    ],
+    [
+      "1030062804",
+      "protein shakes"
+    ],
+    [
+      "155829587",
+      "general purpose vessels"
+    ],
+    [
+      "155829587",
+      "pharmaceutical vessels"
+    ],
+    [
+      "155829587",
+      "pressure vessels"
+    ],
+    [
+      "1655680875",
+      "cabbage"
+    ],
+    [
+      "1655680875",
+      "corn"
+    ],
+    [
+      "1751406188",
+      "regular glass pane"
+    ],
+    [
+      "1751406188",
+      "tempered glass pane"
+    ],
+    [
+      "1855357113",
+      "coal"
+    ],
+    [
+      "1855357113",
+      "nuclear"
+    ],
+    [
+      "1855357113",
+      "solar"
+    ],
+    [
+      "1855357113",
+      "wind"
+    ],
+    [
+      "2078904807",
+      "premium brand"
+    ],
+    [
+      "2078904807",
+      "regular brand"
+    ],
+    [
+      "240605764",
+      "high quality"
+    ],
+    [
+      "240605764",
+      "low"
+    ],
+    [
+      "240605764",
+      "medium"
+    ],
+    [
+      "584268166",
+      "premium package"
+    ],
+    [
+      "584268166",
+      "regular package"
+    ],
+    [
+      "645706426",
+      "buses"
+    ],
+    [
+      "645706426",
+      "privately owned cars"
+    ],
+    [
+      "645706426",
+      "taxis"
+    ],
+    [
+      "69065177",
+      "Soda 1"
+    ],
+    [
+      "69065177",
+      "Soda 2"
+    ]
+  ],
+  "rejected": []
+}

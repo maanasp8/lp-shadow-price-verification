@@ -1,0 +1,101 @@
+problem_id,status,align,n_rows_gold,n_rows_llm,matches_gold,a,b,c,any,any_norm
+-1282947574,OPTIMAL,content,3,3,True,False,False,False,False,False
+-201398490,OPTIMAL,content,4,4,True,False,False,False,False,False
+-2142684674,OPTIMAL,content,2,2,False,True,False,True,True,True
+-1533753278,OPTIMAL,content,2,2,True,False,False,False,False,False
+1825508140,OPTIMAL,content,3,3,True,False,False,False,False,False
+1264668532,OPTIMAL,content,3,3,True,False,False,False,False,False
+-1083302057,OPTIMAL,content,2,2,True,False,False,False,False,False
+-27745871,OPTIMAL,content,2,2,True,False,False,False,False,False
+1466742521,OPTIMAL,content,2,2,True,False,False,False,False,False
+-355727939,OPTIMAL,content,3,3,True,True,False,False,True,False
+37344130,OPTIMAL,content,2,2,True,False,False,False,False,False
+2078904807,OPTIMAL,content,3,3,True,False,False,False,False,False
+-1596596902,OPTIMAL,content,3,3,False,False,True,True,True,True
+1821426741,OPTIMAL,content,2,2,True,False,False,False,False,False
+-1900987309,OPTIMAL,content,2,2,True,False,False,False,False,False
+-146126231,OPTIMAL,content,3,3,False,True,False,True,True,True
+286528177,OPTIMAL,content,3,3,True,False,False,False,False,False
+1133974368,OPTIMAL,content,5,5,True,False,False,False,False,False
+-1952736066,OPTIMAL,content,3,3,True,False,False,False,False,False
+1462210894,parse_fail: ValueError,,,,,,,,,
+-1843155546,OPTIMAL,content,2,2,True,False,False,False,False,False
+-2083631303,OPTIMAL,content,2,2,True,False,False,False,False,False
+-282771990,parse_fail: ValueError,,,,,,,,,
+193295056,OPTIMAL,content,1,1,True,False,False,False,False,False
+-180744128,OPTIMAL,content,2,2,True,False,False,False,False,False
+-1292542531,OPTIMAL,content,3,3,True,False,False,False,False,False
+681150852,OPTIMAL,content,2,2,True,False,False,False,False,False
+-720131595,OPTIMAL,content,3,3,True,False,False,False,False,False
+-1384211970,OPTIMAL,content,2,2,True,False,False,False,False,False
+-261742752,OPTIMAL,content,2,2,True,False,False,False,False,False
+-1202959445,parse_fail: ValueError,,,,,,,,,
+1434993476,OPTIMAL,content,3,3,True,False,False,False,False,False
+1692392701,OPTIMAL,content,2,2,True,False,False,False,False,False
+-206261087,OPTIMAL,content,2,2,True,False,False,False,False,False
+118256182,OPTIMAL,content,6,6,True,False,False,False,False,False
+1262901358,OPTIMAL,content,4,4,True,True,False,False,True,False
+1775140418,OPTIMAL,content,3,3,True,False,False,False,False,False
+-591967366,OPTIMAL,content,3,3,True,False,False,False,False,False
+343561730,parse_fail: ValueError,,,,,,,,,
+1128524765,OPTIMAL,content,5,5,True,False,False,False,False,False
+-707305018,OPTIMAL,content,2,2,True,False,False,False,False,False
+-2145484718,OPTIMAL,content,3,3,True,False,False,False,False,False
+-1371866588,OPTIMAL,content,2,2,True,False,False,False,False,False
+1688548725,OPTIMAL,content,3,3,False,True,False,False,True,True
+-661636428,OPTIMAL,content,4,4,True,False,False,False,False,False
+-2004165813,OPTIMAL,content,3,3,True,True,False,False,True,False
+1629184346,OPTIMAL,content,2,2,True,False,False,False,False,False
+2017354998,OPTIMAL,content,3,3,True,False,False,False,False,False
+-577606329,parse_fail: ValueError,,,,,,,,,
+1092036773,OPTIMAL,content,3,3,True,False,False,False,False,False
+902707159,parse_fail: ValueError,,,,,,,,,
+-342979720,OPTIMAL,content,2,2,True,False,False,False,False,False
+-1412758703,OPTIMAL,content,3,3,True,False,False,False,False,False
+-1107954998,OPTIMAL,content,3,3,True,False,False,False,False,False
+-504122344,OPTIMAL,content,3,3,True,False,False,False,False,False
+721056636,OPTIMAL,content,5,5,True,False,False,False,False,False
+928775045,solve_INFEASIBLE,count_mismatch,1,2,,,,,,
+-1278751305,OPTIMAL,content,3,3,True,False,False,False,False,False
+467579298,OPTIMAL,content,2,2,True,False,False,False,False,False
+1885129178,OPTIMAL,content,2,2,True,False,False,False,False,False
+-1927179020,OPTIMAL,content,2,2,True,False,False,False,False,False
+1054847148,OPTIMAL,content,2,2,True,False,False,False,False,False
+-1492133110,OPTIMAL,content,3,3,True,False,False,False,False,False
+1294399767,OPTIMAL,content,2,2,True,False,False,False,False,False
+2035548217,OPTIMAL,content,2,2,False,True,False,False,True,True
+-17265158,OPTIMAL,content,3,3,True,False,False,False,False,False
+-441849133,parse_fail: ValueError,,,,,,,,,
+-568965344,OPTIMAL,content,3,3,True,True,False,False,True,False
+299393763,parse_fail: ValueError,,,,,,,,,
+1045126906,parse_fail: JSONDecodeError,,,,,,,,,
+-594806556,OPTIMAL,content,2,2,True,False,False,False,False,False
+1738773919,OPTIMAL,content,3,3,False,True,True,True,True,True
+-574304318,parse_fail: ValueError,,,,,,,,,
+-1447728775,OPTIMAL,content,3,3,True,False,False,False,False,False
+-169306566,OPTIMAL,content,2,2,True,False,False,False,False,False
+-1830770679,OPTIMAL,content,3,3,True,False,False,False,False,False
+-400376495,OPTIMAL,content,2,2,True,False,False,False,False,False
+-336089912,OPTIMAL,content,2,2,True,False,False,False,False,False
+-1421194232,OPTIMAL,content,2,2,True,False,False,False,False,False
+1146360292,OPTIMAL,content,2,2,True,False,False,False,False,False
+-672891245,OPTIMAL,content,2,2,True,False,False,False,False,False
+2128667133,OPTIMAL,content,2,2,True,False,False,False,False,False
+-1062928915,OPTIMAL,content,2,2,False,False,True,True,True,True
+125732204,OPTIMAL,content,5,5,True,False,False,False,False,False
+-451402850,OPTIMAL,content,3,3,True,False,False,False,False,False
+786856725,OPTIMAL,content,3,3,False,True,True,True,True,True
+1958482161,OPTIMAL,content,3,3,True,False,False,False,False,False
+1268238141,OPTIMAL,content,4,4,True,False,False,False,False,False
+599598925,OPTIMAL,content,3,3,True,False,False,False,False,False
+-1133652946,OPTIMAL,content,3,3,True,False,False,False,False,False
+-1963149491,OPTIMAL,content,3,3,True,False,False,False,False,False
+-188754660,OPTIMAL,content,3,3,True,False,False,False,False,False
+102495722,OPTIMAL,content,3,3,True,False,False,False,False,False
+-197783589,OPTIMAL,content,3,3,True,False,False,False,False,False
+358299194,OPTIMAL,content,4,4,True,False,False,False,False,False
+1916748046,OPTIMAL,content,2,2,True,False,False,False,False,False
+-1374720410,OPTIMAL,content,2,2,True,False,False,False,False,False
+971456192,OPTIMAL,content,3,3,True,False,False,False,False,False
+-437895545,OPTIMAL,content,3,3,True,False,False,False,False,False
+1470713712,OPTIMAL,content,2,2,False,True,False,True,True,True

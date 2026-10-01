@@ -1,0 +1,23 @@
+problem_id,cell_class,row,variable,var_index,raw,value
+-114149479,objective_coefficient,(objective),crepe cake,0,12,12.0
+-114149479,objective_coefficient,(objective),sponge cake,1,10,10.0
+-114149479,objective_coefficient,(objective),birthday cake,2,15,15.0
+-114149479,row_term,c0_linear,crepe cake,0,200,200.0
+-114149479,row_term,c0_linear,sponge cake,1,300,300.0
+-114149479,row_term,c0_linear,birthday cake,2,350,350.0
+741805703,objective_coefficient,(objective),night-lamp,1,8,8.0
+741805703,objective_coefficient,(objective),desk-lamp,0,5,5.0
+1092036773,objective_coefficient,(objective),cream lipstick,0,70,70.0
+1092036773,objective_coefficient,(objective),matte lipstick,1,100,100.0
+1092036773,row_term,c0_linear,cream lipstick,0,3.5,3.5
+1092036773,row_term,c0_linear,matte lipstick,1,5,5.0
+1092036773,row_term,c1_linear,cream lipstick,0,5,5.0
+1092036773,row_term,c1_linear,matte lipstick,1,3,3.0
+1092036773,row_term,c2_linear,cream lipstick,0,2,2.0
+1092036773,row_term,c2_linear,matte lipstick,1,1.5,1.5
+1231061056,objective_coefficient,(objective),couch,0,200,200.0
+1231061056,objective_coefficient,(objective),bed,1,400,400.0
+1231061056,row_term,c0_linear,couch,0,15,15.0
+1231061056,row_term,c0_linear,bed,1,20,20.0
+1231061056,row_term,c2_linear,couch,0,300,300.0
+1231061056,row_term,c2_linear,bed,1,600,600.0

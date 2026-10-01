@@ -1,0 +1,314 @@
+{
+  "problem_id": "1855357113",
+  "run_on": "2026-08-05",
+  "model": "claude-opus-5",
+  "params": {
+    "max_tokens": 16000,
+    "effort": "high",
+    "thinking": {
+      "type": "adaptive"
+    },
+    "temperature": null,
+    "temperature_note": "not sent; rejected on this model"
+  },
+  "raw_prompt": {
+    "system": "You extract the numbers of a linear-programming word problem into a typed slot table. You are not building or solving a model.\n\nReport only what the text states. Follow these rules exactly.\n\nVARIABLES\n- List every decision quantity the problem asks the reader to choose, using the wording the text uses.\n- Do not invent variables for quantities that are given, not chosen.\n\nOBJECTIVE\n- `sense` is \"max\" or \"min\", whichever the text asks for.\n- Give one term per variable that carries an objective coefficient in the text.\n- If a variable appears in the problem but the text gives it no objective coefficient, emit a term for it with coefficient \"ABSENT\".\n\nCONSTRAINTS\n- One entry per constraint the text states. Give each a short id of your choosing and quote the span of the source text it comes from in `quoted_text`.\n- `operator` is \"<=\", \">=\" or \"==\" as the text implies.\n- `limit` is the number on the other side of the comparison.\n- Give one term per variable, for every variable you listed. If a variable does not appear in that constraint, emit a term for it with coefficient \"ABSENT\". Never omit a variable from a constraint's term list \u2014 say \"ABSENT\" instead.\n\nNUMBERS\n- Normalize every number to a plain decimal: no thousands separators, no currency marks, no percent signs, no units, no words.\n- Write a percentage as the number the text writes, not as a fraction: \"30%\" becomes 30, not 0.3.\n- Write a word-number as its digits: \"twice\" becomes 2, \"a third\" becomes 0.333.\n- If a number is stated but you cannot normalize it, use \"ABSENT\".\n\nDO NOT\n- Do not autoformulate. Do not rearrange a constraint, move terms across the comparison, combine constraints, or introduce a coefficient the text does not state.\n- Do not fold units, rates, or conversions into a coefficient.\n- Do not add non-negativity, integrality, or any constraint the text does not state.\n- Do not fill a missing number with a default such as 1. Use \"ABSENT\".",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Extract the slot table for this problem.\n\n<problem>\nJason has $1000000 to invest in the following energy sectors: solar, wind, nuclear and coal. The annual rate of return for each is as follows: solar, 6%; wind, 9%, nuclear, 12%, coal, 3%. Jason has the following conditions. The amount he invests in coal cannot exceed the amount invested in solar. Similarly, the amount invested in wind cannot exceed the amount invested in nuclear. Lastly, at most 10% of the investment can be in coal. How much money should Jason invest in each sector to maximize his return?\n</problem>"
+      }
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "variables": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Every decision quantity the problem asks the reader to choose."
+      },
+      "objective": {
+        "type": "object",
+        "properties": {
+          "sense": {
+            "type": "string",
+            "enum": [
+              "max",
+              "min"
+            ]
+          },
+          "terms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "variable": {
+                  "type": "string"
+                },
+                "coefficient": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string",
+                      "const": "ABSENT"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "variable",
+                "coefficient"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "sense",
+          "terms"
+        ],
+        "additionalProperties": false
+      },
+      "constraints": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "quoted_text": {
+              "type": "string"
+            },
+            "operator": {
+              "type": "string",
+              "enum": [
+                "<=",
+                ">=",
+                "=="
+              ]
+            },
+            "limit": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string",
+                  "const": "ABSENT"
+                }
+              ]
+            },
+            "terms": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "variable": {
+                    "type": "string"
+                  },
+                  "coefficient": {
+                    "anyOf": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "string",
+                        "const": "ABSENT"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "variable",
+                  "coefficient"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "id",
+            "quoted_text",
+            "operator",
+            "limit",
+            "terms"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "variables",
+      "objective",
+      "constraints"
+    ],
+    "additionalProperties": false
+  },
+  "elapsed_s": 15.196755709010176,
+  "stop_reason": "end_turn",
+  "stop_details": null,
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1817,
+    "output_tokens": 1393,
+    "output_tokens_details": {
+      "thinking_tokens": 589
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "response_model": "claude-opus-5",
+  "request_id": "req_011CdkFHJBHXi62S3FLH1fS4",
+  "raw_response": [
+    {
+      "signature": "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",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"variables\":[\"amount invested in solar\",\"amount invested in wind\",\"amount invested in nuclear\",\"amount invested in coal\"],\"objective\":{\"sense\":\"max\",\"terms\":[{\"variable\":\"amount invested in solar\",\"coefficient\":6},{\"variable\":\"amount invested in wind\",\"coefficient\":9},{\"variable\":\"amount invested in nuclear\",\"coefficient\":12},{\"variable\":\"amount invested in coal\",\"coefficient\":3}]},\"constraints\":[{\"id\":\"budget\",\"quoted_text\":\"Jason has $1000000 to invest in the following energy sectors: solar, wind, nuclear and coal.\",\"operator\":\"<=\",\"limit\":1000000,\"terms\":[{\"variable\":\"amount invested in solar\",\"coefficient\":1},{\"variable\":\"amount invested in wind\",\"coefficient\":1},{\"variable\":\"amount invested in nuclear\",\"coefficient\":1},{\"variable\":\"amount invested in coal\",\"coefficient\":1}]},{\"id\":\"coal_vs_solar\",\"quoted_text\":\"The amount he invests in coal cannot exceed the amount invested in solar.\",\"operator\":\"<=\",\"limit\":\"ABSENT\",\"terms\":[{\"variable\":\"amount invested in solar\",\"coefficient\":1},{\"variable\":\"amount invested in wind\",\"coefficient\":\"ABSENT\"},{\"variable\":\"amount invested in nuclear\",\"coefficient\":\"ABSENT\"},{\"variable\":\"amount invested in coal\",\"coefficient\":1}]},{\"id\":\"wind_vs_nuclear\",\"quoted_text\":\"the amount invested in wind cannot exceed the amount invested in nuclear\",\"operator\":\"<=\",\"limit\":\"ABSENT\",\"terms\":[{\"variable\":\"amount invested in solar\",\"coefficient\":\"ABSENT\"},{\"variable\":\"amount invested in wind\",\"coefficient\":1},{\"variable\":\"amount invested in nuclear\",\"coefficient\":1},{\"variable\":\"amount invested in coal\",\"coefficient\":\"ABSENT\"}]},{\"id\":\"coal_share\",\"quoted_text\":\"at most 10% of the investment can be in coal\",\"operator\":\"<=\",\"limit\":10,\"terms\":[{\"variable\":\"amount invested in solar\",\"coefficient\":\"ABSENT\"},{\"variable\":\"amount invested in wind\",\"coefficient\":\"ABSENT\"},{\"variable\":\"amount invested in nuclear\",\"coefficient\":\"ABSENT\"},{\"variable\":\"amount invested in coal\",\"coefficient\":1}]}]}",
+      "type": "text"
+    }
+  ],
+  "ok": true,
+  "extraction": {
+    "variables": [
+      "amount invested in solar",
+      "amount invested in wind",
+      "amount invested in nuclear",
+      "amount invested in coal"
+    ],
+    "objective": {
+      "sense": "max",
+      "terms": [
+        {
+          "variable": "amount invested in solar",
+          "coefficient": 6
+        },
+        {
+          "variable": "amount invested in wind",
+          "coefficient": 9
+        },
+        {
+          "variable": "amount invested in nuclear",
+          "coefficient": 12
+        },
+        {
+          "variable": "amount invested in coal",
+          "coefficient": 3
+        }
+      ]
+    },
+    "constraints": [
+      {
+        "id": "budget",
+        "quoted_text": "Jason has $1000000 to invest in the following energy sectors: solar, wind, nuclear and coal.",
+        "operator": "<=",
+        "limit": 1000000,
+        "terms": [
+          {
+            "variable": "amount invested in solar",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in wind",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in nuclear",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in coal",
+            "coefficient": 1
+          }
+        ]
+      },
+      {
+        "id": "coal_vs_solar",
+        "quoted_text": "The amount he invests in coal cannot exceed the amount invested in solar.",
+        "operator": "<=",
+        "limit": "ABSENT",
+        "terms": [
+          {
+            "variable": "amount invested in solar",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in wind",
+            "coefficient": "ABSENT"
+          },
+          {
+            "variable": "amount invested in nuclear",
+            "coefficient": "ABSENT"
+          },
+          {
+            "variable": "amount invested in coal",
+            "coefficient": 1
+          }
+        ]
+      },
+      {
+        "id": "wind_vs_nuclear",
+        "quoted_text": "the amount invested in wind cannot exceed the amount invested in nuclear",
+        "operator": "<=",
+        "limit": "ABSENT",
+        "terms": [
+          {
+            "variable": "amount invested in solar",
+            "coefficient": "ABSENT"
+          },
+          {
+            "variable": "amount invested in wind",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in nuclear",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in coal",
+            "coefficient": "ABSENT"
+          }
+        ]
+      },
+      {
+        "id": "coal_share",
+        "quoted_text": "at most 10% of the investment can be in coal",
+        "operator": "<=",
+        "limit": 10,
+        "terms": [
+          {
+            "variable": "amount invested in solar",
+            "coefficient": "ABSENT"
+          },
+          {
+            "variable": "amount invested in wind",
+            "coefficient": "ABSENT"
+          },
+          {
+            "variable": "amount invested in nuclear",
+            "coefficient": "ABSENT"
+          },
+          {
+            "variable": "amount invested in coal",
+            "coefficient": 1
+          }
+        ]
+      }
+    ]
+  }
+}

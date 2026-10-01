@@ -1,0 +1,33 @@
+{
+ "stamp": "2026-08-27",
+ "arms": {
+  "plain_name": {
+   "n_match": 79,
+   "n_wrong": 9,
+   "fp": 78,
+   "fp_norm": 78,
+   "det": 9,
+   "fp_pct": 98.7,
+   "fp_norm_pct": 98.7
+  },
+  "rowlabels_name": {
+   "n_match": 80,
+   "n_wrong": 9,
+   "fp": 9,
+   "fp_norm": 5,
+   "det": 9,
+   "fp_pct": 11.2,
+   "fp_norm_pct": 6.2
+  },
+  "rowlabels_content": {
+   "n_match": 80,
+   "n_wrong": 9,
+   "fp": 4,
+   "fp_norm": 0,
+   "det": 9,
+   "fp_pct": 5.0,
+   "fp_norm_pct": 0.0
+  },
+  "residual_cause": "right row name attached to the wrong constraint"
+ }
+}

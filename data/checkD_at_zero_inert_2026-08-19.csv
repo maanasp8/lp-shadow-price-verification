@@ -1,0 +1,734 @@
+mutant_id,error_type,subclass,resolved,status,d_fired,a_fired,b_fired,n_rows_violated,max_violation
+"-1008324134|1|/10|a[c1_linear,Beam 1]=0.6",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1008324134|4b|swap|a[c0_linear,Beam 1]=0.2 <-> a[c1_linear,Beam 1]=0.6",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1008324134|6|omit|a[c1_linear,Beam 1]=0.6->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1008461120|1|x10|a[c1_linear,plates]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1008461120|4b|swap|a[c0_linear,plates]=12 <-> a[c1_linear,plates]=4",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1021533410|1|x10|a[c0_linear,chairs]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1023483692|1|/10|a[c0_linear,downtown cafe]=40",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1023483692|6|omit|a[c0_linear,downtown cafe]=40->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1036797903|1|x10|a[c0_linear,banana-haters package]=6",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1036797903|4b|swap|a[c0_linear,banana-haters package]=6 <-> a[c2_linear,banana-haters package]=30",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1045601007|1|x10|a[c1_linear,soft]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1045601007|1|x10|a[c1_linear,crunchy]=18",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1045601007|4b|swap|a[c0_linear,soft]=20 <-> a[c1_linear,soft]=10",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1062928915|1|x10|a[c1_linear,horse race]=0.25",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1062928915|1|x10|a[c1_linear,soccer game]=0.1",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1083302057|1|x10|a[c1_linear,hoodies]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1096202168|1|x10|a[c1_linear,shop vacuums]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1110516940|1|/10|a[c0_linear,cereal B]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1110516940|6|omit|a[c0_linear,cereal B]=20->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1119351614|1|/10|a[c0_linear,local factory]=23",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1119351614|4b|swap|a[c0_linear,local factory]=23 <-> a[c1_linear,local factory]=11",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1119351614|4b|swap|a[c0_linear,local factory]=23 <-> a[c2_linear,local factory]=13",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1119351614|6|omit|a[c0_linear,local factory]=23->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1120393808|1|x10|a[c0_linear,bowls]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1129911621|1|/10|a[c0_linear,Prune juice]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1129911621|4b|swap|a[c0_linear,Prune juice]=10 <-> a[c2_linear,Prune juice]=5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1129911621|6|omit|a[c0_linear,Prune juice]=10->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1133652946|1|x10|a[c0_linear,type A layout]=10",1,multi,True,OPTIMAL,False,False,False,0,0.0
+"-1133652946|1|x10|a[c1_linear,type A layout]=7",1,multi,True,OPTIMAL,False,False,False,0,2.2737367544323206e-13
+"-1133652946|4b|swap|a[c0_linear,type A layout]=10 <-> a[c2_linear,type A layout]=15",4b,multi,True,OPTIMAL,False,False,False,0,0.0
+"-1133652946|4b|swap|a[c1_linear,type A layout]=7 <-> a[c2_linear,type A layout]=15",4b,multi,True,OPTIMAL,False,False,False,0,2.2737367544323206e-13
+"-1138570462|1|x10|a[c1_linear,bikes]=30",1,single,True,OPTIMAL,False,False,False,0,1.1368683772161603e-13
+"-114149479|1|x10|a[c0_linear,sponge cakes]=300",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-114149479|1|x10|a[c0_linear,birthday cakes]=350",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-114149479|4a|swap|a[c0_linear,sponge cakes]=300 <-> a[c0_linear,birthday cakes]=350",4a,single,True,OPTIMAL,False,False,False,0,0.0
+"-1164473054|1|x10|a[c1_linear,necklaces]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1164473054|4b|swap|a[c0_linear,necklaces]=3 <-> a[c1_linear,necklaces]=4",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1168130319|1|x10|a[c1_linear,large truck]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1168130319|4b|swap|a[c0_linear,large truck]=8000 <-> a[c1_linear,large truck]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-117212297|1|x10|a[c1_linear,skateboards]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-117212297|4b|swap|a[c0_linear,skateboards]=4 <-> a[c1_linear,skateboards]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1176378527|1|x10|a[c2_linear,onions]=2",1,multi,True,OPTIMAL,False,False,False,0,0.0
+"-1176378527|1|/10|a[c2_linear,onions]=2",1,multi,True,OPTIMAL,False,False,False,0,0.0
+"-1176378527|6|omit|a[c2_linear,onions]=2->0",6,multi,True,OPTIMAL,False,False,False,0,0.0
+"-1176603373|1|x10|a[c0_linear,dresses]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1176603373|4b|swap|a[c0_linear,dresses]=2 <-> a[c1_linear,dresses]=4",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1181361842|1|x10|a[c0_linear,superhero costumes]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1188104412|1|/10|a[c2_linear,double-load]=400",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1188104412|4b|swap|a[c2_linear,double-load]=400 <-> a[c3_linear,double-load]=30",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1188104412|6|omit|a[c2_linear,double-load]=400->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1202959445|1|x10|a[c0_linear,freight trains]=100",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1206801469|1|/10|a[c1_linear,Beta]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1206801469|4b|swap|a[c0_linear,Beta]=5 <-> a[c1_linear,Beta]=4",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1206801469|6|omit|a[c1_linear,Beta]=4->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1211558483|1|x10|a[c1_linear,skirts]=3.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1256233986|1|x10|a[c0_linear,small vehicle]=7000",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1278751305|1|/10|a[c2_linear,Phi brand]=7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1278751305|4b|swap|a[c1_linear,Phi brand]=5 <-> a[c2_linear,Phi brand]=7",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1278751305|6|omit|a[c2_linear,Phi brand]=7->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1296070793|1|x10|a[c1_linear,bikes]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1303541177|1|x10|a[c1_linear,mixture A]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-13162692|1|x10|a[c1_linear,shrimp meat]=7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1323625459|1|x10|a[c0_linear,almond]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1323625459|1|/10|a[c1_linear,almond]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1323625459|4b|swap|a[c0_linear,almond]=5 <-> a[c1_linear,almond]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1323625459|6|omit|a[c1_linear,almond]=3->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-134578212|1|x10|a[c1_linear,61 keys]=1.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-134578212|4b|swap|a[c0_linear,61 keys]=8 <-> a[c1_linear,61 keys]=1.5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1348328225|1|x10|a[c0_linear,mountain bike]=750",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1358145545|1|x10|a[c1_linear,coconut trees]=200",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1371952559|1|/10|a[c0_linear,Thai]=8",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1371952559|4b|swap|a[c0_linear,Thai]=8 <-> a[c1_linear,Thai]=12",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1371952559|6|omit|a[c0_linear,Thai]=8->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1384117219|1|x10|a[c0_linear,solid waste]=25",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1384117219|1|x10|a[c1_linear,solid waste]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1384117219|1|/10|a[c0_linear,solid waste]=25",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1384117219|1|/10|a[c1_linear,solid waste]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1384117219|4b|swap|a[c0_linear,solid waste]=25 <-> a[c1_linear,solid waste]=15",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1384117219|6|omit|a[c0_linear,solid waste]=25->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1384117219|6|omit|a[c1_linear,solid waste]=15->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1394768760|1|/10|a[c0_linear,vegetarian meal]=9",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1394768760|4b|swap|a[c0_linear,vegetarian meal]=9 <-> a[c1_linear,vegetarian meal]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1394768760|6|omit|a[c0_linear,vegetarian meal]=9->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1400177241|1|x10|a[c1_linear,sheds]=2",1,multi,True,OPTIMAL,False,False,False,0,0.0
+"-1400177241|1|/10|a[c1_linear,sheds]=2",1,multi,True,OPTIMAL,False,False,False,0,0.0
+"-1400177241|6|omit|a[c1_linear,sheds]=2->0",6,multi,True,OPTIMAL,False,False,False,0,0.0
+"-1421194232|1|x10|a[c0_linear,oatmeal]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1443479053|1|x10|a[c0_linear,apple]=6",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1449805744|1|/10|a[c1_linear,Tao]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1449805744|4b|swap|a[c0_linear,Tao]=1.3 <-> a[c1_linear,Tao]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1449805744|6|omit|a[c1_linear,Tao]=2->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1461740387|1|x10|a[c2_linear,headsets]=200",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1469208822|1|x10|a[c1_linear,small]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1488895992|1|x10|a[c0_linear,lettuce]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1501301743|1|x10|a[c1_linear,Standard]=1",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1501301743|1|x10|a[c1_linear,Plus]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1501301743|4b|swap|a[c0_linear,Standard]=3 <-> a[c1_linear,Standard]=1",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1501301743|4b|swap|a[c0_linear,Plus]=5 <-> a[c1_linear,Plus]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1512669876|1|x10|a[c0_linear,mugs]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1527825949|1|x10|a[c1_linear,tennis rackets]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1533753278|1|x10|a[c0_linear,police officer costumes]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1542644642|1|x10|a[c1_linear,apple]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1542644642|4b|swap|a[c0_linear,apple]=50 <-> a[c1_linear,apple]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1547439005|1|/10|a[c0_linear,chicken]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1547439005|4b|swap|a[c0_linear,chicken]=10 <-> a[c1_linear,chicken]=6",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1547439005|6|omit|a[c0_linear,chicken]=10->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1547892789|1|x10|a[c0_linear,high definition]=250",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-15543151|1|/10|a[c1_linear,method A]=14",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-15543151|4b|swap|a[c0_linear,method A]=25 <-> a[c1_linear,method A]=14",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-15543151|6|omit|a[c1_linear,method A]=14->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1574025664|1|x10|a[c1_linear,squash]=23",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1574025664|4b|swap|a[c1_linear,squash]=23 <-> a[c2_linear,squash]=110",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1577213425|1|x10|a[c0_linear,bike tires]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1588647623|1|x10|a[c0_linear,display shelf]=25",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1605570733|1|/10|a[c1_linear,Delta]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1605570733|4b|swap|a[c0_linear,Delta]=6 <-> a[c1_linear,Delta]=5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1605570733|6|omit|a[c1_linear,Delta]=5->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1611900017|1|x10|a[c1_linear,carrots]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-161695218|1|x10|a[c1_linear,oval pot]=50",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1620664428|1|x10|a[c0_linear,first mix]=0.3",1,multi,True,OPTIMAL,False,False,False,0,0.0
+"-1620664428|1|/10|a[c0_linear,first mix]=0.3",1,multi,True,OPTIMAL,False,False,False,0,0.0
+"-1620664428|6|omit|a[c0_linear,first mix]=0.3->0",6,multi,True,OPTIMAL,False,False,False,0,0.0
+"-1631258346|1|x10|a[c1_linear,buses]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1631258346|4b|swap|a[c0_linear,buses]=50 <-> a[c1_linear,buses]=20",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1682514824|1|x10|a[c0_linear,pecans]=250",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-169306566|1|x10|a[c0_linear,smoothie]=300",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1713743137|1|x10|a[c2_linear,phones]=400",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1716301675|1|x10|a[c0_linear,chocolate smoothies]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1723877534|1|x10|a[c1_linear,bagels]=3.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1727241372|1|x10|a[c2_linear,expensive box]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1727241372|4b|swap|a[c0_linear,expensive box]=5 <-> a[c2_linear,expensive box]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1727241372|4b|swap|a[c1_linear,expensive box]=8 <-> a[c2_linear,expensive box]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1745177797|1|/10|a[c0_linear,lemons]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1745177797|4b|swap|a[c0_linear,lemons]=3 <-> a[c1_linear,lemons]=4",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1745177797|6|omit|a[c0_linear,lemons]=3->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1747006103|1|/10|a[c1_linear,cream Beta]=3.2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1747006103|6|omit|a[c1_linear,cream Beta]=3.2->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1795768460|1|x10|a[c0_linear,large]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1795768460|1|/10|a[c0_linear,large]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1795768460|4b|swap|a[c0_linear,large]=3 <-> a[c1_linear,large]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1795768460|6|omit|a[c0_linear,large]=3->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1805362172|1|x10|a[c0_linear,videos]=5000",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1805362172|1|x10|a[c0_linear,social media]=1000",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1813218966|1|x10|a[c0_linear,dark]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1813218966|1|x10|a[c1_linear,dark]=1",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1813218966|1|/10|a[c0_linear,dark]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1813218966|1|/10|a[c1_linear,dark]=1",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1813218966|4b|swap|a[c0_linear,dark]=4 <-> a[c1_linear,dark]=1",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1813218966|6|omit|a[c0_linear,dark]=4->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1813218966|6|omit|a[c1_linear,dark]=1->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1814291927|1|x10|a[c0_linear,shuttlecocks]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1817427063|1|x10|a[c0_linear,Mill B]=7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1817427063|1|/10|a[c0_linear,Mill B]=7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1817427063|1|/10|a[c2_linear,Mill B]=1",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1817427063|4b|swap|a[c0_linear,Mill B]=7 <-> a[c1_linear,Mill B]=10",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1817427063|6|omit|a[c0_linear,Mill B]=7->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1817427063|6|omit|a[c2_linear,Mill B]=1->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1819716628|1|x10|a[c0_linear,pain killer 2]=0.6",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1819716628|4b|swap|a[c0_linear,pain killer 2]=0.6 <-> a[c1_linear,pain killer 2]=0.7",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1828241964|1|/10|a[c2_linear,north side]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1828241964|6|omit|a[c2_linear,north side]=4->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1830924888|1|x10|a[c0_linear,regular]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1843155546|1|x10|a[c0_linear,pancakes]=25",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1843155546|4b|swap|a[c0_linear,pancakes]=25 <-> a[c1_linear,pancakes]=15",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1873006018|1|/10|a[c1_linear,pork]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1873006018|6|omit|a[c1_linear,pork]=3->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1880541131|1|/10|a[c0_linear,Printer A]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1880541131|4b|swap|a[c0_linear,Printer A]=10 <-> a[c1_linear,Printer A]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1880541131|6|omit|a[c0_linear,Printer A]=10->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-188754660|1|/10|a[c0_linear,small plant]=12",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-188754660|4b|swap|a[c0_linear,small plant]=12 <-> a[c1_linear,small plant]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-188754660|6|omit|a[c0_linear,small plant]=12->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1900987309|1|x10|a[c1_linear,dotted paper]=5.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1904851972|1|x10|a[c1_linear,LED]=12",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1904851972|4b|swap|a[c0_linear,LED]=6 <-> a[c1_linear,LED]=12",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1906439142|1|x10|a[c0_linear,lunch option]=8",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1913311520|1|x10|a[c1_linear,process B]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1913311520|4b|swap|a[c0_linear,process B]=5 <-> a[c1_linear,process B]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1927179020|1|/10|a[c1_linear,machine 2]=1",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1927179020|4b|swap|a[c0_linear,machine 2]=0.3 <-> a[c1_linear,machine 2]=1",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1927179020|6|omit|a[c1_linear,machine 2]=1->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-1942954068|1|x10|a[c2_linear,coats]=0.9",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1942954068|4b|swap|a[c0_linear,coats]=0.7 <-> a[c2_linear,coats]=0.9",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1942954068|4b|swap|a[c1_linear,coats]=0.5 <-> a[c2_linear,coats]=0.9",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1952736066|1|x10|a[c2_linear,daikons]=70",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1963149491|1|x10|a[c2_linear,mushrooms]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1963149491|4b|swap|a[c1_linear,mushrooms]=80 <-> a[c2_linear,mushrooms]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1965714403|1|x10|a[c2_linear,blueberries]=6",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1965714403|4b|swap|a[c1_linear,blueberries]=22 <-> a[c2_linear,blueberries]=6",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1974542599|1|x10|a[c0_linear,office]=200",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1984936485|1|x10|a[c0_linear,crab soup]=7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1984936485|4b|swap|a[c0_linear,crab soup]=7 <-> a[c1_linear,crab soup]=8",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-1987579295|1|x10|a[c2_linear,cutting boards]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1995830584|1|x10|a[c1_linear,crabs]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1998648387|1|x10|a[c0_linear,economical]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-1998648387|1|x10|a[c0_linear,premium]=8",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-2061445103|1|x10|a[c0_linear,Silent X]=7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-206261087|1|x10|a[c1_linear,diabetic shot]=0.9",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-206261087|4b|swap|a[c0_linear,diabetic shot]=2 <-> a[c1_linear,diabetic shot]=0.9",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-2066769788|1|/10|a[c0_linear,turkey dinner]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-2066769788|6|omit|a[c0_linear,turkey dinner]=20->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-2080370374|1|x10|a[c1_linear,fire-rated glass pane]=9",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-2080370374|4b|swap|a[c0_linear,fire-rated glass pane]=7 <-> a[c1_linear,fire-rated glass pane]=9",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-2082418574|1|x10|a[c1_linear,lined]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-2083631303|1|x10|a[c1_linear,solar panels]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-2094163363|1|x10|a[c3_linear,planes]=5000",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-2094163363|1|x10|a[c3_linear,hot air balloons]=1000",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-2099506892|1|x10|a[c0_linear,oil paintings]=6.5",1,multi,True,OPTIMAL,False,False,False,0,0.0
+"-2099506892|1|x10|a[c1_linear,oil paintings]=15",1,multi,True,OPTIMAL,False,False,False,0,0.0
+"-2099506892|4b|swap|a[c0_linear,oil paintings]=6.5 <-> a[c1_linear,oil paintings]=15",4b,multi,True,OPTIMAL,False,False,False,0,0.0
+"-2101760318|1|/10|a[c0_linear,Mocha flavor]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-2101760318|6|omit|a[c0_linear,Mocha flavor]=3->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-2105184323|1|x10|a[c0_linear,vans]=40",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-2105580086|1|/10|a[c1_linear,Supplement B]=1",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-2105580086|4b|swap|a[c1_linear,Supplement B]=1 <-> a[c2_linear,Supplement B]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-2105580086|6|omit|a[c1_linear,Supplement B]=1->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-2106263334|1|/10|a[c0_linear,Model B]=8",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-2106263334|6|omit|a[c0_linear,Model B]=8->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-2142684674|1|x10|a[c0_linear,truck]=80",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-214665832|1|x10|a[c0_linear,nutritional cereal]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-214665832|1|x10|a[c0_linear,sugary cereal]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-214665832|4a|swap|a[c0_linear,nutritional cereal]=3 <-> a[c0_linear,sugary cereal]=2",4a,single,True,OPTIMAL,False,False,False,0,0.0
+"-214665832|4b|swap|a[c0_linear,sugary cereal]=2 <-> a[c1_linear,sugary cereal]=4",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-215214153|1|x10|a[c1_linear,chandeliers]=60",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-241297255|1|x10|a[c0_linear,tigers]=40",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-261693695|1|x10|a[c1_linear,graph paper]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-261742752|1|x10|a[c0_linear,desk chair]=200",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-26774598|1|/10|a[c1_linear,elk meat]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-26774598|6|omit|a[c1_linear,elk meat]=3->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-267933721|1|x10|a[c0_linear,modern violins]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-267933721|4b|swap|a[c0_linear,modern violins]=5 <-> a[c1_linear,modern violins]=3.5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-273884671|1|x10|a[c1_linear,hardwood flooring]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-27745871|1|/10|a[c1_linear,Chocolate cake mix]=0.43",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-27745871|4b|swap|a[c0_linear,Chocolate cake mix]=0.02 <-> a[c1_linear,Chocolate cake mix]=0.43",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-27745871|6|omit|a[c1_linear,Chocolate cake mix]=0.43->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-282771990|1|/10|a[c0_linear,snack mix B.]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-282771990|6|omit|a[c0_linear,snack mix B.]=10->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-288455684|1|x10|a[c0_linear,peanut butter]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-301688101|1|/10|a[c0_linear,French perfume]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-301688101|6|omit|a[c0_linear,French perfume]=20->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-30300855|1|x10|a[c2_linear,carrots]=1.2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-313424632|1|x10|a[c1_linear,standing desks]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-316516118|1|/10|a[c0_linear,Special Formula]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-316516118|4b|swap|a[c0_linear,Special Formula]=4 <-> a[c1_linear,Special Formula]=5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-316516118|6|omit|a[c0_linear,Special Formula]=4->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-336089912|1|x10|a[c1_linear,large shelf]=80",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-342979720|1|x10|a[c0_linear,internet service]=60",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-356156483|1|/10|a[c0_linear,powder vitamin]=6",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-356156483|4b|swap|a[c0_linear,powder vitamin]=6 <-> a[c1_linear,powder vitamin]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-356156483|6|omit|a[c0_linear,powder vitamin]=6->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-357202617|1|x10|a[c1_linear,mint chocolate ice cream]=70",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-361200173|1|x10|a[c2_linear,beaker 1]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-361200173|4b|swap|a[c1_linear,beaker 1]=6 <-> a[c2_linear,beaker 1]=4",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-387572139|1|x10|a[c0_linear,trucks]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-41153534|1|x10|a[c1_linear,pianos]=500",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-414671050|1|x10|a[c0_linear,party mix]=0.8",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-437895545|1|x10|a[c1_linear,small]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-443833341|1|x10|a[c0_linear,heavy oil]=9",1,multi,True,OPTIMAL,False,False,False,0,0.0
+"-443833341|1|x10|a[c1_linear,heavy oil]=3",1,multi,True,OPTIMAL,False,False,False,0,0.0
+"-443833341|4b|swap|a[c0_linear,heavy oil]=9 <-> a[c1_linear,heavy oil]=3",4b,multi,True,OPTIMAL,False,False,False,0,0.0
+"-47282422|1|x10|a[c1_linear,drills]=70",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-481644170|1|/10|a[c0_linear,sardines]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-481644170|6|omit|a[c0_linear,sardines]=4->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-504122344|1|x10|a[c0_linear,standing table]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-504122344|4b|swap|a[c0_linear,standing table]=2 <-> a[c1_linear,standing table]=2.5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-507549139|1|x10|a[c1_linear,paddles]=1",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-507549139|4b|swap|a[c1_linear,paddles]=1 <-> a[c2_linear,paddles]=0.75",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-534214523|1|/10|a[c1_linear,burgers]=23.5",1,single,True,OPTIMAL,False,False,False,0,-5.684341886080802e-14
+"-534214523|6|omit|a[c1_linear,burgers]=23.5->0",6,single,True,OPTIMAL,False,False,False,0,-5.684341886080802e-14
+"-551748874|1|/10|a[c1_linear,blue energade]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-551748874|6|omit|a[c1_linear,blue energade]=4->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-577606329|1|x10|a[c0_linear,method X]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-580767881|1|x10|a[c0_linear,Aleph 3]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-616263906|1|x10|a[c1_linear,wallets]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-618790770|1|x10|a[c0_linear,plush toys]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-625466875|1|x10|a[c1_linear,desks]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-631420779|1|x10|a[c0_linear,green tea]=0.7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-631420779|4b|swap|a[c0_linear,green tea]=0.7 <-> a[c1_linear,green tea]=0.3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-636643683|1|x10|a[c2_linear,argon gas approach]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-636643683|4b|swap|a[c0_linear,argon gas approach]=10 <-> a[c2_linear,argon gas approach]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-636643683|4b|swap|a[c1_linear,argon gas approach]=12 <-> a[c2_linear,argon gas approach]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-636662142|1|x10|a[c0_linear,adhesives]=6",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-642253022|1|/10|a[c1_linear,single]=30",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-642253022|4b|swap|a[c1_linear,single]=30 <-> a[c2_linear,single]=15",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-642253022|6|omit|a[c1_linear,single]=30->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-642701442|1|x10|a[c1_linear,sneakers]=150",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-644178025|1|x10|a[c1_linear,chocolate chip]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-644178025|4b|swap|a[c1_linear,chocolate chip]=20 <-> a[c2_linear,chocolate chip]=50",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-655808311|1|x10|a[c1_linear,houses]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-661974449|1|x10|a[c0_linear,coffee table]=150",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-66849159|1|x10|a[c1_linear,bikes]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-66849159|4b|swap|a[c0_linear,bikes]=4 <-> a[c1_linear,bikes]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-71192775|1|x10|a[c0_linear,basket balls]=7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-724293739|1|x10|a[c2_linear,table 2]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-724293739|4b|swap|a[c0_linear,table 2]=8 <-> a[c2_linear,table 2]=4",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-724293739|4b|swap|a[c1_linear,table 2]=6 <-> a[c2_linear,table 2]=4",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-738331979|1|x10|a[c1_linear,peonies]=7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-742925976|1|/10|a[c0_linear,small factory]=35",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-742925976|4b|swap|a[c0_linear,small factory]=35 <-> a[c1_linear,small factory]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-742925976|6|omit|a[c0_linear,small factory]=35->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-749201814|1|x10|a[c0_linear,plates]=30",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-757513535|1|/10|a[c1_linear,beef]=2.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-757513535|6|omit|a[c1_linear,beef]=2.5->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-790646361|1|x10|a[c0_linear,spoons]=1",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-790646361|1|x10|a[c0_linear,forks]=1.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-790646361|4b|swap|a[c0_linear,spoons]=1 <-> a[c1_linear,spoons]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-816513289|1|/10|a[c0_linear,Rice]=300",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-816513289|4b|swap|a[c0_linear,Rice]=300 <-> a[c1_linear,Rice]=4.5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-816513289|6|omit|a[c0_linear,Rice]=300->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-855138281|1|x10|a[c1_linear,small]=20",1,single,True,OPTIMAL,False,False,False,0,1.1368683772161603e-13
+"-868287186|1|x10|a[c1_linear,skirts]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-868287186|4b|swap|a[c0_linear,skirts]=3 <-> a[c1_linear,skirts]=5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-871648047|1|x10|a[c2_linear,bilberries]=30",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-879679183|1|x10|a[c2_linear,experiment 2]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-879679183|4b|swap|a[c0_linear,experiment 2]=5 <-> a[c2_linear,experiment 2]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-879679183|4b|swap|a[c1_linear,experiment 2]=3 <-> a[c2_linear,experiment 2]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-913047001|1|x10|a[c1_linear,ring layout]=20",1,single,True,OPTIMAL,False,False,False,0,5.684341886080802e-14
+"-913047001|1|x10|a[c1_linear,mesh layout]=50",1,single,True,OPTIMAL,False,False,False,0,5.684341886080802e-14
+"-913047001|4b|swap|a[c0_linear,ring layout]=50 <-> a[c1_linear,ring layout]=20",4b,single,True,OPTIMAL,False,False,False,0,5.684341886080802e-14
+"-913047001|4b|swap|a[c1_linear,ring layout]=20 <-> a[c2_linear,ring layout]=10",4b,single,True,OPTIMAL,False,False,False,0,5.684341886080802e-14
+"-913047001|4b|swap|a[c0_linear,mesh layout]=100 <-> a[c1_linear,mesh layout]=50",4b,single,True,OPTIMAL,False,False,False,0,5.684341886080802e-14
+"-913047001|4b|swap|a[c1_linear,mesh layout]=50 <-> a[c2_linear,mesh layout]=30",4b,single,True,OPTIMAL,False,False,False,0,5.684341886080802e-14
+"-919179028|1|/10|a[c0_linear,meal replacement shakes]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-919179028|4b|swap|a[c0_linear,meal replacement shakes]=10 <-> a[c1_linear,meal replacement shakes]=20",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-919179028|4b|swap|a[c0_linear,meal replacement shakes]=10 <-> a[c2_linear,meal replacement shakes]=5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-919179028|6|omit|a[c0_linear,meal replacement shakes]=10->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"-926961422|1|x10|a[c0_linear,full-weighted]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-927748635|1|x10|a[c2_linear,strawberries]=1",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-934921495|1|x10|a[c1_linear,gel]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-934921495|4b|swap|a[c0_linear,gel]=4 <-> a[c1_linear,gel]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-934921495|4b|swap|a[c1_linear,gel]=3 <-> a[c2_linear,gel]=6",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-949723129|1|x10|a[c1_linear,large chessboards]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-959862663|1|x10|a[c2_linear,small bowl]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-963004865|1|x10|a[c1_linear,bedsheets]=14",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-963004865|4b|swap|a[c0_linear,bedsheets]=17 <-> a[c1_linear,bedsheets]=14",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"-983015264|1|x10|a[c0_linear,soldiers]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-988774507|1|x10|a[c2_linear,raspberries]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"-988774507|4b|swap|a[c1_linear,raspberries]=40 <-> a[c2_linear,raspberries]=4",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1000020458|1|x10|a[c0_linear,kayaks]=60",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1001215896|1|x10|a[c0_linear,regular]=75",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1001215896|1|/10|a[c0_linear,regular]=75",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1001215896|6|omit|a[c0_linear,regular]=75->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1009345361|1|x10|a[c0_linear,Durian TV]=300",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1009345361|1|x10|a[c0_linear,Orange Premium Video]=500",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1009345361|4a|swap|a[c0_linear,Durian TV]=300 <-> a[c0_linear,Orange Premium Video]=500",4a,single,True,OPTIMAL,False,False,False,0,0.0
+"1010549365|1|/10|a[c1_linear,premium]=0.4",1,single,True,OPTIMAL,False,False,False,0,-7.105427357601002e-15
+"1010549365|4b|swap|a[c0_linear,premium]=0.25 <-> a[c1_linear,premium]=0.4",4b,single,True,OPTIMAL,False,False,False,0,-7.105427357601002e-15
+"1010549365|6|omit|a[c1_linear,premium]=0.4->0",6,single,True,OPTIMAL,False,False,False,0,-7.105427357601002e-15
+"1012426882|1|/10|a[c2_linear,pasta]=1",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1012426882|6|omit|a[c2_linear,pasta]=1->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1023581637|1|x10|a[c0_linear,burgers]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1045884097|1|x10|a[c0_linear,bus stops]=1000",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1045884097|1|x10|a[c0_linear,theatres]=3000",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1051552533|1|/10|a[c1_linear,counter-top sized]=80",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1051552533|4b|swap|a[c0_linear,counter-top sized]=50 <-> a[c1_linear,counter-top sized]=80",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1051552533|6|omit|a[c1_linear,counter-top sized]=80->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1074978508|1|/10|a[c1_linear,hot-air balloon]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1074978508|6|omit|a[c1_linear,hot-air balloon]=4->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1092036773|1|x10|a[c0_linear,cream lipsticks]=3.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1092036773|4b|swap|a[c0_linear,cream lipsticks]=3.5 <-> a[c1_linear,cream lipsticks]=5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1101417478|1|/10|a[c1_linear,cheese]=6",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1101417478|4b|swap|a[c0_linear,cheese]=8 <-> a[c1_linear,cheese]=6",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1101417478|6|omit|a[c1_linear,cheese]=6->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1107094432|1|/10|a[c0_linear,Crane]=85",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1107094432|6|omit|a[c0_linear,Crane]=85->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1108621669|1|/10|a[c1_linear,sedans]=50",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1108621669|4b|swap|a[c0_linear,sedans]=10 <-> a[c1_linear,sedans]=50",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1108621669|6|omit|a[c1_linear,sedans]=50->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1109593584|1|x10|a[c1_linear,electric scooters]=6",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1113010512|1|/10|a[c0_linear,oats]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1113010512|6|omit|a[c0_linear,oats]=5->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1117636837|1|x10|a[c0_linear,sled dogs]=50",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1130600103|1|x10|a[c0_linear,special]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1130600103|4b|swap|a[c0_linear,special]=3 <-> a[c1_linear,special]=5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1138164544|1|/10|a[c1_linear,pizza]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1138164544|6|omit|a[c1_linear,pizza]=10->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1146360292|1|x10|a[c0_linear,matcha milk tea]=525",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1146360292|1|/10|a[c1_linear,matcha milk tea]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1146360292|4b|swap|a[c0_linear,matcha milk tea]=525 <-> a[c1_linear,matcha milk tea]=5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1146360292|6|omit|a[c1_linear,matcha milk tea]=5->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1153045283|1|x10|a[c1_linear,small]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1168196894|1|x10|a[c0_linear,vat leaching]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1168196894|4b|swap|a[c0_linear,vat leaching]=20 <-> a[c1_linear,vat leaching]=17",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1169913509|1|x10|a[c0_linear,small]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1173275251|1|x10|a[c1_linear,orange juice]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1173275251|1|/10|a[c1_linear,orange juice]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1173275251|4b|swap|a[c0_linear,orange juice]=2 <-> a[c1_linear,orange juice]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1173275251|4b|swap|a[c1_linear,orange juice]=3 <-> a[c2_linear,orange juice]=5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1173275251|6|omit|a[c1_linear,orange juice]=3->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1178527024|1|x10|a[c0_linear,short desks]=100",1,single,True,OPTIMAL,False,False,False,0,0.0
+"118743640|1|x10|a[c2_linear,street signs]=0.8",1,single,True,OPTIMAL,False,False,False,0,0.0
+"118743640|4b|swap|a[c0_linear,street signs]=1 <-> a[c2_linear,street signs]=0.8",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1194994066|1|x10|a[c0_linear,mountain bikes]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"119901001|1|x10|a[c0_linear,labradors]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1204240087|1|x10|a[c0_linear,fruits]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1204240087|1|/10|a[c1_linear,fruits]=1",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1204240087|6|omit|a[c1_linear,fruits]=1->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1229366693|1|/10|a[c1_linear,blue gummy]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1229366693|6|omit|a[c1_linear,blue gummy]=2->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1231061056|1|x10|a[c2_linear,couches]=300",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1231818101|1|x10|a[c0_linear,stuffed bears]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1240864021|1|/10|a[c1_linear,dog food B]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1240864021|4b|swap|a[c0_linear,dog food B]=8 <-> a[c1_linear,dog food B]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1240864021|6|omit|a[c1_linear,dog food B]=2->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"124450166|1|x10|a[c0_linear,backpacks]=7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"124450166|4b|swap|a[c0_linear,backpacks]=7 <-> a[c1_linear,backpacks]=5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1259789310|1|/10|a[c0_linear,vegetable juice]=9",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1259789310|4b|swap|a[c0_linear,vegetable juice]=9 <-> a[c1_linear,vegetable juice]=5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1259789310|4b|swap|a[c0_linear,vegetable juice]=9 <-> a[c2_linear,vegetable juice]=7",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1259789310|6|omit|a[c0_linear,vegetable juice]=9->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1270045886|1|x10|a[c0_linear,process J]=8",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1275707149|1|x10|a[c3_linear,soorchle]=200",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1275707149|1|x10|a[c3_linear,wassa]=100",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1275707149|1|/10|a[c3_linear,soorchle]=200",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1275707149|1|/10|a[c3_linear,wassa]=100",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1275707149|4a|swap|a[c3_linear,soorchle]=200 <-> a[c3_linear,wassa]=100",4a,single,True,OPTIMAL,False,False,False,0,0.0
+"1314557513|1|x10|a[c0_linear,Alnolyte]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1316021843|1|x10|a[c1_linear,bookcase]=25",1,single,True,OPTIMAL,False,False,False,0,2.842170943040401e-14
+"1323333207|1|/10|a[c1_linear,Kontrol]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1323333207|6|omit|a[c1_linear,Kontrol]=5->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1326356284|1|x10|a[c0_linear,Eucalyptus]=6",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1326962238|1|x10|a[c1_linear,bookcases]=7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1333247991|1|/10|a[c0_linear,regular model]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1333247991|4b|swap|a[c0_linear,regular model]=20 <-> a[c1_linear,regular model]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1333247991|6|omit|a[c0_linear,regular model]=20->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1338474634|1|x10|a[c1_linear,Gamma]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1338474634|1|/10|a[c0_linear,Gamma]=7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1338474634|1|/10|a[c1_linear,Gamma]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1338474634|6|omit|a[c0_linear,Gamma]=7->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1338474634|6|omit|a[c1_linear,Gamma]=10->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1343830030|1|x10|a[c0_linear,Brand A sneakers]=100",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1350493270|1|/10|a[c0_linear,shrimp]=22",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1350493270|4b|swap|a[c0_linear,shrimp]=22 <-> a[c1_linear,shrimp]=7",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1350493270|6|omit|a[c0_linear,shrimp]=22->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1383248270|1|x10|a[c1_linear,washing machine]=90",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1419130428|1|x10|a[c2_linear,wheat]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1419130428|4b|swap|a[c1_linear,wheat]=10 <-> a[c2_linear,wheat]=4",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1433467400|1|x10|a[c1_linear,thin jar]=90",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1442198615|1|x10|a[c1_linear,large]=35",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1442198615|4b|swap|a[c0_linear,large]=10 <-> a[c1_linear,large]=35",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1448763159|1|x10|a[c1_linear,cupcakes]=60",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1450943790|1|/10|a[c0_linear,indoor soil]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1450943790|6|omit|a[c0_linear,indoor soil]=2->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1457598668|1|x10|a[c3_linear,radio ads]=500",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1457598668|1|x10|a[c3_linear,television ads]=2000",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1468112927|1|x10|a[c0_linear,hashbrowns.]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1470713712|1|x10|a[c0_linear,regular mix]=0.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1492393031|1|x10|a[c3_linear,sports games]=5000",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1492393031|1|x10|a[c3_linear,comedy shows]=2000",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1503083816|1|x10|a[c1_linear,large cabinet]=120",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1519284406|1|x10|a[c0_linear,Indian]=3.4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1519284406|1|x10|a[c2_linear,Indian]=1.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1519284406|1|/10|a[c0_linear,Indian]=3.4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1519284406|1|/10|a[c2_linear,Indian]=1.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1519284406|4b|swap|a[c0_linear,Indian]=3.4 <-> a[c1_linear,Indian]=2.2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1519284406|4b|swap|a[c0_linear,Indian]=3.4 <-> a[c2_linear,Indian]=1.5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1519284406|4b|swap|a[c1_linear,Indian]=2.2 <-> a[c2_linear,Indian]=1.5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1519284406|6|omit|a[c0_linear,Indian]=3.4->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1519284406|6|omit|a[c2_linear,Indian]=1.5->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1524239940|1|x10|a[c0_linear,monitors]=8",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1524239940|4b|swap|a[c0_linear,monitors]=8 <-> a[c2_linear,monitors]=180",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"153962739|1|/10|a[c1_linear,chicken salad sandwiches]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"153962739|4b|swap|a[c0_linear,chicken salad sandwiches]=25 <-> a[c1_linear,chicken salad sandwiches]=15",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"153962739|6|omit|a[c1_linear,chicken salad sandwiches]=15->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1540745183|1|x10|a[c1_linear,marble]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1540745183|4b|swap|a[c0_linear,marble]=1.5 <-> a[c1_linear,marble]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1543270953|1|x10|a[c0_linear,flip phone]=80",1,single,True,OPTIMAL,False,False,False,0,0.0
+"155829587|1|x10|a[c1_linear,general purpose vessels]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"155829587|1|x10|a[c1_linear,pharmaceutical vessels]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"155829587|4b|swap|a[c0_linear,general purpose vessels]=3.5 <-> a[c1_linear,general purpose vessels]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"155829587|4b|swap|a[c0_linear,pharmaceutical vessels]=4 <-> a[c1_linear,pharmaceutical vessels]=5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1588230199|1|x10|a[c1_linear,dresser]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1600733243|1|x10|a[c0_linear,chocolate chip cookies]=314",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1602930125|1|x10|a[c1_linear,demonstration 2]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1609629473|1|x10|a[c1_linear,SUV]=120",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1609629473|4b|swap|a[c0_linear,SUV]=200 <-> a[c1_linear,SUV]=120",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1612947890|1|x10|a[c0_linear,briefcases]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1612947890|4b|swap|a[c0_linear,briefcases]=10 <-> a[c1_linear,briefcases]=9",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1615543212|1|/10|a[c0_linear,concerts]=9",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1615543212|4b|swap|a[c0_linear,concerts]=9 <-> a[c1_linear,concerts]=4",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1615543212|6|omit|a[c0_linear,concerts]=9->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1629184346|1|x10|a[c0_linear,rectangular]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1636951466|1|/10|a[c0_linear,nurses]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1636951466|6|omit|a[c0_linear,nurses]=5->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1637604355|1|/10|a[c1_linear,syrup 1]=0.4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1637604355|4b|swap|a[c0_linear,syrup 1]=0.5 <-> a[c1_linear,syrup 1]=0.4",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1637604355|6|omit|a[c1_linear,syrup 1]=0.4->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1652531585|1|x10|a[c0_linear,orchids]=40",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1655680875|1|x10|a[c2_linear,cabbage]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1680605469|1|x10|a[c0_linear,burritos]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1692392701|1|x10|a[c0_linear,grey]=40",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1694027096|1|x10|a[c1_linear,Regular Synthetic]=40",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1695243531|1|x10|a[c1_linear,shelves]=60",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1725654106|1|/10|a[c0_linear,new one]=50",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1725654106|6|omit|a[c0_linear,new one]=50->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1727707716|1|x10|a[c0_linear,small]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1738481857|1|x10|a[c2_linear,force experiment]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1738481857|4b|swap|a[c0_linear,force experiment]=5 <-> a[c2_linear,force experiment]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1738481857|4b|swap|a[c1_linear,force experiment]=2 <-> a[c2_linear,force experiment]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1751406188|1|x10|a[c1_linear,tempered glass pane]=8",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1754296821|1|x10|a[c2_linear,pants]=0.7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1754296821|4b|swap|a[c0_linear,pants]=0.5 <-> a[c2_linear,pants]=0.7",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1771352861|1|x10|a[c1_linear,bread]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1778958258|1|x10|a[c0_linear,brownies]=1",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1778958258|4b|swap|a[c0_linear,brownies]=1 <-> a[c1_linear,brownies]=0.5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1797374435|1|x10|a[c0_linear,chewable pills]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1797374435|1|x10|a[c1_linear,chewable pills]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1797374435|1|x10|a[c2_linear,chewable pills]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1797374435|1|/10|a[c0_linear,chewable pills]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1797374435|1|/10|a[c1_linear,chewable pills]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1797374435|1|/10|a[c2_linear,chewable pills]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1797374435|4b|swap|a[c0_linear,chewable pills]=2 <-> a[c1_linear,chewable pills]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1797374435|4b|swap|a[c0_linear,chewable pills]=2 <-> a[c2_linear,chewable pills]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1797374435|4b|swap|a[c1_linear,chewable pills]=3 <-> a[c3_linear,chewable pills]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1797374435|4b|swap|a[c2_linear,chewable pills]=3 <-> a[c3_linear,chewable pills]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1797374435|6|omit|a[c0_linear,chewable pills]=2->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1797374435|6|omit|a[c1_linear,chewable pills]=3->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1797374435|6|omit|a[c2_linear,chewable pills]=3->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1797952873|1|x10|a[c1_linear,hams]=2.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1797952873|4b|swap|a[c0_linear,hams]=4 <-> a[c1_linear,hams]=2.5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1804684770|1|/10|a[c1_linear,drug A]=2.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1804684770|4b|swap|a[c0_linear,drug A]=3 <-> a[c1_linear,drug A]=2.5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1804684770|6|omit|a[c1_linear,drug A]=2.5->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1818492485|1|x10|a[c1_linear,model trains]=40",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1821426741|1|x10|a[c1_linear,small]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1862750461|1|/10|a[c2_linear,meal replacement smoothies]=25",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1862750461|4b|swap|a[c0_linear,meal replacement smoothies]=15 <-> a[c2_linear,meal replacement smoothies]=25",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1862750461|4b|swap|a[c1_linear,meal replacement smoothies]=10 <-> a[c2_linear,meal replacement smoothies]=25",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1862750461|6|omit|a[c2_linear,meal replacement smoothies]=25->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1863062325|1|x10|a[c0_linear,queen]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1863062325|1|x10|a[c1_linear,queen]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1863062325|1|/10|a[c0_linear,queen]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1863062325|1|/10|a[c1_linear,queen]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1863062325|4b|swap|a[c0_linear,queen]=20 <-> a[c1_linear,queen]=10",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1863062325|6|omit|a[c0_linear,queen]=20->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1863062325|6|omit|a[c1_linear,queen]=10->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"187636535|1|x10|a[c0_linear,waffles]=50",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1885080399|1|x10|a[c0_linear,Pizza A]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1885080399|4b|swap|a[c0_linear,Pizza A]=4 <-> a[c1_linear,Pizza A]=5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1894232673|1|x10|a[c1_linear,Nantes carrots]=3.7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1894232673|4b|swap|a[c1_linear,Nantes carrots]=3.7 <-> a[c2_linear,Nantes carrots]=200",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1916748046|1|x10|a[c0_linear,large size]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1916748046|1|/10|a[c1_linear,large size]=12",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1916748046|6|omit|a[c1_linear,large size]=12->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1919022789|1|x10|a[c0_linear,vase décor]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1919022789|4b|swap|a[c0_linear,vase décor]=20 <-> a[c1_linear,vase décor]=14",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1932848793|1|x10|a[c0_linear,bikes]=1",1,single,True,OPTIMAL,False,False,False,0,0.0
+"193295056|1|/10|a[c0_linear,expensive]=90",1,single,True,OPTIMAL,False,False,False,0,0.0
+"193295056|6|omit|a[c0_linear,expensive]=90->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1958482161|1|x10|a[c1_linear,western factory]=750",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1958482161|1|/10|a[c0_linear,western factory]=650",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1958482161|1|/10|a[c1_linear,western factory]=750",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1958482161|4b|swap|a[c0_linear,western factory]=650 <-> a[c1_linear,western factory]=750",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1958482161|4b|swap|a[c0_linear,western factory]=650 <-> a[c2_linear,western factory]=35",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1958482161|4b|swap|a[c1_linear,western factory]=750 <-> a[c2_linear,western factory]=35",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"1958482161|6|omit|a[c0_linear,western factory]=650->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1958482161|6|omit|a[c1_linear,western factory]=750->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"1962552394|1|x10|a[c0_linear,billboard ads]=7000",1,multi,True,OPTIMAL,False,False,False,0,0.0
+"1973401520|1|/10|a[c0_linear,health supplement A]=30",1,single,True,OPTIMAL,False,False,False,0,0.0
+"1973401520|6|omit|a[c0_linear,health supplement A]=30->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"201060410|1|x10|a[c0_linear,truss bridges]=50",1,single,True,OPTIMAL,False,False,False,0,0.0
+"201060410|1|x10|a[c1_linear,truss bridges]=8",1,single,True,OPTIMAL,False,False,False,0,0.0
+"201060410|1|/10|a[c0_linear,truss bridges]=50",1,single,True,OPTIMAL,False,False,False,0,0.0
+"201060410|1|/10|a[c1_linear,truss bridges]=8",1,single,True,OPTIMAL,False,False,False,0,0.0
+"201060410|4b|swap|a[c0_linear,truss bridges]=50 <-> a[c1_linear,truss bridges]=8",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"201060410|6|omit|a[c0_linear,truss bridges]=50->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"201060410|6|omit|a[c1_linear,truss bridges]=8->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"2035548217|1|/10|a[c0_linear,Piano A]=25",1,single,True,OPTIMAL,False,False,False,0,0.0
+"2035548217|4b|swap|a[c0_linear,Piano A]=25 <-> a[c1_linear,Piano A]=20",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"2035548217|6|omit|a[c0_linear,Piano A]=25->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"2038058304|1|x10|a[c0_linear,flatbreads]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"2038778006|1|x10|a[c0_linear,small salads]=30",1,single,True,OPTIMAL,False,False,False,0,0.0
+"2042898874|1|x10|a[c0_linear,Low Quality]=6",1,multi,True,OPTIMAL,False,False,False,0,2.842170943040401e-14
+"2042898874|1|x10|a[c1_linear,Low Quality]=20",1,multi,True,OPTIMAL,False,False,False,0,2.842170943040401e-14
+"2042898874|1|/10|a[c0_linear,Low Quality]=6",1,multi,True,OPTIMAL,False,False,False,0,0.0
+"2042898874|4b|swap|a[c0_linear,Low Quality]=6 <-> a[c1_linear,Low Quality]=20",4b,multi,True,OPTIMAL,False,False,False,0,2.842170943040401e-14
+"2042898874|6|omit|a[c0_linear,Low Quality]=6->0",6,multi,True,OPTIMAL,False,False,False,0,2.842170943040401e-14
+"2050370749|1|x10|a[c0_linear,small]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"2050370749|4b|swap|a[c0_linear,small]=5 <-> a[c1_linear,small]=10",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"2051029907|1|x10|a[c2_linear,Oil Max]=56",1,single,True,OPTIMAL,False,False,False,0,0.0
+"2051029907|4b|swap|a[c0_linear,Oil Max]=46 <-> a[c2_linear,Oil Max]=56",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"2051029907|4b|swap|a[c1_linear,Oil Max]=43 <-> a[c2_linear,Oil Max]=56",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"2054560331|1|/10|a[c0_linear,cat foods]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"2054560331|4b|swap|a[c0_linear,cat foods]=5 <-> a[c2_linear,cat foods]=12",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"2054560331|6|omit|a[c0_linear,cat foods]=5->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"2068785825|1|x10|a[c1_linear,roses]=7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"2086021215|1|x10|a[c1_linear,metal signs]=1.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"2086021215|4b|swap|a[c0_linear,metal signs]=2 <-> a[c1_linear,metal signs]=1.5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"2117126961|1|x10|a[c0_linear,veggie option]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"2117126961|4b|swap|a[c0_linear,veggie option]=4 <-> a[c1_linear,veggie option]=5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"2121307739|1|x10|a[c1_linear,star layout]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"2121307739|1|x10|a[c1_linear,snowflake layout]=122",1,single,True,OPTIMAL,False,False,False,0,0.0
+"2121307739|4b|swap|a[c0_linear,star layout]=40 <-> a[c1_linear,star layout]=10",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"2121307739|4b|swap|a[c0_linear,snowflake layout]=323 <-> a[c1_linear,snowflake layout]=122",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"2121307739|4b|swap|a[c1_linear,snowflake layout]=122 <-> a[c2_linear,snowflake layout]=41",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"215705279|1|x10|a[c0_linear,airports]=10000",1,single,True,OPTIMAL,False,False,False,0,0.0
+"215705279|1|x10|a[c0_linear,movie theatres]=2000",1,single,True,OPTIMAL,False,False,False,0,0.0
+"221050166|1|/10|a[c1_linear,sports programs]=18",1,single,True,OPTIMAL,False,False,False,0,0.0
+"221050166|4b|swap|a[c0_linear,sports programs]=4 <-> a[c1_linear,sports programs]=18",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"221050166|6|omit|a[c1_linear,sports programs]=18->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"23481428|1|x10|a[c1_linear,lilies]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"239372788|1|x10|a[c1_linear,laptops]=50",1,single,True,OPTIMAL,False,False,False,0,0.0
+"240605764|1|x10|a[c0_linear,medium]=3",1,multi,True,OPTIMAL,False,False,False,0,0.0
+"240605764|1|x10|a[c1_linear,medium]=2",1,multi,True,OPTIMAL,False,False,False,0,0.0
+"25391666|1|/10|a[c0_linear,supplement B]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"25391666|6|omit|a[c0_linear,supplement B]=4->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"256126407|1|x10|a[c1_linear,graph paper]=5.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"267694031|1|/10|a[c0_linear,top-loading model]=50",1,single,True,OPTIMAL,False,False,False,0,0.0
+"267694031|6|omit|a[c0_linear,top-loading model]=50->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"279930346|1|x10|a[c1_linear,factory 2]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"279930346|1|/10|a[c1_linear,factory 2]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"279930346|1|/10|a[c2_linear,factory 2]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"279930346|4b|swap|a[c0_linear,factory 2]=45 <-> a[c1_linear,factory 2]=20",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"279930346|6|omit|a[c1_linear,factory 2]=20->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"279930346|6|omit|a[c2_linear,factory 2]=10->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"30492189|1|x10|a[c0_linear,coffee]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"334482831|1|x10|a[c0_linear,regular desks]=150",1,single,True,OPTIMAL,False,False,False,0,0.0
+"341875970|1|x10|a[c0_linear,small]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"343561730|1|x10|a[c1_linear,stationary bikes]=30",1,single,True,OPTIMAL,False,False,False,0,0.0
+"346332840|1|/10|a[c0_linear,common third-party annotation company]=40",1,single,True,OPTIMAL,False,False,False,0,0.0
+"346332840|6|omit|a[c0_linear,common third-party annotation company]=40->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"356566587|1|x10|a[c1_linear,RC drones]=30",1,single,True,OPTIMAL,False,False,False,0,0.0
+"368302984|1|x10|a[c1_linear,carrots]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"368302984|4b|swap|a[c0_linear,carrots]=20 <-> a[c1_linear,carrots]=15",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"37344130|1|/10|a[c0_linear,vegetables]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"37344130|4b|swap|a[c0_linear,vegetables]=15 <-> a[c1_linear,vegetables]=30",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"37344130|6|omit|a[c0_linear,vegetables]=15->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"379931422|1|/10|a[c0_linear,pork meat]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"379931422|6|omit|a[c0_linear,pork meat]=3->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"38885939|1|x10|a[c2_linear,chemistry kit]=8",1,single,True,OPTIMAL,False,False,False,0,0.0
+"38885939|4b|swap|a[c0_linear,chemistry kit]=3 <-> a[c2_linear,chemistry kit]=8",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"38885939|4b|swap|a[c1_linear,chemistry kit]=7 <-> a[c2_linear,chemistry kit]=8",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"438270023|1|x10|a[c1_linear,cappuccinos]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"465775172|1|x10|a[c0_linear,stoves]=45",1,single,True,OPTIMAL,False,False,False,0,0.0
+"473766545|1|x10|a[c0_linear,low]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"473766545|1|x10|a[c0_linear,medium]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"473766545|1|x10|a[c1_linear,low]=6",1,single,True,OPTIMAL,False,False,False,0,0.0
+"473766545|1|x10|a[c1_linear,medium]=7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"473766545|1|/10|a[c0_linear,low]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"473766545|1|/10|a[c0_linear,medium]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"473766545|1|/10|a[c1_linear,low]=6",1,single,True,OPTIMAL,False,False,False,0,0.0
+"473766545|1|/10|a[c1_linear,medium]=7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"473766545|4a|swap|a[c0_linear,low]=2 <-> a[c0_linear,medium]=3",4a,single,True,OPTIMAL,False,False,False,0,0.0
+"473766545|4a|swap|a[c1_linear,low]=6 <-> a[c1_linear,medium]=7",4a,single,True,OPTIMAL,False,False,False,0,0.0
+"473766545|4b|swap|a[c0_linear,low]=2 <-> a[c1_linear,low]=6",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"473766545|4b|swap|a[c0_linear,medium]=3 <-> a[c1_linear,medium]=7",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"473766545|6|omit|a[c0_linear,low]=2->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"473766545|6|omit|a[c0_linear,medium]=3->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"473766545|6|omit|a[c1_linear,low]=6->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"473766545|6|omit|a[c1_linear,medium]=7->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"493111753|1|x10|a[c1_linear,folding bike]=550",1,single,True,OPTIMAL,False,False,False,0,-3.637978807091713e-12
+"495029314|1|x10|a[c0_linear,blankets]=30",1,single,True,OPTIMAL,False,False,False,0,0.0
+"495029314|1|x10|a[c1_linear,blankets]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"495029314|1|/10|a[c0_linear,blankets]=30",1,single,True,OPTIMAL,False,False,False,0,0.0
+"495029314|1|/10|a[c1_linear,blankets]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"495029314|4b|swap|a[c0_linear,blankets]=30 <-> a[c1_linear,blankets]=5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"495029314|6|omit|a[c0_linear,blankets]=30->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"495029314|6|omit|a[c1_linear,blankets]=5->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"500097421|1|x10|a[c0_linear,rubber ducks]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"501615489|1|x10|a[c0_linear,ice cream cups]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"501615489|4b|swap|a[c0_linear,ice cream cups]=4 <-> a[c1_linear,ice cream cups]=6",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"556123470|1|x10|a[c1_linear,sunflowers]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"562583112|1|/10|a[c0_linear,drones]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"562583112|4b|swap|a[c0_linear,drones]=4 <-> a[c1_linear,drones]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"562583112|6|omit|a[c0_linear,drones]=4->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"566463604|1|x10|a[c0_linear,brass]=1.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"583736451|1|x10|a[c0_linear,earphone]=40",1,single,True,OPTIMAL,False,False,False,0,0.0
+"583736451|4b|swap|a[c0_linear,earphone]=40 <-> a[c1_linear,earphone]=20",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"587452310|1|x10|a[c0_linear,desks]=40",1,single,True,OPTIMAL,False,False,False,0,4.547473508864641e-13
+"598057720|1|x10|a[c1_linear,sweaters]=1.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"598057720|4b|swap|a[c0_linear,sweaters]=2 <-> a[c1_linear,sweaters]=1.5",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"603259629|1|x10|a[c0_linear,family-sized salad]=18",1,single,True,OPTIMAL,False,False,False,0,0.0
+"611957227|1|/10|a[c1_linear,chocolate croissants]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"611957227|6|omit|a[c1_linear,chocolate croissants]=3->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"636857111|1|/10|a[c1_linear,cereal]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"636857111|6|omit|a[c1_linear,cereal]=5->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"651026322|1|/10|a[c0_linear,planes]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"651026322|6|omit|a[c0_linear,planes]=20->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"659209022|1|x10|a[c0_linear,beans]=12",1,single,True,OPTIMAL,False,False,False,0,0.0
+"697851528|1|/10|a[c2_linear,Pacific]=0.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"697851528|6|omit|a[c2_linear,Pacific]=0.5->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"713346505|1|/10|a[c0_linear,factory outlet]=80",1,single,True,OPTIMAL,False,False,False,0,0.0
+"713346505|4b|swap|a[c0_linear,factory outlet]=80 <-> a[c1_linear,factory outlet]=4",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"713346505|6|omit|a[c0_linear,factory outlet]=80->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"715710952|1|x10|a[c1_linear,paintings]=400",1,single,True,OPTIMAL,False,False,False,0,0.0
+"72416232|1|x10|a[c1_linear,Package 2]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"737447686|1|x10|a[c0_linear,bedside tables]=2.5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"739435915|1|/10|a[c0_linear,Korean]=10",1,single,True,OPTIMAL,False,False,False,0,-2.842170943040401e-14
+"739435915|4b|swap|a[c0_linear,Korean]=10 <-> a[c1_linear,Korean]=14",4b,single,True,OPTIMAL,False,False,False,0,-2.842170943040401e-14
+"739435915|6|omit|a[c0_linear,Korean]=10->0",6,single,True,OPTIMAL,False,False,False,0,-2.842170943040401e-14
+"745349252|1|x10|a[c0_linear,soccer balls]=20",1,single,True,OPTIMAL,False,False,False,0,0.0
+"745349252|4b|swap|a[c0_linear,soccer balls]=20 <-> a[c1_linear,soccer balls]=10",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"777636520|1|/10|a[c0_linear,bus]=8",1,single,True,OPTIMAL,False,False,False,0,0.0
+"777636520|6|omit|a[c0_linear,bus]=8->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"780267130|1|x10|a[c1_linear,roses]=52",1,single,True,OPTIMAL,False,False,False,0,0.0
+"781521487|1|x10|a[c0_linear,vegetable smoothies]=7",1,single,True,OPTIMAL,False,False,False,0,0.0
+"781521487|1|/10|a[c1_linear,vegetable smoothies]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"781521487|6|omit|a[c1_linear,vegetable smoothies]=4->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"794407334|1|x10|a[c0_linear,regular model]=70",1,single,True,OPTIMAL,False,False,False,0,0.0
+"796437889|1|/10|a[c2_linear,foreign farm]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"796437889|4b|swap|a[c0_linear,foreign farm]=5 <-> a[c2_linear,foreign farm]=4",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"796437889|6|omit|a[c2_linear,foreign farm]=4->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"797233732|1|x10|a[c0_linear,tea]=4",1,single,True,OPTIMAL,False,False,False,0,0.0
+"799759512|1|x10|a[c0_linear,Mediterranean salad]=150",1,single,True,OPTIMAL,False,False,False,0,0.0
+"799759512|1|x10|a[c1_linear,Mediterranean salad]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"799759512|1|/10|a[c0_linear,Mediterranean salad]=150",1,single,True,OPTIMAL,False,False,False,0,0.0
+"799759512|1|/10|a[c1_linear,Mediterranean salad]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"799759512|4b|swap|a[c0_linear,Mediterranean salad]=150 <-> a[c1_linear,Mediterranean salad]=15",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"799759512|4b|swap|a[c0_linear,Mediterranean salad]=150 <-> a[c2_linear,Mediterranean salad]=15",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"799759512|6|omit|a[c0_linear,Mediterranean salad]=150->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"799759512|6|omit|a[c1_linear,Mediterranean salad]=15->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"817947649|1|x10|a[c0_linear,cars]=2",1,single,True,OPTIMAL,False,False,False,0,0.0
+"823166508|1|/10|a[c2_linear,fruit snack]=200",1,single,True,OPTIMAL,False,False,False,0,0.0
+"823166508|4b|swap|a[c0_linear,fruit snack]=400 <-> a[c2_linear,fruit snack]=200",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"823166508|4b|swap|a[c1_linear,fruit snack]=600 <-> a[c2_linear,fruit snack]=200",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"823166508|6|omit|a[c2_linear,fruit snack]=200->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"844555197|1|/10|a[c0_linear,small shop]=30",1,single,True,OPTIMAL,False,False,False,0,0.0
+"844555197|4b|swap|a[c0_linear,small shop]=30 <-> a[c1_linear,small shop]=2",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"844555197|6|omit|a[c0_linear,small shop]=30->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"865048192|1|x10|a[c1_linear,SUVs]=25",1,single,True,OPTIMAL,False,False,False,0,0.0
+"876167589|1|x10|a[c1_linear,mango trees]=150",1,single,True,OPTIMAL,False,False,False,0,0.0
+"882129265|1|x10|a[c1_linear,small logging trucks]=12",1,single,True,OPTIMAL,False,False,False,0,0.0
+"892653388|1|x10|a[c2_linear,dining tables]=1000",1,single,True,OPTIMAL,False,False,False,0,0.0
+"902707159|1|/10|a[c1_linear,small]=50",1,single,True,OPTIMAL,False,False,False,0,0.0
+"902707159|4b|swap|a[c0_linear,small]=10 <-> a[c1_linear,small]=50",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"902707159|6|omit|a[c1_linear,small]=50->0",6,single,True,OPTIMAL,False,False,False,0,0.0
+"91331390|1|x10|a[c1_linear,large fish]=15",1,single,True,OPTIMAL,False,False,False,0,0.0
+"927355158|1|x10|a[c1_linear,premium]=3",1,single,True,OPTIMAL,False,False,False,0,0.0
+"927355158|4b|swap|a[c0_linear,premium]=20 <-> a[c1_linear,premium]=3",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"943165280|1|x10|a[c1_linear,fried fish]=5",1,single,True,OPTIMAL,False,False,False,0,0.0
+"981967779|1|/10|a[c2_linear,chicken wraps]=10",1,single,True,OPTIMAL,False,False,False,0,0.0
+"981967779|4b|swap|a[c1_linear,chicken wraps]=12 <-> a[c2_linear,chicken wraps]=10",4b,single,True,OPTIMAL,False,False,False,0,0.0
+"981967779|6|omit|a[c2_linear,chicken wraps]=10->0",6,single,True,OPTIMAL,False,False,False,0,0.0

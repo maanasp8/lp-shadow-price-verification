@@ -1,0 +1,64 @@
+{
+  "_README": [
+    "Human adjudications of pilot cells where the NL4Opt annotation, not the",
+    "extraction, is the defective party. Recorded as DATA, dated, with reasoning,",
+    "on the same footing as the project's exclusion lists (HANDOFF.md §6).",
+    "",
+    "This file is deliberately NOT read by extraction_score.py. Pre-registration",
+    "§5 fixes that scorer as MECHANICAL ONLY — 'no LLM judgment anywhere' — and a",
+    "human adjudication is judgment too. scores.json therefore always reports the",
+    "AS-MEASURED figures. Adjudicated figures are derived from this file and are",
+    "reported BESIDE the as-measured ones, never in place of them.",
+    "",
+    "Adding an entry here can only ever move a number in the extractor's favour,",
+    "which is exactly why each one must carry its full reasoning and be legible",
+    "to a reader who wants to reject it."
+  ],
+  "adjudications": [
+    {
+      "date": "2026-08-05",
+      "problem_id": "-114149479",
+      "verdict": "annotation_defect",
+      "adjudicated_by": "project author",
+      "claim": "The annotation, not the extraction, is wrong. The extractor read the text correctly; the pilot's scorer penalised it for the annotation's error.",
+      "evidence": {
+        "document_states": [
+          "20000 grams of batter, 14000 grams of milk",
+          "crepe cake: 400g batter, 200g milk",
+          "sponge cake: 500g batter, 300g milk",
+          "birthday cake: 450g batter, 350g milk"
+        ],
+        "annotation_has": "ONE constraint row: c0_linear <= 20000 with terms crepe=200, sponge=300, birthday=350. The limit 20000 is the BATTER capacity; the coefficients 200/300/350 are the MILK requirements. No milk row is declared at all.",
+        "extraction_has": "TWO rows: batter <= 20000 with 400/500/450, and milk <= 14000 with 200/300/350 — both matching the document exactly, each with a quoted_text span naming its resource.",
+        "why_it_scored_wrong": "match_rows paired the ground-truth row to the extracted BATTER row on an exact (operator, limit) match at 20000, then compared the extractor's batter coefficients against the annotation's milk coefficients. The correctly-extracted milk row had no ground-truth counterpart and fell to the extra_row spurious bucket."
+      },
+      "affects": [
+        {
+          "axis": 1,
+          "quantity": "numeric_wrong",
+          "cells": [
+            {"cell": "c0_linear[crepe cake]", "gt": 200.0, "extracted": 400},
+            {"cell": "c0_linear[sponge cake]", "gt": 300.0, "extracted": 500},
+            {"cell": "c0_linear[birthday cake]", "gt": 350.0, "extracted": 450}
+          ],
+          "delta": -3,
+          "note": "These are the ONLY three numeric errors in the entire pilot."
+        },
+        {
+          "axis": 4,
+          "quantity": "spurious (cause: extra_row)",
+          "cells": [
+            {"cell": "<extracted row 'milk'>", "components": "3 live coefficients + 1 limit"}
+          ],
+          "delta": -4,
+          "note": "The 'spurious' milk row is the extractor supplying a constraint the annotation omits. Counting it as over-extraction inverts what happened."
+        }
+      ],
+      "not_affected": {
+        "axis_2_alignment": "unchanged — an unmatched extracted row contributes no alignment observation",
+        "axis_3_content_gap": "unchanged — this instance has 0 content gaps"
+      },
+      "counter_argument_for_the_record": "Under §0 this pilot measures AGREEMENT WITH THE NL4OPT ANNOTATION, not correctness against the text. On the strictest reading of that scope, disagreement with a defective annotation is still disagreement and the as-measured figures stand. That reading is why both sets of numbers are reported and why scores.json is left untouched. The adjudication is offered as the more informative of the two, not as a correction of the record."
+    }
+  ]
+}

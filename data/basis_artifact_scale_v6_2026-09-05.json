@@ -1,0 +1,110 @@
+{
+ "stamp": "2026-09-05",
+ "family": "resource",
+ "n_vars": 6,
+ "rows": [
+  6,
+  12,
+  18,
+  24
+ ],
+ "instances_per_cell": 1200,
+ "cap": 300,
+ "seed": 20260903,
+ "cells": {
+  "6": {
+   "instances": 1162,
+   "evaluable": 78010,
+   "reference_detects": 59414,
+   "model_forced": 53184,
+   "reference_silent": 18596,
+   "basis_artifact": 6230,
+   "reference_detects_answer_neutral": 220,
+   "basis_artifact_answer_neutral": 146
+  },
+  "12": {
+   "instances": 1200,
+   "evaluable": 180922,
+   "reference_detects": 150660,
+   "model_forced": 144892,
+   "reference_silent": 30262,
+   "basis_artifact": 5768,
+   "reference_detects_answer_neutral": 373,
+   "basis_artifact_answer_neutral": 328
+  },
+  "18": {
+   "instances": 1200,
+   "evaluable": 175180,
+   "reference_detects": 150958,
+   "model_forced": 147686,
+   "reference_silent": 24222,
+   "basis_artifact": 3272,
+   "reference_detects_answer_neutral": 402,
+   "basis_artifact_answer_neutral": 362
+  },
+  "24": {
+   "instances": 1200,
+   "evaluable": 149148,
+   "reference_detects": 131034,
+   "model_forced": 129042,
+   "reference_silent": 18114,
+   "basis_artifact": 1992,
+   "reference_detects_answer_neutral": 354,
+   "basis_artifact_answer_neutral": 335
+  }
+ },
+ "summary": [
+  {
+   "n_vars": 6,
+   "n_rows": 6,
+   "instances": 1162,
+   "evaluable": 78010,
+   "reference_detects": 59414,
+   "basis_artifact": 6230,
+   "model_forced": 53184,
+   "rate_artifact": 0.10485744100717002,
+   "reference_detects_answer_neutral": 220,
+   "basis_artifact_answer_neutral": 146,
+   "rate_artifact_answer_neutral": 0.6636363636363637
+  },
+  {
+   "n_vars": 6,
+   "n_rows": 12,
+   "instances": 1200,
+   "evaluable": 180922,
+   "reference_detects": 150660,
+   "basis_artifact": 5768,
+   "model_forced": 144892,
+   "rate_artifact": 0.03828487986194079,
+   "reference_detects_answer_neutral": 373,
+   "basis_artifact_answer_neutral": 328,
+   "rate_artifact_answer_neutral": 0.8793565683646113
+  },
+  {
+   "n_vars": 6,
+   "n_rows": 18,
+   "instances": 1200,
+   "evaluable": 175180,
+   "reference_detects": 150958,
+   "basis_artifact": 3272,
+   "model_forced": 147686,
+   "rate_artifact": 0.021674902953139282,
+   "reference_detects_answer_neutral": 402,
+   "basis_artifact_answer_neutral": 362,
+   "rate_artifact_answer_neutral": 0.900497512437811
+  },
+  {
+   "n_vars": 6,
+   "n_rows": 24,
+   "instances": 1200,
+   "evaluable": 149148,
+   "reference_detects": 131034,
+   "basis_artifact": 1992,
+   "model_forced": 129042,
+   "rate_artifact": 0.015202161271120472,
+   "reference_detects_answer_neutral": 354,
+   "basis_artifact_answer_neutral": 335,
+   "rate_artifact_answer_neutral": 0.9463276836158192
+  }
+ ]
+}

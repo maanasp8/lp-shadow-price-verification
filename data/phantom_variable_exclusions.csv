@@ -1,0 +1,5 @@
+problem_id,phantom_name,aliases,signature,span_labels,coefficients_live,n_live_rows,live_detail,excluded_from_mutation
+-1119351614,mini dresses,,orphan_variable,VAR,False,0,[],False
+583736451,earphones,,orphan_variable,VAR,False,0,[],False
+583736451,headphones,,orphan_variable,VAR,False,0,[],False
+73102943,3,billboard,numeric_order_mapping_key+orphan_variable,LIMIT|VAR,True,2,"[{""row"": ""c1_ratio"", ""ctype"": ""ratio"", ""coef"": -0.4, ""pi"": 0.0}, {""row"": ""c2_ratio"", ""ctype"": ""ratio"", ""coef"": -0.25, ""pi"": -40000.0}]",True

@@ -1,0 +1,99 @@
+mutant_id,faces_intersect,obj_moved,sol_moved
+"-2106263334|1|/10|a[c0_linear,Model A]=10",True,False,True
+-2106263334|2|x10|c[Model A]=10000,True,False,True
+"-2106263334|6|omit|a[c0_linear,Model A]=10->0",True,False,True
+"-2101760318|1|/10|a[c0_linear,Vanilla flavor]=2",True,False,True
+"-2101760318|1|/10|a[c1_linear,Vanilla flavor]=2",True,False,True
+-2101760318|2|x10|c[Vanilla flavor]=2,True,False,True
+"-2101760318|4a|swap|a[c1_linear,Vanilla flavor]=2 <-> a[c1_linear,Mocha flavor]=5",True,False,True
+"-2101760318|6|omit|a[c0_linear,Vanilla flavor]=2->0",True,False,True
+"-2101760318|6|omit|a[c1_linear,Vanilla flavor]=2->0",True,False,True
+"-2083631303|1|x10|a[c1_linear,windmills]=40",True,False,True
+-2083631303|2|/10|c[windmills]=1000,True,False,True
+"-1542644642|1|x10|a[c0_linear,peach trees]=80",True,False,True
+"-1542644642|1|x10|a[c1_linear,peach trees]=5",True,False,True
+-1542644642|2|/10|c[peach trees]=25,True,False,True
+"-1542644642|4b|swap|a[c0_linear,peach trees]=80 <-> a[c1_linear,peach trees]=5",True,False,True
+"-1008324134|1|/10|a[c1_linear,Beam 2]=0.4",True,False,True
+-1008324134|2|x10|c[Beam 2]=0.2,True,False,True
+"-1008324134|4b|swap|a[c0_linear,Beam 2]=0.1 <-> a[c1_linear,Beam 2]=0.4",True,False,True
+"-1008324134|6|omit|a[c1_linear,Beam 2]=0.4->0",True,False,True
+"-959862663|1|x10|a[c2_linear,large bowl]=8",True,False,True
+-959862663|2|/10|c[large bowl]=8,True,False,True
+"-949723129|1|x10|a[c1_linear,small]=10",True,False,True
+-949723129|2|/10|c[small]=4,True,False,True
+"-949723129|4a|swap|a[c0_linear,small]=5 <-> a[c0_linear,large chessboards]=10",True,False,True
+"-855138281|1|x10|a[c1_linear,large]=30",True,False,True
+-855138281|2|/10|c[large]=12,True,False,True
+"-816513289|1|/10|a[c0_linear,Kebabs]=200",True,False,True
+"-816513289|1|/10|a[c1_linear,Kebabs]=4",True,False,True
+-816513289|2|x10|c[Kebabs]=2,True,False,True
+"-816513289|4b|swap|a[c0_linear,Kebabs]=200 <-> a[c1_linear,Kebabs]=4",True,False,True
+"-816513289|6|omit|a[c0_linear,Kebabs]=200->0",True,False,True
+"-816513289|6|omit|a[c1_linear,Kebabs]=4->0",True,False,True
+"-816513289|6|omit|a[c1_linear,Rice]=4.5->0",True,False,True
+"-790646361|1|x10|a[c0_linear,knives]=2",True,False,True
+-790646361|2|/10|c[knives]=4,True,False,True
+"-590492809|1|/10|a[c0_linear,Beta]=10",True,False,True
+"-590492809|1|/10|a[c1_linear,Beta]=3",True,False,True
+-590492809|2|x10|c[Beta]=2,True,False,True
+"-590492809|4a|swap|a[c1_linear,Alpha]=20 <-> a[c1_linear,Beta]=3",True,False,True
+"-590492809|4b|swap|a[c0_linear,Beta]=10 <-> a[c1_linear,Beta]=3",True,False,True
+"-590492809|6|omit|a[c0_linear,Beta]=10->0",True,False,True
+"-590492809|6|omit|a[c1_linear,Beta]=3->0",True,False,True
+"-590492809|8|invent|c2_spurious = pattern of c1_linear (median of 2 eligible), limit 2*usage=80",True,False,True
+"-356156483|6|omit|a[c1_linear,powder vitamin]=2->0",True,False,True
+"-261742752|1|x10|a[c0_linear,garden chair]=300",True,False,True
+-261742752|2|/10|c[garden chair]=150,True,False,True
+"-241297255|1|x10|a[c0_linear,elephants]=50",True,False,True
+-241297255|2|/10|c[elephants]=5,True,False,True
+-229455193|3|/10|b[c2_upperbound]=0.6,False,False,True
+-229455193|7|swap|b[c1_lowerbound]=0.25 <-> b[c2_upperbound]=0.6,False,False,True
+"-214665832|1|x10|a[c1_linear,nutritional cereal]=1",True,False,True
+"-214665832|4b|swap|a[c0_linear,nutritional cereal]=3 <-> a[c1_linear,nutritional cereal]=1",True,False,True
+"-76205225|1|/10|a[c1_linear,ramen]=400",True,False,True
+"-76205225|1|/10|a[c2_linear,ramen]=20",True,False,True
+-76205225|2|x10|c[ramen]=100,True,False,True
+"-76205225|4b|swap|a[c1_linear,ramen]=400 <-> a[c2_linear,ramen]=20",True,False,True
+"-76205225|6|omit|a[c1_linear,ramen]=400->0",True,False,True
+"-76205225|6|omit|a[c2_linear,ramen]=20->0",True,False,True
+"240605764|1|x10|a[c0_linear,high quality]=4",True,False,True
+"240605764|1|x10|a[c1_linear,high quality]=1",True,False,True
+240605764|2|/10|c[high quality]=9,True,False,True
+"566463604|1|x10|a[c0_linear,glass]=2",True,False,True
+566463604|2|/10|c[glass]=400,True,False,True
+"598057720|1|x10|a[c1_linear,hoodies]=2",True,False,True
+598057720|2|/10|c[hoodies]=20,True,False,True
+"598057720|4b|swap|a[c0_linear,hoodies]=3 <-> a[c1_linear,hoodies]=2",True,False,True
+"1023581637|1|x10|a[c0_linear,hot-dogs]=2",True,False,True
+1023581637|2|/10|c[hot-dogs]=0.2,True,False,True
+"1092036773|4b|swap|a[c1_linear,cream lipsticks]=5 <-> a[c2_linear,cream lipsticks]=2",True,False,True
+"1178527024|1|x10|a[c0_linear,long desks]=300",True,False,True
+1178527024|2|/10|c[long desks]=6,True,False,True
+"1229366693|1|/10|a[c0_linear,red gummy]=4",True,False,True
+"1229366693|1|/10|a[c1_linear,red gummy]=3",True,False,True
+"1229366693|1|/10|a[c2_linear,red gummy]=2",True,False,True
+1229366693|2|x10|c[red gummy]=3,True,False,True
+"1229366693|4b|swap|a[c0_linear,red gummy]=4 <-> a[c2_linear,red gummy]=2",True,False,True
+"1229366693|4b|swap|a[c1_linear,red gummy]=3 <-> a[c2_linear,red gummy]=2",True,False,True
+"1229366693|6|omit|a[c0_linear,blue gummy]=3->0",True,False,True
+"1229366693|6|omit|a[c0_linear,red gummy]=4->0",True,False,True
+"1229366693|6|omit|a[c1_linear,red gummy]=3->0",True,False,True
+"1229366693|6|omit|a[c2_linear,blue gummy]=5->0",True,False,True
+"1229366693|6|omit|a[c2_linear,red gummy]=2->0",True,False,True
+1229366693|7|swap|b[c0_linear]=40 <-> b[c2_linear]=20,True,False,True
+"1470713712|1|x10|a[c0_linear,sweet mix]=0.75",True,False,True
+1470713712|2|/10|c[sweet mix]=3,True,False,True
+"1862750461|4a|swap|a[c1_linear,chocolate protein shakes]=3 <-> a[c1_linear,meal replacement smoothies]=10",True,False,True
+"1912502114|1|/10|a[c0_linear,Phi]=0.2",True,False,True
+"1912502114|1|/10|a[c1_linear,Phi]=0.45",True,False,True
+1912502114|2|x10|c[Phi]=0.18,True,False,True
+"1912502114|4b|swap|a[c0_linear,Phi]=0.2 <-> a[c1_linear,Phi]=0.45",True,False,True
+"1912502114|6|omit|a[c0_linear,Phi]=0.2->0",True,False,True
+"1912502114|6|omit|a[c1_linear,Phi]=0.45->0",True,False,True
+"1916748046|1|x10|a[c0_linear,small size]=15",True,False,True
+"1916748046|1|x10|a[c1_linear,small size]=10",True,False,True
+1916748046|2|/10|c[small size]=300,True,False,True
+"1916748046|4a|swap|a[c1_linear,large size]=12 <-> a[c1_linear,small size]=10",True,False,True
+"1932848793|1|x10|a[c0_linear,cars]=3",True,False,True
+1932848793|2|/10|c[cars]=3000,True,False,True

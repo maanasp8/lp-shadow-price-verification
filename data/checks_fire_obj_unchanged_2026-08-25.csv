@@ -1,0 +1,167 @@
+mutant_id,error_type,max_abs_dx,x_moved
+-2105184323|5|swap|c[postal service]=100 <-> c[vans]=80,5,11.11111111111111,True
+"-2084079400|4b|swap|a[c0_linear,Alpha brand]=10 <-> a[c1_linear,Alpha brand]=5",4b,4.440892098500626e-16,False
+"-2082418574|4a|swap|a[c0_linear,lined]=2 <-> a[c0_linear,unlined paper]=1",4a,0.0,False
+"-2080370374|4b|swap|a[c0_linear,bulletproof glass pane]=4 <-> a[c1_linear,bulletproof glass pane]=6",4b,0.0,False
+"-2012603375|4a|swap|a[c1_linear,with a catalyst]=20 <-> a[c1_linear,without a catalyst]=12",4a,20.0,True
+-1970166929|5|swap|c[CPUs]=0.06 <-> c[software]=0.11,5,2000000.0,True
+-1943415390|2|/10|c[retail industries]=0.11,2,0.0,False
+"-1904851972|4b|swap|a[c0_linear,Halogen]=9 <-> a[c1_linear,Halogen]=10",4b,0.0,False
+-1880270232|5|swap|c[algebra questions]=1 <-> c[calculus questions]=3,5,5.0,True
+"-1864917274|4a|swap|a[c0_linear,large]=4 <-> a[c0_linear,small art pieces]=2",4a,0.0,False
+"-1817427063|4b|swap|a[c0_linear,Mill B]=7 <-> a[c2_linear,Mill B]=1",4b,0.0,False
+"-1815789258|4b|swap|a[c1_linear,glass dogs]=30 <-> a[c2_linear,glass dogs]=20",4b,3.552713678800501e-15,False
+"-1795768460|1|x10|a[c1_linear,large]=2",1,0.0,False
+-1742967011|5|swap|c[helicopters]=5 <-> c[trucks]=10,5,0.0,False
+"-1723877534|4a|swap|a[c0_linear,bagels]=2 <-> a[c0_linear,croissants]=1.5",4a,0.0,False
+-1715825597|5|swap|c[pop industry]=0.05 <-> c[country industry]=0.03,5,200000.0,True
+-1706100768|5|swap|c[quick shot]=6 <-> c[slow shot]=3,5,4.0,True
+"-1689259006|4b|swap|a[c0_linear,pudding toppings]=3 <-> a[c1_linear,pudding toppings]=1.2",4b,0.0,False
+-1628312989|3|/10|b[c1_lowerbound]=4,3,3.6,True
+"-1620664428|1|x10|a[c1_linear,first mix]=0.7",1,0.0,False
+-1620664428|2|/10|c[first mix]=12,2,0.0,False
+"-1620664428|4b|swap|a[c0_linear,first mix]=0.3 <-> a[c1_linear,first mix]=0.7",4b,0.0,False
+"-1609306796|4a|swap|a[c0_linear,vans]=50 <-> a[c0_linear,trucks]=100",4a,1.7763568394002505e-15,False
+"-1400177241|1|x10|a[c0_linear,sheds]=4",1,0.0,False
+-1400177241|2|/10|c[sheds]=700,2,0.0,False
+"-1400177241|4b|swap|a[c0_linear,sheds]=4 <-> a[c1_linear,sheds]=2",4b,0.0,False
+"-1394768760|4a|swap|a[c0_linear,steak]=18 <-> a[c0_linear,vegetarian meal]=9",4a,27.77777777777778,True
+-1371866588|5|swap|c[standing desks]=500 <-> c[office chairs]=230,5,100.0,True
+"-1352169480|4a|swap|a[c0_linear,regular truck]=50 <-> a[c0_linear,refrigerated truck]=70",4a,7.105427357601002e-15,False
+"-1323625459|1|x10|a[c1_linear,almond]=3",1,0.0,False
+-1243268146|5|swap|c[first-dose]=20 <-> c[second-dose]=60,5,0.0,False
+-1202875232|3|/10|b[c1_lowerbound]=10,3,9.0,True
+-1176603373|7|swap|b[c0_linear]=30 <-> b[c1_linear]=50,7,0.0,False
+"-1176378527|1|x10|a[c1_linear,onions]=2",1,0.0,False
+-1162304095|5|swap|c[elder sister]=0.08 <-> c[younger sister]=0.05,5,1000.0,True
+-1138570462|5|swap|c[cars]=5000 <-> c[bikes]=1000,5,33.333333333333336,True
+-1119351614|7|swap|b[c0_linear]=74 <-> b[c2_linear]=26,7,0.0,False
+"-1083302057|1|x10|a[c0_linear,t-shirts]=1",1,30.0,True
+"-1083302057|1|x10|a[c1_linear,t-shirts]=2",1,30.0,True
+-1083302057|2|/10|c[t-shirts]=10,2,30.0,True
+"-1083302057|4b|swap|a[c0_linear,t-shirts]=1 <-> a[c1_linear,t-shirts]=2",4b,30.0,True
+-974682365|7|swap|b[c0_linear]=100 <-> b[c1_linear]=60,7,40.0,True
+"-950198491|4a|swap|a[c0_linear,regular batch]=50 <-> a[c0_linear,premium batch]=40",4a,0.0,False
+"-944200428|1|x10|a[c0_linear,tripod]=300",1,0.0,False
+-879837204|5|swap|c[broccoli]=8 <-> c[pears]=6,5,0.0,False
+"-864692003|4a|swap|a[c0_linear,boat]=5000 <-> a[c0_linear,cargo plane]=3000",4a,0.0,False
+-823020274|5|swap|c[small ball]=5 <-> c[large ball]=2,5,4.0,True
+"-742925976|4a|swap|a[c0_linear,medium sized factory]=50 <-> a[c0_linear,small factory]=35",4a,5.0,True
+-734996004|5|swap|c[laptops]=200 <-> c[tablets]=160,5,0.0,False
+-708051064|5|swap|c[regular handbags]=30 <-> c[premium handbags]=180,5,475.0,True
+-706167573|5|swap|c[employees]=60 <-> c[U-pick]=45,5,225.0,True
+"-640645082|4a|swap|a[c0_linear,rickshaws]=10 <-> a[c0_linear,ox carts]=8",4a,0.0,False
+-620437882|3|/10|b[c2_lowerbound]=50,3,67.5,True
+"-606525597|4a|swap|a[c2_linear,mangoes]=2 <-> a[c2_linear,pineapples]=1.5",4a,0.0,False
+-606525597|5|swap|c[pineapples]=450 <-> c[mangoes]=400,5,0.0,False
+"-590492809|1|x10|a[c1_linear,Alpha]=20",1,1.2254067669684798,True
+"-590492809|1|x10|a[c1_linear,Beta]=3",1,1.3513513513513513,True
+-590492809|3|/10|b[c1_linear]=40,3,1.3513513513513513,True
+-550351289|5|swap|c[camel caravans]=12 <-> c[desert trucks]=5,5,0.0,False
+-522392392|5|swap|c[electric vehicle company]=0.04 <-> c[business analytics software company]=0.05,5,20000.0,True
+-441849133|7|swap|b[c0_linear]=1000 <-> b[c1_linear]=800,7,250.0,True
+-400300871|5|swap|c[pharmaceutical industry]=0.05 <-> c[entertainment industry]=0.04,5,500000.0,True
+"-356156483|1|x10|a[c1_linear,gummy vitamin]=7",1,6.721153846153846,True
+"-313424632|4b|swap|a[c0_linear,standing desks]=15 <-> a[c1_linear,standing desks]=20",4b,150.0,True
+-313424632|7|swap|b[c0_linear]=4000 <-> b[c1_linear]=1500,7,150.0,True
+-271434326|5|swap|c[small]=12 <-> c[large bones]=15,5,0.0,False
+-229455193|2|/10|c[healthcare industries]=0.1,2,0.6000000000058208,False
+-221520752|5|swap|c[video game]=0.07 <-> c[cell phone company]=0.09,5,300000.0,True
+-214665832|7|swap|b[c0_linear]=500 <-> b[c1_linear]=700,7,0.0,False
+-188381292|7|swap|b[c0_sum]=50 <-> b[c1_lowerbound]=10,7,0.0,False
+-158369978|5|swap|c[red bean bags]=5 <-> c[blue bean bags]=8,5,4.0,True
+-134578212|5|swap|c[61 keys]=1500 <-> c[81 keys]=2500,5,5.333333333333333,True
+-106908195|5|swap|c[t-shirts]=10 <-> c[hoodies]=20,5,0.0,False
+"-66849159|4b|swap|a[c0_linear,scooters]=2 <-> a[c1_linear,scooters]=3",4b,0.0,False
+-50294932|5|swap|c[gold]=0.03 <-> c[ruby]=0.06,5,600000.0,True
+46292831|5|swap|c[short shot]=2 <-> c[long shot]=5,5,2.0,True
+69065177|7|swap|b[c0_linear]=50 <-> b[c1_linear]=40,7,6.363636363636363,True
+"111816674|4a|swap|a[c0_linear,regular]=20 <-> a[c0_linear,touchscreen laptops]=25",4a,2.842170943040401e-14,False
+"111816674|4b|swap|a[c0_linear,touchscreen laptops]=25 <-> a[c1_linear,touchscreen laptops]=20",4b,50.000000000000014,True
+118743640|7|swap|b[c0_linear]=100 <-> b[c2_linear]=60,7,0.0,False
+"186157891|4a|swap|a[c1_linear,pork]=4 <-> a[c1_linear,chicken]=2",4a,3.125,True
+243699416|7|swap|b[c0_linear]=100 <-> b[c1_linear]=150,7,5.0,True
+"256126407|4a|swap|a[c0_linear,graph paper]=3 <-> a[c0_linear,music paper]=1.5",4a,0.0,False
+"279930346|4a|swap|a[c2_linear,factory 1]=15 <-> a[c2_linear,factory 2]=10",4a,66.66666666666667,True
+"279930346|4b|swap|a[c1_linear,factory 2]=20 <-> a[c2_linear,factory 2]=10",4b,0.0,False
+"298923065|4a|swap|a[c0_linear,diamond]=3 <-> a[c0_linear,gold necklaces]=5",4a,4.440892098500626e-16,False
+299393763|7|swap|b[c0_linear]=25 <-> b[c1_linear]=13,7,5.0,True
+377178712|7|swap|b[c0_sum]=100 <-> b[c1_lowerbound]=20,7,0.0,False
+"415803817|1|/10|a[c1_linear,coffee table]=3",1,2276.470588235294,True
+"415803817|1|/10|a[c1_linear,bedside table]=2",1,788.0090497737558,True
+415803817|3|x10|b[c1_linear]=3500,3,2276.470588235294,True
+"415803817|6|omit|a[c1_linear,coffee table]=3->0",6,2276.470588235294,True
+"415803817|6|omit|a[c1_linear,bedside table]=2->0",6,843.1372549019609,True
+"415803817|6|omit|a[c2_linear,coffee table]=1.5->0",6,294.95798319327747,True
+542112273|5|swap|c[logging trucks]=250 <-> c[lumber carrier vessels]=1000,5,0.0,False
+"556594261|4a|swap|a[c0_linear,cars]=10 <-> a[c0_linear,motor bikes]=6",4a,0.0,False
+"562583112|4a|swap|a[c0_linear,drones]=4 <-> a[c0_linear,couriers]=25",4a,27.586206896551722,True
+584268166|5|swap|c[regular package]=2 <-> c[premium package]=3,5,0.0,False
+"611957227|1|x10|a[c1_linear,chocolate croissants]=3",1,0.0,False
+611957227|5|swap|c[chocolate croissants]=4 <-> c[strawberry croissants]=6,5,1200.0,True
+"615752596|4a|swap|a[c0_linear,medicine A]=30 <-> a[c0_linear,medicine B.]=40",4a,8.881784197001252e-16,False
+"626992884|4a|swap|a[c0_linear,package X]=5 <-> a[c0_linear,package Y.]=3",4a,0.0,False
+"681150852|4a|swap|a[c0_linear,train]=50 <-> a[c0_linear,truck]=40",4a,0.0,False
+"686025796|4a|swap|a[c2_linear,regular]=20 <-> a[c2_linear,speed boats]=30",4a,0.0,False
+690843809|5|swap|c[car]=10 <-> c[truck]=14,5,0.0,False
+"691521231|4b|swap|a[c0_linear,Analyzer 3000]=20 <-> a[c1_linear,Analyzer 3000]=30",4b,18.0,True
+"713346505|4a|swap|a[c0_linear,retail store]=200 <-> a[c0_linear,factory outlet]=80",4a,6.0,True
+724147587|5|swap|c[spinach]=55 <-> c[lettuce]=50,5,50.0,True
+724147587|7|swap|b[c0_sum]=50 <-> b[c2_linear]=300,7,0.0,False
+"781521487|1|x10|a[c1_linear,vegetable smoothies]=4",1,0.0,False
+"844555197|4a|swap|a[c0_linear,small shop]=30 <-> a[c0_linear,large shop]=70",4a,7.142857142857143,True
+865048192|5|swap|c[minivans]=5500 <-> c[SUVs]=4000,5,48.0,True
+883784731|7|swap|b[c0_linear]=400 <-> b[c1_linear]=500,7,25.0,True
+"902707159|4a|swap|a[c1_linear,small]=50 <-> a[c1_linear,large branches]=100",4a,12.0,True
+"922724597|1|x10|a[c0_linear,D batteries]=3",1,0.0,False
+922724597|2|/10|c[D batteries]=1,2,0.0,False
+"927355158|4a|swap|a[c1_linear,premium]=3 <-> a[c1_linear,regular]=2",4a,500.0,True
+"966407725|4b|swap|a[c1_linear,strawberry toppings]=0.5 <-> a[c2_linear,strawberry toppings]=0.7",4b,0.0,False
+1001215896|5|swap|c[regular]=80 <-> c[premium]=95,5,300.0,True
+"1012426882|4b|swap|a[c0_linear,hamburger]=1 <-> a[c1_linear,hamburger]=0.5",4b,0.0,False
+1012426882|7|swap|b[c0_linear]=2 <-> b[c2_linear]=4,7,0.0,False
+"1051552533|4a|swap|a[c1_linear,counter-top sized]=80 <-> a[c1_linear,fridge sized one]=150",4a,6.666666666666667,True
+1052619427|3|x10|b[c2_upperbound]=300,3,66.66666666666667,True
+"1092036773|4b|swap|a[c1_linear,matte lipsticks]=3 <-> a[c2_linear,matte lipsticks]=1.5",4b,78.48101265822784,True
+1094773395|7|swap|b[c0_linear]=20 <-> b[c1_linear]=30,7,3.125000000000001,True
+"1108621669|4a|swap|a[c1_linear,sedans]=50 <-> a[c1_linear,buses]=250",4a,18.4,True
+"1113010512|4a|swap|a[c1_linear,oats]=16 <-> a[c1_linear,sunflower seeds]=22",4a,0.0,False
+"1130600103|4a|swap|a[c0_linear,regular]=2 <-> a[c0_linear,special]=3",4a,13.333333333333332,True
+"1146360292|1|x10|a[c1_linear,matcha milk tea]=5",1,0.0,False
+1168196894|3|/10|b[c2_sum]=100,3,0.0,False
+1173275251|7|swap|b[c0_linear]=30 <-> b[c1_linear]=40,7,0.0,False
+"1180514101|4a|swap|a[c0_linear,trucks]=20 <-> a[c0_linear,vans]=12",4a,0.0,False
+"1181172112|4a|swap|a[c0_linear,train]=50 <-> a[c0_linear,car]=30",4a,0.0,False
+"1204240087|1|/10|a[c0_linear,fruits]=4",1,0.0,False
+"1204240087|4b|swap|a[c0_linear,fruits]=4 <-> a[c1_linear,fruits]=1",4b,0.0,False
+"1204240087|6|omit|a[c0_linear,fruits]=4->0",6,0.0,False
+1206867214|5|swap|c[drafters]=1 <-> c[architects]=2,5,0.0,False
+1283305022|5|swap|c[cleansing chemical]=4 <-> c[odor-removing chemical]=6,5,100.0,True
+"1310506563|4a|swap|a[c0_linear,boat]=30 <-> a[c0_linear,neighbor]=8",4a,1.7763568394002505e-15,False
+1319496932|5|swap|c[umbrellas]=12 <-> c[raincoats]=7,5,1200.0,True
+1361923588|5|swap|c[phones]=50 <-> c[laptops]=70,5,100.0,True
+1421633003|2|/10|c[tobacco]=0.124,2,0.0,False
+1476803282|5|swap|c[submarine]=30 <-> c[boat]=25,5,0.0,False
+1477942004|5|swap|c[mini bears]=40 <-> c[dogs]=47,5,40.0,True
+"1493954743|4b|swap|a[c0_linear,sour peach candies]=1 <-> a[c1_linear,sour peach candies]=4",4b,0.0,False
+1524239940|5|swap|c[monitors]=40 <-> c[gaming stations]=80,5,9.374999999999998,True
+"1600733243|4a|swap|a[c0_linear,chocolate chip cookies]=314 <-> a[c0_linear,oatmeal cookies]=271",4a,11.07011070110701,True
+"1636951466|4a|swap|a[c0_linear,nurses]=5 <-> a[c0_linear,pharmacists]=7",4a,28.571428571428573,True
+"1735063067|4a|swap|a[c0_linear,trucks]=15 <-> a[c0_linear,vans]=10",4a,0.0,False
+"1764286025|4a|swap|a[c0_linear,rail]=100 <-> a[c0_linear,truck]=85",4a,0.0,False
+"1771352861|4a|swap|a[c0_linear,bread]=1 <-> a[c0_linear,cookies]=0.5",4a,0.0,False
+1797374435|7|swap|b[c2_linear]=40 <-> b[c3_linear]=30,7,0.0,False
+"1797952873|4b|swap|a[c0_linear,pork ribs]=2 <-> a[c1_linear,pork ribs]=3.5",4b,0.0,False
+1815576357|5|swap|c[van]=7 <-> c[minibus]=10,5,0.0,False
+"1825508140|4b|swap|a[c0_linear,mango-lovers package]=4 <-> a[c1_linear,mango-lovers package]=8",4b,0.0,False
+"1862321313|4a|swap|a[c0_linear,liquid]=40 <-> a[c0_linear,foam hand sanitizer]=60",4a,0.0,False
+1862321313|5|swap|c[liquid]=30 <-> c[foam hand sanitizer]=20,5,20.0,True
+1911422792|5|swap|c[headsets]=45 <-> c[keyboards]=80,5,120.0,True
+"1912502114|1|x10|a[c0_linear,Zeta]=0.15",1,113.06370794559773,True
+"1912502114|1|x10|a[c0_linear,Phi]=0.2",1,118.1818181818182,True
+1912502114|3|/10|b[c0_linear]=25,3,118.1818181818182,True
+"1912502114|4a|swap|a[c0_linear,Zeta]=0.15 <-> a[c0_linear,Phi]=0.2",4a,30.681818181818187,True
+"1916748046|1|x10|a[c1_linear,large size]=12",1,0.0,False
+"1916748046|4b|swap|a[c0_linear,large size]=20 <-> a[c1_linear,large size]=12",4b,0.0,False
+"1958482161|4a|swap|a[c0_linear,northern factory]=800 <-> a[c0_linear,western factory]=650",4a,1000.0,True
+"2128667133|4a|swap|a[c0_linear,shipping container]=5000 <-> a[c0_linear,cargo planes]=6000",4a,0.0,False

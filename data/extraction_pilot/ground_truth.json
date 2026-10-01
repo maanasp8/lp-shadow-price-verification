@@ -1,0 +1,3813 @@
+{
+  "-1970166929": {
+    "problem_id": "-1970166929",
+    "split": "train",
+    "document": "Martin has $2000000 to invest in the following technology sectors: GPUs, CPUs, software and mobile devices. The annual rate of return for each is as follows: GPUs, 4%; CPUs, 6%, software, 11%, mobile devices, 8%. Martin has the following conditions. The amount he invests in GPUs cannot exceed the amount invested in CPUs. Similarly, the amount invested in mobile devices cannot exceed the amount invested in software. Lastly, at most 9% of the investment can be in GPUs. How much money should Martin invest in each sector to maximize his return?",
+    "variables": [
+      "GPUs",
+      "CPUs",
+      "software",
+      "mobile devices"
+    ],
+    "variable_aliases": {
+      "GPUs": 0,
+      "CPUs": 1,
+      "software": 2,
+      "mobile devices": 3
+    },
+    "unresolved_mentions": [],
+    "n_vars": 4,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "GPUs",
+        "var_index": 0,
+        "raw": "4%",
+        "value": 0.04,
+        "non_numeric_raw": true,
+        "reason": "percentage"
+      },
+      {
+        "variable": "CPUs",
+        "var_index": 1,
+        "raw": "6%",
+        "value": 0.06,
+        "non_numeric_raw": true,
+        "reason": "percentage"
+      },
+      {
+        "variable": "software",
+        "var_index": 2,
+        "raw": "11%",
+        "value": 0.11,
+        "non_numeric_raw": true,
+        "reason": "percentage"
+      },
+      {
+        "variable": "mobile devices",
+        "var_index": 3,
+        "raw": "8%",
+        "value": 0.08,
+        "non_numeric_raw": true,
+        "reason": "percentage"
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_sum",
+        "ctype": "sum",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "has",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "2000000",
+          "value": 2000000.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "GPUs": 1.0,
+          "CPUs": 1.0,
+          "software": 1.0,
+          "mobile devices": 1.0
+        },
+        "canonical_rhs": 2000000.0
+      },
+      {
+        "name": "c1_xy",
+        "ctype": "xy",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "cannot exceed",
+        "subject_var": null,
+        "x_var": "GPUs",
+        "y_var": "CPUs",
+        "declared_limit": null,
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "GPUs": 1.0,
+          "CPUs": -1.0
+        },
+        "canonical_rhs": 0.0
+      },
+      {
+        "name": "c2_xy",
+        "ctype": "xy",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "cannot exceed",
+        "subject_var": null,
+        "x_var": "mobile devices",
+        "y_var": "software",
+        "declared_limit": null,
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "mobile devices": 1.0,
+          "software": -1.0
+        },
+        "canonical_rhs": 0.0
+      },
+      {
+        "name": "c3_ratio",
+        "ctype": "ratio",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": "GPUs",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "9%",
+          "value": 0.09,
+          "non_numeric_raw": true,
+          "reason": "percentage"
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "GPUs": 0.91,
+          "CPUs": -0.09,
+          "software": -0.09,
+          "mobile devices": -0.09
+        },
+        "canonical_rhs": 0.0
+      }
+    ],
+    "non_numeric_cells": [
+      {
+        "where": "objective",
+        "variable": "GPUs",
+        "raw": "4%",
+        "reason": "percentage"
+      },
+      {
+        "where": "objective",
+        "variable": "CPUs",
+        "raw": "6%",
+        "reason": "percentage"
+      },
+      {
+        "where": "objective",
+        "variable": "software",
+        "raw": "11%",
+        "reason": "percentage"
+      },
+      {
+        "where": "objective",
+        "variable": "mobile devices",
+        "raw": "8%",
+        "reason": "percentage"
+      },
+      {
+        "where": "c3_ratio.declared_limit",
+        "raw": "9%",
+        "reason": "percentage"
+      }
+    ],
+    "parser_notes": []
+  },
+  "-1501301743": {
+    "problem_id": "-1501301743",
+    "split": "dev",
+    "document": "The Chips Alloy company produces 150 tons of iron ore and 35 tons of zinc ore each month. These can be treated in different ways to produce three different alloy grades: Standard, Plus or Premium. To produce 1 ton of the Standard grade alloy requires 3 tons of iron ore and 1 ton of zinc ore. To produce 1 ton of the Plus grade alloy requires 5 tons of iron ore and 2 tons of zinc ore. Finally, to produce 1 ton of the Premium grade alloy requires 6 tons of iron ore and 3 tons of zinc ore. The profit per ton from selling the alloys are $1500, $2500 and $5500 for the Standard, Plus, and Premium grades respectively. How much of each alloy grade should be produced to maximize profit?",
+    "variables": [
+      "Standard",
+      "Plus",
+      "Premium"
+    ],
+    "variable_aliases": {
+      "Standard": 0,
+      "Plus": 1,
+      "Premium": 2,
+      "Standard grade alloy": 0,
+      "Plus grade alloy": 1,
+      "Premium grade alloy": 2
+    },
+    "unresolved_mentions": [],
+    "n_vars": 3,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "Standard",
+        "var_index": 0,
+        "raw": "1500",
+        "value": 1500.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "Plus",
+        "var_index": 1,
+        "raw": "2500",
+        "value": 2500.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "Premium",
+        "var_index": 2,
+        "raw": "5500",
+        "value": 5500.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "produces",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "150",
+          "value": 150.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "Standard grade alloy",
+            "var_index": 0,
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "Plus grade alloy",
+            "var_index": 1,
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "Premium grade alloy",
+            "var_index": 2,
+            "raw": "6",
+            "value": 6.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "Standard": 3.0,
+          "Plus": 5.0,
+          "Premium": 6.0
+        },
+        "canonical_rhs": 150.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "produces",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "35",
+          "value": 35.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "Standard grade alloy",
+            "var_index": 0,
+            "raw": "1",
+            "value": 1.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "Plus grade alloy",
+            "var_index": 1,
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "Premium grade alloy",
+            "var_index": 2,
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "Standard": 1.0,
+          "Plus": 2.0,
+          "Premium": 3.0
+        },
+        "canonical_rhs": 35.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "-1133652946": {
+    "problem_id": "-1133652946",
+    "split": "train",
+    "document": "A landscaper provides 3 landscaping layouts using different amounts of rock, mulch, and grass. He has 1200 units of rock, 700 units of mulch, and 2000 units of grass. A type A layout has 10 units of rock, 7 units of mulch, and 15 units of grass. A type B layout has 5 units of rock, 12 units of mulch, and 10 units of grass. A type C layout has 12 units of rock, 4 units of mulch, and 12 units of grass. The profit is $200 for each type A layout, $175 for each type B layout, and $225 for each type C layout. How many layouts of each type should be used to maximize profit?",
+    "variables": [
+      "type A layout",
+      "type B layout",
+      "type C layout"
+    ],
+    "variable_aliases": {
+      "type A layout": 0,
+      "type B layout": 1,
+      "type C layout": 2
+    },
+    "unresolved_mentions": [],
+    "n_vars": 3,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "type A layout",
+        "var_index": 0,
+        "raw": "200",
+        "value": 200.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "type B layout",
+        "var_index": 1,
+        "raw": "175",
+        "value": 175.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "type C layout",
+        "var_index": 2,
+        "raw": "225",
+        "value": 225.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "has",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "1200",
+          "value": 1200.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "type A layout",
+            "var_index": 0,
+            "raw": "10",
+            "value": 10.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "type B layout",
+            "var_index": 1,
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "type C layout",
+            "var_index": 2,
+            "raw": "12",
+            "value": 12.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "type A layout": 10.0,
+          "type B layout": 5.0,
+          "type C layout": 12.0
+        },
+        "canonical_rhs": 1200.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "has",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "700",
+          "value": 700.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "type A layout",
+            "var_index": 0,
+            "raw": "7",
+            "value": 7.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "type B layout",
+            "var_index": 1,
+            "raw": "12",
+            "value": 12.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "type C layout",
+            "var_index": 2,
+            "raw": "4",
+            "value": 4.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "type A layout": 7.0,
+          "type B layout": 12.0,
+          "type C layout": 4.0
+        },
+        "canonical_rhs": 700.0
+      },
+      {
+        "name": "c2_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "has",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "2000",
+          "value": 2000.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "type A layout",
+            "var_index": 0,
+            "raw": "15",
+            "value": 15.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "type B layout",
+            "var_index": 1,
+            "raw": "10",
+            "value": 10.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "type C layout",
+            "var_index": 2,
+            "raw": "12",
+            "value": 12.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "type A layout": 15.0,
+          "type B layout": 10.0,
+          "type C layout": 12.0
+        },
+        "canonical_rhs": 2000.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "-1062928915": {
+    "problem_id": "-1062928915",
+    "split": "test",
+    "document": "A woman has $100000 to gamble on two sports bets: a basketball tournament, a horse race, and a soccer game. Based on simple analysis, the woman determines her chance of losing her money would be 50% for basketball tournament, 25% for horse race, and 10% for the soccer game. The payout for each dollar put on each bet will be $1.2 for basketball tournament, $0.5 for horse race, and $0.1 for the soccer game. Knowing herself, she limits her average chance of losing her money should be at most 30%. Could you help her determine how much to money to put on each sport bet to maximize her average payout?",
+    "variables": [
+      "basketball tournament",
+      "horse race",
+      "soccer game"
+    ],
+    "variable_aliases": {
+      "basketball tournament": 0,
+      "horse race": 1,
+      "soccer game": 2
+    },
+    "unresolved_mentions": [],
+    "n_vars": 3,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "basketball tournament",
+        "var_index": 0,
+        "raw": "1.2",
+        "value": 1.2,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "horse race",
+        "var_index": 1,
+        "raw": "0.5",
+        "value": 0.5,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "soccer game",
+        "var_index": 2,
+        "raw": "0.1",
+        "value": 0.1,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_sum",
+        "ctype": "sum",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "has",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "100000",
+          "value": 100000.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "basketball tournament": 1.0,
+          "horse race": 1.0,
+          "soccer game": 1.0
+        },
+        "canonical_rhs": 100000.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "30%",
+          "value": 0.3,
+          "non_numeric_raw": true,
+          "reason": "percentage"
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "basketball tournament",
+            "var_index": 0,
+            "raw": "50%",
+            "value": 0.5,
+            "non_numeric_raw": true,
+            "reason": "percentage"
+          },
+          {
+            "variable": "horse race",
+            "var_index": 1,
+            "raw": "25%",
+            "value": 0.25,
+            "non_numeric_raw": true,
+            "reason": "percentage"
+          },
+          {
+            "variable": "soccer game",
+            "var_index": 2,
+            "raw": "10%",
+            "value": 0.1,
+            "non_numeric_raw": true,
+            "reason": "percentage"
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "basketball tournament": 0.5,
+          "horse race": 0.25,
+          "soccer game": 0.1
+        },
+        "canonical_rhs": 0.3
+      }
+    ],
+    "non_numeric_cells": [
+      {
+        "where": "c1_linear.declared_limit",
+        "raw": "30%",
+        "reason": "percentage"
+      },
+      {
+        "where": "c1_linear.term",
+        "variable": "basketball tournament",
+        "raw": "50%",
+        "reason": "percentage"
+      },
+      {
+        "where": "c1_linear.term",
+        "variable": "horse race",
+        "raw": "25%",
+        "reason": "percentage"
+      },
+      {
+        "where": "c1_linear.term",
+        "variable": "soccer game",
+        "raw": "10%",
+        "reason": "percentage"
+      }
+    ],
+    "parser_notes": []
+  },
+  "-615992646": {
+    "problem_id": "-615992646",
+    "split": "train",
+    "document": "A man has $1000000 to invest in four industries. He can invest in the biotech industry, food industry, finance industry, and health care industry. The return on investment for each of the industries is as follows: biotech, 4%; food, 6%; finance, 8%; and health care 10%. To be safe, he wants to make sure the amount invested in the health care industry does not exceed the amount invested in the biotech industry. Also the amount invested in the food industry cannot exceed the amount invested in the finance industry. Lastly, at most 30% of the investment can be in the health care industry. How much should he invested in each industry to maximize his returns?",
+    "variables": [
+      "biotech industry",
+      "food industry",
+      "finance industry",
+      "health care"
+    ],
+    "variable_aliases": {
+      "biotech industry": 0,
+      "food industry": 1,
+      "finance industry": 2,
+      "health care": 3,
+      "biotech": 0,
+      "food": 1,
+      "finance": 2
+    },
+    "unresolved_mentions": [],
+    "n_vars": 4,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "biotech",
+        "var_index": 0,
+        "raw": "4%",
+        "value": 0.04,
+        "non_numeric_raw": true,
+        "reason": "percentage"
+      },
+      {
+        "variable": "food",
+        "var_index": 1,
+        "raw": "6%",
+        "value": 0.06,
+        "non_numeric_raw": true,
+        "reason": "percentage"
+      },
+      {
+        "variable": "finance",
+        "var_index": 2,
+        "raw": "8%",
+        "value": 0.08,
+        "non_numeric_raw": true,
+        "reason": "percentage"
+      },
+      {
+        "variable": "health care",
+        "var_index": 3,
+        "raw": "10%",
+        "value": 0.1,
+        "non_numeric_raw": true,
+        "reason": "percentage"
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_xy",
+        "ctype": "xy",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "cannot exceed",
+        "subject_var": null,
+        "x_var": "food industry",
+        "y_var": "finance industry",
+        "declared_limit": null,
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "food industry": 1.0,
+          "finance industry": -1.0
+        },
+        "canonical_rhs": 0.0
+      },
+      {
+        "name": "c1_ratio",
+        "ctype": "ratio",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": "health care",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "30%",
+          "value": 0.3,
+          "non_numeric_raw": true,
+          "reason": "percentage"
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "health care": 0.7,
+          "biotech industry": -0.3,
+          "food industry": -0.3,
+          "finance industry": -0.3
+        },
+        "canonical_rhs": 0.0
+      }
+    ],
+    "non_numeric_cells": [
+      {
+        "where": "objective",
+        "variable": "biotech",
+        "raw": "4%",
+        "reason": "percentage"
+      },
+      {
+        "where": "objective",
+        "variable": "food",
+        "raw": "6%",
+        "reason": "percentage"
+      },
+      {
+        "where": "objective",
+        "variable": "finance",
+        "raw": "8%",
+        "reason": "percentage"
+      },
+      {
+        "where": "objective",
+        "variable": "health care",
+        "raw": "10%",
+        "reason": "percentage"
+      },
+      {
+        "where": "c1_ratio.declared_limit",
+        "raw": "30%",
+        "reason": "percentage"
+      }
+    ],
+    "parser_notes": []
+  },
+  "-114149479": {
+    "problem_id": "-114149479",
+    "split": "test",
+    "document": "A small bakery has 20000 grams of batter and 14000 grams of milk to make their crepe cakes, sponge cakes, and birthday cakes. A crepe cake needs 400 grams of batter and 200 grams of milk. A sponge cake requires 500 grams of batter and 300 grams of milk. A birthday cake requires 450 grams of batter and 350 grams of milk. If the profit per crepe cake is $12, the profit per sponge cake is $10, and the profit per birthday cake is $15, how many of each should the bakery make to maximize their profit?",
+    "variables": [
+      "crepe cakes",
+      "sponge cakes",
+      "birthday cakes"
+    ],
+    "variable_aliases": {
+      "crepe cakes": 0,
+      "sponge cakes": 1,
+      "birthday cakes": 2,
+      "crepe cake": 0,
+      "sponge cake": 1,
+      "birthday cake": 2
+    },
+    "unresolved_mentions": [],
+    "n_vars": 3,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "crepe cake",
+        "var_index": 0,
+        "raw": "12",
+        "value": 12.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "sponge cake",
+        "var_index": 1,
+        "raw": "10",
+        "value": 10.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "birthday cake",
+        "var_index": 2,
+        "raw": "15",
+        "value": 15.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "has",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "20000",
+          "value": 20000.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "crepe cake",
+            "var_index": 0,
+            "raw": "200",
+            "value": 200.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "sponge cake",
+            "var_index": 1,
+            "raw": "300",
+            "value": 300.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "birthday cake",
+            "var_index": 2,
+            "raw": "350",
+            "value": 350.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "crepe cakes": 200.0,
+          "sponge cakes": 300.0,
+          "birthday cakes": 350.0
+        },
+        "canonical_rhs": 20000.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "155829587": {
+    "problem_id": "155829587",
+    "split": "train",
+    "document": "A steel company produces 120 tons of iron ore and 70 tons of zinc ore each month. These can be treated in different ways to produce three types of vessels: general purpose vessels, pharmaceutical vessels or pressure vessels. To produce 1 set of general purpose vessels requires 3.5 tons of iron ore and 2 tons of zinc ore. To produce 1 set of pharmaceutical vessels requires 4 tons of iron ore and 5 tons of zinc ore. Finally, to produce 1 set of pressure vessels requires 2 tons of iron ore and 3.5 tons of zinc ore. The profit per set from selling the vessels are $2000, $3000 and $4500 for the general purpose, pharmaceutical, and pressure vessels respectively. How many sets of each type of vessel should be produced to maximize profit?",
+    "variables": [
+      "general purpose vessels",
+      "pharmaceutical vessels",
+      "pressure vessels"
+    ],
+    "variable_aliases": {
+      "general purpose vessels": 0,
+      "pharmaceutical vessels": 1,
+      "pressure vessels": 2,
+      "general purpose": 0,
+      "pharmaceutical": 1
+    },
+    "unresolved_mentions": [],
+    "n_vars": 3,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "general purpose",
+        "var_index": 0,
+        "raw": "2000",
+        "value": 2000.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "pharmaceutical",
+        "var_index": 1,
+        "raw": "3000",
+        "value": 3000.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "pressure vessels",
+        "var_index": 2,
+        "raw": "4500",
+        "value": 4500.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "produces",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "120",
+          "value": 120.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "general purpose vessels",
+            "var_index": 0,
+            "raw": "3.5",
+            "value": 3.5,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "pharmaceutical vessels",
+            "var_index": 1,
+            "raw": "4",
+            "value": 4.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "pressure vessels",
+            "var_index": 2,
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "general purpose vessels": 3.5,
+          "pharmaceutical vessels": 4.0,
+          "pressure vessels": 2.0
+        },
+        "canonical_rhs": 120.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "produces",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "70",
+          "value": 70.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "general purpose vessels",
+            "var_index": 0,
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "pharmaceutical vessels",
+            "var_index": 1,
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "pressure vessels",
+            "var_index": 2,
+            "raw": "3.5",
+            "value": 3.5,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "general purpose vessels": 2.0,
+          "pharmaceutical vessels": 5.0,
+          "pressure vessels": 3.5
+        },
+        "canonical_rhs": 70.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "240605764": {
+    "problem_id": "240605764",
+    "split": "train",
+    "document": "A cosmetics company makes low, medium, and high quality face wash. A low quality face wash contains 1 unit of rare ingredients and 4 units of water. A medium quality face wash contains 3 units of rare ingredients and 2 units of water. A high quality face wash contains 4 units of rare ingredients and 1 unit of water. The company has available 100 units of rare ingredients and 200 units of water. If the profit per low quality face wash is $3, the profit per medium quality face wash is $7, and the profit per high quality face wash is $9, how many of each should be made to maximize profits?",
+    "variables": [
+      "low",
+      "medium",
+      "high quality"
+    ],
+    "variable_aliases": {
+      "low": 0,
+      "medium": 1,
+      "high quality": 2,
+      "low quality": 0,
+      "medium quality": 1
+    },
+    "unresolved_mentions": [],
+    "n_vars": 3,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "low quality",
+        "var_index": 0,
+        "raw": "3",
+        "value": 3.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "medium quality",
+        "var_index": 1,
+        "raw": "7",
+        "value": 7.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "high quality",
+        "var_index": 2,
+        "raw": "9",
+        "value": 9.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "100",
+          "value": 100.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "low quality",
+            "var_index": 0,
+            "raw": "1",
+            "value": 1.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "medium quality",
+            "var_index": 1,
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "high quality",
+            "var_index": 2,
+            "raw": "4",
+            "value": 4.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "low": 1.0,
+          "medium": 3.0,
+          "high quality": 4.0
+        },
+        "canonical_rhs": 100.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "200",
+          "value": 200.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "low quality",
+            "var_index": 0,
+            "raw": "4",
+            "value": 4.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "medium quality",
+            "var_index": 1,
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "high quality",
+            "var_index": 2,
+            "raw": "1",
+            "value": 1.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "low": 4.0,
+          "medium": 2.0,
+          "high quality": 1.0
+        },
+        "canonical_rhs": 200.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "645706426": {
+    "problem_id": "645706426",
+    "split": "train",
+    "document": "A company decides to promote their product by buying ad space on taxis, buses, and privately owned cars. The cost of an ad as well as the expected viewership is given as follows. An ad on a taxi costs $500 and reaches 5000 viewers. An ad on a bus costs $1000 and reaches 12000 viewers. Finally an ad on a privately owned car cost $300 and reaches 2000 viewers. The bus company limits the number of ads from a single company to at most 8. In addition at most 30% of the ads should be on taxis and at least 20% of ads should be on privately owned cars. If the company has a budget of $20000, how many ads should be bought for each option in order to maximize viewership?",
+    "variables": [
+      "taxis",
+      "buses",
+      "privately owned cars"
+    ],
+    "variable_aliases": {
+      "taxis": 0,
+      "buses": 1,
+      "privately owned cars": 2,
+      "taxi": 0,
+      "bus": 1,
+      "privately owned car": 2,
+      "cars": 2
+    },
+    "unresolved_mentions": [],
+    "n_vars": 3,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "taxi",
+        "var_index": 0,
+        "raw": "5000",
+        "value": 5000.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "bus",
+        "var_index": 1,
+        "raw": "12000",
+        "value": 12000.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "privately owned car",
+        "var_index": 2,
+        "raw": "2000",
+        "value": 2000.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_upperbound",
+        "ctype": "upperbound",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": "bus",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "8",
+          "value": 8.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "buses": 1.0
+        },
+        "canonical_rhs": 8.0
+      },
+      {
+        "name": "c1_ratio",
+        "ctype": "ratio",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": "taxis",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "30%",
+          "value": 0.3,
+          "non_numeric_raw": true,
+          "reason": "percentage"
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "taxis": 0.7,
+          "buses": -0.3,
+          "privately owned cars": -0.3
+        },
+        "canonical_rhs": 0.0
+      },
+      {
+        "name": "c2_ratio",
+        "ctype": "ratio",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": "cars",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "20%",
+          "value": 0.2,
+          "non_numeric_raw": true,
+          "reason": "percentage"
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "privately owned cars": 0.8,
+          "taxis": -0.2,
+          "buses": -0.2
+        },
+        "canonical_rhs": 0.0
+      },
+      {
+        "name": "c3_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "budget",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "20000",
+          "value": 20000.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "taxi",
+            "var_index": 0,
+            "raw": "500",
+            "value": 500.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "bus",
+            "var_index": 1,
+            "raw": "1000",
+            "value": 1000.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "privately owned car",
+            "var_index": 2,
+            "raw": "300",
+            "value": 300.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "taxis": 500.0,
+          "buses": 1000.0,
+          "privately owned cars": 300.0
+        },
+        "canonical_rhs": 20000.0
+      }
+    ],
+    "non_numeric_cells": [
+      {
+        "where": "c1_ratio.declared_limit",
+        "raw": "30%",
+        "reason": "percentage"
+      },
+      {
+        "where": "c2_ratio.declared_limit",
+        "raw": "20%",
+        "reason": "percentage"
+      }
+    ],
+    "parser_notes": []
+  },
+  "1855357113": {
+    "problem_id": "1855357113",
+    "split": "train",
+    "document": "Jason has $1000000 to invest in the following energy sectors: solar, wind, nuclear and coal. The annual rate of return for each is as follows: solar, 6%; wind, 9%, nuclear, 12%, coal, 3%. Jason has the following conditions. The amount he invests in coal cannot exceed the amount invested in solar. Similarly, the amount invested in wind cannot exceed the amount invested in nuclear. Lastly, at most 10% of the investment can be in coal. How much money should Jason invest in each sector to maximize his return?",
+    "variables": [
+      "solar",
+      "wind",
+      "nuclear",
+      "coal"
+    ],
+    "variable_aliases": {
+      "solar": 0,
+      "wind": 1,
+      "nuclear": 2,
+      "coal": 3
+    },
+    "unresolved_mentions": [],
+    "n_vars": 4,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "solar",
+        "var_index": 0,
+        "raw": "6%",
+        "value": 0.06,
+        "non_numeric_raw": true,
+        "reason": "percentage"
+      },
+      {
+        "variable": "wind",
+        "var_index": 1,
+        "raw": "9%",
+        "value": 0.09,
+        "non_numeric_raw": true,
+        "reason": "percentage"
+      },
+      {
+        "variable": "nuclear",
+        "var_index": 2,
+        "raw": "12%",
+        "value": 0.12,
+        "non_numeric_raw": true,
+        "reason": "percentage"
+      },
+      {
+        "variable": "coal",
+        "var_index": 3,
+        "raw": "3%",
+        "value": 0.03,
+        "non_numeric_raw": true,
+        "reason": "percentage"
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_xy",
+        "ctype": "xy",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "cannot exceed",
+        "subject_var": null,
+        "x_var": "coal",
+        "y_var": "solar",
+        "declared_limit": null,
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "coal": 1.0,
+          "solar": -1.0
+        },
+        "canonical_rhs": 0.0
+      },
+      {
+        "name": "c1_xy",
+        "ctype": "xy",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "cannot exceed",
+        "subject_var": null,
+        "x_var": "wind",
+        "y_var": "nuclear",
+        "declared_limit": null,
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "wind": 1.0,
+          "nuclear": -1.0
+        },
+        "canonical_rhs": 0.0
+      },
+      {
+        "name": "c2_ratio",
+        "ctype": "ratio",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": "coal",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "10%",
+          "value": 0.1,
+          "non_numeric_raw": true,
+          "reason": "percentage"
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "coal": 0.9,
+          "solar": -0.1,
+          "wind": -0.1,
+          "nuclear": -0.1
+        },
+        "canonical_rhs": 0.0
+      }
+    ],
+    "non_numeric_cells": [
+      {
+        "where": "objective",
+        "variable": "solar",
+        "raw": "6%",
+        "reason": "percentage"
+      },
+      {
+        "where": "objective",
+        "variable": "wind",
+        "raw": "9%",
+        "reason": "percentage"
+      },
+      {
+        "where": "objective",
+        "variable": "nuclear",
+        "raw": "12%",
+        "reason": "percentage"
+      },
+      {
+        "where": "objective",
+        "variable": "coal",
+        "raw": "3%",
+        "reason": "percentage"
+      },
+      {
+        "where": "c2_ratio.declared_limit",
+        "raw": "10%",
+        "reason": "percentage"
+      }
+    ],
+    "parser_notes": []
+  },
+  "-1927179020": {
+    "problem_id": "-1927179020",
+    "split": "test",
+    "document": "A patient can be hooked up to two machines to have medicine delivered, machine 1 and machine 2. Machine 1 delivers 0.5 units of medicine to the heart per minute and 0.8 units of medicine per minute to the brain. Machine 2 delivers 0.3 units of medicine per minute to the heart and 1 unit of medicine per minute to the brain. In addition however, machine 1 creates 0.3 units of waste per minute while machine 2 creates 0.5 units of waste per minute. If at most 8 units of medicine can be received by the heart and at least 4 units of medicine should be received by the brain, how many minutes should each machine be used to minimize the total amount of waste produced?",
+    "variables": [
+      "machine 1",
+      "machine 2"
+    ],
+    "variable_aliases": {
+      "machine 1": 0,
+      "machine 2": 1,
+      "Machine 1": 0,
+      "Machine 2": 1
+    },
+    "unresolved_mentions": [],
+    "n_vars": 2,
+    "sense": "min",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "machine 1",
+        "var_index": 0,
+        "raw": "0.3",
+        "value": 0.3,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "machine 2",
+        "var_index": 1,
+        "raw": "0.5",
+        "value": 0.5,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "8",
+          "value": 8.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "Machine 1",
+            "var_index": 0,
+            "raw": "0.5",
+            "value": 0.5,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "Machine 2",
+            "var_index": 1,
+            "raw": "0.3",
+            "value": 0.3,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "machine 1": 0.5,
+          "machine 2": 0.3
+        },
+        "canonical_rhs": 8.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "4",
+          "value": 4.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "Machine 1",
+            "var_index": 0,
+            "raw": "0.8",
+            "value": 0.8,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "Machine 2",
+            "var_index": 1,
+            "raw": "1",
+            "value": 1.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "machine 1": 0.8,
+          "machine 2": 1.0
+        },
+        "canonical_rhs": 4.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "-1921036549": {
+    "problem_id": "-1921036549",
+    "split": "test",
+    "document": "Both chorine and water softener need to be added to a pool. One unit of chlorine takes 1 minute to be effective while one unit of water softener takes 2 minutes to be effective. Because too much chlorine can burn your eyes, there has to at most half as much chlorine as water softener in the pool. If there has to be at least 200 units of chlorine in the water and a total of 500 units of chemicals in the water, how many units of each should be added to minimize the total time it takes for the pool to be ready? (Note: chlorine must be added before water softener or vice versa).",
+    "variables": [
+      "chorine",
+      "water softener"
+    ],
+    "variable_aliases": {
+      "chorine": 0,
+      "water softener": 1,
+      "chlorine": 0
+    },
+    "unresolved_mentions": [],
+    "n_vars": 2,
+    "sense": "min",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "chlorine",
+        "var_index": 0,
+        "raw": "1",
+        "value": 1.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "water softener",
+        "var_index": 1,
+        "raw": "2",
+        "value": 2.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_xby",
+        "ctype": "xby",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": null,
+        "x_var": "chlorine",
+        "y_var": "water softener",
+        "declared_limit": null,
+        "declared_param": {
+          "raw": "half",
+          "value": 0.5,
+          "non_numeric_raw": true,
+          "reason": "word_number"
+        },
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "chorine": 1.0,
+          "water softener": -0.5
+        },
+        "canonical_rhs": 0.0
+      },
+      {
+        "name": "c1_lowerbound",
+        "ctype": "lowerbound",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": "chlorine",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "200",
+          "value": 200.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "chorine": 1.0
+        },
+        "canonical_rhs": 200.0
+      }
+    ],
+    "non_numeric_cells": [
+      {
+        "where": "c0_xby.declared_param",
+        "raw": "half",
+        "reason": "word_number"
+      }
+    ],
+    "parser_notes": []
+  },
+  "-1828241964": {
+    "problem_id": "-1828241964",
+    "split": "train",
+    "document": "Thunder Wood is a logging company and it cuts three specific trees: Elm, Oak, and Alder. The company has two operations. The north side operation costs $450 to operate per day and produces 5 elm trees, 5 oak trees, and 4 alder trees daily. The south side operation costs $550 to operate per day and produces 6 elm trees, 4 oak trees, and 6 alder trees daily. The logging company must provide a paper pulp with 25 elm trees, 15 oak trees, and 30 alder trees per week. How many days a week should each operation be run in order to minimize cost while meeting the requirements?",
+    "variables": [
+      "north side",
+      "south side"
+    ],
+    "variable_aliases": {
+      "north side": 0,
+      "south side": 1
+    },
+    "unresolved_mentions": [],
+    "n_vars": 2,
+    "sense": "min",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "north side",
+        "var_index": 0,
+        "raw": "450",
+        "value": 450.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "south side",
+        "var_index": 1,
+        "raw": "550",
+        "value": 550.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "provide",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "25",
+          "value": 25.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "north side",
+            "var_index": 0,
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "south side",
+            "var_index": 1,
+            "raw": "6",
+            "value": 6.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "north side": 5.0,
+          "south side": 6.0
+        },
+        "canonical_rhs": 25.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "provide",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "15",
+          "value": 15.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "north side",
+            "var_index": 0,
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "south side",
+            "var_index": 1,
+            "raw": "4",
+            "value": 4.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "north side": 5.0,
+          "south side": 4.0
+        },
+        "canonical_rhs": 15.0
+      },
+      {
+        "name": "c2_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "provide",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "30",
+          "value": 30.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "north side",
+            "var_index": 0,
+            "raw": "4",
+            "value": 4.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "south side",
+            "var_index": 1,
+            "raw": "6",
+            "value": 6.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "north side": 4.0,
+          "south side": 6.0
+        },
+        "canonical_rhs": 30.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "-1727241372": {
+    "problem_id": "-1727241372",
+    "split": "test",
+    "document": "A science store makes two boxes, a cheap and expensive box. The cheap box contains 3 units of metal and 5 units of acid which can be mixed to create 8 units of foam. The expensive box contains 5 units of metal and 8 units of acid which can be mixed to create 10 units of foam. The cheap box however gives off 2 units of heat while the expensive box gives off 3 units of heat. The science store has available 200 units of metal and 300 units of acid. If at most 50 units of heat can be given off, how many of each box should the store make to maximize the amount of foam produced?",
+    "variables": [
+      "cheap",
+      "expensive box"
+    ],
+    "variable_aliases": {
+      "cheap": 0,
+      "expensive box": 1,
+      "cheap box": 0
+    },
+    "unresolved_mentions": [],
+    "n_vars": 2,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "cheap box",
+        "var_index": 0,
+        "raw": "8",
+        "value": 8.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "expensive box",
+        "var_index": 1,
+        "raw": "10",
+        "value": 10.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "200",
+          "value": 200.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "cheap box",
+            "var_index": 0,
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "expensive box",
+            "var_index": 1,
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "cheap": 3.0,
+          "expensive box": 5.0
+        },
+        "canonical_rhs": 200.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "300",
+          "value": 300.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "cheap box",
+            "var_index": 0,
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "expensive box",
+            "var_index": 1,
+            "raw": "8",
+            "value": 8.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "cheap": 5.0,
+          "expensive box": 8.0
+        },
+        "canonical_rhs": 300.0
+      },
+      {
+        "name": "c2_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "50",
+          "value": 50.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "cheap box",
+            "var_index": 0,
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "expensive box",
+            "var_index": 1,
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "cheap": 2.0,
+          "expensive box": 3.0
+        },
+        "canonical_rhs": 50.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "-1448607152": {
+    "problem_id": "-1448607152",
+    "split": "test",
+    "document": "A strata-management company is looking into purchasing two types of air conditioners, a low-power and a high-power model. A low-powered air conditioner can cool down 12 housing units and uses 150 units of electricity every day. A high-power model can cool down 17 housing units and uses 250 units of electricity every day. Since the low-powered model is not good for the aesthetics, the strata decided to limit the number of low-powered models to only 30% and at least 7 high-powered models must be used. If the apartment needs to condition at least 250 housing units and has 3400 units of electricity available, how many of each air conditioner should the strata company buy to minimize the total number of air conditioners?",
+    "variables": [
+      "low-power",
+      "high-power model"
+    ],
+    "variable_aliases": {
+      "low-power": 0,
+      "high-power model": 1,
+      "low-powered air": 0,
+      "low-powered model": 0,
+      "low-powered models": 0,
+      "high-powered models": 1
+    },
+    "unresolved_mentions": [],
+    "n_vars": 2,
+    "sense": "min",
+    "objective_type": "objvar",
+    "objective_coefficients_implicit": true,
+    "objective_terms": [
+      {
+        "variable": "low-power",
+        "var_index": 0,
+        "raw": null,
+        "value": 1.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "high-power model",
+        "var_index": 1,
+        "raw": null,
+        "value": 1.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_lowerbound",
+        "ctype": "lowerbound",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": "high-powered models",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "7",
+          "value": 7.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "high-power model": 1.0
+        },
+        "canonical_rhs": 7.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "250",
+          "value": 250.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "low-powered air",
+            "var_index": 0,
+            "raw": "12",
+            "value": 12.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "high-power model",
+            "var_index": 1,
+            "raw": "17",
+            "value": 17.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "low-power": 12.0,
+          "high-power model": 17.0
+        },
+        "canonical_rhs": 250.0
+      },
+      {
+        "name": "c2_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "3400",
+          "value": 3400.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "high-power model",
+            "var_index": 1,
+            "raw": "250",
+            "value": 250.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "low-powered air",
+            "var_index": 0,
+            "raw": "150",
+            "value": 150.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "high-power model": 250.0,
+          "low-power": 150.0
+        },
+        "canonical_rhs": 3400.0
+      },
+      {
+        "name": "c3_ratio",
+        "ctype": "ratio",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "limit",
+        "subject_var": "low-powered models",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "30%",
+          "value": 0.3,
+          "non_numeric_raw": true,
+          "reason": "percentage"
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "low-power": 0.7,
+          "high-power model": -0.3
+        },
+        "canonical_rhs": 0.0
+      }
+    ],
+    "non_numeric_cells": [
+      {
+        "where": "c3_ratio.declared_limit",
+        "raw": "30%",
+        "reason": "percentage"
+      }
+    ],
+    "parser_notes": []
+  },
+  "-919179028": {
+    "problem_id": "-919179028",
+    "split": "train",
+    "document": "Julia is on a strict diet and insists on only taking vanilla protein bars and organic meal replacement shakes. She wants to save money and minimize the cost but must get enough protein and carbs, and not too much fat. Vanilla protein bars cost $10 per serving and contain 30 units of protein, 50 units of carbs, and 2 units of fat. Organic meal replacement shakes cost $15 per serving and contain 10 units of protein, 20 units of carbs, and 5 units of fat. Julia requires at least 155 units of protein and 140 units of carbs but must not eat more than 55 units of fat each day. Formulate the problem as an LP problem in order to minimize cost.",
+    "variables": [
+      "vanilla protein bars",
+      "meal replacement shakes"
+    ],
+    "variable_aliases": {
+      "vanilla protein bars": 0,
+      "meal replacement shakes": 1,
+      "Vanilla protein bars": 0
+    },
+    "unresolved_mentions": [],
+    "n_vars": 2,
+    "sense": "min",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "meal replacement shakes",
+        "var_index": 1,
+        "raw": "15",
+        "value": 15.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "Vanilla protein bars",
+        "var_index": 0,
+        "raw": "10",
+        "value": 10.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "155",
+          "value": 155.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "Vanilla protein bars",
+            "var_index": 0,
+            "raw": "30",
+            "value": 30.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "meal replacement shakes",
+            "var_index": 1,
+            "raw": "10",
+            "value": 10.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "vanilla protein bars": 30.0,
+          "meal replacement shakes": 10.0
+        },
+        "canonical_rhs": 155.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "140",
+          "value": 140.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "Vanilla protein bars",
+            "var_index": 0,
+            "raw": "50",
+            "value": 50.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "meal replacement shakes",
+            "var_index": 1,
+            "raw": "20",
+            "value": 20.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "vanilla protein bars": 50.0,
+          "meal replacement shakes": 20.0
+        },
+        "canonical_rhs": 140.0
+      },
+      {
+        "name": "c2_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "not eat more than",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "55",
+          "value": 55.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "meal replacement shakes",
+            "var_index": 1,
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "Vanilla protein bars",
+            "var_index": 0,
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "meal replacement shakes": 5.0,
+          "vanilla protein bars": 2.0
+        },
+        "canonical_rhs": 55.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "69065177": {
+    "problem_id": "69065177",
+    "split": "train",
+    "document": "You have two sodas that contain caffeine and sugar. Soda 1 contains 3 units of caffeine and 2 units of sugar per can. Soda 2 contains 2 units of caffeine and 5 units of sugar per can. You must consume at least 50 units of caffeine and 40 units of sugar. If a can of soda 1 costs $5 and a can of soda 2 costs $7, how many of each should you buy to minimize costs?",
+    "variables": [
+      "Soda 1",
+      "Soda 2"
+    ],
+    "variable_aliases": {
+      "Soda 1": 0,
+      "Soda 2": 1,
+      "soda 1": 0,
+      "soda 2": 1
+    },
+    "unresolved_mentions": [],
+    "n_vars": 2,
+    "sense": "min",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "soda 1",
+        "var_index": 0,
+        "raw": "5",
+        "value": 5.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "soda 2",
+        "var_index": 1,
+        "raw": "7",
+        "value": 7.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "50",
+          "value": 50.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "Soda 1",
+            "var_index": 0,
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "Soda 2",
+            "var_index": 1,
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "Soda 1": 3.0,
+          "Soda 2": 2.0
+        },
+        "canonical_rhs": 50.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "40",
+          "value": 40.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "Soda 1",
+            "var_index": 0,
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "Soda 2",
+            "var_index": 1,
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "Soda 1": 2.0,
+          "Soda 2": 5.0
+        },
+        "canonical_rhs": 40.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "584268166": {
+    "problem_id": "584268166",
+    "split": "dev",
+    "document": "A TCM company makes powdered medicine in two different packages, a regular package and premium package, to sell to TCM doctors. The regular package requires 100 g of medicinal herbs and 30 seconds of drying. A premium package requires 130 units of medicinal herbs and 60 seconds of drying. The company has available 9000 units of medicinal herbs and has available 3500 seconds in the drying machine. Since the premium package sells better, the number of regular packages must be less than the number of premium packages. In addition, the company must make at least 15 regular packages. If a regular package can treat 2 people and a premium batch can treat 3 people, how many of each type of package should be made to maximize the number of people that can be treated?",
+    "variables": [
+      "regular package",
+      "premium package"
+    ],
+    "variable_aliases": {
+      "regular package": 0,
+      "premium package": 1,
+      "regular packages": 0,
+      "premium packages": 1,
+      "premium batch": 1
+    },
+    "unresolved_mentions": [],
+    "n_vars": 2,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "regular package",
+        "var_index": 0,
+        "raw": "2",
+        "value": 2.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "premium batch",
+        "var_index": 1,
+        "raw": "3",
+        "value": 3.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "9000",
+          "value": 9000.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "regular package",
+            "var_index": 0,
+            "raw": "100",
+            "value": 100.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "premium package",
+            "var_index": 1,
+            "raw": "130",
+            "value": 130.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "regular package": 100.0,
+          "premium package": 130.0
+        },
+        "canonical_rhs": 9000.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "3500",
+          "value": 3500.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "regular package",
+            "var_index": 0,
+            "raw": "30",
+            "value": 30.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "premium package",
+            "var_index": 1,
+            "raw": "60",
+            "value": 60.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "regular package": 30.0,
+          "premium package": 60.0
+        },
+        "canonical_rhs": 3500.0
+      },
+      {
+        "name": "c2_xy",
+        "ctype": "xy",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "less than",
+        "subject_var": null,
+        "x_var": "regular packages",
+        "y_var": "premium packages",
+        "declared_limit": null,
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "regular package": 1.0,
+          "premium package": -1.0
+        },
+        "canonical_rhs": 0.0
+      },
+      {
+        "name": "c3_lowerbound",
+        "ctype": "lowerbound",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": "regular packages",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "15",
+          "value": 15.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "regular package": 1.0
+        },
+        "canonical_rhs": 15.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "741805703": {
+    "problem_id": "741805703",
+    "split": "test",
+    "document": "A lighting company makes desk-lamps and night-lamps. There is an expected demand of at least 30 desk-lamps and 50 night-lamps each day. However, due to the size of their factory, they can make at most 150 desk-lamps and 180 night-lamps per day. To satisfy a contract, a minimum of 100 lamps must be made each day. If the profit per desk-lamp sold is $5 and the profit per night-lamp sold is $8, how many lamps of each type should be made to maximize profit?",
+    "variables": [
+      "desk-lamps",
+      "night-lamps"
+    ],
+    "variable_aliases": {
+      "desk-lamps": 0,
+      "night-lamps": 1,
+      "desk-lamp": 0,
+      "night-lamp": 1
+    },
+    "unresolved_mentions": [],
+    "n_vars": 2,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "night-lamp",
+        "var_index": 1,
+        "raw": "8",
+        "value": 8.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "desk-lamp",
+        "var_index": 0,
+        "raw": "5",
+        "value": 5.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_lowerbound",
+        "ctype": "lowerbound",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": "desk-lamps",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "30",
+          "value": 30.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "desk-lamps": 1.0
+        },
+        "canonical_rhs": 30.0
+      },
+      {
+        "name": "c1_lowerbound",
+        "ctype": "lowerbound",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": "night-lamps",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "50",
+          "value": 50.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "night-lamps": 1.0
+        },
+        "canonical_rhs": 50.0
+      },
+      {
+        "name": "c2_upperbound",
+        "ctype": "upperbound",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": "desk-lamps",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "150",
+          "value": 150.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "desk-lamps": 1.0
+        },
+        "canonical_rhs": 150.0
+      },
+      {
+        "name": "c3_upperbound",
+        "ctype": "upperbound",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": "night-lamps",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "180",
+          "value": 180.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "night-lamps": 1.0
+        },
+        "canonical_rhs": 180.0
+      },
+      {
+        "name": "c4_sum",
+        "ctype": "sum",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "minimum",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "100",
+          "value": 100.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "desk-lamps": 1.0,
+          "night-lamps": 1.0
+        },
+        "canonical_rhs": 100.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "1030062804": {
+    "problem_id": "1030062804",
+    "split": "dev",
+    "document": "A nurse suggests that his patient drink more protein shakes and milk to meet their calcium and protein requirements. One glass of protein shake contains 3 units of calcium, 2 units of protein, and 3 grams of sugar. One glass of milk contains 5 units of calcium, 1 unit of protein, and 5 grams of sugar. The patient must get at least 90 units of calcium and 85 units of protein. Since the patent prefers milk, they must drink at least 3 times as many glasses of milk as glasses of protein shakes. How many glasses of each should they drink to minimize their sugar intake?",
+    "variables": [
+      "protein shakes",
+      "milk"
+    ],
+    "variable_aliases": {
+      "protein shakes": 0,
+      "milk": 1,
+      "protein shake": 0
+    },
+    "unresolved_mentions": [],
+    "n_vars": 2,
+    "sense": "min",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "protein shake",
+        "var_index": 0,
+        "raw": "3",
+        "value": 3.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "milk",
+        "var_index": 1,
+        "raw": "5",
+        "value": 5.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "90",
+          "value": 90.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "protein shake",
+            "var_index": 0,
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "milk",
+            "var_index": 1,
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "protein shakes": 3.0,
+          "milk": 5.0
+        },
+        "canonical_rhs": 90.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "85",
+          "value": 85.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "protein shake",
+            "var_index": 0,
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "milk",
+            "var_index": 1,
+            "raw": "1",
+            "value": 1.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "protein shakes": 2.0,
+          "milk": 1.0
+        },
+        "canonical_rhs": 85.0
+      },
+      {
+        "name": "c2_xby",
+        "ctype": "xby",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": "milk",
+        "y_var": "protein shakes",
+        "declared_limit": null,
+        "declared_param": {
+          "raw": "3 times",
+          "value": 3.0,
+          "non_numeric_raw": true,
+          "reason": "multiplier_phrase"
+        },
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "milk": 1.0,
+          "protein shakes": -3.0
+        },
+        "canonical_rhs": 0.0
+      }
+    ],
+    "non_numeric_cells": [
+      {
+        "where": "c2_xby.declared_param",
+        "raw": "3 times",
+        "reason": "multiplier_phrase"
+      }
+    ],
+    "parser_notes": []
+  },
+  "1092036773": {
+    "problem_id": "1092036773",
+    "split": "train",
+    "document": "Bob Fashion produces two types of lipsticks: cream lipsticks and matte lipsticks. The profit per cream lipstick is $70 and the profit per matte lipstick is $100. It takes 3.5 hours to produce the raw materials for one cream lipstick, 5 hours to mix and 2 hours in packing. It takes 5 hours to produce the raw materials for one matte lipstick, 3 hours to mix and 1.5 hours in packing. Per month, 300 hours are available for preparing the raw materials, 400 hours for mixing and 200 hours for packing the lipsticks.  How many of each type of lipstick should be produced in order to maximize the total monthly profit?",
+    "variables": [
+      "cream lipsticks",
+      "matte lipsticks"
+    ],
+    "variable_aliases": {
+      "cream lipsticks": 0,
+      "matte lipsticks": 1,
+      "cream lipstick": 0,
+      "matte lipstick": 1
+    },
+    "unresolved_mentions": [],
+    "n_vars": 2,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "cream lipstick",
+        "var_index": 0,
+        "raw": "70",
+        "value": 70.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "matte lipstick",
+        "var_index": 1,
+        "raw": "100",
+        "value": 100.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "300",
+          "value": 300.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "cream lipstick",
+            "var_index": 0,
+            "raw": "3.5",
+            "value": 3.5,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "matte lipstick",
+            "var_index": 1,
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "cream lipsticks": 3.5,
+          "matte lipsticks": 5.0
+        },
+        "canonical_rhs": 300.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "400",
+          "value": 400.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "cream lipstick",
+            "var_index": 0,
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "matte lipstick",
+            "var_index": 1,
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "cream lipsticks": 5.0,
+          "matte lipsticks": 3.0
+        },
+        "canonical_rhs": 400.0
+      },
+      {
+        "name": "c2_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "200",
+          "value": 200.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "cream lipstick",
+            "var_index": 0,
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "matte lipstick",
+            "var_index": 1,
+            "raw": "1.5",
+            "value": 1.5,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "cream lipsticks": 2.0,
+          "matte lipsticks": 1.5
+        },
+        "canonical_rhs": 200.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "1231061056": {
+    "problem_id": "1231061056",
+    "split": "train",
+    "document": "A furniture store stocks couches and beds. Each couch takes 15 sq ft of space while each bed takes 20 sq ft of space. The store has a total of 300 sq ft of space available. Based on past seasons, the store makes sure a minimum of 50% of all items in stock are beds. In terms of capital, the store wants to spend at most $8000. Each couch costs the store $300 and each bed costs the store $600. If the profit per couch sold is $200 and the profit per bed sold is $400, how many of each should be stocked in order to maximize profit?",
+    "variables": [
+      "couches",
+      "beds"
+    ],
+    "variable_aliases": {
+      "couches": 0,
+      "beds": 1,
+      "couch": 0,
+      "bed": 1
+    },
+    "unresolved_mentions": [],
+    "n_vars": 2,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "couch",
+        "var_index": 0,
+        "raw": "200",
+        "value": 200.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "bed",
+        "var_index": 1,
+        "raw": "400",
+        "value": 400.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "300",
+          "value": 300.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "couch",
+            "var_index": 0,
+            "raw": "15",
+            "value": 15.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "bed",
+            "var_index": 1,
+            "raw": "20",
+            "value": 20.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "couches": 15.0,
+          "beds": 20.0
+        },
+        "canonical_rhs": 300.0
+      },
+      {
+        "name": "c1_ratio",
+        "ctype": "ratio",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "minimum",
+        "subject_var": "beds",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "50%",
+          "value": 0.5,
+          "non_numeric_raw": true,
+          "reason": "percentage"
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "beds": 0.5,
+          "couches": -0.5
+        },
+        "canonical_rhs": 0.0
+      },
+      {
+        "name": "c2_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "8000",
+          "value": 8000.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "couch",
+            "var_index": 0,
+            "raw": "300",
+            "value": 300.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "bed",
+            "var_index": 1,
+            "raw": "600",
+            "value": 600.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "couches": 300.0,
+          "beds": 600.0
+        },
+        "canonical_rhs": 8000.0
+      }
+    ],
+    "non_numeric_cells": [
+      {
+        "where": "c1_ratio.declared_limit",
+        "raw": "50%",
+        "reason": "percentage"
+      }
+    ],
+    "parser_notes": []
+  },
+  "1655680875": {
+    "problem_id": "1655680875",
+    "split": "train",
+    "document": "A farmer has 200 acres of land on which he grows corn and cabbage. It takes 1 day of tractor time and 2 days of hand-picking time per acre of corn. It takes 1.5 days of tractor time and 3 days of hand-picking time per acre of cabbage. In a year, there are 200 days available for tractor use and 275 days available for hand-picking. If the profit per acre of corn is $50 and the profit per acre of cabbage is $70, how many acres of each should be grown in order to maximize profit?",
+    "variables": [
+      "corn",
+      "cabbage"
+    ],
+    "variable_aliases": {
+      "corn": 0,
+      "cabbage": 1
+    },
+    "unresolved_mentions": [],
+    "n_vars": 2,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "corn",
+        "var_index": 0,
+        "raw": "50",
+        "value": 50.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "cabbage",
+        "var_index": 1,
+        "raw": "70",
+        "value": 70.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_sum",
+        "ctype": "sum",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "has",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "200",
+          "value": 200.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "corn": 1.0,
+          "cabbage": 1.0
+        },
+        "canonical_rhs": 200.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "200",
+          "value": 200.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "corn",
+            "var_index": 0,
+            "raw": "1",
+            "value": 1.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "cabbage",
+            "var_index": 1,
+            "raw": "1.5",
+            "value": 1.5,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "corn": 1.0,
+          "cabbage": 1.5
+        },
+        "canonical_rhs": 200.0
+      },
+      {
+        "name": "c2_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "275",
+          "value": 275.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "corn",
+            "var_index": 0,
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "cabbage",
+            "var_index": 1,
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "corn": 2.0,
+          "cabbage": 3.0
+        },
+        "canonical_rhs": 275.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "1751406188": {
+    "problem_id": "1751406188",
+    "split": "test",
+    "document": "A glass factory makes two types of glass panes: a regular glass pane and a tempered glass pane. Both require time on a heating and cooling machine. Both machines are available for a maximum of 300 minutes per day. It takes 3 minutes in the heating machine and 5 minutes in the cooling machine to make one regular glass pane. It takes 5 minutes in the heating machine and 8 minutes in the cooling machine to make one tempered glass pane. The profit per pane of regular glass is $8 and the profit per pane of tempered glass is $10. How many panes of each glass type should the factory make to maximize profit? What is the maximum profit?",
+    "variables": [
+      "regular glass pane",
+      "tempered glass pane"
+    ],
+    "variable_aliases": {
+      "regular glass pane": 0,
+      "tempered glass pane": 1,
+      "regular glass": 0,
+      "tempered glass": 1
+    },
+    "unresolved_mentions": [],
+    "n_vars": 2,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "regular glass",
+        "var_index": 0,
+        "raw": "8",
+        "value": 8.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "tempered glass",
+        "var_index": 1,
+        "raw": "10",
+        "value": 10.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "maximum",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "300",
+          "value": 300.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "regular glass pane",
+            "var_index": 0,
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "tempered glass pane",
+            "var_index": 1,
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "regular glass pane": 3.0,
+          "tempered glass pane": 5.0
+        },
+        "canonical_rhs": 300.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "maximum",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "300",
+          "value": 300.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "regular glass pane",
+            "var_index": 0,
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "tempered glass pane",
+            "var_index": 1,
+            "raw": "8",
+            "value": 8.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "regular glass pane": 5.0,
+          "tempered glass pane": 8.0
+        },
+        "canonical_rhs": 300.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "2078904807": {
+    "problem_id": "2078904807",
+    "split": "test",
+    "document": "Lucy has a dog and she wants his food to be mixed.  In order to keep the dog healthy but also keep the food tasty, the mix needs to have a minimum of 15 units of calcium, 20 units of vitamin mix, and 20 units of protein. A regular brand costs $20 per bag and contains 4 units of calcium, 7 units of vitamin mix, and 10 units of protein. A premium brand costs $35 per bag and contains 12 units of calcium, 10 units of vitamin mix, and 16 units of protein. How many bags of each brand should Lucy mix in order to minimize cost while also meeting the taste and health requirements.",
+    "variables": [
+      "regular brand",
+      "premium brand"
+    ],
+    "variable_aliases": {
+      "regular brand": 0,
+      "premium brand": 1
+    },
+    "unresolved_mentions": [],
+    "n_vars": 2,
+    "sense": "min",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "premium brand",
+        "var_index": 1,
+        "raw": "35",
+        "value": 35.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "regular brand",
+        "var_index": 0,
+        "raw": "20",
+        "value": 20.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "minimum",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "15",
+          "value": 15.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "regular brand",
+            "var_index": 0,
+            "raw": "4",
+            "value": 4.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "premium brand",
+            "var_index": 1,
+            "raw": "12",
+            "value": 12.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "regular brand": 4.0,
+          "premium brand": 12.0
+        },
+        "canonical_rhs": 15.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "minimum",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "20",
+          "value": 20.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "regular brand",
+            "var_index": 0,
+            "raw": "7",
+            "value": 7.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "premium brand",
+            "var_index": 1,
+            "raw": "10",
+            "value": 10.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "regular brand": 7.0,
+          "premium brand": 10.0
+        },
+        "canonical_rhs": 20.0
+      },
+      {
+        "name": "c2_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "minimum",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "20",
+          "value": 20.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "regular brand",
+            "var_index": 0,
+            "raw": "10",
+            "value": 10.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "premium brand",
+            "var_index": 1,
+            "raw": "16",
+            "value": 16.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "regular brand": 10.0,
+          "premium brand": 16.0
+        },
+        "canonical_rhs": 20.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  }
+}

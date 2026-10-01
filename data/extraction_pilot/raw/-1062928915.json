@@ -1,0 +1,253 @@
+{
+  "problem_id": "-1062928915",
+  "run_on": "2026-08-05",
+  "model": "claude-opus-5",
+  "params": {
+    "max_tokens": 16000,
+    "effort": "high",
+    "thinking": {
+      "type": "adaptive"
+    },
+    "temperature": null,
+    "temperature_note": "not sent; rejected on this model"
+  },
+  "raw_prompt": {
+    "system": "You extract the numbers of a linear-programming word problem into a typed slot table. You are not building or solving a model.\n\nReport only what the text states. Follow these rules exactly.\n\nVARIABLES\n- List every decision quantity the problem asks the reader to choose, using the wording the text uses.\n- Do not invent variables for quantities that are given, not chosen.\n\nOBJECTIVE\n- `sense` is \"max\" or \"min\", whichever the text asks for.\n- Give one term per variable that carries an objective coefficient in the text.\n- If a variable appears in the problem but the text gives it no objective coefficient, emit a term for it with coefficient \"ABSENT\".\n\nCONSTRAINTS\n- One entry per constraint the text states. Give each a short id of your choosing and quote the span of the source text it comes from in `quoted_text`.\n- `operator` is \"<=\", \">=\" or \"==\" as the text implies.\n- `limit` is the number on the other side of the comparison.\n- Give one term per variable, for every variable you listed. If a variable does not appear in that constraint, emit a term for it with coefficient \"ABSENT\". Never omit a variable from a constraint's term list \u2014 say \"ABSENT\" instead.\n\nNUMBERS\n- Normalize every number to a plain decimal: no thousands separators, no currency marks, no percent signs, no units, no words.\n- Write a percentage as the number the text writes, not as a fraction: \"30%\" becomes 30, not 0.3.\n- Write a word-number as its digits: \"twice\" becomes 2, \"a third\" becomes 0.333.\n- If a number is stated but you cannot normalize it, use \"ABSENT\".\n\nDO NOT\n- Do not autoformulate. Do not rearrange a constraint, move terms across the comparison, combine constraints, or introduce a coefficient the text does not state.\n- Do not fold units, rates, or conversions into a coefficient.\n- Do not add non-negativity, integrality, or any constraint the text does not state.\n- Do not fill a missing number with a default such as 1. Use \"ABSENT\".",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Extract the slot table for this problem.\n\n<problem>\nA woman has $100000 to gamble on two sports bets: a basketball tournament, a horse race, and a soccer game. Based on simple analysis, the woman determines her chance of losing her money would be 50% for basketball tournament, 25% for horse race, and 10% for the soccer game. The payout for each dollar put on each bet will be $1.2 for basketball tournament, $0.5 for horse race, and $0.1 for the soccer game. Knowing herself, she limits her average chance of losing her money should be at most 30%. Could you help her determine how much to money to put on each sport bet to maximize her average payout?\n</problem>"
+      }
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "variables": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Every decision quantity the problem asks the reader to choose."
+      },
+      "objective": {
+        "type": "object",
+        "properties": {
+          "sense": {
+            "type": "string",
+            "enum": [
+              "max",
+              "min"
+            ]
+          },
+          "terms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "variable": {
+                  "type": "string"
+                },
+                "coefficient": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string",
+                      "const": "ABSENT"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "variable",
+                "coefficient"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "sense",
+          "terms"
+        ],
+        "additionalProperties": false
+      },
+      "constraints": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "quoted_text": {
+              "type": "string"
+            },
+            "operator": {
+              "type": "string",
+              "enum": [
+                "<=",
+                ">=",
+                "=="
+              ]
+            },
+            "limit": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string",
+                  "const": "ABSENT"
+                }
+              ]
+            },
+            "terms": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "variable": {
+                    "type": "string"
+                  },
+                  "coefficient": {
+                    "anyOf": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "string",
+                        "const": "ABSENT"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "variable",
+                  "coefficient"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "id",
+            "quoted_text",
+            "operator",
+            "limit",
+            "terms"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "variables",
+      "objective",
+      "constraints"
+    ],
+    "additionalProperties": false
+  },
+  "elapsed_s": 9.318721374962479,
+  "stop_reason": "end_turn",
+  "stop_details": null,
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1833,
+    "output_tokens": 581,
+    "output_tokens_details": {
+      "thinking_tokens": 147
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "response_model": "claude-opus-5",
+  "request_id": "req_011CdkFE5f8KLEcyPqQnWAvN",
+  "raw_response": [
+    {
+      "signature": "CAISogQKhwEIEBgCKkAtvXzf0sBBpElBdjmJ5aJpX0upb/39CaIsr/hNQZEBMEHJP8A8tAYgGkMFUBCiu4up9aY6pUx3UTA+SIOnxkQcMg1jbGF1ZGUtb3B1cy01OAFCCHRoaW5raW5nWiQ3ZGZkZTBlYS02YjVjLTQ5NzUtYjA2NS0wNDQ2M2Y0NTJlYTASDL6WO37oX0XDlkxhWRoMwx21zcffovqKAQFaIjAw6SIeu0faxoCE+3rLBnnxeV61ekjRK+oAxKBLobdTLcxhFwZwG1TPx+dcCVcoTg8qxwIjna8MXJGfIBdzpNe56FofWBBd+mGeHXvHfSXZkLDZ+mz6pGMBIfdMdT3c9jeUqbUusqt1whOQonsjRjfs612CTSIwDuFtN/vuXfJ3M8HZo5wVrZpm5Rd3p//jMhhVj/sjjybMYXS6RYZnbHCHjj2hgJTcjYgkJCWKSsNBpPcFJPACeGSVHSG6v3Y83+BNYRg5JRqvOeRaLKE7BZWqfEYhOwIrBU9sLb0ZCZ/6W2h7+1G5F8X0tv7NDK9fvv58RrluILVpCY6Mgk/r1wflwokSB1SQkthZEu/t4aWPcP27HQKhh3GLv6YsIiR9S6ixbwlCdyyEQkLUFhcr5h2+xwUS2hyeU8GGDYZ+lma69EoiMe9HsxbAqnyafRac48fxeM3KmGfnNV+1pvjZWtRx266ui115peaRJYrbrQDrrVS8TTkPokefStQYAQ==",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"variables\":[\"money put on basketball tournament\",\"money put on horse race\",\"money put on soccer game\"],\"objective\":{\"sense\":\"max\",\"terms\":[{\"variable\":\"money put on basketball tournament\",\"coefficient\":1.2},{\"variable\":\"money put on horse race\",\"coefficient\":0.5},{\"variable\":\"money put on soccer game\",\"coefficient\":0.1}]},\"constraints\":[{\"id\":\"budget\",\"quoted_text\":\"A woman has $100000 to gamble on two sports bets: a basketball tournament, a horse race, and a soccer game.\",\"operator\":\"<=\",\"limit\":100000,\"terms\":[{\"variable\":\"money put on basketball tournament\",\"coefficient\":1},{\"variable\":\"money put on horse race\",\"coefficient\":1},{\"variable\":\"money put on soccer game\",\"coefficient\":1}]},{\"id\":\"avg_loss_chance\",\"quoted_text\":\"her chance of losing her money would be 50% for basketball tournament, 25% for horse race, and 10% for the soccer game ... she limits her average chance of losing her money should be at most 30%\",\"operator\":\"<=\",\"limit\":30,\"terms\":[{\"variable\":\"money put on basketball tournament\",\"coefficient\":50},{\"variable\":\"money put on horse race\",\"coefficient\":25},{\"variable\":\"money put on soccer game\",\"coefficient\":10}]}]}",
+      "type": "text"
+    }
+  ],
+  "ok": true,
+  "extraction": {
+    "variables": [
+      "money put on basketball tournament",
+      "money put on horse race",
+      "money put on soccer game"
+    ],
+    "objective": {
+      "sense": "max",
+      "terms": [
+        {
+          "variable": "money put on basketball tournament",
+          "coefficient": 1.2
+        },
+        {
+          "variable": "money put on horse race",
+          "coefficient": 0.5
+        },
+        {
+          "variable": "money put on soccer game",
+          "coefficient": 0.1
+        }
+      ]
+    },
+    "constraints": [
+      {
+        "id": "budget",
+        "quoted_text": "A woman has $100000 to gamble on two sports bets: a basketball tournament, a horse race, and a soccer game.",
+        "operator": "<=",
+        "limit": 100000,
+        "terms": [
+          {
+            "variable": "money put on basketball tournament",
+            "coefficient": 1
+          },
+          {
+            "variable": "money put on horse race",
+            "coefficient": 1
+          },
+          {
+            "variable": "money put on soccer game",
+            "coefficient": 1
+          }
+        ]
+      },
+      {
+        "id": "avg_loss_chance",
+        "quoted_text": "her chance of losing her money would be 50% for basketball tournament, 25% for horse race, and 10% for the soccer game ... she limits her average chance of losing her money should be at most 30%",
+        "operator": "<=",
+        "limit": 30,
+        "terms": [
+          {
+            "variable": "money put on basketball tournament",
+            "coefficient": 50
+          },
+          {
+            "variable": "money put on horse race",
+            "coefficient": 25
+          },
+          {
+            "variable": "money put on soccer game",
+            "coefficient": 10
+          }
+        ]
+      }
+    ]
+  }
+}

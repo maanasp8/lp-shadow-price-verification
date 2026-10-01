@@ -1,0 +1,272 @@
+{
+  "problem_id": "584268166",
+  "run_on": "2026-08-05",
+  "model": "claude-opus-5",
+  "params": {
+    "max_tokens": 16000,
+    "effort": "high",
+    "thinking": {
+      "type": "adaptive"
+    },
+    "temperature": null,
+    "temperature_note": "not sent; rejected on this model"
+  },
+  "raw_prompt": {
+    "system": "You extract the numbers of a linear-programming word problem into a typed slot table. You are not building or solving a model.\n\nReport only what the text states. Follow these rules exactly.\n\nVARIABLES\n- List every decision quantity the problem asks the reader to choose, using the wording the text uses.\n- Do not invent variables for quantities that are given, not chosen.\n\nOBJECTIVE\n- `sense` is \"max\" or \"min\", whichever the text asks for.\n- Give one term per variable that carries an objective coefficient in the text.\n- If a variable appears in the problem but the text gives it no objective coefficient, emit a term for it with coefficient \"ABSENT\".\n\nCONSTRAINTS\n- One entry per constraint the text states. Give each a short id of your choosing and quote the span of the source text it comes from in `quoted_text`.\n- `operator` is \"<=\", \">=\" or \"==\" as the text implies.\n- `limit` is the number on the other side of the comparison.\n- Give one term per variable, for every variable you listed. If a variable does not appear in that constraint, emit a term for it with coefficient \"ABSENT\". Never omit a variable from a constraint's term list \u2014 say \"ABSENT\" instead.\n\nNUMBERS\n- Normalize every number to a plain decimal: no thousands separators, no currency marks, no percent signs, no units, no words.\n- Write a percentage as the number the text writes, not as a fraction: \"30%\" becomes 30, not 0.3.\n- Write a word-number as its digits: \"twice\" becomes 2, \"a third\" becomes 0.333.\n- If a number is stated but you cannot normalize it, use \"ABSENT\".\n\nDO NOT\n- Do not autoformulate. Do not rearrange a constraint, move terms across the comparison, combine constraints, or introduce a coefficient the text does not state.\n- Do not fold units, rates, or conversions into a coefficient.\n- Do not add non-negativity, integrality, or any constraint the text does not state.\n- Do not fill a missing number with a default such as 1. Use \"ABSENT\".",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Extract the slot table for this problem.\n\n<problem>\nA TCM company makes powdered medicine in two different packages, a regular package and premium package, to sell to TCM doctors. The regular package requires 100 g of medicinal herbs and 30 seconds of drying. A premium package requires 130 units of medicinal herbs and 60 seconds of drying. The company has available 9000 units of medicinal herbs and has available 3500 seconds in the drying machine. Since the premium package sells better, the number of regular packages must be less than the number of premium packages. In addition, the company must make at least 15 regular packages. If a regular package can treat 2 people and a premium batch can treat 3 people, how many of each type of package should be made to maximize the number of people that can be treated?\n</problem>"
+      }
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "variables": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Every decision quantity the problem asks the reader to choose."
+      },
+      "objective": {
+        "type": "object",
+        "properties": {
+          "sense": {
+            "type": "string",
+            "enum": [
+              "max",
+              "min"
+            ]
+          },
+          "terms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "variable": {
+                  "type": "string"
+                },
+                "coefficient": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string",
+                      "const": "ABSENT"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "variable",
+                "coefficient"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "sense",
+          "terms"
+        ],
+        "additionalProperties": false
+      },
+      "constraints": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "quoted_text": {
+              "type": "string"
+            },
+            "operator": {
+              "type": "string",
+              "enum": [
+                "<=",
+                ">=",
+                "=="
+              ]
+            },
+            "limit": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string",
+                  "const": "ABSENT"
+                }
+              ]
+            },
+            "terms": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "variable": {
+                    "type": "string"
+                  },
+                  "coefficient": {
+                    "anyOf": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "string",
+                        "const": "ABSENT"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "variable",
+                  "coefficient"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "id",
+            "quoted_text",
+            "operator",
+            "limit",
+            "terms"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "variables",
+      "objective",
+      "constraints"
+    ],
+    "additionalProperties": false
+  },
+  "elapsed_s": 12.185695624968503,
+  "stop_reason": "end_turn",
+  "stop_details": null,
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1862,
+    "output_tokens": 924,
+    "output_tokens_details": {
+      "thinking_tokens": 390
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "response_model": "claude-opus-5",
+  "request_id": "req_011CdkFMoaU4bn2EQND5L1Qm",
+  "raw_response": [
+    {
+      "signature": "CAISxwkKhwEIEBgCKkDZmnnZvOg7dakPJZYbooaCz2ePBa/s5uXwIvDtG2RiX0D/slhJhnSr4OzOFXm6VnrmItpoIigsvZZC5TXSXvTqMg1jbGF1ZGUtb3B1cy01OAFCCHRoaW5raW5nWiQ3ZGZkZTBlYS02YjVjLTQ5NzUtYjA2NS0wNDQ2M2Y0NTJlYTASDHLUVDSEyba3wf3Q/BoMGQDX+lxxQpNHHvdvIjAGzsxv1ew/ZnNxQmQA2ETyeVdd1U6C9RdLY/yGAwlM1G9yyZMI8A6QTSuUoDZF+j0q7AcS0YQOC9/gq1XaPIwzquIGYu0v0zTtMstQcmwR5F/um6QH7OmDJ8X5bbiyH27uGPbBb9LO9iCUM/t8gvh8veQLHp08ZovZ20uRmjNnTbYjR/N1h44sE2ugqhHhh/OXa9n1fu5LGbX8/ne0N/VW+PfVR63UY8Qeuy553Fj2hZU+HvIi27CO1XNUIjKB/K81hq2IhlZte1MntPH2H1SRe2/SMnejvhcUgA/JvOaaJBmdUApXjjtA14/+FIvtQ7+ernAalLMi0q4NX/ITypg9tCCYrtV29nh/E0GWjtfwKfBX2uYqXOf4Ol2bbGW8vMUl8YgTj0aLBbEMB/XHjRcDnZ3iy/qc+/JaZ/70BfSqvRpCf9n2Zw5vXU5dunXcx7fFLwx9eNU+qa6xr89z+BIBa03E63lPzLm5bk37+rz3Si7c47o4RdYjP1M2OdGu/5L14Mrb+4QlaxAJ3Ad4mYKf+WNlJRak6ssanZgNT0g7tSW0lQO2FiU6EtSUb9XR1h9p2gZSURPNjHFpM2KoWpDgi/vBhqylGq91WPKTk3TbFWz8wtM+o73X6RHK8yvB/Dif0Xx5f/0x65sWUvPdzSHIhRZiJkshb1ZU/usRZZSUZOOkQ8gDYKgh6oSL6bdkqBnMRkX1NUn6V+IzTkW15rAcCXb2Qi2vDUYwVf5tlxyp2rdiMAI+XbhrEgJj/z/28/eBAALAYeR2XYzi7RcNYDfiF7FGpugISUPZpmcNLF0quf5NrFwoYoiC+bg0wd924MfI6N5In31T9OPeZZcXciOzkcuQ1ncL/TpSyZ/g1CmLZG3ynFMACdCf0XM8nwppaX1bdDsIZzQL4a6HGFlWz2FqVnNGDzlu+fxclImhyfW4mPmDFDaEMasJrYQR1RQRL8ktT2eJJ9sN+LX0+SWdWKbhLM2qn4Ovjvdq7WGBx8sk4GV+iBusa8F2H+quqrNENTp3eo2z4/Xjq6jSd9Kba19PWPM7967uXh77wEjXP1CKqLe2FlEKiyIWtyydChhrknQOtS9Fddyc74B7Yp6Hw59jnZThI4YO0JBTEg7ZVfbAO5pWxVXEQu7M+Z/E3I3AX4MGrMhUw9CCDJGmj3DFFyTFV6scam4qoS8rTwHAzCkoD4Kjdp0MTcnTwaf677AlrO9bXjVoO4jVQM2hKxSx9M2d2G0njvp9yBLKSMo3b4BMfvLHKv3OXiGNyyxxFH25MRdKm9liwhDcO8rVRpUhOXpHUK+9o2l8lEh33/2PgLmbV0eWTujOtknjd6TvNJvDwqWSc/Q9FzQtl6zS3AZY3EVWbSldXM7fKmZjBjk+EPg3xa0TcXoUQW5NWwJWREY5XRgB",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"variables\":[\"number of regular packages\",\"number of premium packages\"],\"objective\":{\"sense\":\"max\",\"terms\":[{\"variable\":\"number of regular packages\",\"coefficient\":2},{\"variable\":\"number of premium packages\",\"coefficient\":3}]},\"constraints\":[{\"id\":\"herbs\",\"quoted_text\":\"The regular package requires 100 g of medicinal herbs ... A premium package requires 130 units of medicinal herbs ... The company has available 9000 units of medicinal herbs\",\"operator\":\"<=\",\"limit\":9000,\"terms\":[{\"variable\":\"number of regular packages\",\"coefficient\":100},{\"variable\":\"number of premium packages\",\"coefficient\":130}]},{\"id\":\"drying\",\"quoted_text\":\"30 seconds of drying ... 60 seconds of drying ... has available 3500 seconds in the drying machine\",\"operator\":\"<=\",\"limit\":3500,\"terms\":[{\"variable\":\"number of regular packages\",\"coefficient\":30},{\"variable\":\"number of premium packages\",\"coefficient\":60}]},{\"id\":\"regular_less_than_premium\",\"quoted_text\":\"the number of regular packages must be less than the number of premium packages\",\"operator\":\"<=\",\"limit\":\"ABSENT\",\"terms\":[{\"variable\":\"number of regular packages\",\"coefficient\":1},{\"variable\":\"number of premium packages\",\"coefficient\":1}]},{\"id\":\"min_regular\",\"quoted_text\":\"the company must make at least 15 regular packages\",\"operator\":\">=\",\"limit\":15,\"terms\":[{\"variable\":\"number of regular packages\",\"coefficient\":1},{\"variable\":\"number of premium packages\",\"coefficient\":\"ABSENT\"}]}]}",
+      "type": "text"
+    }
+  ],
+  "ok": true,
+  "extraction": {
+    "variables": [
+      "number of regular packages",
+      "number of premium packages"
+    ],
+    "objective": {
+      "sense": "max",
+      "terms": [
+        {
+          "variable": "number of regular packages",
+          "coefficient": 2
+        },
+        {
+          "variable": "number of premium packages",
+          "coefficient": 3
+        }
+      ]
+    },
+    "constraints": [
+      {
+        "id": "herbs",
+        "quoted_text": "The regular package requires 100 g of medicinal herbs ... A premium package requires 130 units of medicinal herbs ... The company has available 9000 units of medicinal herbs",
+        "operator": "<=",
+        "limit": 9000,
+        "terms": [
+          {
+            "variable": "number of regular packages",
+            "coefficient": 100
+          },
+          {
+            "variable": "number of premium packages",
+            "coefficient": 130
+          }
+        ]
+      },
+      {
+        "id": "drying",
+        "quoted_text": "30 seconds of drying ... 60 seconds of drying ... has available 3500 seconds in the drying machine",
+        "operator": "<=",
+        "limit": 3500,
+        "terms": [
+          {
+            "variable": "number of regular packages",
+            "coefficient": 30
+          },
+          {
+            "variable": "number of premium packages",
+            "coefficient": 60
+          }
+        ]
+      },
+      {
+        "id": "regular_less_than_premium",
+        "quoted_text": "the number of regular packages must be less than the number of premium packages",
+        "operator": "<=",
+        "limit": "ABSENT",
+        "terms": [
+          {
+            "variable": "number of regular packages",
+            "coefficient": 1
+          },
+          {
+            "variable": "number of premium packages",
+            "coefficient": 1
+          }
+        ]
+      },
+      {
+        "id": "min_regular",
+        "quoted_text": "the company must make at least 15 regular packages",
+        "operator": ">=",
+        "limit": 15,
+        "terms": [
+          {
+            "variable": "number of regular packages",
+            "coefficient": 1
+          },
+          {
+            "variable": "number of premium packages",
+            "coefficient": "ABSENT"
+          }
+        ]
+      }
+    ]
+  }
+}

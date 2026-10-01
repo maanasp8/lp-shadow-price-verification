@@ -1,0 +1,15 @@
+{
+  "n_evaluable": 18525,
+  "feas_obj_detected": 16897,
+  "feas_obj_rate": 0.9121,
+  "breakdown": {
+    "infeasible_and_moved": 5952,
+    "infeasible_only": 45,
+    "moved_only": 10900
+  },
+  "abc_union_selfcheck": 17018,
+  "abc_union_rate_selfcheck": 0.9187,
+  "class55_size": 55,
+  "class55_detected_by_feas_obj": 0,
+  "stamp": "2026-09-30"
+}

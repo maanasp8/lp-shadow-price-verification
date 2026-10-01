@@ -1,0 +1,194 @@
+{
+ "stamp": "2026-09-03",
+ "n_vars": 4,
+ "rows": [
+  4,
+  8,
+  12
+ ],
+ "instances_per_cell": 120,
+ "cap": 300,
+ "seed": 20260903,
+ "cells": {
+  "4": {
+   "stat": {
+    "instances": 118,
+    "generated": 4109,
+    "swaps": 3381,
+    "objective_moved": 2641,
+    "objective_unchanged": 740,
+    "answer_neutral": 734,
+    "no_report": 721,
+    "inert": 728,
+    "reported": 13,
+    "certified": 8,
+    "instance_not_optimal": 2,
+    "basis_artifact": 5,
+    "solution_moved": 6
+   },
+   "by_type": {
+    "4a": {
+     "swaps": 880,
+     "objective_unchanged": 93,
+     "answer_neutral": 91,
+     "reported": 1
+    },
+    "4b": {
+     "swaps": 1186,
+     "objective_unchanged": 552,
+     "answer_neutral": 551,
+     "reported": 4,
+     "certified": 2
+    },
+    "5": {
+     "swaps": 677,
+     "objective_unchanged": 86,
+     "answer_neutral": 83,
+     "reported": 1
+    },
+    "7": {
+     "swaps": 638,
+     "objective_unchanged": 9,
+     "answer_neutral": 9,
+     "reported": 7,
+     "certified": 6
+    }
+   }
+  },
+  "8": {
+   "stat": {
+    "instances": 120,
+    "generated": 13787,
+    "inert": 5399,
+    "swaps": 8388,
+    "objective_moved": 7019,
+    "objective_unchanged": 1369,
+    "answer_neutral": 1314,
+    "no_report": 1301,
+    "solution_moved": 55,
+    "reported": 13,
+    "certified": 10,
+    "basis_artifact": 3
+   },
+   "by_type": {
+    "4a": {
+     "swaps": 1098,
+     "objective_unchanged": 62,
+     "answer_neutral": 50,
+     "reported": 2,
+     "certified": 1
+    },
+    "4b": {
+     "swaps": 4169,
+     "objective_unchanged": 1242,
+     "answer_neutral": 1214,
+     "reported": 2,
+     "certified": 1
+    },
+    "5": {
+     "swaps": 686,
+     "objective_unchanged": 39,
+     "answer_neutral": 38,
+     "reported": 2,
+     "certified": 2
+    },
+    "7": {
+     "swaps": 2435,
+     "objective_unchanged": 26,
+     "answer_neutral": 12,
+     "reported": 7,
+     "certified": 6
+    }
+   }
+  },
+  "12": {
+   "stat": {
+    "instances": 120,
+    "generated": 28480,
+    "inert": 14215,
+    "swaps": 14265,
+    "objective_moved": 12612,
+    "objective_unchanged": 1653,
+    "answer_neutral": 1579,
+    "no_report": 1560,
+    "reported": 19,
+    "certified": 10,
+    "basis_artifact": 9,
+    "solution_moved": 74
+   },
+   "by_type": {
+    "4a": {
+     "swaps": 1149,
+     "objective_unchanged": 40,
+     "answer_neutral": 33
+    },
+    "4b": {
+     "swaps": 7592,
+     "objective_unchanged": 1547,
+     "answer_neutral": 1506,
+     "reported": 10,
+     "certified": 3
+    },
+    "5": {
+     "swaps": 679,
+     "objective_unchanged": 27,
+     "answer_neutral": 24
+    },
+    "7": {
+     "swaps": 4845,
+     "objective_unchanged": 39,
+     "answer_neutral": 16,
+     "reported": 9,
+     "certified": 7
+    }
+   }
+  }
+ },
+ "summary": [
+  {
+   "n_vars": 4,
+   "n_rows": 4,
+   "instances": 118,
+   "generated": 4109,
+   "inert": 728,
+   "swaps": 3381,
+   "objective_unchanged": 740,
+   "answer_neutral": 734,
+   "reported": 13,
+   "certified": 8,
+   "basis_artifact": 5,
+   "rate_answer_neutral": 0.2170955338657202,
+   "rate_certified": 0.0023661638568470865
+  },
+  {
+   "n_vars": 4,
+   "n_rows": 8,
+   "instances": 120,
+   "generated": 13787,
+   "inert": 5399,
+   "swaps": 8388,
+   "objective_unchanged": 1369,
+   "answer_neutral": 1314,
+   "reported": 13,
+   "certified": 10,
+   "basis_artifact": 3,
+   "rate_answer_neutral": 0.15665236051502146,
+   "rate_certified": 0.0011921793037672865
+  },
+  {
+   "n_vars": 4,
+   "n_rows": 12,
+   "instances": 120,
+   "generated": 28480,
+   "inert": 14215,
+   "swaps": 14265,
+   "objective_unchanged": 1653,
+   "answer_neutral": 1579,
+   "reported": 19,
+   "certified": 10,
+   "basis_artifact": 9,
+   "rate_answer_neutral": 0.11069050122677883,
+   "rate_certified": 0.0007010164738871364
+  }
+ ]
+}

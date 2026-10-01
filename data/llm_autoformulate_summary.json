@@ -1,0 +1,55 @@
+{
+ "stamp": "2026-08-25",
+ "model": "claude-haiku-4-5",
+ "attempted": 100,
+ "status": {
+  "OPTIMAL": 88,
+  "parse_fail: JSONDecodeError": 4,
+  "parse_fail: ValueError": 7,
+  "solve_INFEASIBLE": 1
+ },
+ "align": {
+  "content": 87,
+  "count_mismatch": 2
+ },
+ "scored": 87,
+ "wrong": {
+  "n": 8,
+  "detected": 8,
+  "pct": 100.0,
+  "ci95": [
+   67.6,
+   100
+  ],
+  "detected_norm": 8
+ },
+ "match": {
+  "n": 79,
+  "reported": 3,
+  "pct": 3.8,
+  "ci95": [
+   1.3,
+   10.6
+  ],
+  "reported_norm": 0,
+  "ci95_norm": [
+   0,
+   4.6
+  ],
+  "all_three_are_uniform_row_rescalings": true
+ },
+ "alignment_ablation_opus44": {
+  "name": {
+   "n": 44,
+   "fp": 44
+  },
+  "position": {
+   "n": 44,
+   "fp": 6
+  },
+  "content": {
+   "n": 44,
+   "fp": 0
+  }
+ }
+}

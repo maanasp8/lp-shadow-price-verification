@@ -1,0 +1,215 @@
+{
+ "generated": "2026-08-18",
+ "method": "derived from scores.json alignment + ground_truth.json values; no matching reimplemented, extractor not re-run",
+ "objective_coefficients": 9,
+ "row_terms": 13,
+ "total": 22,
+ "instances_contributing": [
+  "-114149479",
+  "1092036773",
+  "1231061056",
+  "741805703"
+ ],
+ "variables_resolved": 9,
+ "note": "These 22 cells belong to the 9 order_mapping-resolved variables. The 54 unresolved variables carry the separate 124 content-gap cells. The remaining numeric-scorable cells are 54 row limits, which have no variable referent: 22 + 54 = 76 = scores.json numeric_correct + numeric_wrong.",
+ "cells": [
+  {
+   "problem_id": "-114149479",
+   "cell_class": "objective_coefficient",
+   "row": "(objective)",
+   "variable": "crepe cake",
+   "var_index": 0,
+   "raw": "12",
+   "value": 12.0
+  },
+  {
+   "problem_id": "-114149479",
+   "cell_class": "objective_coefficient",
+   "row": "(objective)",
+   "variable": "sponge cake",
+   "var_index": 1,
+   "raw": "10",
+   "value": 10.0
+  },
+  {
+   "problem_id": "-114149479",
+   "cell_class": "objective_coefficient",
+   "row": "(objective)",
+   "variable": "birthday cake",
+   "var_index": 2,
+   "raw": "15",
+   "value": 15.0
+  },
+  {
+   "problem_id": "-114149479",
+   "cell_class": "row_term",
+   "row": "c0_linear",
+   "variable": "crepe cake",
+   "var_index": 0,
+   "raw": "200",
+   "value": 200.0
+  },
+  {
+   "problem_id": "-114149479",
+   "cell_class": "row_term",
+   "row": "c0_linear",
+   "variable": "sponge cake",
+   "var_index": 1,
+   "raw": "300",
+   "value": 300.0
+  },
+  {
+   "problem_id": "-114149479",
+   "cell_class": "row_term",
+   "row": "c0_linear",
+   "variable": "birthday cake",
+   "var_index": 2,
+   "raw": "350",
+   "value": 350.0
+  },
+  {
+   "problem_id": "741805703",
+   "cell_class": "objective_coefficient",
+   "row": "(objective)",
+   "variable": "night-lamp",
+   "var_index": 1,
+   "raw": "8",
+   "value": 8.0
+  },
+  {
+   "problem_id": "741805703",
+   "cell_class": "objective_coefficient",
+   "row": "(objective)",
+   "variable": "desk-lamp",
+   "var_index": 0,
+   "raw": "5",
+   "value": 5.0
+  },
+  {
+   "problem_id": "1092036773",
+   "cell_class": "objective_coefficient",
+   "row": "(objective)",
+   "variable": "cream lipstick",
+   "var_index": 0,
+   "raw": "70",
+   "value": 70.0
+  },
+  {
+   "problem_id": "1092036773",
+   "cell_class": "objective_coefficient",
+   "row": "(objective)",
+   "variable": "matte lipstick",
+   "var_index": 1,
+   "raw": "100",
+   "value": 100.0
+  },
+  {
+   "problem_id": "1092036773",
+   "cell_class": "row_term",
+   "row": "c0_linear",
+   "variable": "cream lipstick",
+   "var_index": 0,
+   "raw": "3.5",
+   "value": 3.5
+  },
+  {
+   "problem_id": "1092036773",
+   "cell_class": "row_term",
+   "row": "c0_linear",
+   "variable": "matte lipstick",
+   "var_index": 1,
+   "raw": "5",
+   "value": 5.0
+  },
+  {
+   "problem_id": "1092036773",
+   "cell_class": "row_term",
+   "row": "c1_linear",
+   "variable": "cream lipstick",
+   "var_index": 0,
+   "raw": "5",
+   "value": 5.0
+  },
+  {
+   "problem_id": "1092036773",
+   "cell_class": "row_term",
+   "row": "c1_linear",
+   "variable": "matte lipstick",
+   "var_index": 1,
+   "raw": "3",
+   "value": 3.0
+  },
+  {
+   "problem_id": "1092036773",
+   "cell_class": "row_term",
+   "row": "c2_linear",
+   "variable": "cream lipstick",
+   "var_index": 0,
+   "raw": "2",
+   "value": 2.0
+  },
+  {
+   "problem_id": "1092036773",
+   "cell_class": "row_term",
+   "row": "c2_linear",
+   "variable": "matte lipstick",
+   "var_index": 1,
+   "raw": "1.5",
+   "value": 1.5
+  },
+  {
+   "problem_id": "1231061056",
+   "cell_class": "objective_coefficient",
+   "row": "(objective)",
+   "variable": "couch",
+   "var_index": 0,
+   "raw": "200",
+   "value": 200.0
+  },
+  {
+   "problem_id": "1231061056",
+   "cell_class": "objective_coefficient",
+   "row": "(objective)",
+   "variable": "bed",
+   "var_index": 1,
+   "raw": "400",
+   "value": 400.0
+  },
+  {
+   "problem_id": "1231061056",
+   "cell_class": "row_term",
+   "row": "c0_linear",
+   "variable": "couch",
+   "var_index": 0,
+   "raw": "15",
+   "value": 15.0
+  },
+  {
+   "problem_id": "1231061056",
+   "cell_class": "row_term",
+   "row": "c0_linear",
+   "variable": "bed",
+   "var_index": 1,
+   "raw": "20",
+   "value": 20.0
+  },
+  {
+   "problem_id": "1231061056",
+   "cell_class": "row_term",
+   "row": "c2_linear",
+   "variable": "couch",
+   "var_index": 0,
+   "raw": "300",
+   "value": 300.0
+  },
+  {
+   "problem_id": "1231061056",
+   "cell_class": "row_term",
+   "row": "c2_linear",
+   "variable": "bed",
+   "var_index": 1,
+   "raw": "600",
+   "value": 600.0
+  }
+ ]
+}

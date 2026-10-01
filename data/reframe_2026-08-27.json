@@ -1,0 +1,49 @@
+{
+ "moved": {
+  "n": 16852,
+  "checks": 16852,
+  "checks_norm": 16852,
+  "reference": 16852
+ },
+ "still": {
+  "n": 1673,
+  "checks": 166,
+  "checks_norm": 166,
+  "reference": 178
+ },
+ "inert": {
+  "n": 5507,
+  "checks": 29,
+  "checks_norm": 29,
+  "reference": 75
+ },
+ "face": {
+  "n": 86,
+  "primal_unique": 82,
+  "genuine": 55,
+  "artifact": 31,
+  "held_of_55": 55,
+  "n_55": 55
+ },
+ "checks_29": {
+  "n": 29,
+  "basis_dependent": 20,
+  "artifact": 29,
+  "forced": 0
+ },
+ "reference_75": {
+  "n": 75,
+  "basis_dependent": 43,
+  "faces_intersect": 70,
+  "genuine": 5,
+  "obj_moved": 0,
+  "sol_moved": 75
+ },
+ "reference_unique_det": {
+  "n": 98,
+  "faces_intersect": 96,
+  "genuine": 2,
+  "obj_moved": 0
+ },
+ "stamp": "2026-08-27"
+}

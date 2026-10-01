@@ -1,0 +1,3127 @@
+{
+  "-1998648387": {
+    "problem_id": "-1998648387",
+    "split": "train",
+    "document": "An oil company produces economical, regular and premium grades of oil. Each tanker of economical grade oil produces a net revenue of $500, each tanker of regular grade oil produces a net revenue of $1020, and each tanker of premium grade oil produces a net revenue of $920. To produce a tanker of economical grade oil, 4 units of compound A and 2 units of compound B are required. To produce a tanker of regular grade oil, 5 units of compound A and 1 unit of compound B are required. To produce a tanker of premium grade oil, 8 units of compound A and 1 unit of compound B are required. Currently the company has 200  units of compound A and 100 units of compound B to process. How many full or partial tankers of each oil grade should the company produce so that net revenue is maximized?",
+    "variables": [
+      "economical",
+      "regular",
+      "premium"
+    ],
+    "n_vars": 3,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "economical grade oil",
+        "raw": "500",
+        "value": 500.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "regular grade oil",
+        "raw": "1020",
+        "value": 1020.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "premium grade oil",
+        "raw": "920",
+        "value": 920.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "has",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "200",
+          "value": 200.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "economical grade oil",
+            "raw": "4",
+            "value": 4.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "regular grade oil",
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "premium grade oil",
+            "raw": "8",
+            "value": 8.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "economical": 4.0,
+          "regular": 5.0,
+          "premium": 8.0
+        },
+        "canonical_rhs": 200.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "has",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "100",
+          "value": 100.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "economical grade oil",
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "regular grade oil",
+            "raw": "1",
+            "value": 1.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "premium grade oil",
+            "raw": "1",
+            "value": 1.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "economical": 2.0,
+          "regular": 1.0,
+          "premium": 1.0
+        },
+        "canonical_rhs": 100.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "-1501301743": {
+    "problem_id": "-1501301743",
+    "split": "dev",
+    "document": "The Chips Alloy company produces 150 tons of iron ore and 35 tons of zinc ore each month. These can be treated in different ways to produce three different alloy grades: Standard, Plus or Premium. To produce 1 ton of the Standard grade alloy requires 3 tons of iron ore and 1 ton of zinc ore. To produce 1 ton of the Plus grade alloy requires 5 tons of iron ore and 2 tons of zinc ore. Finally, to produce 1 ton of the Premium grade alloy requires 6 tons of iron ore and 3 tons of zinc ore. The profit per ton from selling the alloys are $1500, $2500 and $5500 for the Standard, Plus, and Premium grades respectively. How much of each alloy grade should be produced to maximize profit?",
+    "variables": [
+      "Standard",
+      "Plus",
+      "Premium"
+    ],
+    "n_vars": 3,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "Standard",
+        "raw": "1500",
+        "value": 1500.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "Plus",
+        "raw": "2500",
+        "value": 2500.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "Premium",
+        "raw": "5500",
+        "value": 5500.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "produces",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "150",
+          "value": 150.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "Standard grade alloy",
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "Plus grade alloy",
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "Premium grade alloy",
+            "raw": "6",
+            "value": 6.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "Standard": 3.0,
+          "Plus": 5.0,
+          "Premium": 6.0
+        },
+        "canonical_rhs": 150.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "produces",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "35",
+          "value": 35.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "Standard grade alloy",
+            "raw": "1",
+            "value": 1.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "Plus grade alloy",
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "Premium grade alloy",
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "Standard": 1.0,
+          "Plus": 2.0,
+          "Premium": 3.0
+        },
+        "canonical_rhs": 35.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "-1062928915": {
+    "problem_id": "-1062928915",
+    "split": "test",
+    "document": "A woman has $100000 to gamble on two sports bets: a basketball tournament, a horse race, and a soccer game. Based on simple analysis, the woman determines her chance of losing her money would be 50% for basketball tournament, 25% for horse race, and 10% for the soccer game. The payout for each dollar put on each bet will be $1.2 for basketball tournament, $0.5 for horse race, and $0.1 for the soccer game. Knowing herself, she limits her average chance of losing her money should be at most 30%. Could you help her determine how much to money to put on each sport bet to maximize her average payout?",
+    "variables": [
+      "basketball tournament",
+      "horse race",
+      "soccer game"
+    ],
+    "n_vars": 3,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "basketball tournament",
+        "raw": "1.2",
+        "value": 1.2,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "horse race",
+        "raw": "0.5",
+        "value": 0.5,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "soccer game",
+        "raw": "0.1",
+        "value": 0.1,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_sum",
+        "ctype": "sum",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "has",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "100000",
+          "value": 100000.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "basketball tournament": 1.0,
+          "horse race": 1.0,
+          "soccer game": 1.0
+        },
+        "canonical_rhs": 100000.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "30%",
+          "value": 0.3,
+          "non_numeric_raw": true,
+          "reason": "percentage"
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "basketball tournament",
+            "raw": "50%",
+            "value": 0.5,
+            "non_numeric_raw": true,
+            "reason": "percentage"
+          },
+          {
+            "variable": "horse race",
+            "raw": "25%",
+            "value": 0.25,
+            "non_numeric_raw": true,
+            "reason": "percentage"
+          },
+          {
+            "variable": "soccer game",
+            "raw": "10%",
+            "value": 0.1,
+            "non_numeric_raw": true,
+            "reason": "percentage"
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "basketball tournament": 0.5,
+          "horse race": 0.25,
+          "soccer game": 0.1
+        },
+        "canonical_rhs": 0.3
+      }
+    ],
+    "non_numeric_cells": [
+      {
+        "where": "c1_linear.declared_limit",
+        "raw": "30%",
+        "reason": "percentage"
+      },
+      {
+        "where": "c1_linear.term",
+        "variable": "basketball tournament",
+        "raw": "50%",
+        "reason": "percentage"
+      },
+      {
+        "where": "c1_linear.term",
+        "variable": "horse race",
+        "raw": "25%",
+        "reason": "percentage"
+      },
+      {
+        "where": "c1_linear.term",
+        "variable": "soccer game",
+        "raw": "10%",
+        "reason": "percentage"
+      }
+    ],
+    "parser_notes": []
+  },
+  "-1045601007": {
+    "problem_id": "-1045601007",
+    "split": "train",
+    "document": "A small bakery has 1000 grams of batter and 800 grams of milk to make their soft, smooth, and crunchy cake-pops. A soft cake-pop needs 20 grams of batter and 10 grams of milk. A smooth cake-pop requires 15 grams of batter and 15 grams of milk. A crunchy cake-pop requires 12 grams of batter and 18 grams of milk. If the profit per soft cake-pop is $4, the profit per smooth cake-pop is $6, and the profit per crunchy cake-pop is $5, how many of each should the bakery make to maximize their profit?",
+    "variables": [
+      "soft",
+      "smooth",
+      "crunchy"
+    ],
+    "n_vars": 3,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "soft cake-pop",
+        "raw": "4",
+        "value": 4.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "smooth cake-pop",
+        "raw": "6",
+        "value": 6.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "crunchy cake-pop",
+        "raw": "5",
+        "value": 5.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "has",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "1000",
+          "value": 1000.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "soft cake-pop",
+            "raw": "20",
+            "value": 20.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "smooth cake-pop",
+            "raw": "15",
+            "value": 15.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "crunchy cake-pop",
+            "raw": "12",
+            "value": 12.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "soft": 20.0,
+          "smooth": 15.0,
+          "crunchy": 12.0
+        },
+        "canonical_rhs": 1000.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "has",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "800",
+          "value": 800.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "soft cake-pop",
+            "raw": "10",
+            "value": 10.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "smooth cake-pop",
+            "raw": "15",
+            "value": 15.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "crunchy cake-pop",
+            "raw": "18",
+            "value": 18.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "soft": 10.0,
+          "smooth": 15.0,
+          "crunchy": 18.0
+        },
+        "canonical_rhs": 800.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "-443833341": {
+    "problem_id": "-443833341",
+    "split": "test",
+    "document": "Maple Oil processes three types of crude oil: light oil, non-sticky oil and heavy oil. Each tank of light oil produces a net revenue of $550, each tank of non-sticky oil produces a net revenue of $750, and each tank of heavy oil produces a net revenue of $950. To process a tank of light oil, 3 units of compound A and 3 units of compound B are required. To process a tank of non-sticky oil, 6 units of compound A and 2 units of compound B are required. To process a tank of heavy oil, 9 units of compound A and 3 units of compound B are required. Currently the company has 250 units of compound A and 150 units of compound B to process. How many full or partial tanks of each oil should the company process so that net revenue is maximized?",
+    "variables": [
+      "light oil",
+      "non-sticky oil",
+      "heavy oil"
+    ],
+    "n_vars": 3,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "light oil",
+        "raw": "550",
+        "value": 550.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "non-sticky oil",
+        "raw": "750",
+        "value": 750.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "heavy oil",
+        "raw": "950",
+        "value": 950.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "has",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "250",
+          "value": 250.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "light oil",
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "non-sticky oil",
+            "raw": "6",
+            "value": 6.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "heavy oil",
+            "raw": "9",
+            "value": 9.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "light oil": 3.0,
+          "non-sticky oil": 6.0,
+          "heavy oil": 9.0
+        },
+        "canonical_rhs": 250.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "has",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "150",
+          "value": 150.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "heavy oil",
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "non-sticky oil",
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "light oil",
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "heavy oil": 3.0,
+          "non-sticky oil": 2.0,
+          "light oil": 3.0
+        },
+        "canonical_rhs": 150.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "-114149479": {
+    "problem_id": "-114149479",
+    "split": "test",
+    "document": "A small bakery has 20000 grams of batter and 14000 grams of milk to make their crepe cakes, sponge cakes, and birthday cakes. A crepe cake needs 400 grams of batter and 200 grams of milk. A sponge cake requires 500 grams of batter and 300 grams of milk. A birthday cake requires 450 grams of batter and 350 grams of milk. If the profit per crepe cake is $12, the profit per sponge cake is $10, and the profit per birthday cake is $15, how many of each should the bakery make to maximize their profit?",
+    "variables": [
+      "crepe cakes",
+      "sponge cakes",
+      "birthday cakes"
+    ],
+    "n_vars": 3,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "crepe cake",
+        "raw": "12",
+        "value": 12.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "sponge cake",
+        "raw": "10",
+        "value": 10.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "birthday cake",
+        "raw": "15",
+        "value": 15.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "has",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "20000",
+          "value": 20000.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "crepe cake",
+            "raw": "200",
+            "value": 200.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "sponge cake",
+            "raw": "300",
+            "value": 300.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "birthday cake",
+            "raw": "350",
+            "value": 350.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "crepe cakes": 200.0,
+          "sponge cakes": 300.0,
+          "birthday cakes": 350.0
+        },
+        "canonical_rhs": 20000.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "155829587": {
+    "problem_id": "155829587",
+    "split": "train",
+    "document": "A steel company produces 120 tons of iron ore and 70 tons of zinc ore each month. These can be treated in different ways to produce three types of vessels: general purpose vessels, pharmaceutical vessels or pressure vessels. To produce 1 set of general purpose vessels requires 3.5 tons of iron ore and 2 tons of zinc ore. To produce 1 set of pharmaceutical vessels requires 4 tons of iron ore and 5 tons of zinc ore. Finally, to produce 1 set of pressure vessels requires 2 tons of iron ore and 3.5 tons of zinc ore. The profit per set from selling the vessels are $2000, $3000 and $4500 for the general purpose, pharmaceutical, and pressure vessels respectively. How many sets of each type of vessel should be produced to maximize profit?",
+    "variables": [
+      "general purpose vessels",
+      "pharmaceutical vessels",
+      "pressure vessels"
+    ],
+    "n_vars": 3,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "general purpose",
+        "raw": "2000",
+        "value": 2000.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "pharmaceutical",
+        "raw": "3000",
+        "value": 3000.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "pressure vessels",
+        "raw": "4500",
+        "value": 4500.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "produces",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "120",
+          "value": 120.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "general purpose vessels",
+            "raw": "3.5",
+            "value": 3.5,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "pharmaceutical vessels",
+            "raw": "4",
+            "value": 4.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "pressure vessels",
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "general purpose vessels": 3.5,
+          "pharmaceutical vessels": 4.0,
+          "pressure vessels": 2.0
+        },
+        "canonical_rhs": 120.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "produces",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "70",
+          "value": 70.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "general purpose vessels",
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "pharmaceutical vessels",
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "pressure vessels",
+            "raw": "3.5",
+            "value": 3.5,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "general purpose vessels": 2.0,
+          "pharmaceutical vessels": 5.0,
+          "pressure vessels": 3.5
+        },
+        "canonical_rhs": 70.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "473766545": {
+    "problem_id": "473766545",
+    "split": "train",
+    "document": "A tea company makes low, medium, and high quality tea. A low quality tea contains 2 units of rare additives and 6 units of tea leaves. A medium quality tea contains 3 units of rare additives and 7 units of tea leaves. A high quality tea contains 4 units of rare additives and 8 units of tea leaves. The company has available 200 units of rare additives and 400 units of tea leaves. If the profit per low quality tea is $1, the profit per medium quality tea is $3, and the profit per high quality tea is $5, how many of each should be made to maximize profits?",
+    "variables": [
+      "low",
+      "medium",
+      "high quality tea"
+    ],
+    "n_vars": 3,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "medium quality tea",
+        "raw": "3",
+        "value": 3.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "high quality tea",
+        "raw": "5",
+        "value": 5.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "low quality tea",
+        "raw": "1",
+        "value": 1.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "200",
+          "value": 200.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "low quality tea",
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "medium quality tea",
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "high quality tea",
+            "raw": "4",
+            "value": 4.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "low": 2.0,
+          "medium": 3.0,
+          "high quality tea": 4.0
+        },
+        "canonical_rhs": 200.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "400",
+          "value": 400.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "low quality tea",
+            "raw": "6",
+            "value": 6.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "medium quality tea",
+            "raw": "7",
+            "value": 7.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "high quality tea",
+            "raw": "8",
+            "value": 8.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "low": 6.0,
+          "medium": 7.0,
+          "high quality tea": 8.0
+        },
+        "canonical_rhs": 400.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "1855357113": {
+    "problem_id": "1855357113",
+    "split": "train",
+    "document": "Jason has $1000000 to invest in the following energy sectors: solar, wind, nuclear and coal. The annual rate of return for each is as follows: solar, 6%; wind, 9%, nuclear, 12%, coal, 3%. Jason has the following conditions. The amount he invests in coal cannot exceed the amount invested in solar. Similarly, the amount invested in wind cannot exceed the amount invested in nuclear. Lastly, at most 10% of the investment can be in coal. How much money should Jason invest in each sector to maximize his return?",
+    "variables": [
+      "solar",
+      "wind",
+      "nuclear",
+      "coal"
+    ],
+    "n_vars": 4,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "solar",
+        "raw": "6%",
+        "value": 0.06,
+        "non_numeric_raw": true,
+        "reason": "percentage"
+      },
+      {
+        "variable": "wind",
+        "raw": "9%",
+        "value": 0.09,
+        "non_numeric_raw": true,
+        "reason": "percentage"
+      },
+      {
+        "variable": "nuclear",
+        "raw": "12%",
+        "value": 0.12,
+        "non_numeric_raw": true,
+        "reason": "percentage"
+      },
+      {
+        "variable": "coal",
+        "raw": "3%",
+        "value": 0.03,
+        "non_numeric_raw": true,
+        "reason": "percentage"
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_xy",
+        "ctype": "xy",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "cannot exceed",
+        "subject_var": null,
+        "x_var": "coal",
+        "y_var": "solar",
+        "declared_limit": null,
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "coal": 1.0,
+          "solar": -1.0
+        },
+        "canonical_rhs": 0.0
+      },
+      {
+        "name": "c1_xy",
+        "ctype": "xy",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "cannot exceed",
+        "subject_var": null,
+        "x_var": "wind",
+        "y_var": "nuclear",
+        "declared_limit": null,
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "wind": 1.0,
+          "nuclear": -1.0
+        },
+        "canonical_rhs": 0.0
+      },
+      {
+        "name": "c2_ratio",
+        "ctype": "ratio",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": "coal",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "10%",
+          "value": 0.1,
+          "non_numeric_raw": true,
+          "reason": "percentage"
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "coal": 0.9,
+          "solar": -0.1,
+          "wind": -0.1,
+          "nuclear": -0.1
+        },
+        "canonical_rhs": 0.0
+      }
+    ],
+    "non_numeric_cells": [
+      {
+        "where": "objective",
+        "variable": "solar",
+        "raw": "6%",
+        "reason": "percentage"
+      },
+      {
+        "where": "objective",
+        "variable": "wind",
+        "raw": "9%",
+        "reason": "percentage"
+      },
+      {
+        "where": "objective",
+        "variable": "nuclear",
+        "raw": "12%",
+        "reason": "percentage"
+      },
+      {
+        "where": "objective",
+        "variable": "coal",
+        "raw": "3%",
+        "reason": "percentage"
+      },
+      {
+        "where": "c2_ratio.declared_limit",
+        "raw": "10%",
+        "reason": "percentage"
+      }
+    ],
+    "parser_notes": []
+  },
+  "2042898874": {
+    "problem_id": "2042898874",
+    "split": "dev",
+    "document": "A paint manufacturer produces 300 kg of dye and 200 kg of filler each week. By using different combinations, they can produce three different paint products for sale: Low Quality, Regular Quality, and Premium Quality. The profit per kg for selling the paint is $100, $200, $230 for the low quality, regular quality, and premium quality respectively. To produce 1 kg of low quality paint requires 6 kg of dye and 20 kg of filler. To produce 1 kg of regular quality paint requires 10 kg of dye and 10 kg of filler. To produce 1 kg of premium quality paint require 15 kg of dye and 2 kg of dye. Formulate the problem of deciding how much of each paint to make each week as a LP problem in order to maximize profit.",
+    "variables": [
+      "Low Quality",
+      "Regular Quality",
+      "Premium Quality"
+    ],
+    "n_vars": 3,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "low quality",
+        "raw": "100",
+        "value": 100.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "regular quality",
+        "raw": "200",
+        "value": 200.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "premium quality",
+        "raw": "230",
+        "value": 230.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "produces",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "300",
+          "value": 300.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "low quality paint",
+            "raw": "6",
+            "value": 6.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "regular quality paint",
+            "raw": "10",
+            "value": 10.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "premium quality paint",
+            "raw": "15",
+            "value": 15.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "Low Quality": 6.0,
+          "Regular Quality": 10.0,
+          "Premium Quality": 15.0
+        },
+        "canonical_rhs": 300.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "produces",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "200",
+          "value": 200.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "low quality paint",
+            "raw": "20",
+            "value": 20.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "regular quality paint",
+            "raw": "10",
+            "value": 10.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "premium quality paint",
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "Low Quality": 20.0,
+          "Regular Quality": 10.0,
+          "Premium Quality": 2.0
+        },
+        "canonical_rhs": 200.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "-1987579295": {
+    "problem_id": "-1987579295",
+    "split": "train",
+    "document": "A small wood shop that specializes in kitchen tools and can make a maximum of 30 cutting boards and 50 knife handles in a week. It takes a worker 5 hours to make a cutting board and 10 hours to make a knife handle. The profit on a cutting board is $100 and the profit on a knife handle is $250.  The total number of hours by all of the employees is at most 200 hours per week. Formulate an LP problem in order to maximize profit.",
+    "variables": [
+      "cutting boards",
+      "knife handles"
+    ],
+    "n_vars": 2,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "cutting board",
+        "raw": "100",
+        "value": 100.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "knife handle",
+        "raw": "250",
+        "value": 250.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_upperbound",
+        "ctype": "upperbound",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "maximum",
+        "subject_var": "cutting boards",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "30",
+          "value": 30.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "cutting boards": 1.0
+        },
+        "canonical_rhs": 30.0
+      },
+      {
+        "name": "c1_upperbound",
+        "ctype": "upperbound",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "maximum",
+        "subject_var": "knife handles",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "50",
+          "value": 50.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "knife handles": 1.0
+        },
+        "canonical_rhs": 50.0
+      },
+      {
+        "name": "c2_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "200",
+          "value": 200.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "cutting board",
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "knife handle",
+            "raw": "10",
+            "value": 10.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "cutting boards": 5.0,
+          "knife handles": 10.0
+        },
+        "canonical_rhs": 200.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "-1819716628": {
+    "problem_id": "-1819716628",
+    "split": "test",
+    "document": "A patient in the hospital can take two different pain killers, pain killer 1 and pain killer 2. Per dose, pain killer 1 delivers 0.5 units of medicine to the legs and 0.8 units of medicine to the back. Per dose, pain killer 2 delivers 0.7 units of medicine to the legs and 0.4 units of medicine to the back. In, addition pain killer 1 deliver 0.3 units of sleeping medicine and pain killer 2 delivers 0.6 units of sleeping medicine. At most 8 units of sleep medicine should be delivered and at least 4 units of medicine should be delivered to the legs. How many doses of each should be taken to maximize the amount of medicine delivered to the back?",
+    "variables": [
+      "pain killer 1",
+      "pain killer 2"
+    ],
+    "n_vars": 2,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "pain killer 1",
+        "raw": "0.8",
+        "value": 0.8,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "pain killer 2",
+        "raw": "0.4",
+        "value": 0.4,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "At most",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "8",
+          "value": 8.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "pain killer 1",
+            "raw": "0.3",
+            "value": 0.3,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "pain killer 2",
+            "raw": "0.6",
+            "value": 0.6,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "pain killer 1": 0.3,
+          "pain killer 2": 0.6
+        },
+        "canonical_rhs": 8.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "4",
+          "value": 4.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "pain killer 1",
+            "raw": "0.5",
+            "value": 0.5,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "pain killer 2",
+            "raw": "0.7",
+            "value": 0.7,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "pain killer 1": 0.5,
+          "pain killer 2": 0.7
+        },
+        "canonical_rhs": 4.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "-1628312989": {
+    "problem_id": "-1628312989",
+    "split": "train",
+    "document": "The Notorious Desk company wants to promote a new brand of wine and wants to market it using a total market budget of $87,000. To do so, the company needs to decide how much to allocate on each of its two advertising channels: (1) morning TV show and (2) social media. Each day, it costs the company $1,000 and $2000 to run advertisement spots on morning TV show and social media respectively. The expected daily reach, based on past ratings, is 15,000 viewers for each morning show spot and 30,000 internet users for a social media spot. The chief marketer knows from her experience that both channels are key to the success of the product launch. She wants to plan at least 4 but no more than 7 morning show spots. In addition, the social media spots needs to be at least 30 due to pricing tier policy. How many times should each of the media channels be used to maximize the reach of  the campaign?",
+    "variables": [
+      "morning TV show",
+      "social media"
+    ],
+    "n_vars": 2,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "morning show",
+        "raw": "15,000",
+        "value": 15000.0,
+        "non_numeric_raw": true,
+        "reason": "comma_formatted"
+      },
+      {
+        "variable": "social media spot",
+        "raw": "30,000",
+        "value": 30000.0,
+        "non_numeric_raw": true,
+        "reason": "comma_formatted"
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "budget",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "87,000",
+          "value": 87000.0,
+          "non_numeric_raw": true,
+          "reason": "comma_formatted"
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "morning TV",
+            "raw": "1,000",
+            "value": 1000.0,
+            "non_numeric_raw": true,
+            "reason": "comma_formatted"
+          },
+          {
+            "variable": "social media",
+            "raw": "2000",
+            "value": 2000.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "morning TV show": 1000.0,
+          "social media": 2000.0
+        },
+        "canonical_rhs": 87000.0
+      },
+      {
+        "name": "c1_lowerbound",
+        "ctype": "lowerbound",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": "morning show",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "4",
+          "value": 4.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "morning TV show": 1.0
+        },
+        "canonical_rhs": 4.0
+      },
+      {
+        "name": "c2_upperbound",
+        "ctype": "upperbound",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "no more than",
+        "subject_var": "morning show",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "7",
+          "value": 7.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "morning TV show": 1.0
+        },
+        "canonical_rhs": 7.0
+      },
+      {
+        "name": "c3_lowerbound",
+        "ctype": "lowerbound",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": "social media spots",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "30",
+          "value": 30.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "social media": 1.0
+        },
+        "canonical_rhs": 30.0
+      }
+    ],
+    "non_numeric_cells": [
+      {
+        "where": "objective",
+        "variable": "morning show",
+        "raw": "15,000",
+        "reason": "comma_formatted"
+      },
+      {
+        "where": "objective",
+        "variable": "social media spot",
+        "raw": "30,000",
+        "reason": "comma_formatted"
+      },
+      {
+        "where": "c0_linear.declared_limit",
+        "raw": "87,000",
+        "reason": "comma_formatted"
+      },
+      {
+        "where": "c0_linear.term",
+        "variable": "morning TV",
+        "raw": "1,000",
+        "reason": "comma_formatted"
+      }
+    ],
+    "parser_notes": []
+  },
+  "-1264330103": {
+    "problem_id": "-1264330103",
+    "split": "train",
+    "document": "Alex is making a special vitamin mix using two drinks: orange juice and apple juice. The vitamin mix must contain at least 100 units of Vitamin A, at least 200 units of vitamin D, and at most 150 units of vitamin E. A cup of orange juice contains 6 units of Vitamin A, 5 units of Vitamin D, 12 units of Vitamin E, and 3 units of Vitamin K. A cup of apple juice contains 10 units of Vitamin A, 3 units of Vitamin D, 15 units of Vitamin E, and 9 units of Vitamin K. How many cups of each drink should be used to make the vitamin mix in order to minimize the amount of Vitamin K?",
+    "variables": [
+      "orange juice",
+      "apple juice"
+    ],
+    "n_vars": 2,
+    "sense": "min",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "apple juice",
+        "raw": "9",
+        "value": 9.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "orange juice",
+        "raw": "3",
+        "value": 3.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "100",
+          "value": 100.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "orange juice",
+            "raw": "6",
+            "value": 6.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "apple juice",
+            "raw": "10",
+            "value": 10.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "orange juice": 6.0,
+          "apple juice": 10.0
+        },
+        "canonical_rhs": 100.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "200",
+          "value": 200.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "orange juice",
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "apple juice",
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "orange juice": 5.0,
+          "apple juice": 3.0
+        },
+        "canonical_rhs": 200.0
+      },
+      {
+        "name": "c2_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "150",
+          "value": 150.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "orange juice",
+            "raw": "12",
+            "value": 12.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "apple juice",
+            "raw": "15",
+            "value": 15.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "orange juice": 12.0,
+          "apple juice": 15.0
+        },
+        "canonical_rhs": 150.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "-451843339": {
+    "problem_id": "-451843339",
+    "split": "test",
+    "document": "A nutritionist is making a special vitamin mix using two drinks: A and B. The vitamin mix must contain at least 150 units of Vitamin A, at least 300 units of vitamin D, and at most 400 units of vitamin E. A cup of drink A contains 8 units of Vitamin A, 6 units of Vitamin D, 10 units of Vitamin E, and 4 units of Vitamin K. A cup of drink B contains 15 units of Vitamin A, 2 units of Vitamin D, 20 units of Vitamin E, and 12 units of Vitamin K. How many cups of each drink should be used to make the vitamin mix in order to minimize the amount of Vitamin K?",
+    "variables": [
+      "A",
+      "B."
+    ],
+    "n_vars": 2,
+    "sense": "min",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "drink B",
+        "raw": "12",
+        "value": 12.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "drink A",
+        "raw": "4",
+        "value": 4.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "150",
+          "value": 150.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "drink A",
+            "raw": "8",
+            "value": 8.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "drink B",
+            "raw": "15",
+            "value": 15.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "A": 8.0,
+          "B.": 15.0
+        },
+        "canonical_rhs": 150.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "300",
+          "value": 300.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "drink A",
+            "raw": "6",
+            "value": 6.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "drink B",
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "A": 6.0,
+          "B.": 2.0
+        },
+        "canonical_rhs": 300.0
+      },
+      {
+        "name": "c2_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "400",
+          "value": 400.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "drink A",
+            "raw": "10",
+            "value": 10.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "drink B",
+            "raw": "20",
+            "value": 20.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "A": 10.0,
+          "B.": 20.0
+        },
+        "canonical_rhs": 400.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "-134578212": {
+    "problem_id": "-134578212",
+    "split": "train",
+    "document": "A keyboard company produces two types of analog synthesizer keyboards, one with 61 keys and another with 81 keys. Both keyboards are sold for $1500 and $2500 respectively. There are about 3000 oscillator chips available every day from which the 61 key version requires 8 chips while the 81 key version requires 16 chips. The company has a total 8 working hours a day.  Both of these synthesizers require a production time of 1.5 hours. What should be the manufacturing quantity for each of the keyboards to maximize the total revenue?",
+    "variables": [
+      "61 keys",
+      "81 keys"
+    ],
+    "n_vars": 2,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "61 keys",
+        "raw": "1500",
+        "value": 1500.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "81 keys",
+        "raw": "2500",
+        "value": 2500.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "3000",
+          "value": 3000.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "61 key version",
+            "raw": "8",
+            "value": 8.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "81 key version",
+            "raw": "16",
+            "value": 16.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "61 keys": 8.0,
+          "81 keys": 16.0
+        },
+        "canonical_rhs": 3000.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "total",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "8",
+          "value": 8.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "61 key version",
+            "raw": "1.5",
+            "value": 1.5,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "81 key version",
+            "raw": "1.5",
+            "value": 1.5,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "61 keys": 1.5,
+          "81 keys": 1.5
+        },
+        "canonical_rhs": 8.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "25709243": {
+    "problem_id": "25709243",
+    "split": "test",
+    "document": "A printing company sells math workbooks and English workbooks. To meet demand, they must make at least 40 math workbooks and at least 60 English workbooks. However, they can make at most 140 math workbooks and at most 170 English workbooks. The company has a contract with a school to send at least 200 workbooks of either type. If the profit per math workbook is $15 and the profit per English workbook is $17, how many of each should the company make to maximize profit?",
+    "variables": [
+      "math workbooks",
+      "English workbooks"
+    ],
+    "n_vars": 2,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "English workbook",
+        "raw": "17",
+        "value": 17.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "math workbook",
+        "raw": "15",
+        "value": 15.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_lowerbound",
+        "ctype": "lowerbound",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": "math workbooks",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "40",
+          "value": 40.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "math workbooks": 1.0
+        },
+        "canonical_rhs": 40.0
+      },
+      {
+        "name": "c1_lowerbound",
+        "ctype": "lowerbound",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": "English workbooks",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "60",
+          "value": 60.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "English workbooks": 1.0
+        },
+        "canonical_rhs": 60.0
+      },
+      {
+        "name": "c2_upperbound",
+        "ctype": "upperbound",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": "math workbooks",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "140",
+          "value": 140.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "math workbooks": 1.0
+        },
+        "canonical_rhs": 140.0
+      },
+      {
+        "name": "c3_upperbound",
+        "ctype": "upperbound",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": "English workbooks",
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "170",
+          "value": 170.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "English workbooks": 1.0
+        },
+        "canonical_rhs": 170.0
+      },
+      {
+        "name": "c4_sum",
+        "ctype": "sum",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "200",
+          "value": 200.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "math workbooks": 1.0,
+          "English workbooks": 1.0
+        },
+        "canonical_rhs": 200.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "256126407": {
+    "problem_id": "256126407",
+    "split": "test",
+    "document": "Forest Paper makes two types of products: graph paper and music paper. Each type of paper requires the use of two machines, a printing machine and a scanning machine. It takes 3 minutes on the printing machine and 5.5 minutes on the scanning machine to make a ream of graph paper. On the other hand, it takes 1.5 minutes on the printing machine and 3 minutes on the scanning machine to make a ream of music paper. Each machine is available for a maximum of 350 minutes per day. The company sells a package of graph paper at a profit of $4 and a package of music paper at a profit of $2.5. The company can sell all the paper it makes. How many reams of each type should the company produce in a day in order to maximize profit? What is that profit?",
+    "variables": [
+      "graph paper",
+      "music paper"
+    ],
+    "n_vars": 2,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "graph paper",
+        "raw": "4",
+        "value": 4.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "music paper",
+        "raw": "2.5",
+        "value": 2.5,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "maximum",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "350",
+          "value": 350.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "graph paper",
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "music paper",
+            "raw": "1.5",
+            "value": 1.5,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "graph paper": 3.0,
+          "music paper": 1.5
+        },
+        "canonical_rhs": 350.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "maximum",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "350",
+          "value": 350.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "graph paper",
+            "raw": "5.5",
+            "value": 5.5,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "music paper",
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "graph paper": 5.5,
+          "music paper": 3.0
+        },
+        "canonical_rhs": 350.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "528982296": {
+    "problem_id": "528982296",
+    "split": "train",
+    "document": "A man insists he can meet his calorie and protein requirements from eating burgers and fries. He wants to get at least 3000 calories and 150 grams of protein. Each burger contains 500 calories and 30 grams of protein while each order of fries contains 300 calories and 5 grams of protein. If the cost per burger is $7 and the cost per order of fries is $3, how many of each should he eat to meet his requirements at minimum cost?",
+    "variables": [
+      "burgers",
+      "fries"
+    ],
+    "n_vars": 2,
+    "sense": "min",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "burger",
+        "raw": "7",
+        "value": 7.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "fries",
+        "raw": "3",
+        "value": 3.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "3000",
+          "value": 3000.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "burger",
+            "raw": "500",
+            "value": 500.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "fries",
+            "raw": "300",
+            "value": 300.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "burgers": 500.0,
+          "fries": 300.0
+        },
+        "canonical_rhs": 3000.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "150",
+          "value": 150.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "burger",
+            "raw": "30",
+            "value": 30.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "fries",
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "burgers": 30.0,
+          "fries": 5.0
+        },
+        "canonical_rhs": 150.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "834095199": {
+    "problem_id": "834095199",
+    "split": "train",
+    "document": "A pasta restaurant is going to purchase pasta rollers. There are two models available. Roller v2 can make 15 kg of spaghetti per cycle, requires 60 grams of fuel per cycle, and costs $9000. Roller v1 can make 9 kg of pasta per cycle, requires 70 grams of fuel per cycle, and costs $4000. The pasta restaurant must make at least 150 kg of spaghetti per cycle and use at most 900 grams of fuel per cycle. How many of each pasta roller should they purchase to minimize costs?",
+    "variables": [
+      "Roller v2",
+      "Roller v1"
+    ],
+    "n_vars": 2,
+    "sense": "min",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "Roller v1",
+        "raw": "4000",
+        "value": 4000.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "Roller v2",
+        "raw": "9000",
+        "value": 9000.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "150",
+          "value": 150.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "Roller v2",
+            "raw": "15",
+            "value": 15.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "Roller v1",
+            "raw": "9",
+            "value": 9.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "Roller v2": 15.0,
+          "Roller v1": 9.0
+        },
+        "canonical_rhs": 150.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "at most",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "900",
+          "value": 900.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "Roller v2",
+            "raw": "60",
+            "value": 60.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "Roller v1",
+            "raw": "70",
+            "value": 70.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "Roller v2": 60.0,
+          "Roller v1": 70.0
+        },
+        "canonical_rhs": 900.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "1138164544": {
+    "problem_id": "1138164544",
+    "split": "train",
+    "document": "An actor needs to gain weight for a role and decides to eat only pizza and donuts. He wants to eat a minimum of 3000 calories per day and at least 200 grams of fat per day. Each pizza costs $4 and contains 300 calories and 10 grams of fat. Each donut costs $2 and contains 200 calories and 7 grams of fat. How many of each should the actor eat to minimize costs?",
+    "variables": [
+      "pizza",
+      "donuts"
+    ],
+    "n_vars": 2,
+    "sense": "min",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "pizza",
+        "raw": "4",
+        "value": 4.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "donut",
+        "raw": "2",
+        "value": 2.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "minimum",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "3000",
+          "value": 3000.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "pizza",
+            "raw": "300",
+            "value": 300.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "donut",
+            "raw": "200",
+            "value": 200.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "pizza": 300.0,
+          "donuts": 200.0
+        },
+        "canonical_rhs": 3000.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "200",
+          "value": 200.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "pizza",
+            "raw": "10",
+            "value": 10.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "donut",
+            "raw": "7",
+            "value": 7.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "pizza": 10.0,
+          "donuts": 7.0
+        },
+        "canonical_rhs": 200.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "1450943790": {
+    "problem_id": "1450943790",
+    "split": "train",
+    "document": "A gardener mixes soil to produce his own soil mix to fulfill his compost and loam requirements. There are two types of soil, an outdoor soil and an indoor soil. The indoor soil costs $2 and contains 2 units of compost and 3 units of loam. The outdoor soil costs $3 and contains 4 units of compost and 6 units of loam. If the gardener requires at least 80 units of compost and 70 units of loam per week, how much of each soil should he purchase to minimize his cost?",
+    "variables": [
+      "outdoor soil",
+      "indoor soil"
+    ],
+    "n_vars": 2,
+    "sense": "min",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "indoor soil",
+        "raw": "2",
+        "value": 2.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "outdoor soil",
+        "raw": "3",
+        "value": 3.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "80",
+          "value": 80.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "indoor soil",
+            "raw": "2",
+            "value": 2.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "outdoor soil",
+            "raw": "4",
+            "value": 4.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "indoor soil": 2.0,
+          "outdoor soil": 4.0
+        },
+        "canonical_rhs": 80.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": ">=",
+        "operator_raw": "GREATER_OR_EQUAL",
+        "direction_text": "at least",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "70",
+          "value": 70.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "indoor soil",
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "outdoor soil",
+            "raw": "6",
+            "value": 6.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "indoor soil": 3.0,
+          "outdoor soil": 6.0
+        },
+        "canonical_rhs": 70.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "1581587735": {
+    "problem_id": "1581587735",
+    "split": "train",
+    "document": "James has available a field of 120 square feet in which he plants aster flowers and stonecrops. The seed for aster costs $20 per square foot. The seed for stonecrops costs $45 per square foot. James has available a budget of $5000 to spend on seeds. The profit per square foot of aster flowers is $60 and the profit per square foot of stonecrops is $80. Find the optimal solution for James in order to maximize profit.",
+    "variables": [
+      "aster flowers",
+      "stonecrops."
+    ],
+    "n_vars": 2,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "aster flowers",
+        "raw": "60",
+        "value": 60.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "stonecrops",
+        "raw": "80",
+        "value": 80.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_sum",
+        "ctype": "sum",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "120",
+          "value": 120.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "aster flowers": 1.0,
+          "stonecrops.": 1.0
+        },
+        "canonical_rhs": 120.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "budget",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "5000",
+          "value": 5000.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "aster",
+            "raw": "20",
+            "value": 20.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "stonecrops",
+            "raw": "45",
+            "value": 45.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "aster flowers": 20.0,
+          "stonecrops.": 45.0
+        },
+        "canonical_rhs": 5000.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "1652531585": {
+    "problem_id": "1652531585",
+    "split": "train",
+    "document": "A flower grower has 120 acres of agricultural land in which he wants to plant tulips and orchids. The seed for tulips costs $15 per acre whereas the seed for orchids costs $40 per acre. The profit per acre of tulips is $75 whereas the profit for orchids is $105 an acre. If the grower has a maximum budget of $1200 to spend on seeds, determine how many tulips and orchids he needs to plant to maximize his profit.",
+    "variables": [
+      "tulips",
+      "orchids"
+    ],
+    "n_vars": 2,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "tulips",
+        "raw": "75",
+        "value": 75.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "orchids",
+        "raw": "105",
+        "value": 105.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "maximum budget",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "1200",
+          "value": 1200.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "tulips",
+            "raw": "15",
+            "value": 15.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "orchids",
+            "raw": "40",
+            "value": 40.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "tulips": 15.0,
+          "orchids": 40.0
+        },
+        "canonical_rhs": 1200.0
+      },
+      {
+        "name": "c1_sum",
+        "ctype": "sum",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "has",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "120",
+          "value": 120.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [],
+        "implicit_structural_coefficient": true,
+        "canonical_net_coefficients": {
+          "tulips": 1.0,
+          "orchids": 1.0
+        },
+        "canonical_rhs": 120.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  },
+  "1885080399": {
+    "problem_id": "1885080399",
+    "split": "train",
+    "document": "A pizza shop specializes in pizza and they make two types. Pizza A requires 4 units of mozzarella cheese and 5 units of American cheese. Pizza B requires 5 units of mozzarella cheese and 3 units of American cheese. The shop has 600 units and 500 units of mozzarella and American cheese available, respectively. If the profit per pizza A is $3 and the profit per pizza B is $4, how many of each should the shop make to maximize profit?",
+    "variables": [
+      "Pizza A",
+      "Pizza B"
+    ],
+    "n_vars": 2,
+    "sense": "max",
+    "objective_type": "objective",
+    "objective_coefficients_implicit": false,
+    "objective_terms": [
+      {
+        "variable": "pizza B",
+        "raw": "4",
+        "value": 4.0,
+        "non_numeric_raw": false,
+        "reason": null
+      },
+      {
+        "variable": "pizza A",
+        "raw": "3",
+        "value": 3.0,
+        "non_numeric_raw": false,
+        "reason": null
+      }
+    ],
+    "constraints": [
+      {
+        "name": "c0_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "600",
+          "value": 600.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "Pizza A",
+            "raw": "4",
+            "value": 4.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "Pizza B",
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "Pizza A": 4.0,
+          "Pizza B": 5.0
+        },
+        "canonical_rhs": 600.0
+      },
+      {
+        "name": "c1_linear",
+        "ctype": "linear",
+        "operator": "<=",
+        "operator_raw": "LESS_OR_EQUAL",
+        "direction_text": "available",
+        "subject_var": null,
+        "x_var": null,
+        "y_var": null,
+        "declared_limit": {
+          "raw": "500",
+          "value": 500.0,
+          "non_numeric_raw": false,
+          "reason": null
+        },
+        "declared_param": null,
+        "declared_terms": [
+          {
+            "variable": "Pizza A",
+            "raw": "5",
+            "value": 5.0,
+            "non_numeric_raw": false,
+            "reason": null
+          },
+          {
+            "variable": "Pizza B",
+            "raw": "3",
+            "value": 3.0,
+            "non_numeric_raw": false,
+            "reason": null
+          }
+        ],
+        "implicit_structural_coefficient": false,
+        "canonical_net_coefficients": {
+          "Pizza A": 5.0,
+          "Pizza B": 3.0
+        },
+        "canonical_rhs": 500.0
+      }
+    ],
+    "non_numeric_cells": [],
+    "parser_notes": []
+  }
+}

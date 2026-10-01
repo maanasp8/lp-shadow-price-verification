@@ -1,0 +1,314 @@
+{
+  "problem_id": "-1970166929",
+  "run_on": "2026-08-05",
+  "model": "claude-opus-5",
+  "params": {
+    "max_tokens": 16000,
+    "effort": "high",
+    "thinking": {
+      "type": "adaptive"
+    },
+    "temperature": null,
+    "temperature_note": "not sent; rejected on this model"
+  },
+  "raw_prompt": {
+    "system": "You extract the numbers of a linear-programming word problem into a typed slot table. You are not building or solving a model.\n\nReport only what the text states. Follow these rules exactly.\n\nVARIABLES\n- List every decision quantity the problem asks the reader to choose, using the wording the text uses.\n- Do not invent variables for quantities that are given, not chosen.\n\nOBJECTIVE\n- `sense` is \"max\" or \"min\", whichever the text asks for.\n- Give one term per variable that carries an objective coefficient in the text.\n- If a variable appears in the problem but the text gives it no objective coefficient, emit a term for it with coefficient \"ABSENT\".\n\nCONSTRAINTS\n- One entry per constraint the text states. Give each a short id of your choosing and quote the span of the source text it comes from in `quoted_text`.\n- `operator` is \"<=\", \">=\" or \"==\" as the text implies.\n- `limit` is the number on the other side of the comparison.\n- Give one term per variable, for every variable you listed. If a variable does not appear in that constraint, emit a term for it with coefficient \"ABSENT\". Never omit a variable from a constraint's term list \u2014 say \"ABSENT\" instead.\n\nNUMBERS\n- Normalize every number to a plain decimal: no thousands separators, no currency marks, no percent signs, no units, no words.\n- Write a percentage as the number the text writes, not as a fraction: \"30%\" becomes 30, not 0.3.\n- Write a word-number as its digits: \"twice\" becomes 2, \"a third\" becomes 0.333.\n- If a number is stated but you cannot normalize it, use \"ABSENT\".\n\nDO NOT\n- Do not autoformulate. Do not rearrange a constraint, move terms across the comparison, combine constraints, or introduce a coefficient the text does not state.\n- Do not fold units, rates, or conversions into a coefficient.\n- Do not add non-negativity, integrality, or any constraint the text does not state.\n- Do not fill a missing number with a default such as 1. Use \"ABSENT\".",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Extract the slot table for this problem.\n\n<problem>\nMartin has $2000000 to invest in the following technology sectors: GPUs, CPUs, software and mobile devices. The annual rate of return for each is as follows: GPUs, 4%; CPUs, 6%, software, 11%, mobile devices, 8%. Martin has the following conditions. The amount he invests in GPUs cannot exceed the amount invested in CPUs. Similarly, the amount invested in mobile devices cannot exceed the amount invested in software. Lastly, at most 9% of the investment can be in GPUs. How much money should Martin invest in each sector to maximize his return?\n</problem>"
+      }
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "variables": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Every decision quantity the problem asks the reader to choose."
+      },
+      "objective": {
+        "type": "object",
+        "properties": {
+          "sense": {
+            "type": "string",
+            "enum": [
+              "max",
+              "min"
+            ]
+          },
+          "terms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "variable": {
+                  "type": "string"
+                },
+                "coefficient": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string",
+                      "const": "ABSENT"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "variable",
+                "coefficient"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "sense",
+          "terms"
+        ],
+        "additionalProperties": false
+      },
+      "constraints": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "quoted_text": {
+              "type": "string"
+            },
+            "operator": {
+              "type": "string",
+              "enum": [
+                "<=",
+                ">=",
+                "=="
+              ]
+            },
+            "limit": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string",
+                  "const": "ABSENT"
+                }
+              ]
+            },
+            "terms": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "variable": {
+                    "type": "string"
+                  },
+                  "coefficient": {
+                    "anyOf": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "string",
+                        "const": "ABSENT"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "variable",
+                  "coefficient"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "id",
+            "quoted_text",
+            "operator",
+            "limit",
+            "terms"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "variables",
+      "objective",
+      "constraints"
+    ],
+    "additionalProperties": false
+  },
+  "elapsed_s": 18.231347332999576,
+  "stop_reason": "end_turn",
+  "stop_details": null,
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1831,
+    "output_tokens": 1382,
+    "output_tokens_details": {
+      "thinking_tokens": 543
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "response_model": "claude-opus-5",
+  "request_id": "req_011CdkCejWGpEDmgDP2vkzUm",
+  "raw_response": [
+    {
+      "signature": "CAISlQsKhwEIEBgCKkDtSu6TX/XMthnp3T3g1wYIz/6p1JbP4e+GmCifP5/ES7+i3W1p49c7Mv4AzG8f83WWkQBBZ86qDCT+7UKoTEQZMg1jbGF1ZGUtb3B1cy01OAFCCHRoaW5raW5nWiQ3ZGZkZTBlYS02YjVjLTQ5NzUtYjA2NS0wNDQ2M2Y0NTJlYTASDIBavf+KQMq4sdL5JBoMXDQOYHDjBDpXrWcvIjAqlwCwkP05Kl3hl5bYz8is8DKmIzpUrUu1efrSTGs9P7UoWnF8jQBpG0wFUXGmdfwquglvhWscGHX5nhZ+P/vSxDb1HkYmzGHyMAa8conUd4mjR9wZMyWiLkhQmagDwZ/szoxOA2pMtrFJQmMR/ny8SEL+HjK1aBCHqa4f5FSwvslB/JPan/KdZzvFM29HpcKasRo7LPYuuio2CHv7OoFpIr/pZhxqK/l4YeC+i8vOEGRe/mKkJfdPDJ/epIkFbDhPVt8kU8DZESKXIpgAac/t0U2d+bEsqID0TP5iHuNRhydWifYB371VYY9Ic0lEmL8F09uPOo+1NuVnrW8yKwhPDCOOP0gTwYVn91rME43HUwOTUeahEQTao/vpfcUp1bafQYWNV3W86ANI0AwqMy3BKHL+C7MrjyJSFgBRNtasEcxrHyfDrRqzpCMjcVNc8C9HrBK4XdYTSaA0lD9O6sHtpjzW2BB1wCy9Tw4+8QO18a3pzr3Q8x3DTqTnFeVzwd9UK+OK4OqCoGoG4cdwuBjq+n4vAkP5xTpBnYVqa1bfaaiKQ85KKUe1QKsJ4keRKjnyfTdkRk7Ts0evWfFY+l7iOrWoIdaMlhR/DrxdzRK976faDNPCziRQqfCrfTnbGXQkhTj3XGgYD8HFDu8T/E40IWBYIMLe8Mtx3rDgWpSN2U/pNV1lCoPHyy71Nka/eQjrswiHEogxhA9WQX/onwQDGJeT4hs7LP1ea0rkT7EgY6OepSAc4sFtfSVrfstPG+cYp4pflZXveYY7zRYG6HKtWo2F5Dwp0z0D/wAFyDJBJUVrVl5bZh8r+UsXbsXiuE11vJoVvlu2LqDFml3GvA0I9SKN7QJHPdgQZuHG+YnDh2YxHVwBxUC4eqitiTdvQXWFiXju4qKeKTRS+3pBhrTyRiIMcUEQozhGeQwAaAOeF6MgCTBV0Zlx1f3jKW1VvF5KvZ6vV2X0JkLnPyYhAyZjBdVDyc8RYigb6Ou7okSzcPQZNb9DRzKLQf+o2tswYYUeWVTDVwz/K+ms1IUEW9gykmsDsSvTGSb8y/VCVXAeuScfwEcNbpT2sDP+d7NhcZLYNoUVf+TPF3LVWzfvugKsCJnzS/eQNoSd3dyuyW/IV0fkeHeKE9XkyFL8ChdM16ySoav8+7VdNa3tLWrO0LzRxAiA3BQilhTO66T5gobymzBGmYbLdP3plUwGDjI1+fj3T1M1hzWf024yesyT/KIi3743zjvoNeMQusGtf+ettEMuRtKbWH03HQVDuOdeVHRMKahSgOxJcOy9UDAFIvneTu57LSiMe8w65WZBD85+C03GqR+9g4C6MzLxuli6BpmYf4J9TAZ7Qx3QToc5OQ6Olah/s3XEOIclIxuTOKKeWzK5EePVX1cSCq6ku9m7z8r7h94zrfhBff03e3VZAr+H5gIIoNzDItYRn/jtq3WJp/LadB9J09IspzL2dJuSKiSxlDWU6ISpvFbSYM/OH1N3ARD0hXhRXlBiCp1IEOaPpvmSX/c+ROBFhCD+bcSAiQmZzM0R+jfn+AqN6CyTFMNlak6n/GIYHTxnY9JS+eYqxHx+BguuWFwjdHQLeYWTx+NQZMrkNGUEnkwCj6FoYsGuK8I2g9mN1YLXNyd4P3xXXFZJWXm3YuYhbv4iVIifwaOybBcx4bYOLChAyFe2GAE=",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"variables\":[\"amount invested in GPUs\",\"amount invested in CPUs\",\"amount invested in software\",\"amount invested in mobile devices\"],\"objective\":{\"sense\":\"max\",\"terms\":[{\"variable\":\"amount invested in GPUs\",\"coefficient\":4},{\"variable\":\"amount invested in CPUs\",\"coefficient\":6},{\"variable\":\"amount invested in software\",\"coefficient\":11},{\"variable\":\"amount invested in mobile devices\",\"coefficient\":8}]},\"constraints\":[{\"id\":\"budget\",\"quoted_text\":\"Martin has $2000000 to invest in the following technology sectors: GPUs, CPUs, software and mobile devices.\",\"operator\":\"<=\",\"limit\":2000000,\"terms\":[{\"variable\":\"amount invested in GPUs\",\"coefficient\":1},{\"variable\":\"amount invested in CPUs\",\"coefficient\":1},{\"variable\":\"amount invested in software\",\"coefficient\":1},{\"variable\":\"amount invested in mobile devices\",\"coefficient\":1}]},{\"id\":\"gpu_vs_cpu\",\"quoted_text\":\"The amount he invests in GPUs cannot exceed the amount invested in CPUs.\",\"operator\":\"<=\",\"limit\":\"ABSENT\",\"terms\":[{\"variable\":\"amount invested in GPUs\",\"coefficient\":1},{\"variable\":\"amount invested in CPUs\",\"coefficient\":1},{\"variable\":\"amount invested in software\",\"coefficient\":\"ABSENT\"},{\"variable\":\"amount invested in mobile devices\",\"coefficient\":\"ABSENT\"}]},{\"id\":\"mobile_vs_software\",\"quoted_text\":\"the amount invested in mobile devices cannot exceed the amount invested in software\",\"operator\":\"<=\",\"limit\":\"ABSENT\",\"terms\":[{\"variable\":\"amount invested in GPUs\",\"coefficient\":\"ABSENT\"},{\"variable\":\"amount invested in CPUs\",\"coefficient\":\"ABSENT\"},{\"variable\":\"amount invested in software\",\"coefficient\":1},{\"variable\":\"amount invested in mobile devices\",\"coefficient\":1}]},{\"id\":\"gpu_share\",\"quoted_text\":\"at most 9% of the investment can be in GPUs\",\"operator\":\"<=\",\"limit\":9,\"terms\":[{\"variable\":\"amount invested in GPUs\",\"coefficient\":1},{\"variable\":\"amount invested in CPUs\",\"coefficient\":\"ABSENT\"},{\"variable\":\"amount invested in software\",\"coefficient\":\"ABSENT\"},{\"variable\":\"amount invested in mobile devices\",\"coefficient\":\"ABSENT\"}]}]}",
+      "type": "text"
+    }
+  ],
+  "ok": true,
+  "extraction": {
+    "variables": [
+      "amount invested in GPUs",
+      "amount invested in CPUs",
+      "amount invested in software",
+      "amount invested in mobile devices"
+    ],
+    "objective": {
+      "sense": "max",
+      "terms": [
+        {
+          "variable": "amount invested in GPUs",
+          "coefficient": 4
+        },
+        {
+          "variable": "amount invested in CPUs",
+          "coefficient": 6
+        },
+        {
+          "variable": "amount invested in software",
+          "coefficient": 11
+        },
+        {
+          "variable": "amount invested in mobile devices",
+          "coefficient": 8
+        }
+      ]
+    },
+    "constraints": [
+      {
+        "id": "budget",
+        "quoted_text": "Martin has $2000000 to invest in the following technology sectors: GPUs, CPUs, software and mobile devices.",
+        "operator": "<=",
+        "limit": 2000000,
+        "terms": [
+          {
+            "variable": "amount invested in GPUs",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in CPUs",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in software",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in mobile devices",
+            "coefficient": 1
+          }
+        ]
+      },
+      {
+        "id": "gpu_vs_cpu",
+        "quoted_text": "The amount he invests in GPUs cannot exceed the amount invested in CPUs.",
+        "operator": "<=",
+        "limit": "ABSENT",
+        "terms": [
+          {
+            "variable": "amount invested in GPUs",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in CPUs",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in software",
+            "coefficient": "ABSENT"
+          },
+          {
+            "variable": "amount invested in mobile devices",
+            "coefficient": "ABSENT"
+          }
+        ]
+      },
+      {
+        "id": "mobile_vs_software",
+        "quoted_text": "the amount invested in mobile devices cannot exceed the amount invested in software",
+        "operator": "<=",
+        "limit": "ABSENT",
+        "terms": [
+          {
+            "variable": "amount invested in GPUs",
+            "coefficient": "ABSENT"
+          },
+          {
+            "variable": "amount invested in CPUs",
+            "coefficient": "ABSENT"
+          },
+          {
+            "variable": "amount invested in software",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in mobile devices",
+            "coefficient": 1
+          }
+        ]
+      },
+      {
+        "id": "gpu_share",
+        "quoted_text": "at most 9% of the investment can be in GPUs",
+        "operator": "<=",
+        "limit": 9,
+        "terms": [
+          {
+            "variable": "amount invested in GPUs",
+            "coefficient": 1
+          },
+          {
+            "variable": "amount invested in CPUs",
+            "coefficient": "ABSENT"
+          },
+          {
+            "variable": "amount invested in software",
+            "coefficient": "ABSENT"
+          },
+          {
+            "variable": "amount invested in mobile devices",
+            "coefficient": "ABSENT"
+          }
+        ]
+      }
+    ]
+  }
+}

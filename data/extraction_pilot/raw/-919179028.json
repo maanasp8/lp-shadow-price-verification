@@ -1,0 +1,256 @@
+{
+  "problem_id": "-919179028",
+  "run_on": "2026-08-05",
+  "model": "claude-opus-5",
+  "params": {
+    "max_tokens": 16000,
+    "effort": "high",
+    "thinking": {
+      "type": "adaptive"
+    },
+    "temperature": null,
+    "temperature_note": "not sent; rejected on this model"
+  },
+  "raw_prompt": {
+    "system": "You extract the numbers of a linear-programming word problem into a typed slot table. You are not building or solving a model.\n\nReport only what the text states. Follow these rules exactly.\n\nVARIABLES\n- List every decision quantity the problem asks the reader to choose, using the wording the text uses.\n- Do not invent variables for quantities that are given, not chosen.\n\nOBJECTIVE\n- `sense` is \"max\" or \"min\", whichever the text asks for.\n- Give one term per variable that carries an objective coefficient in the text.\n- If a variable appears in the problem but the text gives it no objective coefficient, emit a term for it with coefficient \"ABSENT\".\n\nCONSTRAINTS\n- One entry per constraint the text states. Give each a short id of your choosing and quote the span of the source text it comes from in `quoted_text`.\n- `operator` is \"<=\", \">=\" or \"==\" as the text implies.\n- `limit` is the number on the other side of the comparison.\n- Give one term per variable, for every variable you listed. If a variable does not appear in that constraint, emit a term for it with coefficient \"ABSENT\". Never omit a variable from a constraint's term list \u2014 say \"ABSENT\" instead.\n\nNUMBERS\n- Normalize every number to a plain decimal: no thousands separators, no currency marks, no percent signs, no units, no words.\n- Write a percentage as the number the text writes, not as a fraction: \"30%\" becomes 30, not 0.3.\n- Write a word-number as its digits: \"twice\" becomes 2, \"a third\" becomes 0.333.\n- If a number is stated but you cannot normalize it, use \"ABSENT\".\n\nDO NOT\n- Do not autoformulate. Do not rearrange a constraint, move terms across the comparison, combine constraints, or introduce a coefficient the text does not state.\n- Do not fold units, rates, or conversions into a coefficient.\n- Do not add non-negativity, integrality, or any constraint the text does not state.\n- Do not fill a missing number with a default such as 1. Use \"ABSENT\".",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Extract the slot table for this problem.\n\n<problem>\nJulia is on a strict diet and insists on only taking vanilla protein bars and organic meal replacement shakes. She wants to save money and minimize the cost but must get enough protein and carbs, and not too much fat. Vanilla protein bars cost $10 per serving and contain 30 units of protein, 50 units of carbs, and 2 units of fat. Organic meal replacement shakes cost $15 per serving and contain 10 units of protein, 20 units of carbs, and 5 units of fat. Julia requires at least 155 units of protein and 140 units of carbs but must not eat more than 55 units of fat each day. Formulate the problem as an LP problem in order to minimize cost.\n</problem>"
+      }
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "variables": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Every decision quantity the problem asks the reader to choose."
+      },
+      "objective": {
+        "type": "object",
+        "properties": {
+          "sense": {
+            "type": "string",
+            "enum": [
+              "max",
+              "min"
+            ]
+          },
+          "terms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "variable": {
+                  "type": "string"
+                },
+                "coefficient": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string",
+                      "const": "ABSENT"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "variable",
+                "coefficient"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "sense",
+          "terms"
+        ],
+        "additionalProperties": false
+      },
+      "constraints": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "quoted_text": {
+              "type": "string"
+            },
+            "operator": {
+              "type": "string",
+              "enum": [
+                "<=",
+                ">=",
+                "=="
+              ]
+            },
+            "limit": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string",
+                  "const": "ABSENT"
+                }
+              ]
+            },
+            "terms": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "variable": {
+                    "type": "string"
+                  },
+                  "coefficient": {
+                    "anyOf": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "string",
+                        "const": "ABSENT"
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "variable",
+                  "coefficient"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "id",
+            "quoted_text",
+            "operator",
+            "limit",
+            "terms"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "variables",
+      "objective",
+      "constraints"
+    ],
+    "additionalProperties": false
+  },
+  "elapsed_s": 7.295138041023165,
+  "stop_reason": "end_turn",
+  "stop_details": null,
+  "usage": {
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 1859,
+    "output_tokens": 452,
+    "output_tokens_details": {
+      "thinking_tokens": 32
+    },
+    "server_tool_use": null,
+    "service_tier": "standard"
+  },
+  "response_model": "claude-opus-5",
+  "request_id": "req_011CdkFLseWzQEEogS6UCYBw",
+  "raw_response": [
+    {
+      "signature": "CAISwwIKhwEIEBgCKkBXcLyebDFj9Ho3eWVXBKEsKC6RYjOVBHph+g4mWA2DnSJ8SYqe2NiGrkg2UlifLw8Y6LRMPkqWQAh8SMt5FdG6Mg1jbGF1ZGUtb3B1cy01OAFCCHRoaW5raW5nWiQ3ZGZkZTBlYS02YjVjLTQ5NzUtYjA2NS0wNDQ2M2Y0NTJlYTASDKc/DIXEJMR1Hqgb+hoM0C2yoyjiq7hdwq8NIjBFCD2+apRcoZPofR2qLpbQtcjFdVR7bfzymn4ONtogZzW4G+Lpm4B9SRkq1wPJs7sqadZWzdoSAjk8GfrW/9QMxM42g2/B7c34OAYGcpiP3JO1dBbBNTufSA+IxUbNz3zqyxLDvy+e/lfjZ7w2GITQcGP+swrKHnliuJjjduwM3hOC7SUvNquPkurd7aWkJZe/QMABIA5fgND6oBgB",
+      "thinking": "",
+      "type": "thinking"
+    },
+    {
+      "citations": null,
+      "text": "{\"variables\":[\"servings of vanilla protein bars\",\"servings of organic meal replacement shakes\"],\"objective\":{\"sense\":\"min\",\"terms\":[{\"variable\":\"servings of vanilla protein bars\",\"coefficient\":10},{\"variable\":\"servings of organic meal replacement shakes\",\"coefficient\":15}]},\"constraints\":[{\"id\":\"protein\",\"quoted_text\":\"Julia requires at least 155 units of protein\",\"operator\":\">=\",\"limit\":155,\"terms\":[{\"variable\":\"servings of vanilla protein bars\",\"coefficient\":30},{\"variable\":\"servings of organic meal replacement shakes\",\"coefficient\":10}]},{\"id\":\"carbs\",\"quoted_text\":\"at least 155 units of protein and 140 units of carbs\",\"operator\":\">=\",\"limit\":140,\"terms\":[{\"variable\":\"servings of vanilla protein bars\",\"coefficient\":50},{\"variable\":\"servings of organic meal replacement shakes\",\"coefficient\":20}]},{\"id\":\"fat\",\"quoted_text\":\"must not eat more than 55 units of fat each day\",\"operator\":\"<=\",\"limit\":55,\"terms\":[{\"variable\":\"servings of vanilla protein bars\",\"coefficient\":2},{\"variable\":\"servings of organic meal replacement shakes\",\"coefficient\":5}]}]}",
+      "type": "text"
+    }
+  ],
+  "ok": true,
+  "extraction": {
+    "variables": [
+      "servings of vanilla protein bars",
+      "servings of organic meal replacement shakes"
+    ],
+    "objective": {
+      "sense": "min",
+      "terms": [
+        {
+          "variable": "servings of vanilla protein bars",
+          "coefficient": 10
+        },
+        {
+          "variable": "servings of organic meal replacement shakes",
+          "coefficient": 15
+        }
+      ]
+    },
+    "constraints": [
+      {
+        "id": "protein",
+        "quoted_text": "Julia requires at least 155 units of protein",
+        "operator": ">=",
+        "limit": 155,
+        "terms": [
+          {
+            "variable": "servings of vanilla protein bars",
+            "coefficient": 30
+          },
+          {
+            "variable": "servings of organic meal replacement shakes",
+            "coefficient": 10
+          }
+        ]
+      },
+      {
+        "id": "carbs",
+        "quoted_text": "at least 155 units of protein and 140 units of carbs",
+        "operator": ">=",
+        "limit": 140,
+        "terms": [
+          {
+            "variable": "servings of vanilla protein bars",
+            "coefficient": 50
+          },
+          {
+            "variable": "servings of organic meal replacement shakes",
+            "coefficient": 20
+          }
+        ]
+      },
+      {
+        "id": "fat",
+        "quoted_text": "must not eat more than 55 units of fat each day",
+        "operator": "<=",
+        "limit": 55,
+        "terms": [
+          {
+            "variable": "servings of vanilla protein bars",
+            "coefficient": 2
+          },
+          {
+            "variable": "servings of organic meal replacement shakes",
+            "coefficient": 5
+          }
+        ]
+      }
+    ]
+  }
+}

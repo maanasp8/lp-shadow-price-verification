@@ -1,0 +1,62 @@
+problem_id,split,stage,reason
+-804075997,train,solve,INFEASIBLE
+2091753729,train,parse,"order_mapping_collision: distinct mentions in obj_declaration.terms collapse onto the same variable index (['graphing calculator', 'scientific calculator'])"
+-1341619224,train,solve,UNBOUNDED
+1040469781,train,solve,INFEASIBLE
+-615992646,train,solve,UNBOUNDED
+-1294988074,train,solve,INFEASIBLE
+-612343855,train,solve,UNBOUNDED
+1116522080,train,solve,UNBOUNDED
+1855357113,train,solve,UNBOUNDED
+1082778763,train,solve,INFEASIBLE
+-2111556473,train,solve,INFEASIBLE
+-2082341508,train,solve,UNBOUNDED
+1133814426,train,parse,"order_mapping_collision: distinct mentions in obj_declaration.terms collapse onto the same variable index (['large package', 'small package'])"
+1158106256,train,solve,INFEASIBLE
+789180705,train,solve,UNBOUNDED
+1475791337,train,solve,INFEASIBLE
+-1549050915,train,solve,INFEASIBLE
+1571791236,train,solve,INFEASIBLE
+339134760,train,solve,UNBOUNDED
+1958464730,train,solve,UNBOUNDED
+159070851,train,parse,"order_mapping_collision: distinct mentions in obj_declaration.vars collapse onto the same variable index (['Lucent Beach', 'Silver beach'])"
+-1395627543,train,solve,UNBOUNDED
+-1149460127,train,parse,"order_mapping_collision: distinct mentions in obj_declaration.terms collapse onto the same variable index (['cheeseburger', 'cheeseburgers'])"
+1981196061,train,parse,"order_mapping_collision: distinct mentions in obj_declaration.terms collapse onto the same variable index (['action figure', 'toy car'])"
+789654879,train,solve,INFEASIBLE
+-1680076123,train,solve,INFEASIBLE
+-1264330103,train,solve,INFEASIBLE
+-446204523,train,solve,INFEASIBLE
+1554876939,train,parse,ratio_limit_out_of_range: '1000' -> 10 after rescale
+-996226930,dev,solve,UNBOUNDED
+1670020945,dev,parse,"order_mapping_collision: distinct mentions in obj_declaration.terms collapse onto the same variable index (['economical mobile phone', 'premium mobile phone'])"
+-1194187124,dev,solve,INFEASIBLE
+-1379231929,dev,solve,INFEASIBLE
+31495053,dev,solve,UNBOUNDED
+-1028228232,dev,solve,INFEASIBLE
+381702316,dev,solve,UNBOUNDED
+-641246185,dev,solve,INFEASIBLE
+141730788,dev,solve,INFEASIBLE
+137282577,dev,solve,INFEASIBLE
+-725478241,test,solve,INFEASIBLE
+-451843339,test,solve,INFEASIBLE
+-847055511,test,solve,INFEASIBLE
+-1766223663,test,solve,INFEASIBLE
+-468779640,test,solve,INFEASIBLE
+-1603650758,test,solve,INFEASIBLE
+-2028768463,test,solve,INFEASIBLE
+-945818446,test,solve,INFEASIBLE
+1238353423,test,solve,INFEASIBLE
+-634192638,test,solve,INFEASIBLE
+941255519,test,solve,INFEASIBLE
+-1448607152,test,solve,INFEASIBLE
+-1770860412,test,parse,"order_mapping_collision: distinct mentions in c0_xby collapse onto the same variable index (['graduate researcher', 'ultrasound technician'])"
+-1704758994,test,solve,INFEASIBLE
+1278831553,test,solve,UNBOUNDED
+1677678357,test,solve,UNBOUNDED
+912269019,test,solve,INFEASIBLE
+1695786577,test,parse,"order_mapping_collision: distinct mentions in c0_linear.terms collapse onto the same variable index (['train', 'tram'])"
+-440570570,test,solve,INFEASIBLE
+1197838065,test,solve,UNBOUNDED
+249236183,test,solve,UNBOUNDED
+602019445,test,solve,INFEASIBLE

@@ -1,0 +1,42 @@
+{
+ "stamp": "2026-08-15",
+ "status": "POST-HOC. Not the pre-registered primary endpoint, which remains 77.30 % single / 85.56 % multi macro-averaged within each check's applicability set.",
+ "denominator_note": "n = 18,525 = provenance full-2026-08-02, population primary, bucket '3 evaluable'. Not a pre-registered denominator.",
+ "do_not_quote": "91.40 % \u2014 a projection assuming D catches nothing outside its pre-registered binding->slack population. Measurement falsified it.",
+ "distinct_from": "92.17 % (2,531/2,746) is Check D's hit rate on binding->slack misses only. It is NOT this union and must not be conflated.",
+ "n": 18525,
+ "a_or_b": 14401,
+ "a_or_b_or_d": 17018,
+ "marginal_d_total": 2617,
+ "marginal_d_from_binding_to_slack": 2531,
+ "marginal_d_newly_measured": 86,
+ "by_scope": [
+  {
+   "scope": "multi",
+   "n_evaluable": 10772,
+   "a_or_b": 8920,
+   "a_or_b_pct": "82.81",
+   "a_or_b_or_d": 10612,
+   "a_or_b_or_d_pct": "98.51",
+   "marginal_d": 1692
+  },
+  {
+   "scope": "single",
+   "n_evaluable": 7753,
+   "a_or_b": 5481,
+   "a_or_b_pct": "70.70",
+   "a_or_b_or_d": 6406,
+   "a_or_b_or_d_pct": "82.63",
+   "marginal_d": 925
+  },
+  {
+   "scope": "pooled",
+   "n_evaluable": 18525,
+   "a_or_b": 14401,
+   "a_or_b_pct": "77.74",
+   "a_or_b_or_d": 17018,
+   "a_or_b_or_d_pct": "91.87",
+   "marginal_d": 2617
+  }
+ ]
+}

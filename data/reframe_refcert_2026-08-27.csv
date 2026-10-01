@@ -1,0 +1,76 @@
+mutant_id,silenced_by,basis_dependent,faces_intersect,obj_moved,sol_moved
+"-2106263334|1|x10|a[c1_linear,Model A]=80",-,False,True,False,True
+"-2106263334|1|/10|a[c1_linear,Model B]=70",barrier,True,True,False,True
+"-2106263334|6|omit|a[c1_linear,Model B]=70->0",barrier,True,True,False,True
+"-2101760318|1|x10|a[c1_linear,Vanilla flavor]=2",barrier,True,True,False,True
+"-2083631303|1|x10|a[c0_sum,windmills]=1",-,False,True,False,True
+"-1830924888|1|/10|a[c1_sum,regular]=1",barrier,True,True,False,True
+"-1830924888|6|omit|a[c1_sum,regular]=1->0",barrier,True,True,False,True
+"-1542644642|1|/10|a[c0_linear,apple]=50",-,False,True,False,True
+"-1542644642|4b|swap|a[c0_linear,peach trees]=80 <-> a[c2_sum,peach trees]=1",-,False,True,False,True
+"-1533753278|4a|swap|a[c1_xby,police officer costumes]=-3 <-> a[c1_xby,fireman costumes]=1",-,False,False,False,True
+"-1083302057|1|/10|a[c0_linear,hoodies]=2",barrier,True,True,False,True
+"-1083302057|4a|swap|a[c0_linear,t-shirts]=1 <-> a[c0_linear,hoodies]=2",-,False,True,False,True
+"-1083302057|6|omit|a[c0_linear,hoodies]=2->0",barrier,True,True,False,True
+"-1008324134|1|x10|a[c0_linear,Beam 2]=0.1",-,False,True,False,True
+"-1008324134|1|/10|a[c0_linear,Beam 1]=0.2",barrier,True,True,False,True
+"-1008324134|4a|swap|a[c0_linear,Beam 1]=0.2 <-> a[c0_linear,Beam 2]=0.1",barrier,True,True,False,True
+"-1008324134|6|omit|a[c0_linear,Beam 1]=0.2->0",barrier,True,True,False,True
+"-959862663|1|x10|a[c0_linear,large bowl]=5",-,False,True,False,True
+"-959862663|1|x10|a[c1_linear,large bowl]=4",-,False,True,False,True
+"-949723129|1|x10|a[c0_linear,small]=5",-,False,True,False,True
+"-949723129|1|/10|a[c0_linear,large chessboards]=10",barrier,True,True,False,True
+"-949723129|6|omit|a[c0_linear,large chessboards]=10->0",barrier,True,True,False,True
+"-855138281|1|x10|a[c0_linear,large]=15",-,False,True,False,True
+"-790646361|1|x10|a[c1_linear,knives]=1",-,False,True,False,True
+"-790646361|1|/10|a[c1_linear,spoons]=2",primal simplex,True,True,False,True
+"-790646361|4a|swap|a[c1_linear,forks]=1.5 <-> a[c1_linear,knives]=1",primal simplex,True,True,False,True
+"-620437882|4a|swap|a[c1_xby,rings]=1 <-> a[c1_xby,necklaces]=-3",-,False,False,False,True
+-356156483|3|/10|b[c1_linear]=24,primal simplex;barrier,True,True,False,True
+"-261742752|1|x10|a[c1_sum,garden chair]=1",-,False,True,False,True
+"-261742752|1|/10|a[c1_sum,desk chair]=1",barrier,True,True,False,True
+"-261742752|1|/10|a[c1_sum,garden chair]=1",-,False,True,False,True
+"-261742752|6|omit|a[c1_sum,desk chair]=1->0",barrier,True,True,False,True
+"-261742752|6|omit|a[c1_sum,garden chair]=1->0",-,False,True,False,True
+"-241297255|1|x10|a[c1_linear,elephants]=20",-,False,True,False,True
+"-241297255|4a|swap|a[c1_linear,elephants]=20 <-> a[c1_linear,tigers]=30",primal simplex,True,True,False,True
+"-214665832|1|/10|a[c1_linear,sugary cereal]=4",barrier,True,True,False,True
+"-214665832|4a|swap|a[c1_linear,nutritional cereal]=1 <-> a[c1_linear,sugary cereal]=4",barrier,True,True,False,True
+"-214665832|4a|swap|a[c1_linear,kids' cereal]=1.5 <-> a[c1_linear,sugary cereal]=4",-,False,False,False,True
+"368302984|1|/10|a[c0_linear,carrots]=20",barrier,True,True,False,True
+"368302984|4a|swap|a[c0_linear,diced onions]=10 <-> a[c0_linear,carrots]=20",-,False,False,False,True
+"368302984|6|omit|a[c0_linear,carrots]=20->0",barrier,True,True,False,True
+"415803817|1|/10|a[c2_linear,bedside table]=3.5",-,False,True,False,True
+415803817|3|x10|b[c2_linear]=5000,-,False,True,False,True
+"415803817|4a|swap|a[c2_linear,coffee table]=1.5 <-> a[c2_linear,bedside table]=3.5",-,False,True,False,True
+"566463604|1|x10|a[c1_linear,glass]=1",-,False,True,False,True
+"598057720|1|x10|a[c0_linear,hoodies]=3",-,False,True,False,True
+"659209022|1|/10|a[c1_sum,beans]=1",barrier,True,True,False,True
+"659209022|6|omit|a[c1_sum,beans]=1->0",barrier,True,True,False,True
+"1023581637|1|x10|a[c1_linear,hot-dogs]=1",-,False,True,False,True
+"1023581637|4a|swap|a[c1_linear,burgers]=2 <-> a[c1_linear,hot-dogs]=1",-,False,True,False,True
+"1052619427|1|x10|a[c1_lowerbound,lemons]=1",-,False,True,False,True
+"1052619427|1|x10|a[c3_xby,lemons]=-0.333333",primal simplex;barrier,True,True,False,True
+"1052619427|1|/10|a[c3_xby,bananas]=1",primal simplex;barrier,True,True,False,True
+"1052619427|6|omit|a[c3_xby,bananas]=1->0",primal simplex,True,True,False,True
+"1178527024|1|x10|a[c1_linear,long desks]=10",-,False,True,False,True
+"1178527024|1|/10|a[c1_linear,short desks]=4",barrier,True,True,False,True
+"1178527024|6|omit|a[c1_linear,short desks]=4->0",barrier,True,True,False,True
+"1229366693|1|x10|a[c0_linear,red gummy]=4",barrier,True,True,False,True
+"1229366693|1|x10|a[c2_linear,red gummy]=2",barrier,True,True,False,True
+"1231061056|6|omit|a[c0_linear,beds]=20->0",primal simplex;barrier,True,True,False,True
+"1343830030|1|/10|a[c1_sum,Brand A sneakers]=1",barrier,True,True,False,True
+"1343830030|6|omit|a[c1_sum,Brand A sneakers]=1->0",barrier,True,True,False,True
+"1468112927|1|/10|a[c1_linear,hashbrowns.]=2",barrier,True,True,False,True
+"1468112927|6|omit|a[c1_linear,hashbrowns.]=2->0",barrier,True,True,False,True
+"1470713712|1|x10|a[c1_linear,sweet mix]=0.25",-,False,True,False,True
+"1470713712|1|/10|a[c1_linear,regular mix]=0.5",barrier,True,True,False,True
+"1470713712|4a|swap|a[c1_linear,sweet mix]=0.25 <-> a[c1_linear,regular mix]=0.5",barrier,True,True,False,True
+"1470713712|6|omit|a[c1_linear,regular mix]=0.5->0",barrier,True,True,False,True
+"1862750461|1|x10|a[c0_linear,chocolate protein shakes]=35",-,False,True,False,True
+1862750461|3|/10|b[c0_linear]=150,barrier,True,True,False,True
+"1862750461|4a|swap|a[c0_linear,chocolate protein shakes]=35 <-> a[c0_linear,meal replacement smoothies]=15",-,False,False,False,True
+1862750461|7|swap|b[c0_linear]=150 <-> b[c1_linear]=50,barrier,True,True,False,True
+"1932848793|1|x10|a[c1_linear,cars]=1",-,False,True,False,True
+"1932848793|1|/10|a[c1_linear,bikes]=0.5",barrier,True,True,False,True
+"1932848793|6|omit|a[c1_linear,bikes]=0.5->0",barrier,True,True,False,True

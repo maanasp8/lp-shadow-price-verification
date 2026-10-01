@@ -1,0 +1,17 @@
+arm,case,n,fired,pct
+restructure,negate_flip_all,1040,0,0.0
+restructure,negate_flip_row0,1039,0,0.0
+restructure,rescale_x2_all,1040,0,0.0
+restructure,rescale_x2_row0,1039,0,0.0
+restructure,rescale_x01_all,1040,0,0.0
+restructure,reorder_rows,1040,0,0.0
+restructure,reindex_vars,1040,0,0.0
+detection,type1,4179,2850,68.2
+detection,type2,4096,3649,89.09
+detection,type3,2949,1916,64.97
+detection,type4a,1110,801,72.16
+detection,type4b,1367,1145,83.76
+detection,type5,1003,981,97.81
+detection,type6,1904,1217,63.92
+detection,type7,1193,1119,93.8
+detection,type8,724,723,99.86
