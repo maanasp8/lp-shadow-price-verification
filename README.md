@@ -1,8 +1,7 @@
 # Basis Artifacts in Solution-Level Verification of LLM-Generated Linear Programs
 
 Code and artefacts for the MATH-AI 2026 paper "Basis Artifacts in Solution-Level
-Verification of LLM-Generated Linear Programs" by Maanas Punuru (Wake Tech
-Community College).
+Verification of LLM-Generated Linear Programs" by Maanas Punuru (Panther Creek High School).
 
 The paper studies how verifiers for LLM-generated linear programs are scored. A
 linear program has one optimal value but often many optimal solutions, so a solver
